@@ -1,0 +1,37 @@
+body {
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ccc;
+  font-family: "futura-pt", sans-serif;
+}
+
+.site-header .page-link {
+  display: inline;
+  font-family: "Ostrich Sans Inline", sans-serif;
+  font-size: 5em;
+}
+
+.page-link + .page-link {
+  margin-left: 0.4em;
+}
+
+p + p {
+  margin-top: 0.7em;
+}
+
+.site-nav {
+  position: absolute;
+  right: 0;
+  margin-right: 3em;
+}
+
+.site-header {
+  height: 8em;
+}
+
+
+main {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
