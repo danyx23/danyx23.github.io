@@ -35,3 +35,30 @@ main {
   margin: auto;
   line-height: 1.6;
 }
+
+.author {
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+article + article {
+  margin-top: 2.5em;
+}
+
+p a {
+  border-bottom: thin #666 dotted;
+}
+
+.pagination {
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+p img {
+  display: block;
+  margin: 0 auto;
+}

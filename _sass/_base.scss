@@ -99,8 +99,8 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: #fff;
+        //text-decoration: underline;
     }
 }
 
@@ -129,11 +129,11 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
+     font-size: 15px;
+     border-radius: 3px;
+     color:#fdce93;
+     background-color:#3f3f3f;
+ }
 
 code {
     padding: 1px 5px;

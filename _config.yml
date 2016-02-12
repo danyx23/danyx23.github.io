@@ -17,6 +17,6 @@ github_username:  danyx23
 paginate: 5
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, redcarpet, jekyll-gist]
