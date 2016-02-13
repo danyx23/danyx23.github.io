@@ -2,20 +2,43 @@
 layout: post
 title: Signals and Effects in Elm
 ---
-Ok, let me try to clarify all of this a little bit (I think I got most of this but if someone more knowledgeable reads this and finds an error please correct me!)
+I have rewritten a webapp from React/Redux to Elm over the last 4 weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I had several ideas for blog posts on the topic and have just given a talk at [Berlin.js](http://www.berlinjs.org) about it, but then I answered a few questions on the Elm Discuss mailinglist and thought that those questions would make for a good post. (I adapted two long mailing list answers for the post so please excuse some changes in writing style.)
 
-What is the difference between Tasks and Effects?
+###How do Ports, Signals, Tasks and Effects relate to each other?
+
+Elm uses a very nice unidirectional architecture for the flow of displayed website -> user actions -> state changes -> displayed website. All the code you write in a typical Elm program comes together in just two pure functions: update and view. Update takes a user action an the previous application state and creates a new application state, and view takes an application state and renders it into a virtual dom representation (that then gets efficiently displayed a la React). For more background on unidirectional UIs see André Staltz's excellent blog post [Unidirectional User Interface Architectures](http://staltz.com/unidirectional-user-interface-architectures.html)
+
+The canonical StartApp.Simple that really only uses your update and view function has two big caveats though: you can't easily create long-running, effectful operations (like sending http requests), and it provides no straightforward way to have communication with "native Javascript", that is, code not written in Elm. When you read about Elm, ports are quickly mentioned but in the beginning it can be hard to figure out where and how they play into StartApp.
+
+So what are Ports, exactly? They are a way to get values from Elm to native Javascript (outgoing Port) or from Javascript to Elm (incoming Port). They are defined with their own keyword, `port`. If a Port is defined to be of a Non-Signal type (e.g. `port initialUrl : String`) then it is a send or receive once value (at init time of the Elm code). More frequently it will be a Signal of some type (e.g. a `Signal String`) that works somewhat similar to an EventEmitter or Observable in other languages and trigger whenever their value changes (more about them later). So to wrap this up, if you want your native Javascript to fire "events" over to elm to notify it of something, you need an incoming port in Javascript of the correct type (and with a decoder to verify the incoming data) and if you want the Elm code to native your native Javascript you need an outgoing port.
+
+The starting point for this post was a question about this [simple example](https://gist.github.com/danyx23/27be1e9a9b387d9a7532) that should interact with native Javascript code but didn't. 
+
+Why does this code not work? You may notice that there is nowhere in the Elm code where the getURL signal is actually used. If it is not used in your elm code, how can elm react to it?
+
+StartApp hides a bit of wiring from you, but I think it helps to understand how `StartApp.start` works. What the start function does is hook up a mailbox (something where messages go when you send them to the address e.g. in an onClick handler) so that they lead to a new html emmited to main. This is the heart of the unidirectional UI approach. The user clicks a button, this leads to a message being sent to the mailbox. The mailbox has a Signal that fires whenever a message is sent to it. This Signal is of your applications Action type, so the value you get from the signal is of this Action type. Eventually this leads to a full cycle through your update/view structure and thus to a new version of your Virtual Dom.
+
+Let's look at the intermediary types more closely, we start with a Signal of Actions. This then gets turned into a Signal of Models (so everytime a new Action is fired this action value is run through update together with the last model state to get the new model state). This finally gets turned into a Signal of Html (whenever the Signal of Model fires, we run it through the view function to arrive at a new Html to display). This is then handed to main so that the Elm runtime can display it for us.
+
+Ok so now how do we get the port signal to also trigger cycles through update/view? The easiest way is to change from `StartApp.Simple` to the slightly more complex `StartApp` and use the `inputs` for it. `Inputs` is a list of Signals that fire Actions that will be combined with the Signal of the mailbox. So this is exactly what we want to have for this little program so it can react to the signal that represents the port.
+
+To make it clearer what needs to change, here is a modified, [working version of the above code](https://gist.github.com/danyx23/23ab6572e7292e66e5ae). One of the first things I did was add type annotations everywhere, because in my experience this helps you think about a piece of code when you are stuck. Let's look at the other changes in detail:
+
+The first obvious change is the added list of inputs to `start`. This is where I feed in a list of `Signals of Actions`. Why not a `Signal of Strings` (which is what the type of the port is)? Because the update method that changes the model needs a value of type Action. I added the function `setUrlFromJSSignal` that just maps the port Signal from `Signal of String` to a `Signal of Actions` by applying the `SetURL` type constructor. I changed the `SetURL` action to have a String "payload", so the action `SetURL` always carries the url to set. This means that the `onClick` handler also needs to set the payload when it constructs the `SetURL` action.
+
+The Effects type has also come in and made update a little more complex, because instead of only returning the new model we now have to return a tuple of the new model and any Effects we want the runtime to perform (this is for stateful side effects like send http requests etc).
+
+###What is the difference between Tasks and Effects?
 
 Task is the more basic type (it is defined in Core). It represents a long-running operation that can fail (with an error type) or succeed (with a success type). It's type is thus:
-```haskell
 Task errorType successType
-```
 
-There are only two values of task you can create yourself in your code, without using a seperate library, by using one of the two creation functions:
+There are only two values of task you can create yourself in your code, without using a separate library, by using one of the two creation functions:
+
 ```haskell
 succeed : a -> Task x a
 and
-fail : x -> Task x a 
+fail : x -> Task x a
 ```
 
 These are ways to create task objects without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a Task with succeed).
@@ -26,7 +49,7 @@ Note that the operation doesn't start right away! I said "when the runtime execu
 
 So how does this actually work? The task you get back *represents* the long running action. When a library creates it for you, nothing "happens", it just created a value (of Type Task) that indicates what you would like to happen.
 
-If you look at e.g. the implementation of the [native part of the send function in http](https://github.com/evancz/elm-http/blob/3.0.0/src/Native/Http.js) you will see that a Task is created in native code by handing it a callback. This callback is what will get called when the runtime actually executes the task. This is when the actual XHR request is created and performed - only when the runtime executes this callback.
+If you look at e.g. the implementation of [the native part of the send function in http](https://github.com/evancz/elm-http/blob/3.0.0/src/Native/Http.js) you will see that a Task is created in native code by handing it a callback. This callback is what will get called when the runtime actually executes the task. This is when the actual XHR request is created and performed - only when the runtime executes this callback.
 
 So how do you get the runtime to run this task? By passing it into an outgoing port. The runtime has some special casing for Tasks that come to it via outgoing ports that make it execute the callback the Task represents.
 
@@ -62,7 +85,7 @@ getRandomGif topic =
     |> Effects.task
 ```
 
-Let's look at what it does. It starts with creating a task that represents the Http get operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain whats happening:
+Let's look at what it does. It starts with creating a task that represents the Http get operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what's happening:
 
 ```haskell
 getRandomGif topic =
@@ -85,6 +108,4 @@ A final question that may still be in your head is: why have Effects at all? The
 
 Ok, so finally, if Effects just wrap Tasks with error type Never and your Action type as the success type, then it should be clear that if we only create them but never hand them to the runtime via a port, nothing will ever happen. So after setting up your project with StartApp and creating effects, you have to wire up main like usual, but also create an outgoing port that is wired to app.tasks so that the runtime can actually perform those tasks (represented by the effects) for you.
 
-The [reactivity post of the guide](http://elm-lang.org/guide/reactivity#tasks) is another take on introducing signals and tasks and hopefully between this reply and that post it will be clear how Tasks and Effects and Signals work together to form the backbone of how Elm apps work :)
-
-I'll try to turn this answer and my previous reply into a coherent blog post at some point - let me know if anything about it is still unclear!
+The reactivity post of the guide is another take on introducing signals and tasks and hopefully between this reply and that post it will be clear how Tasks and Effects and Signals work together to form the backbone of how Elm apps work :)

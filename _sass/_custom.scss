@@ -5,10 +5,91 @@ body {
   font-family: "futura-pt", sans-serif;
 }
 
-.site-header .page-link {
+.content-area-about {
+  //background: url('../img/background.jpg') no-repeat center center;
+  //background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+html.about {
+  height: 100%;
+}
+
+body.about {
+  //background: #000;
+  display: flex;
+  height: 100%;
+}
+
+.photo-of-daniel {
+  width: 30%;
+  background: url('../img/DanielBachler.jpg') no-repeat bottom center;
+  background-size: cover;
+}
+
+.page-content {
+  overflow: auto;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.site-header{
   display: inline;
   font-family: "Ostrich Sans Inline", sans-serif;
-  font-size: 5em;
+  font-size: 80px;
+}
+
+.site-header {
+  height: 200px;
+  background: inherit;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+@include media-query($on-wide-screen) {
+  .site-header {
+    font-size: 60px;
+  }
+
+  .site-header {
+    height: 130px;
+  }
+
+  .page-content {
+    padding-top: 130px;
+  }
+
+}
+
+@include media-query($on-laptop) {
+  .site-header {
+    font-size: 40px;
+  }
+}
+
+@include media-query($on-palm) {
+  .site-header {
+    font-size: 30px;
+  }
+
+  .site-header {
+    height: 80px;
+  }
+
+  .page-content {
+    padding-top: 80px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  pre, code {
+    font-size: 12px;
+  }
 }
 
 .page-link + .page-link {
@@ -20,13 +101,8 @@ p + p {
 }
 
 .site-nav {
-  position: absolute;
-  right: 0;
-  margin-right: 3em;
-}
-
-.site-header {
-  height: 8em;
+  margin-right: 1em;
+  float: right;
 }
 
 
@@ -61,4 +137,9 @@ p a {
 p img {
   display: block;
   margin: 0 auto;
+  height: auto;
+}
+
+p + h3, p + h2, p + h4, p + h5 {
+  margin-top: 1.5em;
 }
