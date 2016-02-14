@@ -1,3 +1,7 @@
+html {
+  background: black;
+}
+
 body {
   background: url('../img/background.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -5,21 +9,28 @@ body {
   font-family: "futura-pt", sans-serif;
 }
 
-.content-area-about {
+.wrapper.about-me {
   //background: url('../img/background.jpg') no-repeat center center;
   //background-size: cover;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  max-width: 90%;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 40%;
+  max-width: 40vmin;
+}
+
+.about-text {
+  width: 50%;
+  margin-left: 5%;
 }
 
 html.about {
-  height: 100%;
-}
-
-body.about {
-  //background: #000;
-  display: flex;
   height: 100%;
 }
 
@@ -101,8 +112,12 @@ p + p {
 }
 
 .site-nav {
-  margin-right: 1em;
+  margin-right: 0.5em;
   float: right;
+}
+
+.site-title {
+  margin-left: 0.5em;
 }
 
 
@@ -142,4 +157,41 @@ p img {
 
 p + h3, p + h2, p + h4, p + h5 {
   margin-top: 1.5em;
+}
+
+.attribution {
+  margin-top: 3em;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.contacts li {
+  list-style: none;
+  display: inline;
+  margin: 8px;
+  opacity: 0.5;
+}
+
+.contacts li:hover {
+  opacity: 1.0;
+}
+
+
+.contacts li svg {
+  height: 32px;
+  width: 32px;
+}
+
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+
+    path {
+      fill: #fff;
+    }
+  }
 }

@@ -2,55 +2,62 @@
 title: About me
 ---
 <!DOCTYPE html>
-<html class="about">
+<html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="about">
+<body>
 
-    <div class="photo-of-daniel"></div>
+{% include header.html %}
 
-    <div class="content-area-about">
+<div class="page-content">
+    <div class="wrapper about-me">
+        <div class="about-image"><img src="/img/DanielBachler.jpg"></div>
+        <div class="about-text">
+            <p>
+                Hi! I’m Daniel.
+            </p>
 
-        {% include header.html %}
+            <p>
+                I’m a software engineer and a photographer. I have used a wide variety of programming languages and am currently most interested in functional programming, especiall Elm, Haskell and F#. I am currently working on a Slideshow editor in the browser using Elm and a serverless backend running on AWS Lambda.
+            </p>
 
-        <div class="page-content">
-            <div class="wrapper">
-                <p>
-                    Hi, I’m Daniel
-                </p>
+            <p>
+            My work as a photographer is online at
+                <a href="http://iconoclash-photography.com" target="blank">Iconoclash Photography</a>, the studio I run with my wife. I studied film directing and a couple of the films I made <a
+                    href="https://vimeo.com/album/3796617" target="blank">are still online at vimeo</a>. I sometimes write about software engineering here on my blog and about politics and economics on <a
+                    href="http://ichahnezusammenhaenge.de" target="blank">ichahnezusammenhaenge.de</a>. For random curiousities I use
+                <a href="http://danyx.soup.io/" target="blank">soup.io</a>
+            </p>
 
-                <p>
-                    I’m a software engineer and a photographer. I care about good code and meaningful work.
-                </p>
-                <p>
-                    I sometimes write about software engineering on my blog and about politics and economics on <a href="http://ichahnezusammenhaenge.de">ichahnezusammenhaenge.de</a>
-                </p>
-                <p>
-                    The easiest way to get in contact with me is via email: <a href="mailto:daniel@danielbachler.de">daniel@danielbachler.de</a>
-                </p>
-                <p>
-                    My snail mail address
-                </p>
-                <p>
-    Daniel Bachler<br>
-    Wrangelstr 3<br>
-    10997 Berlin<br>
-    Germany
-                </p>
+            <p>
+                To get in touch, just drop me an email at <a href="mailto:daniel@danielbachler.de">daniel@danielbachler.de</a>. You can also find me at twitter, github etc:
+                <ul class="contacts">
+            <li>{% include icon-twitter.html %}</li>
+            <li>{% include icon-github.html %}</li>
+            <li>{% include icon-linkedin.html %}</li>
+            <li>{% include icon-facebook.html %}</li>
+                </ul>
+            </p>
 
-                <h3>Attributions
-                </h3>
-                <p>
-                    This site was designed by me and built with Jekyll. It is set in Futura PT and Ostrich Sans Inline. The background image as well as the profile image on this page is © Teresa Marenzi. The social media icons are by http://www.flaticon.com/packs/simpleicon-social-media
-                </p>
+            <p>
+                My snail mail address is:<br>
+                Daniel Bachler<br>
+                Wrangelstr 3<br>
+                10997 Berlin<br>
+                Germany
+            </p>
 
-          </div>
-        </div>
+            <p class="attribution">Credits<br>
+                This site was designed by me and built with Jekyll. It is set in <a
+                        href="https://typekit.com/fonts/futura-pt">Futura PT</a> and <a
+                        href="https://www.theleagueofmoveabletype.com/ostrich-sans">Ostrich Sans Inline</a>. The
+                background image as well as the profile image on this page is © <a href="http://teresamarenzi.com">Teresa
+                    Marenzi</a>. The social media icons
+                are by <a href="http://www.flaticon.com/packs/simpleicon-social-media">flaticon</a>
+            </p></div>
     </div>
-  </body>
+</div>
+</body>
 
 </html>
-
-
-
