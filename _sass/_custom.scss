@@ -109,6 +109,21 @@ html.about {
   pre, code {
     font-size: 12px;
   }
+
+  .wrapper.about-me {
+    display: block;
+  }
+
+  .about-me .about-image {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .about-me .about-text {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .page-link + .page-link {
