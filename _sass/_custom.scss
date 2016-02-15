@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: url('../img/background.jpg') no-repeat center center fixed;
+  background: url('../img/background.jpg') no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,6 +12,10 @@ body {
   color: #ccc;
   font-family: "futura-pt", sans-serif;
   min-height: 100%;
+}
+
+.no-touchevents body {
+  background-attachment: fixed;
 }
 
 .wrapper.about-me {
