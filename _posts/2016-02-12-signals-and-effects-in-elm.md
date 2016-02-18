@@ -59,19 +59,19 @@ start config =
             Debug.crash "This should never happen."
 
     -- set up a signal of new models that foldp-s over
-    -- the actions signal. This is the central piece.
+    -- the actions signal. This is the central piece
+    -- that makes the elm architecture work the way it does.
     -- The update function will process one Action and
     -- the old Model state to the new model State, the 
-    -- Signal that triggers it all is the Mailboxes Signal
+    -- Signal that triggers it all is the Mailbox' Signal
     -- we set up at the top
     model : Signal model
     model =
       Signal.foldp update config.model actions.signal
   in
-    -- Finally, map over with the view function. This 
-    -- turns the Signal of models into a Signal of Htmls
-    -- that can be rendered
-    Signal Html
+    -- Finally, map over it with the view function. This 
+    -- turns the Signal of Models into a Signal of Htmls
+    -- that can be rendered    
     Signal.map (config.view address) model
 ```
 
@@ -93,4 +93,4 @@ The Effects type has also come in and made update a little more complex, because
 
 To wrap up, I hope that this post helped you understand how Elm uses Signals even if the main two functions you work on in Elm (update and view) don't make this immediately visible as they don't have any Signals in their signature. 
 
-Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have.
+Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!
