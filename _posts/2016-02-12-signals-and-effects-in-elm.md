@@ -6,7 +6,7 @@ I have rewritten a webapp from React/Redux to [Elm](http://elm-lang.org/) over t
 
 These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the [great primer "Road to Elm"](http://www.lambdacat.com/road-to-elm-index/) by Lambdacat and then studied the [Elm Architecture Tutorials](https://github.com/evancz/elm-architecture-tutorial) a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). 
 
-###How do Signals and Ports relate to each other?
+### How do Signals and Ports relate to each other?
 
 Elm uses a very nice unidirectional architecture for the flow of:
 
@@ -28,7 +28,7 @@ Note that when I wrote about the update function, I said "together with the last
 
 At this point, if you want to really dive into it, let's look at how [StartApp.Simple](https://github.com/evancz/start-app) is actually implemented (Feel free to skip this annotated code and read on below for how Ports come into the picture)
 
-```elm
+```haskell
 start : Config model action -> Signal Html
 start config =
   let
