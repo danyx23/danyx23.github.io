@@ -2,15 +2,15 @@
 layout: post
 title: Ports in Elm
 ---
-This is the third post in a series of posts about Elm. In my [last post about Signals in Elm]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) I briefly mentioned ports. Since they are the only way to communicate with "native" Javascript, they certainly warrant a closer look.
+This is the third post in a series of posts about Elm. In my [first post about Signals in Elm]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) I briefly mentioned ports. Since they are the only way to communicate with "native" Javascript, they certainly warrant a closer look.
 
-So what are Ports, exactly? As I wrote above, they are a way to get values from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, `port`. If a Port is defined to be of a Non-Signal type (e.g. `port initialUrl : String`) then it is a "one time" message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a `Signal` of some type (e.g. a `Signal String`). 
+So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, `port`. If a Port is defined to be of a Non-Signal type (e.g. `port initialUrl : String`) then it is a "one time" message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a `Signal` of some type (e.g. a `Signal String`). Ports can not send and receive values of any type but only a subset - the big two groups of values that can't be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the [elm guild page on interop](http://elm-lang.org/guide/interop).
 
 As a simple example, let's create a pair of ports to send `String`s from Elm to Js, do something with it in native JS, and then send the `String`s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs). 
 
 ### Outgoing ports
 
-Since we want this to be possible not just once, we need to declare both ports as `Signals`. Let's start with the outgoing port and on the Elm side:
+Since we want to send stuff several times, not just once, we need to declare both ports as `Signals`. Let's start with the outgoing port and on the Elm side:
 
 ```haskell
 port requestEncryption : Signal String
@@ -30,7 +30,7 @@ function encryptString(message) {
 }
 ```
 
-Pretty straigthforward. We use the `subscribe` method to register a callback that will be called with the `message` string value every time the Signal fires. Ok, but how do we finish implementing this on the Elm side?
+Pretty straigthforward. We use the `subscribe` method to register a callback that will be called with the `message` string value every time the Signal fires at the Elm side. Ok, but how do we finish implementing this on the Elm side?
 
 There are two ways to do this - one is to create a new `Mailbox` and use `Effects` to send our messages, the other is to create a custom version of `StartApp` that returns an additional value for things to send to the port in `update`. I have implemented both attempts as gists, here is the [one with the Mailbox](https://gist.github.com/danyx23/e42ceedaccf0c4a556b8) and once with a [modified StartApp](https://gist.github.com/danyx23/6004778b9322dc716373). For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let's hook up the Mailbox:
 
@@ -49,7 +49,7 @@ This initalizes the `Mailbox` and fills in the hole we had before - the Signal w
 ```haskell
 sendStringToBeEncrypted : String -> Effects Action
 sendStringToBeEncrypted clearText =
-  send portRequestEncryptionMailbox.address clearText
+  Mailbox.send portRequestEncryptionMailbox.address clearText
   |> Effects.task
   |> Effects.map (\_ -> Noop)
 
@@ -64,11 +64,34 @@ update action model =
     -- other cases ...
 ```
 
+The last line in `sendStringToBeEncrypted` may be a bit confusing - what are we mapping there? Let's take a look at the type of `Mailbox.send`:
+
+```haskell
+send : Address a -> a -> Task x ()
+```
+
+This means that the `success` type of the task we get back from send is `()` (aka Unit) which acts a bit similar to `void` in C like languages, i.e. it represents "no actual value". Let me desugar `sendStringToBeEncrypted` so it is clearer what types we are working with:
+
+```haskell
+sendStringToBeEncrypted : String -> Effects Action
+sendStringToBeEncrypted clearText =
+  sendTask : Task x ()
+  sendTask = Mailbox.send portRequestEncryptionMailbox.address clearText
+
+  effectOfUnit : Effects ()
+  effectOfUnit = Effects.task sendTask
+
+  effectOfAction : Effects Action
+  effectOfAction = Effects.map (\_ -> Noop)
+```
+
+(Note that instead of first converting to `Effects ()` and then mapping that I could also have mapped the `Task x ()` to `Task x Action` and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual `Action` value. We are only interested in performing the side effect of sending the message and it will not have a reasonable "payload" that should be routed through update. But because of how `Effects` are typed in `StartApp`, we do need to have an `Effects Aciton` in the end and so we introduce a `Noop` value that explicitly does nothing when it is processed in `update`.
+
 Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?
 
 ### Incoming Ports
 
-Let's start on the Javascript side. We will define an incoming port called `encryptionCompleted` on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it send an encrypted value back to the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call send to send a value back to Elm) 
+Let's start on the Javascript side. We will define an incoming port called `encryptionCompleted` on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call `send` to send a value back to Elm) 
 
 ```javascript
 var div = document.getElementById('root');
@@ -90,7 +113,7 @@ port encryptionCompleted : Signal String
 
 Note that this time the port we have defined has no "implementation" in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our `StartApp.start` call?
 
-In the last post, when we switched from StartApp.Simple to StartApp, I mentioned `inputs`. `inputs` is a `List of Signals` that fire `Action`s that will be combined with the Signal of the mailbox. So this is exactly what we want to have for this little program so it can react to the signal that represents the port - the only thing that is missing is that we have defined `encryptionCompleted` as a Signal of String and we need a Signal of Action for inputs. Sounds like we need a map:
+In the last post, when we switched from StartApp.Simple to StartApp, I mentioned `inputs`. `inputs` is a `List of (Signal of Action)`, i.e. Signals that fire `Action`s that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined `encryptionCompleted` as a `Signal of String` and we need a `Signal of Action` for inputs. Sounds like we need a map again:
 
 ```haskell
 encryptedString : Signal Action
@@ -106,8 +129,8 @@ app =
     }
 ```
 
-And voilà! We have a Signal of Actions that we can put into the inputs part of start.
+And voilà! We have a `Signal of Actions` that we can put into the inputs part of start.
 
-So just to recap, let's go through the example again: Whenever the user enters text we process the `TextChanged` value in our `update` function and not only update the model but also create a new `Effect`. This is then returned by `update` and, because we wired the `tasks` part returned by `start` up to an outgoing `port`, it is handed to the runtime. This leads, on the native JS side, to a call of `encryptString` (because this is the function we registered with `subscribe`). In it we pretended to do some encryption and then sent the value back with `encryptionCompleted.send` (again, you can send values at any time, it only happens in our example that we send one value back for every value we receive on the JS side). This `send` call leads the `encryptionCompleted` Signal to fire, with the String value we sent from the JS side. This is than `map`ped into an `Action` value, namely `EncryptedValueReceived`, and because this is hooked up to the inputs part of StartApp it triggers the same chain through `update` as any other events. In `update` we then handle processing of this `EncryptedValueReceived` value and the whole exercise is complete.
+So just to recap, let's go through the example again: Whenever the user enters text we process the `TextChanged` value in our `update` function and not only update the model but also create a new `Effects`. This is then returned by `update` and, because we wired the `tasks` part returned by `start` to an outgoing `port`, it is handed to the runtime. This leads, on the native JS side, to a call of `encryptString` (because this is the function we registered with `subscribe`). In it we pretended to do some encryption and then sent the value back with `encryptionCompleted.send` (again, you can send values at any time, it only happens in our example that we send one value back for every value we receive on the JS side). This `send` call leads the `encryptionCompleted` Signal to fire, with the string value we sent from the JS side. This is than `map`ped into an `Action` value, namely `EncryptedValueReceived`, and because this is hooked up to the inputs part of StartApp it triggers the same chain through `update` as any other events. In `update` we then handle processing of this `EncryptedValueReceived` value and the whole exercise is complete.
 
 Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!
