@@ -11,7 +11,7 @@ This is the second post in a series on some of the concepts in [Elm](http://elm-
 ```haskell
 Task errorType successType
 
-(or, as it is actually written in the library:)
+-- (or, as it is actually written in the library:)
 
 Task x a
 ```
@@ -21,7 +21,7 @@ There are only two values of `Task` you can create yourself in your code, withou
 ```haskell
 succeed : a -> Task x a
 
-and
+-- and
 
 fail : x -> Task x a
 ```

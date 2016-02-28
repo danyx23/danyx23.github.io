@@ -77,5 +77,5 @@ start config =
 
 `StartApp.Simple` is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply `update` and `view`. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests. 
 
-The next post in the series deals with [Tasks and Effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}), while the final post is all about [ports](({% post_url 2016-02-26-ports-in-elm %}). I hope you enjoyed the article and if you have any feedback please let me know! 
+The next post in the series deals with [Tasks and Effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}), while the final post is all about [ports]({% post_url 2016-02-26-ports-in-elm %}). I hope you enjoyed the article and if you have any feedback please let me know! 
 
