@@ -49,7 +49,7 @@ This initalizes the `Mailbox` and fills in the hole we had before - the Signal w
 ```haskell
 sendStringToBeEncrypted : String -> Effects Action
 sendStringToBeEncrypted clearText =
-  Mailbox.send portRequestEncryptionMailbox.address clearText
+  Signal.send portRequestEncryptionMailbox.address clearText
   |> Effects.task
   |> Effects.map (\_ -> Noop)
 
@@ -76,7 +76,7 @@ This means that the `success` type of the task we get back from send is `()` (ak
 sendStringToBeEncrypted : String -> Effects Action
 sendStringToBeEncrypted clearText =
   sendTask : Task x ()
-  sendTask = Mailbox.send portRequestEncryptionMailbox.address clearText
+  sendTask = Signal.send portRequestEncryptionMailbox.address clearText
 
   effectOfUnit : Effects ()
   effectOfUnit = Effects.task sendTask
