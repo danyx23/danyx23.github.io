@@ -26,7 +26,7 @@ succeed : a -> Task x a
 fail : x -> Task x a
 ```
 
-These are ways to create task objects without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a `Task` with `succeed`).
+These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a `Task` with `succeed`).
 
 Most of the time you actually get in contact with tasks, these will be created for you by library functions that initialize the task so that it will perform some long running operation when the runtime executes it and handle the result of the operation according to Task semantics (I.e. that some native code will make sure to call fail or succed on the native representation of the task when the operation is finished).
 
