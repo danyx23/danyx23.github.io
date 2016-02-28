@@ -85,7 +85,7 @@ sendStringToBeEncrypted clearText =
   effectOfAction = Effects.map (\_ -> Noop)
 ```
 
-(Note that instead of first converting to `Effects ()` and then mapping that I could also have mapped the `Task x ()` to `Task x Action` and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual `Action` value. We are only interested in performing the side effect of sending the message and it will not have a reasonable "payload" that should be routed through update. But because of how `Effects` are typed in `StartApp`, we do need to have an `Effects Aciton` in the end and so we introduce a `Noop` value that explicitly does nothing when it is processed in `update`.
+(Note that instead of first converting to `Effects ()` and then mapping that I could also have mapped the `Task x ()` to `Task x Action` and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual `Action` value. We are only interested in performing the side effect of sending the message and it will not have a reasonable "payload" that should be routed through update. But because of how `Effects` are typed in `StartApp`, we do need to have an `Effects Action` in the end and so we introduce a `Noop` value that explicitly does nothing when it is processed in `update`.
 
 Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?
 
@@ -113,7 +113,7 @@ port encryptionCompleted : Signal String
 
 Note that this time the port we have defined has no "implementation" in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our `StartApp.start` call?
 
-In the last post, when we switched from StartApp.Simple to StartApp, I mentioned `inputs`. `inputs` is a `List of (Signal of Action)`, i.e. Signals that fire `Action`s that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined `encryptionCompleted` as a `Signal of String` and we need a `Signal of Action` for inputs. Sounds like we need a map again:
+In the last post, when we switched from StartApp.Simple to StartApp, I mentioned `inputs`. `inputs` is a `List of (Signal of Action)`, i.e. Signals that fire `Actions` that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined `encryptionCompleted` as a `Signal of String` and we need a `Signal of Action` for inputs. Sounds like we need a map again:
 
 ```haskell
 encryptedString : Signal Action

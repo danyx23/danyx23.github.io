@@ -44,7 +44,7 @@ As a last piece of info before we have a look at Effects and how all of this act
 
 ### Effects
 
-On to `Effects`! If you look at the definition for `Effect`s it's pretty simple:
+On to `Effects`! If you look at the definition for `Effects` it's pretty simple:
 
 ```haskell
 type Effects a
@@ -54,7 +54,7 @@ type Effects a
     | Batch (List (Effects a))
 ```
 
-`None` and `Batch` are helpers, so the basic things an Effect can represent are `Task`s (with error type `Never`) and `Tick`s. The latter is used for animations if you want to do something at the next animation frame.
+`None` and `Batch` are helpers, so the basic things an Effect can represent are `Tasks` (with error type `Never`) and `Ticks`. The latter is used for animations if you want to do something at the next animation frame.
 
 It's very common to turn a `Task` into an `Effect`, whereas the inverse is usually only ever done by `StartApp`/the runtime.
 
@@ -88,7 +88,7 @@ getRandomGif topic =
   Effects.task getTaskWithNoErrorAndAction
 ```
 
-So in the end, Effects in this case just wraps the Task for us. Because we used `toMaybe` and then `map`ped it to the `NewGif` type constructor function, this will result in an `Action` coming back to us via `update` when it is done that is either (`NewGif Nothing`) if the http request failed, or (`NewGif "some-url-here"`) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the [implementation](https://github.com/evancz/elm-effects/blob/master/src/Effects.elm) of Effects.
+So in the end, Effects in this case just wraps the Task for us. Because we used `toMaybe` and then mapped it to the `NewGif` type constructor function, this will result in an `Action` coming back to us via `update` when it is done that is either (`NewGif Nothing`) if the http request failed, or (`NewGif "some-url-here"`) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the [implementation](https://github.com/evancz/elm-effects/blob/master/src/Effects.elm) of Effects.
 
 One thing that is worth looking at is the return type of the function: Effects Action. Effects has a type variable, just like for example List. So this is an Effects that deals with the Action type you define in your application - and this is the really neat part of how to make sure that you can deal with the result of the Task/Effect - the result will just be a value of your Action type!
 
