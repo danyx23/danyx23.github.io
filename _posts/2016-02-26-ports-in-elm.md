@@ -2,7 +2,7 @@
 layout: post
 title: Ports in Elm
 ---
-This is the third post in a series of posts about [Elm](http://elm-lang.org/). In my [first post about Signals in Elm]({% post_url 2016-02-12-signals-in-elm %}) I briefly mentioned ports. Since they are the only way to communicate with "native" Javascript, they certainly warrant a closer look.
+This is the third post in a series of posts about [Elm](http://elm-lang.org/). In my [first post about Signals in Elm]({% post_url 2016-02-12-signals-in-elm %}) I briefly mentioned ports. Since they are the only way to communicate with "native" Javascript, they certainly warrant a closer look. If you haven't checked out the last post in this series on [tasks and effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) I suggest you do that now as this post will build on these concepts.
 
 So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, `port`. If a Port is defined to be of a Non-Signal type (e.g. `port initialUrl : String`) then it is a "one time" message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a `Signal` of some type (e.g. a `Signal String`). Ports can not send and receive values of any type but only a subset - the big two groups of values that can't be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the [elm guide page on interop](http://elm-lang.org/guide/interop).
 
@@ -86,6 +86,22 @@ sendStringToBeEncrypted clearText =
 ```
 
 (Note that instead of first converting to `Effects ()` and then mapping that I could also have mapped the `Task x ()` to `Task x Action` and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual `Action` value. We are only interested in performing the side effect of sending the message and it will not have a reasonable "payload" that should be routed through update. But because of how `Effects` are typed in `StartApp`, we do need to have an `Effects Action` in the end and so we introduce a `Noop` value that explicitly does nothing when it is processed in `update`.
+
+At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don't do this, the Tasks you create via Effects will never be executed by the runtime:
+
+```haskell
+app =
+  StartApp.start
+    { init = init
+    , update = update
+    , view = view
+    , inputs = []
+    }
+
+port tasks : Signal (Task.Task Never ())
+port tasks =
+  app.tasks
+```
 
 Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?
 
