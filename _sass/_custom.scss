@@ -36,7 +36,7 @@ html.about {
   height: 100%;
 }
 
-.about.no-touchevents body {
+.no-touchevents body.about {
   background: url('../img/background.jpg') no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
