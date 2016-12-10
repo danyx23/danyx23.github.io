@@ -2,6 +2,8 @@
 layout: post
 title: Signals in Elm
 ---
+(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)
+
 I have rewritten a webapp from React/Redux to [Elm](http://elm-lang.org/) over the last few weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I have participated in the Elm google group quite a bit lately and I noticed that even though the Elm docs are really good, there are some concepts that are a bit hard to understand and to differentiate from each other. I am therefore starting a mini-series of posts about different concepts in Elm. This first one is about Signals - and why you don't see them much in many smaller Elm programs even though they are always there.
 
 These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the [great primer "Road to Elm"](http://www.lambdacat.com/road-to-elm-index/) by Lambdacat and then studied the [Elm Architecture Tutorials](https://github.com/evancz/elm-architecture-tutorial) a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). If you already know about Signals, you may want to jump ahead to the next post about [tasks and effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) or the one after that about [ports]({% post_url 2016-02-26-ports-in-elm %})
@@ -38,14 +40,14 @@ start config =
     actions =
       Signal.mailbox Nothing
 
-    -- here the address is set up. Since the Mailbox is of Maybe action, 
-    -- everything that is sent to address is "wrapped" in the Just type 
+    -- here the address is set up. Since the Mailbox is of Maybe action,
+    -- everything that is sent to address is "wrapped" in the Just type
     -- constructor and forwarded to the Mailbox
     address : Address action
     address =
       Signal.forwardTo actions.address Just
 
-    -- This local version of update just wraps config.update to 
+    -- This local version of update just wraps config.update to
     -- take care of the Maybe part of the action that will be
     -- processed (so that the update function the user provides)
     -- can simply operate as Action -> Model -> Model)
@@ -62,20 +64,19 @@ start config =
     -- the actions signal. This is the central piece
     -- that makes the elm architecture work the way it does.
     -- The update function will process one Action and
-    -- the old Model state to the new model State, the 
+    -- the old Model state to the new model State, the
     -- Signal that triggers it all is the Mailbox' Signal
     -- we set up at the top
     model : Signal model
     model =
       Signal.foldp update config.model actions.signal
   in
-    -- Finally, map over it with the view function. This 
+    -- Finally, map over it with the view function. This
     -- turns the Signal of Models into a Signal of Htmls
     -- that can be rendered    
     Signal.map (config.view address) model
 ```
 
-`StartApp.Simple` is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply `update` and `view`. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests. 
+`StartApp.Simple` is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply `update` and `view`. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.
 
-The next post in the series deals with [Tasks and Effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}), while the final post is all about [ports]({% post_url 2016-02-26-ports-in-elm %}). I hope you enjoyed the article and if you have any feedback please let me know! 
-
+The next post in the series deals with [Tasks and Effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}), while the final post is all about [ports]({% post_url 2016-02-26-ports-in-elm %}). I hope you enjoyed the article and if you have any feedback please let me know!

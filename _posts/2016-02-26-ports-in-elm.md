@@ -2,11 +2,13 @@
 layout: post
 title: Ports in Elm
 ---
+(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)
+
 This is the third post in a series of posts about [Elm](http://elm-lang.org/). In my [first post about Signals in Elm]({% post_url 2016-02-12-signals-in-elm %}) I briefly mentioned ports. Since they are the only way to communicate with "native" Javascript, they certainly warrant a closer look. If you haven't checked out the last post in this series on [tasks and effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) I suggest you do that now as this post will build on these concepts.
 
 So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, `port`. If a Port is defined to be of a Non-Signal type (e.g. `port initialUrl : String`) then it is a "one time" message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a `Signal` of some type (e.g. a `Signal String`). Ports can not send and receive values of any type but only a subset - the big two groups of values that can't be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the [elm guide page on interop](http://elm-lang.org/guide/interop).
 
-As a simple example, let's create a pair of ports to send `String`s from Elm to Js, do something with it in native JS, and then send the `String`s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs). 
+As a simple example, let's create a pair of ports to send `String`s from Elm to Js, do something with it in native JS, and then send the `String`s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs).
 
 ### Outgoing ports
 
@@ -56,8 +58,8 @@ sendStringToBeEncrypted clearText =
 -- and this is our update function that now returns a tuple of (Model, Effect):
 update : Action -> Model -> (Model, Effects Action)
 update action model =
-  case action of 
-    TextChanged text -> 
+  case action of
+    TextChanged text ->
       ( { model | clearText = text }
       , sendStringToBeEncrypted text -- create the Effect here
       )
@@ -107,7 +109,7 @@ Ok great, this is the outgoing part of the ports - how about handling stuff that
 
 ### Incoming Ports
 
-Let's start on the Javascript side. We will define an incoming port called `encryptionCompleted` on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call `send` to send a value back to Elm) 
+Let's start on the Javascript side. We will define an incoming port called `encryptionCompleted` on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call `send` to send a value back to Elm)
 
 ```javascript
 var div = document.getElementById('root');
@@ -137,7 +139,7 @@ encryptedString =
   Signal.map EncryptedValueReceived encryptionCompleted
 
 app =
-  StartApp.start 
+  StartApp.start
     { init = (init, Effects.none)
     , view = view
     , update = update

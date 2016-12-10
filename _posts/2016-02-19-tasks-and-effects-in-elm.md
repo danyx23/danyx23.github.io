@@ -2,6 +2,8 @@
 layout: post
 title: Tasks and Effects in Elm
 ---
+(Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)
+
 This is the second post in a series on some of the concepts in [Elm](http://elm-lang.org/) that might be a bit puzzling when you start out with Elm. In the [last post about Signals in Elm]({% post_url 2016-02-12-signals-in-elm %}) I wrote about Signals and how they are behind the scenes of `StartApp.Simple`. In this post I get into long running operations like XHRs (aka AJAX). There are two closely related types that are involved in this, `Tasks` and `Effects`, and the exact differences between can be confusing in the beginning. So let's dive right in:
 
 ### Tasks
@@ -38,7 +40,7 @@ If you look at e.g. the implementation of [the native part of the send function 
 
 So how do you get the runtime to run this task? By passing it into an outgoing `port`. I will go into detail on ports in a later blogpost, but suffice to say that they are a way to send messages between "native" JS and Elm (called an incoming `port`) and from Elm to native JS (an outgoing `port`). The runtime has some special casing for Tasks that come to it via outgoing ports that make it execute the callback the Task represents.
 
-When the long running native code is done, it will either call `succeed` or `fail` on the task. In most real life code that uses the Elm Architecture you will set up a "chain" of task processing that will lead to the the end result of the task execution being that a value of your `Action` type is routed back through your `update` function. This value of your `Action` type is the usually tagged with the result of the task (e.g. the decoded Json response of an XHR). 
+When the long running native code is done, it will either call `succeed` or `fail` on the task. In most real life code that uses the Elm Architecture you will set up a "chain" of task processing that will lead to the the end result of the task execution being that a value of your `Action` type is routed back through your `update` function. This value of your `Action` type is the usually tagged with the result of the task (e.g. the decoded Json response of an XHR).
 
 As a last piece of info before we have a look at Effects and how all of this actually looks in an example, let me just mention that Tasks can easily be chained togehter with `andThen`, much like promises in JS are chained together.
 
