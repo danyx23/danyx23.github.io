@@ -36,7 +36,7 @@ Purescript is definitely an interesting contender that I want to study more in t
 
 This means that if you either already have a big chunk of business logic written in a .NET language or if you need to do high performance computations on the server, F# is IMO a more attractive choice than Purescript. Additionally, because F# is more in the tradition of pragmatic functional languages like OCaml than the Haskell tradition of that Purescript adopted, it offers the escape hatches of mutability and side effects within the normal control flow (this is arguably also dangerous, but debating this is for another post).
 
-The downside of F#/Fable is that the same language is bolted onto two different runtimes with slightly different semantics. One example of such a mismatch is that the fixed-point arithmetic datatype Decimal of the .NET platform does not exist in Javascript of course and is thus silently converted to a double. For many cases this is fine but it is definitely something to be aware of (for a longer list see http://fable.io/docs/compatibility.html )
+The downside of F#/Fable is that the same language is bolted onto two different runtimes with slightly different semantics. One example of such a mismatch is that the fixed-point arithmetic datatype Decimal of the .NET platform does not exist in Javascript of course and is thus silently converted to a double. For many cases this is fine but it is definitely something to be aware of ([a longer list is here](http://fable.io/docs/compatibility.html) )
 
 Alright, so this is why I think it makes sense to use the same language on the backend and frontend, some of my criteria for choosing a language and why F# is the candidate I want to use.
 
