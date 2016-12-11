@@ -247,6 +247,7 @@ createApp initModel view update Virtualdom.createRender
 ```
 
 And finally the server code using Suave:
+
 ```ocaml
 open Suave                 // always open suave
 open Suave.Web             // for config
