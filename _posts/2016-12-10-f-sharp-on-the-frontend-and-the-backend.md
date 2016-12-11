@@ -326,6 +326,8 @@ startWebServer defaultConfig app
 
 ### Final thoughts
 
-I'd be interested in hearing about people who already use this stack or are exploring one of the other options on using the same language on the frontend and the backend.
+I think that the ability to use F# on the backend with the full power of the .NET ecosystem but now also share code that does not depend on .NET libraries (like business logic and the core problem domain code) with the frontend is a very exiting development. I'm looking forward to exploring this in more detail in the future :).
 
-Many thanks to the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: [Tomas Petricek](https://github.com/tpetricek), [Scott Wlaschin](https://fsharpforfunandprofit.com/), [Alfonso Garcia Caro](https://github.com/alfonsogarciacaro), [Steffen Forkmann](https://github.com/forki) and [Sergey Tihon](https://sergeytihon.wordpress.com/)!
+I'd also be interested in hearing about people who already use this stack or are exploring one of the other options on using the same language on the frontend and the backend.
+
+Finally I'd like to thank the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: [Tomas Petricek](https://github.com/tpetricek), [Scott Wlaschin](https://fsharpforfunandprofit.com/), [Alfonso Garcia Caro](https://github.com/alfonsogarciacaro), [Steffen Forkmann](https://github.com/forki) and [Sergey Tihon](https://sergeytihon.wordpress.com/)!
