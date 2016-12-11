@@ -100,7 +100,7 @@ module Shared =
 
 This shared code is then used in the frontend:
 
-```fsharp
+```ocaml
 #r "../node_modules/fable-core/Fable.Core.dll"
 #load "../node_modules/fable-arch/Fable.Arch.Html.fs"
 #load "../node_modules/fable-arch/Fable.Arch.App.fs"
@@ -247,7 +247,7 @@ createApp initModel view update Virtualdom.createRender
 ```
 
 And finally the server code using Suave:
-```fsharp
+```ocaml
 open Suave                 // always open suave
 open Suave.Web             // for config
 open Suave.Writers
