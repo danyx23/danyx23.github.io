@@ -2,6 +2,8 @@
 layout: post
 title: Using F# on both the frontend and the backend
 ---
+_Note: This post was written in 2016. Since then, the introduction of the [SAFE stack](https://safe-stack.github.io/) has significantly improved the sitation in F#, but the basic ideas of this blog post are still valid - they are just a lot nicer now :)_
+
 When the call for the [F# Advent Calendar](https://sergeytihon.wordpress.com/tag/fsadvent/) came up I thought that this would be a great opportunity to finally check out a technology stack that intrigued me for quite a while now: Using F# on the backend (which by now works well on linux/osx as well as windows) and also on the frontend, via [Fable](http://fable.io/), the F# to Javascript compiler backend. I have played a bit with F# in the past but I wanted to see how well this particular combination works in practice.
 
 ### The same language on the backend and the frontend
