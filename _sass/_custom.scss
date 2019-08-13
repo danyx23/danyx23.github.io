@@ -165,8 +165,12 @@ article + article {
   margin-top: 2.5em;
 }
 
+p {
+  letter-spacing: 0.5px;
+}
+
 p a {
-  border-bottom: thin #666 dotted;
+  border-bottom: thin #999 dotted;
 }
 
 .pagination {
