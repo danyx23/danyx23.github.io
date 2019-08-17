@@ -1,3 +1,181 @@
+// $line: 1.25rem;
+// $hairline: 0.125rem;
+// $smallfont: 0.75rem;
+
+// $bodywidth: 35rem;
+// $asidewidth: 10rem;
+
+// html {
+//     font-size: 1em;
+//     line-height: $line;
+
+//     text-align: justify;
+//     -moz-hyphens: auto;
+//     -webkit-hyphens: auto;
+//     -ms-hyphens: auto;
+//     hyphens: auto;
+// }
+
+// body {
+//     max-width: $bodywidth;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 $line;
+//     position: relative;
+// }
+
+// h1, h2, h3, h4, h5, h6 { margin: $line 0; }
+
+// h1 { font-size: (2.00 * $line); line-height: (3.0 * $line); text-align: center; }
+// h2 { font-size: (1.50 * $line); line-height: (1.0 * $line); }
+// h3 { font-size: (1.25 * $line); line-height: (1.0 * $line); }
+// h4 { font-size: (1.00 * $line); line-height: (1.0 * $line); }
+// h5 { font-size: (0.75 * $line); line-height: (1.0 * $line); }
+// h6 { font-size: (0.50 * $line); line-height: (1.0 * $line); }
+
+// h2, h3 {
+//     padding-top: (0.5 * $line);
+//     padding-bottom: (0.5 * $line - $hairline);
+//     border-bottom: $hairline solid;
+// }
+
+// p, div, ul, ol, blockquote, address, table, pre { margin: $line 0; }
+
+// li p:first-child, dd p:first-child { margin-top: 0; }
+// li p:last-child, dt p:last-child { margin-bottom: 0; }
+
+// p+p { text-indent: $line; }
+
+// ul, ol {
+//     padding-left: 0;
+//     margin-left: (2 * $line);
+// }
+// li ul, li ol { margin-top: 0; margin-bottom: 0; }
+
+// dt { font-weight: bolder; margin-top: $line; }
+// dd { margin-bottom: $line; margin-left: $line; }
+
+// blockquote {
+//     padding: 0 $line;
+// }
+
+// table { margin-left: auto; margin-right: auto; }
+
+// thead { border-bottom: $hairline solid currentColor; }
+// tfoot { border-top:    $hairline solid currentColor; }
+// thead, tfoot {
+//     th, td {
+//         line-height: ($line - $hairline);
+//     }
+// }
+
+// td, th { font-size: $smallfont; padding: 0 ($line / 2); }
+// td:first-child, th:first-child { padding-left: 0; }
+// td:last-child, th:last-child { padding-right: 0; }
+
+// pre {
+//     padding: $line 0;
+//     border-left: $hairline solid;
+//     padding-left: ($line - $hairline);
+//     font-size: 0.75rem;
+// }
+
+// hr {
+//     color: inherit;
+//     margin: $line 0;
+//     margin-top: (-1 * $hairline);
+//     padding: 0;
+//     border: none;
+//     border-top: $hairline solid;
+//     height: 0;
+// }
+
+// aside, nav {
+//     font-size: $smallfont;
+//     line-height: $line;
+
+//     h1 { line-height: $line; }
+//     h1 { font-size: 1rem; }
+//     h2 { font-size: 0.875rem; }
+//     h3 { font-size: 0.750rem; }
+//     h2, h3 {
+//         line-height: $smallfont;
+//         padding-top: (($line - $smallfont) / 2);
+//         padding-bottom: ((($line - $smallfont) / 2) - $hairline);
+//         border-bottom: $hairline solid;
+//     }
+// }
+
+
+// /* By default, navigation should appear inline */
+// nav {
+//     text-align: center;
+
+//     /* Flatten the navigation hierarchy */
+//     ul { margin-left: 0; }
+//     ul, li { display: inline; }
+
+//     /* Use vertical bars to separate each item. */
+//     ul *:first-child:before { content: ''; }
+//     ul *:before { content: ' | '; }
+// }
+
+// /*
+//  * By default, asides should appear inline, but narrower because they have
+//  * a smaller font size.
+//  */
+// aside {
+//     max-width: ($asidewidth + $asidewidth);
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 $line;
+// }
+
+// /* If we have sufficient width to put stuff on the sides... */
+// $asideoffset: ($line + $line + $asidewidth + $line);
+// $bodyWithAsides: ($asideoffset + $bodywidth + $asideoffset);
+// @media screen and (min-width: $bodyWithAsides) {
+
+//     aside, nav {
+//         margin: $line;
+//         margin-top: 0;
+//         padding: 0 $line;
+//         outline: $hairline solid;
+
+//         max-width: $asidewidth;
+//         text-align: left;
+//     }
+
+//     aside {
+//         clear: right;
+//         float: right;
+//         margin-right: (0 - $asideoffset);
+//     }
+
+//     nav {
+//         text-align: left;
+//         clear: left;
+//         float: left;
+//         margin-left: (0 - $asideoffset);
+
+//         /* Now we have room to display the hierarchy */
+//         ul, li { display: block; }
+//         ul ul { margin-left: $line; }
+
+//         ul *:before { content: ''; }
+//     }
+// }
+
+// /* If we don't even have our minimum width, don't bother justifying. */
+// @media screen and (max-width: $bodywidth) {
+//     html { text-align: left; }
+// }
+
+// /* Special support for footnotes from Pandoc */
+// div.footnotes { font-size: $smallfont; }
+
+
+
 html {
   height: 100%;
 }
@@ -20,6 +198,10 @@ body {
   overflow: auto;
   display: flex;
   justify-content: center;
+}
+
+.wrapper * {
+  max-width: 100%;
 }
 
 .about-image {
