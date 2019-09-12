@@ -8,12 +8,15 @@ code, pre {
     opacity: 0.87;
 }
 
+$spacing-unit:     30px;
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
 .highlight {
     @extend %vertical-rhythm;
 
-    .highlighter-rouge & {
-      background: #3f3f3f;
-    }
+
     .hll{background-color:#222}
     .c{color:#7f9f7f}
     .err{color:#e37170;background-color:#3d3535}
@@ -84,4 +87,3 @@ code, pre {
     .vi{color:#ffffc7}
     .il{color:#8cd0d3}
 }
-
