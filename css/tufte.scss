@@ -203,9 +203,7 @@ th, td{ font-size: 1.2rem;
 /* Basic Layout stuff --*/
 
 article { position: relative;
-          padding: 1
-
-          rem 0rem 2.5rem 0rem; } // reduced top and bottom padding by 50%
+          padding: 1rem 0rem 2.5rem 0rem; } // reduced top and bottom padding by 50%
 
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
@@ -349,22 +347,22 @@ header > nav.group, body footer {
 nav.group a.active:before{ content:"\0003c\000a0";} // escaped unicode for the carats and then a space on active menu links
 nav.group a.active:after{ content:"\000a0\0003e" ;}
 
-header > nav  a{
-  font-size: 1.2rem;
-  font-family: $sans-font;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: $contrast-color;
-  padding-top: 1.5rem;
-  text-decoration: none;
-  display: inline-block;
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 2rem;
-  //margin-left: 1rem;
-  vertical-align: baseline;
-}
+// header > nav  a{
+//   font-size: 1.2rem;
+//   font-family: $sans-font;
+//   letter-spacing: 0.15em;
+//   text-transform: uppercase;
+//   color: $contrast-color;
+//   padding-top: 1.5rem;
+//   text-decoration: none;
+//   display: inline-block;
+//   float: left;
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   padding-right: 2rem;
+//   //margin-left: 1rem;
+//   vertical-align: baseline;
+// }
 header > nav a img{
   height: 5rem;
   position: relative;
@@ -609,5 +607,151 @@ p {
 pre.highlight {
 
   padding-left: 1rem;
+
+}
+
+.wrapper.about-me {
+  //background: url('../img/background.jpg') no-repeat center center;
+  //background-size: cover;
+  height: 100%;
+  width: 90%;
+  max-width: 90%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 40%;
+  max-width: 40vmin;
+}
+
+.about-text {
+  width: 50%;
+  margin-left: 5%;
+}
+
+html.about {
+  height: 100%;
+}
+
+
+.no-touchevents body.about {
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.photo-of-daniel {
+  width: 30%;
+  background: url('../img/DanielBachler.jpg') no-repeat bottom center;
+  background-size: cover;
+}
+
+
+.site-header {
+
+  padding-bottom: 2.3rem;
+
+  font-family: "Ostrich Sans Inline", sans-serif;
+
+
+  height: 140px;
+  background: inherit;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  font-size: 80px;
+
+}
+
+.nav-inner {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+article.group {
+  padding-top: 140px;
+}
+
+@media screen and (max-width: $on-wide-screen) {
+  .site-header {
+    font-size: 60px;
+    height: 90px;
+    padding-bottom: 1.6rem;
+  }
+
+  article.group {
+    padding-top: 90px;
+  }
+
+
+  .page-content {
+    padding-top: 90px;
+  }
+
+}
+
+@media screen and (max-width: $on-laptop) {
+  .site-header {
+    font-size: 40px;
+    padding-bottom: 1.4rem;
+  }
+
+  article.group {
+    padding-top: 80px;
+  }
+
+}
+
+@media screen and (max-width: $on-palm) {
+  .site-header {
+    font-size: 25px;
+    height: 50px;
+    padding-bottom: 1rem;
+  }
+
+  article.group {
+    padding-top: 30px;
+  }
+
+  .wrapper.about-me {
+    display: block;
+  }
+
+  .about-me .about-image {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .about-me .about-text {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+.site-nav {
+  margin-right: 0.5em;
+  float: right;
+}
+
+
+.trigger {
+  display: flex;
+  align-content: end;
+  justify-content: end;
+  max-width: 50%;
+  margin-left: 2rem;
+}
+
+.page-link {
+
+  margin-right: 1rem;
+  font-size: 50%;
 
 }
