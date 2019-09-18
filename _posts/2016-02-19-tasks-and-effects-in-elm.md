@@ -10,7 +10,7 @@ This is the second post in a series on some of the concepts in [Elm](http://elm-
 
 `Task` is the more basic type (it is defined in Core) and so let's start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It's type is thus:
 
-```haskell
+```elm
 Task errorType successType
 
 -- (or, as it is actually written in the library:)
@@ -20,7 +20,7 @@ Task x a
 
 There are only two values of `Task` you can create yourself in your code, without using a separate library. These two ways are two functions:
 
-```haskell
+```elm
 succeed : a -> Task x a
 
 -- and
@@ -48,7 +48,7 @@ As a last piece of info before we have a look at Effects and how all of this act
 
 On to `Effects`! If you look at the definition for `Effects` it's pretty simple:
 
-```haskell
+```elm
 type Effects a
     = Task (Task.Task Never a)
     | Tick (Time -> a)
@@ -64,7 +64,7 @@ Several libraries use `Task` to allow you to work with long running operations -
 
 So how is this used? The [Elm Architecture example 5](https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer) uses this very central piece of code:
 
-```haskell
+```elm
 getRandomGif : String -> Effects Action
 getRandomGif topic =
   Http.get decodeImageUrl (randomUrl topic)
@@ -75,7 +75,7 @@ getRandomGif topic =
 
 Let's look at what it does. It starts with creating a task that represents the Http `get` operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what's happening:
 
-```haskell
+```elm
 getRandomGif topic =
   getTaskWithError : Task Http.Error String
   getTaskWithError = Http.get decodeImageUrl (randomUrl topic)
@@ -96,7 +96,7 @@ One thing that is worth looking at is the return type of the function: Effects A
 
 At this point you may wonder: why have Effects at all? Aren't they just weird wrappers for Tasks? Let's quickly take a look again at how the Task case of the Effects type is defined:
 
-```haskell
+```elm
 type Effects a
     = Task (Task.Task Never a)
 ```
@@ -110,7 +110,7 @@ Ok, so finally, remember I wrote something about having to send Tasks off to an 
 3. `start` gets a fourth parameter, `inputs`, for incoming `Signals`.
 4. The tasks part of the record that is returned by `start` has to be handed to a port so that the `Tasks/Effects` are actually performed by the runtime like so:
 
-```haskell
+```elm
 app =
   StartApp.start
     { init = init "funny cats"

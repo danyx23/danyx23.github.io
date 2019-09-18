@@ -62,18 +62,10 @@ a {
   text-decoration: none;
 }
 
-p > a { @if $link-style == underline
-    {
+p > a {
       color: $text-color;
       text-decoration: none;
-      border-bottom: 1px solid #777;
-      padding-bottom: 1px;
-    }
-    @else
-    {
-      color: $contrast-color;
-      text-decoration: none;
-    }
+
   }
 
 body { width: 87.5%;
@@ -268,7 +260,7 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
                    color: $contrast-color;
                    top: 0rem; } //removed superscripting for numerical reference in sidenote
 
-p, footer, .content > table, div.table-wrapper, div.mathblock{ width: 55%; }
+p, footer, .content > table, div.table-wrapper, div.mathblock, div.pagination { width: 55%; }
 
 div.table-wrapper { overflow-x: auto; } //changed all overflow values to 'auto' so scroll bars appear only as needed
 
@@ -519,84 +511,6 @@ hr.slender {
 }
 
 
-/* --- Icomoon icon fonts CSS --*/
-@font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?rgwlb8');
-  src:url('../fonts/icomoon.eot?#iefixrgwlb8') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?rgwlb8') format('woff'),
-    url('../fonts/icomoon.ttf?rgwlb8') format('truetype'),
-    url('../fonts/icomoon.svg?rgwlb8#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  color: $contrast-color;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-pencil:before {
-  content: "\e600";
-}
-.icon-film:before {
-  content: "\e60f";
-}
-.icon-calendar:before {
-  content: "\e601";
-}
-.icon-link:before {
-  content: "\e602";
-}
-.icon-info:before {
-  content: "\e603";
-}
-.icon-cancel-circle:before {
-  content: "\e604";
-}
-.icon-checkmark-circle:before {
-  content: "\e605";
-}
-.icon-spam:before {
-  content: "\e606";
-}
-.icon-mail:before {
-  content: "\e607";
-}
-.icon-googleplus:before {
-  content: "\e608";
-}
-.icon-facebook:before {
-  content: "\e609";
-}
-.icon-twitter:before {
-  content: "\e60a";
-}
-.icon-feed:before {
-  content: "\e60b";
-}
-.icon-flickr:before {
-  content: "\e60c";
-}
-.icon-github:before {
-  content: "\e60d";
-}
-.icon-box-add:before {
-  content: "\e60e";
-}
-/*-- End of Icomoon icon font section --*/
-
-
 // custom stuff
 
 p {
@@ -754,4 +668,50 @@ article.group {
   margin-right: 1rem;
   font-size: 50%;
 
+}
+
+
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient($bg-color, $bg-color), linear-gradient($bg-color, $bg-color), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 $bg-color, -0.03em 0 $bg-color, 0 0.03em $bg-color, 0 -0.03em $bg-color, 0.06em 0 $bg-color, -0.06em 0 $bg-color, 0.09em 0 $bg-color, -0.09em 0 $bg-color, 0.12em 0 $bg-color, -0.12em 0 $bg-color, 0.15em 0 $bg-color, -0.15em 0 $bg-color;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+.pagination {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.page_number {
+  margin: 0.5rem;
 }

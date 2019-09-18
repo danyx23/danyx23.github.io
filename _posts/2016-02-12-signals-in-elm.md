@@ -30,7 +30,7 @@ Note that when I wrote about the update function, I said "together with the last
 
 At this point, if you want to really dive into it, let's look at how [StartApp.Simple](https://github.com/evancz/start-app) is actually implemented (I added comments and type annotation to every named value)
 
-```haskell
+```elm
 start : Config model action -> Signal Html
 start config =
   let
@@ -73,7 +73,7 @@ start config =
   in
     -- Finally, map over it with the view function. This
     -- turns the Signal of Models into a Signal of Htmls
-    -- that can be rendered    
+    -- that can be rendered
     Signal.map (config.view address) model
 ```
 

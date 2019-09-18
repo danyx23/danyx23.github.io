@@ -61,7 +61,7 @@ The entire setup is on github at [https://github.com/danyx23/FableSuaveSharedCod
 
 Since this is a proof of concept, the actual code is maybe less interesting than the setup around it, but for completness sake, what follows are the three main file that are the essence of the two programs. First, the shared code that defines the Cart and Discount types, a concrete instance of the Discount type that gives a 90% discount at twelve items and the function to calculate the price for a cart given a list of potentially applicable discounts
 
-```ocaml
+```fsharp
 namespace DiscountSample
 
 module Shared =
@@ -102,7 +102,7 @@ module Shared =
 
 This shared code is then used in the frontend:
 
-```ocaml
+```fsharp
 #r "../node_modules/fable-core/Fable.Core.dll"
 #load "../node_modules/fable-arch/Fable.Arch.Html.fs"
 #load "../node_modules/fable-arch/Fable.Arch.App.fs"
@@ -250,7 +250,7 @@ createApp initModel view update Virtualdom.createRender
 
 And finally the server code using Suave:
 
-```ocaml
+```fsharp
 open Suave                 // always open suave
 open Suave.Web             // for config
 open Suave.Writers

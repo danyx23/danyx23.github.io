@@ -20,11 +20,11 @@ layout: default
     <!-- Pagination links -->
     <div class="pagination">
       {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">{% include icon-arrow-left.html %}</a>
+      <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fas fa-arrow-left"></i></a>
       {% endif %}
       <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">{% include icon-arrow-right.html %}</a>
+      <a href="{{ paginator.next_page_path }}" class="next"><i class="fas fa-arrow-right"></i></a>
       {% endif %}
     </div>
 

@@ -14,7 +14,7 @@ As a simple example, let's create a pair of ports to send `String`s from Elm to 
 
 Since we want to send stuff several times, not just once, we need to declare both ports as `Signals`. Let's start with the outgoing port and on the Elm side:
 
-```haskell
+```elm
 port requestEncryption : Signal String
 port requestEncryption =
   -- how do we get a Signal here for the implementation?
@@ -36,7 +36,7 @@ Pretty straigthforward. We use the `subscribe` method to register a callback tha
 
 There are two ways to do this - one is to create a new `Mailbox` and use `Effects` to send our messages, the other is to create a custom version of `StartApp` that returns an additional value for things to send to the port in `update`. I have implemented both attempts as gists, here is the [one with the Mailbox](https://gist.github.com/danyx23/e42ceedaccf0c4a556b8) and once with a [modified StartApp](https://gist.github.com/danyx23/6004778b9322dc716373). For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let's hook up the Mailbox:
 
-```haskell
+```elm
 portRequestEncryptionMailbox : Mailbox String
 portRequestEncryptionMailbox =
   mailbox ""
@@ -48,7 +48,7 @@ port requestEncryption =
 
 This initalizes the `Mailbox` and fills in the hole we had before - the Signal we use as a port will just be the `Signal` of our new `Mailbox`. But how do we actually send anything to this Mailbox? By creating an Effect, like so:
 
-```haskell
+```elm
 sendStringToBeEncrypted : String -> Effects Action
 sendStringToBeEncrypted clearText =
   Signal.send portRequestEncryptionMailbox.address clearText
@@ -68,13 +68,13 @@ update action model =
 
 The last line in `sendStringToBeEncrypted` may be a bit confusing - what are we mapping there? Let's take a look at the type of `Mailbox.send`:
 
-```haskell
+```elm
 send : Address a -> a -> Task x ()
 ```
 
 This means that the `success` type of the task we get back from send is `()` (aka Unit) which acts a bit similar to `void` in C like languages, i.e. it represents "no actual value". Let me desugar `sendStringToBeEncrypted` so it is clearer what types we are working with:
 
-```haskell
+```elm
 sendStringToBeEncrypted : String -> Effects Action
 sendStringToBeEncrypted clearText =
   sendTask : Task x ()
@@ -91,7 +91,7 @@ sendStringToBeEncrypted clearText =
 
 At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don't do this, the Tasks you create via Effects will never be executed by the runtime:
 
-```haskell
+```elm
 app =
   StartApp.start
     { init = init
@@ -124,7 +124,7 @@ function encryptString(message) {
 
 Note that I not only had to modify `encryptString` but also pass in an initial value at the time when we initialize Elm with the call to `Elm.embed`. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because `Signals` in Elm always need an initial value. Let's add this incoming port on the Elm side to complete the example:
 
-```haskell
+```elm
 port encryptionCompleted : Signal String
 
 ```
@@ -133,7 +133,7 @@ Note that this time the port we have defined has no "implementation" in Elm. Tha
 
 In the last post, when we switched from StartApp.Simple to StartApp, I mentioned `inputs`. `inputs` is a `List of (Signal of Action)`, i.e. Signals that fire `Actions` that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined `encryptionCompleted` as a `Signal of String` and we need a `Signal of Action` for inputs. Sounds like we need a map again:
 
-```haskell
+```elm
 encryptedString : Signal Action
 encryptedString =
   Signal.map EncryptedValueReceived encryptionCompleted
@@ -143,7 +143,7 @@ app =
     { init = (init, Effects.none)
     , view = view
     , update = update
-    , inputs = [ encryptedString ]  
+    , inputs = [ encryptedString ]
     }
 ```
 
