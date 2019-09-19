@@ -587,8 +587,16 @@ html.about {
   height: 100%;
 }
 
-article.group {
+article.group, .about-me {
   padding-top: 140px;
+}
+
+.about-text, .about-image {
+  padding-top: 1rem;
+}
+
+.about-text p {
+  width: 100%;
 }
 
 @media screen and (max-width: $on-wide-screen) {
@@ -598,7 +606,7 @@ article.group {
     padding-bottom: 1.6rem;
   }
 
-  article.group {
+  article.group, .about-me {
     padding-top: 90px;
   }
 
@@ -615,7 +623,7 @@ article.group {
     padding-bottom: 1.4rem;
   }
 
-  article.group {
+  article.group, .about-me {
     padding-top: 80px;
   }
 
@@ -628,7 +636,7 @@ article.group {
     padding-bottom: 1rem;
   }
 
-  article.group {
+  article.group, .about-me {
     padding-top: 30px;
   }
 
@@ -646,6 +654,8 @@ article.group {
     width: 100%;
     margin: 0;
   }
+
+
 }
 
 
