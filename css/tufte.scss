@@ -693,7 +693,7 @@ a:visited {
     text-shadow: unset;
 }
 
-a:link, .tufte-underline, .hover-tufte-underline:hover {
+article a:link, .page-content a:link, .tufte-underline, .hover-tufte-underline:hover {
     text-decoration: none;
     background: -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient(currentColor, currentColor);
     background: linear-gradient($bg-color, $bg-color), linear-gradient($bg-color, $bg-color), linear-gradient(currentColor, currentColor);
