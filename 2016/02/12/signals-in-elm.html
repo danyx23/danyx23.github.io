@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Signals in Elm</title>
+  <meta name="description" content="(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may s...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2016/02/12/signals-in-elm.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>Signals in Elm</h1>
+<p class="subtitle">February 12, 2016</p>
+
+<p>(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)</p>
+
+<p>I have rewritten a webapp from React/Redux to <a href="http://elm-lang.org/">Elm</a> over the last few weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I have participated in the Elm google group quite a bit lately and I noticed that even though the Elm docs are really good, there are some concepts that are a bit hard to understand and to differentiate from each other. I am therefore starting a mini-series of posts about different concepts in Elm. This first one is about Signals - and why you don’t see them much in many smaller Elm programs even though they are always there.</p>
+
+<p>These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the <a href="http://www.lambdacat.com/road-to-elm-index/">great primer “Road to Elm”</a> by Lambdacat and then studied the <a href="https://github.com/evancz/elm-architecture-tutorial">Elm Architecture Tutorials</a> a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). If you already know about Signals, you may want to jump ahead to the next post about <a href="/2016/02/19/tasks-and-effects-in-elm.html">tasks and effects</a> or the one after that about <a href="/2016/02/26/ports-in-elm.html">ports</a></p>
+
+<h3 id="what-are-signals">What are Signals?</h3>
+
+<p>Elm uses a very nice unidirectional architecture for the flow of:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>displayed website ➞ user actions ➞ new application state ➞ displayed website
+</code></pre></div></div>
+
+<p>All the code you write in a typical Elm program comes together in just two pure functions: <code class="highlighter-rouge">update</code> and <code class="highlighter-rouge">view</code>. Update takes a user action and the previous application state and creates a new application state, and view takes an application state and renders it into a virtual dom representation (that then gets efficiently displayed by batching diffs to the DOM a la React). For more background on unidirectional UIs in general see André Staltz’ excellent blog post <a href="http://staltz.com/unidirectional-user-interface-architectures.html">Unidirectional User Interface Architectures</a></p>
+
+<p>One of the key concepts in Elm is that of a Signal. A Signal is a value that can change over time. One of the conceptually simplest signals is the current time - every second the signal “fires” with the new time value (seconds passed since epoch or whatever). Another example could be the coordinates of the mouse cursor in the current window. When the mouse is still, no values are fired by the Signal - but whenever the user moves the mouse, new values are sent. (This is actually one of the examples at <a href="http://elm-lang.org/examples/mouse-position">elm-lang.org/examples</a>). Signals are a bit similar to EventEmmitters or Observables in Javascript - the key difference is that they exist for the entire lifetime of the program and always have an initial value.</p>
+
+<p>Signals don’t provide any access to their history - they only provide the current value. But even a simple counter example needs to track the number of clicks that happened so far. Since Elm is a pure language with no mutable state, how do you keep track of the current click-count? We’ll come back to that question, but first let’s look at how <code class="highlighter-rouge">StartApp.Simple</code> works that you probably know from the <a href="https://github.com/evancz/elm-architecture-tutorial">Elm Architecture Tutorials</a>.</p>
+
+<p>StartApp hides a bit of wiring from you, but I think it helps to understand how <code class="highlighter-rouge">StartApp.start</code> does its magic. What the <code class="highlighter-rouge">start</code> function does is hook up a <code class="highlighter-rouge">Mailbox</code> (something where messages go when you send them to the address e.g. in an onClick handler) so that they lead to a new html emmited to main. This is the heart of the unidirectional UI approach. The user clicks a button, this leads to a message being sent to the mailbox. The mailbox has a <code class="highlighter-rouge">Signal</code> that fires whenever a message is sent to it. This <code class="highlighter-rouge">Signal</code> is of your applications <code class="highlighter-rouge">Action</code> type, i.e. it fires <code class="highlighter-rouge">Action</code> values. Eventually this leads to a full cycle through your <code class="highlighter-rouge">update</code>/<code class="highlighter-rouge">view</code> functions and thus to a new version of your Virtual Dom.</p>
+
+<p>Let’s look at the intermediary types more closely: we start with a <code class="highlighter-rouge">Signal of Actions</code>. This then gets turned into a <code class="highlighter-rouge">Signal of Models</code> (so everytime a new <code class="highlighter-rouge">Action</code> is fired this action value is run through <code class="highlighter-rouge">update</code> together with the last model state to get the new model state). This finally gets turned into a <code class="highlighter-rouge">Signal of Html</code> (whenever the <code class="highlighter-rouge">Signal of Model</code> fires, we run it through the <code class="highlighter-rouge">view</code> function to arrive at a new Html to display). This is then handed to <code class="highlighter-rouge">main</code> so that the Elm runtime can display it for us.</p>
+
+<p>Note that when I wrote about the update function, I said “together with the last model state”. This brings us back to our question from above - how can you work with history or state in Elm? The answer is in the function called <code class="highlighter-rouge">Signal.foldp</code> (“fold from the past”). If you aren’t familiar with folds yet, they are another name for reduce functions (as in map/reduce). It logically reduces all the values from the entire history with a given function and returns the value - in our case it uses the inital Model and reduces all Actions that were sent to our program to arrive at a current Model. (the implementation actually just caches the last current value and works from there of course).</p>
+
+<p>At this point, if you want to really dive into it, let’s look at how <a href="https://github.com/evancz/start-app">StartApp.Simple</a> is actually implemented (I added comments and type annotation to every named value)</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">start</span> <span class="p">:</span> <span class="kt">Config</span> <span class="n">model</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="kt">Signal</span> <span class="kt">Html</span>
+<span class="n">start</span> <span class="n">config</span> <span class="o">=</span>
+  <span class="k">let</span>
+    <span class="c1">-- create the main Mailbox. It is of type "Mailbox (Maybe action)" and is</span>
+    <span class="c1">-- initialized with an "empty" value of Nothing</span>
+    <span class="n">actions</span> <span class="p">:</span> <span class="kt">Mailbox</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="n">action</span><span class="p">)</span>
+    <span class="n">actions</span> <span class="o">=</span>
+      <span class="kt">Signal</span><span class="o">.</span><span class="n">mailbox</span> <span class="kt">Nothing</span>
+
+    <span class="c1">-- here the address is set up. Since the Mailbox is of Maybe action,</span>
+    <span class="c1">-- everything that is sent to address is "wrapped" in the Just type</span>
+    <span class="c1">-- constructor and forwarded to the Mailbox</span>
+    <span class="n">address</span> <span class="p">:</span> <span class="kt">Address</span> <span class="n">action</span>
+    <span class="n">address</span> <span class="o">=</span>
+      <span class="kt">Signal</span><span class="o">.</span><span class="n">forwardTo</span> <span class="n">actions</span><span class="o">.</span><span class="n">address</span> <span class="kt">Just</span>
+
+    <span class="c1">-- This local version of update just wraps config.update to</span>
+    <span class="c1">-- take care of the Maybe part of the action that will be</span>
+    <span class="c1">-- processed (so that the update function the user provides)</span>
+    <span class="c1">-- can simply operate as Action -&gt; Model -&gt; Model)</span>
+    <span class="n">update</span> <span class="p">:</span> <span class="kt">Maybe</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="n">model</span> <span class="o">-&gt;</span> <span class="n">model</span>
+    <span class="n">update</span> <span class="n">maybeAction</span> <span class="n">model</span> <span class="o">=</span>
+      <span class="k">case</span> <span class="n">maybeAction</span> <span class="k">of</span>
+        <span class="kt">Just</span> <span class="n">action</span> <span class="o">-&gt;</span>
+            <span class="n">config</span><span class="o">.</span><span class="n">update</span> <span class="n">action</span> <span class="n">model</span>
+
+        <span class="kt">Nothing</span> <span class="o">-&gt;</span>
+            <span class="kt">Debug</span><span class="o">.</span><span class="n">crash</span> <span class="s">"</span><span class="s2">This should never happen."</span>
+
+    <span class="c1">-- set up a signal of new models that foldp-s over</span>
+    <span class="c1">-- the actions signal. This is the central piece</span>
+    <span class="c1">-- that makes the elm architecture work the way it does.</span>
+    <span class="c1">-- The update function will process one Action and</span>
+    <span class="c1">-- the old Model state to the new model State, the</span>
+    <span class="c1">-- Signal that triggers it all is the Mailbox' Signal</span>
+    <span class="c1">-- we set up at the top</span>
+    <span class="n">model</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="n">model</span>
+    <span class="n">model</span> <span class="o">=</span>
+      <span class="kt">Signal</span><span class="o">.</span><span class="n">foldp</span> <span class="n">update</span> <span class="n">config</span><span class="o">.</span><span class="n">model</span> <span class="n">actions</span><span class="o">.</span><span class="n">signal</span>
+  <span class="k">in</span>
+    <span class="c1">-- Finally, map over it with the view function. This</span>
+    <span class="c1">-- turns the Signal of Models into a Signal of Htmls</span>
+    <span class="c1">-- that can be rendered</span>
+    <span class="kt">Signal</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">view</span> <span class="n">address</span><span class="p">)</span> <span class="n">model</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">StartApp.Simple</code> is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply <code class="highlighter-rouge">update</code> and <code class="highlighter-rouge">view</code>. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.</p>
+
+<p>The next post in the series deals with <a href="/2016/02/19/tasks-and-effects-in-elm.html">Tasks and Effects</a>, while the final post is all about <a href="/2016/02/26/ports-in-elm.html">ports</a>. I hope you enjoyed the article and if you have any feedback please let me know!</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

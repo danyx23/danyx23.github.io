@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Using F# on both the frontend and the backend</title>
+  <meta name="description" content="Note: This post was written in 2016. Since then, the introduction of the SAFE stack has significantly improved the sitation in F#, but the basic ideas of thi...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>Using F# on both the frontend and the backend</h1>
+<p class="subtitle">December 10, 2016</p>
+
+<p><em>Note: This post was written in 2016. Since then, the introduction of the <a href="https://safe-stack.github.io/">SAFE stack</a> has significantly improved the sitation in F#, but the basic ideas of this blog post are still valid - they are just a lot nicer now :)</em></p>
+
+<p>When the call for the <a href="https://sergeytihon.wordpress.com/tag/fsadvent/">F# Advent Calendar</a> came up I thought that this would be a great opportunity to finally check out a technology stack that intrigued me for quite a while now: Using F# on the backend (which by now works well on linux/osx as well as windows) and also on the frontend, via <a href="http://fable.io/">Fable</a>, the F# to Javascript compiler backend. I have played a bit with F# in the past but I wanted to see how well this particular combination works in practice.</p>
+
+<h3 id="the-same-language-on-the-backend-and-the-frontend">The same language on the backend and the frontend</h3>
+
+<p>Using the same language on the server and the client has many benefits in my opinion, chief among them the ability to reuse data definitions and business logic. Even though many modern web sites shoulder a lot of complexity on the client to guide the user and give immediate feedback, the backend usually has to replicate most of this logic to verify the client submissions and guard against malicious clients. Discount rules are a prime example of such code that is often replicated in both the frontend and the backend.</p>
+
+<p>The first language that will probably come to mind for this job is Javascript. Since the advent of Node, Javascript is available on the backend as well as in the browser, and, with Electron, even for desktop apps with a native feel. Heavy performance tuning has made Javascript reasonably fast. However, I think that its dynamically typed nature makes Javascript a very problematic choice for non-trivial software projects. Static type checking can catch many bugs before they ever hit production and it can free your developers to concentrate on testing the properties of their code that are actually interesting.</p>
+
+<p>A very desirable property for a type system is for it to have Algebraic Data Types. This means that, in addition to Product types (think classes or records) where ALL stated fields exist for every instance, they also support Sum types (Discriminated Unions in F#) where every value adheres to exactly one of several strictly predefined layouts. Together, Product and Sum types allow a much richer modelling where you can make illegal states irrepresentable (see this <a href="http://blog.ploeh.dk/2016/11/28/easy-domain-modelling-with-types/">recent article by Marc Seemann</a> on the benefits of ADTs). Having Sum types also allows languages to get rid of nulls - a very desirable trait since a big fraction of errors in dynamically typed languages or such with weak type systems are NullReferenceExceptions or the infamous “undefined is not a function”.</p>
+
+<h3 id="possible-languages">Possible languages</h3>
+
+<p>Ok, now that I have outlined desirable feature, let us look for languages that meet these two core requirements (a strong, static type system with ADTs and being usable via cross-compilation to Javascript on both the browser frontend and the backend). Not a lot of options remain. The ones I know are:</p>
+
+<ul>
+  <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+  <li><a href="http://www.purescript.org/">Purescript</a></li>
+  <li><a href="http://fable.io/">F#/Fable</a></li>
+  <li><a href="http://bloomberg.github.io/bucklescript/">OCaml/Bucklescript</a></li>
+  <li><a href="https://github.com/ghcjs/ghcjs">Haskell/ghcjs</a></li>
+</ul>
+
+<p>All of these are interesting languages. Here is my very personal reasoning for choosing among these languages: Typescript is a superset of Javascript with type annotations that, since version 2.0, has support for union types. It is a big improvement over raw Javascript, but I think that one still feels a lot of the odd language design decisions underneath it, so I will disregard it for now.</p>
+
+<p>The javascript compiler backends for OCaml and Haskell have a relatively small set of Javascript library bindings available and are IMHO harder to interface with native Javascript libraries - for now I don’t think that they are immediately usable if you want to write user interfaces with them.</p>
+
+<p>This leaves me with F#/Fable and Purescript. Purescript was designed from the beginning with Javascript as the compile target in mind. Quite a few important Javascript libraries have been annotated with type definitions for Purescript and are thus readily usable, and if they are not, the Purescript FFI was built for Javascript and is very straightforward to use. Additionally, the type system of Purescript is very powerful and feels a bit like a modern refresh of Haskell’s type system.</p>
+
+<p>So what about F#/Fable? The basic story is similar to OCaml/Haskell in that you have to create FFI definitions and these are only available for a few libraries so far. What is really neat about Fable though is that there is a way to bootstrap Fable FFI files from Typescript definitions via <a href="https://www.npmjs.com/package/ts2fable">ts2fable</a> - and those are available for a huge number of important Javascript libraries. I think that this lowers the pain of interfacing with native Javascript libraries enough for F#/Fable to be a reasonable choice.</p>
+
+<h3 id="f-versus-purescript">F# versus Purescript</h3>
+
+<p>Purescript is definitely an interesting contender that I want to study more in the future, but this blog post is about F#, so, let us ask the obvious question: why use F# instead of Purescript? YMMV but I see F# to have an interesting advantage on the server side since IMO on the backend the .NET platform is a more solid runtime than Node. Since F# compiles to IL and can interface with any .NET library, it has access to a huge amount of libraries that interface with all sorts of systems, parse files etc. It also supports strong multi-threading primitives and F# even has support to cross compile to the GPU - this makes it much more interesting for numerically intense workloads than Node.</p>
+
+<p>This means that if you either already have a big chunk of business logic written in a .NET language or if you need to do high performance computations on the server, F# is IMO a more attractive choice than Purescript. Additionally, because F# is more in the tradition of pragmatic functional languages like OCaml than the Haskell tradition of that Purescript adopted, it offers the escape hatches of mutability and side effects within the normal control flow (this is arguably also dangerous, but debating this is for another post).</p>
+
+<p>The downside of F#/Fable is that the same language is bolted onto two different runtimes with slightly different semantics. One example of such a mismatch is that the fixed-point arithmetic datatype Decimal of the .NET platform does not exist in Javascript of course and is thus silently converted to a double. For many cases this is fine but it is definitely something to be aware of (<a href="http://fable.io/docs/compatibility.html">a longer list is here</a> )</p>
+
+<p>Alright, so this is why I think it makes sense to use the same language on the backend and frontend, some of my criteria for choosing a language and why F# is the candidate I want to use.</p>
+
+<h3 id="the-proof-of-concept-idea">The proof of concept idea</h3>
+
+<p>Let’s finally get to some <a href="https://github.com/danyx23/FableSuaveSharedCode">code</a>! Be warned that some of this is probably not exactly idiomatic F# code since I haven’t used the language much until now :)</p>
+
+<p>The basic idea for my little proof of concept was:</p>
+
+<ul>
+  <li>Write a frontend in F# that is the most primitive shopping cart you can imagine - it just has one product and the user can use buttons to increase/decrease the quantity.</li>
+  <li>Have a type that defines a discount, consisting of: a name, a function that checks whether the discount applies and one that modifies the price. Reuse these data types and functions between the frontend and the backend</li>
+  <li>On the frontend, use <a href="https://github.com/fable-compiler/fable-arch">Fable-Arch</a> to bring the clarity of the <a href="https://guide.elm-lang.org/architecture/">Elm Architecture</a> to F#</li>
+  <li>Bundle up the generated Javascript into an Electron app to see how well this works</li>
+  <li>Since the Electron Desktop app is based on the Chromium engine, use the power of CSS and icon fonts to pep up the UI a little by just dropping in some CSS from a third party.</li>
+  <li>Try <a href="http://suave.io">Suave</a> as a http server with a functional design. Reuse the type definitions and discount calculation code. Handle Json-Serialization and CORS headers.</li>
+</ul>
+
+<h3 id="the-implementation">The implementation</h3>
+
+<p>The entire setup is on github at <a href="https://github.com/danyx23/FableSuaveSharedCode">https://github.com/danyx23/FableSuaveSharedCode</a> where you can just clone it and run both the Suave server and the electron based client.</p>
+
+<p>Since this is a proof of concept, the actual code is maybe less interesting than the setup around it, but for completness sake, what follows are the three main file that are the essence of the two programs. First, the shared code that defines the Cart and Discount types, a concrete instance of the Discount type that gives a 90% discount at twelve items and the function to calculate the price for a cart given a list of potentially applicable discounts</p>
+
+<div class="language-fsharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">namespace</span> <span class="nc">DiscountSample</span>
+
+<span class="k">module</span> <span class="nc">Shared</span> <span class="p">=</span>
+
+  <span class="k">let</span> <span class="nc">ItemPrice</span> <span class="p">=</span> <span class="mi">20</span><span class="p">.</span><span class="mi">0</span>
+
+  <span class="k">type</span> <span class="nc">Cart</span> <span class="p">=</span>
+    <span class="p">{</span> <span class="nc">Quantity</span><span class="p">:</span> <span class="kt">int</span>
+    <span class="p">}</span>
+
+  <span class="k">type</span> <span class="nc">Discount</span> <span class="p">=</span>
+    <span class="p">{</span> <span class="nc">Name</span><span class="p">:</span> <span class="kt">string</span>
+      <span class="nc">Applies</span><span class="p">:</span> <span class="p">(</span><span class="nc">Cart</span> <span class="p">-&gt;</span> <span class="kt">bool</span><span class="p">)</span>
+      <span class="nc">ApplyDiscount</span><span class="p">:</span> <span class="p">(</span><span class="n">double</span> <span class="p">-&gt;</span> <span class="n">double</span><span class="p">)</span>
+    <span class="p">}</span>
+
+  <span class="k">let</span> <span class="n">doesTwelveItemsDiscountApply</span> <span class="n">cart</span> <span class="p">=</span>
+    <span class="k">match</span> <span class="n">cart</span><span class="p">.</span><span class="nc">Quantity</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="mi">12</span> <span class="p">-&gt;</span> <span class="bp">true</span>
+    <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="bp">false</span>
+
+
+  <span class="k">let</span> <span class="n">twelveItemsDiscount</span> <span class="p">=</span>
+    <span class="p">{</span> <span class="nc">Name</span> <span class="p">=</span> <span class="s2">"12 Items - 90% off!"</span>
+      <span class="nc">Applies</span> <span class="p">=</span> <span class="n">doesTwelveItemsDiscountApply</span>
+      <span class="nc">ApplyDiscount</span> <span class="p">=</span> <span class="p">(</span><span class="k">fun</span> <span class="n">price</span> <span class="p">-&gt;</span> <span class="n">price</span> <span class="p">*</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+
+  <span class="k">let</span> <span class="n">calculatePrice</span> <span class="p">(</span><span class="n">discounts</span> <span class="p">:</span> <span class="nc">Discount</span> <span class="kt">list</span><span class="p">)</span> <span class="p">(</span><span class="n">cart</span> <span class="p">:</span> <span class="nc">Cart</span><span class="p">)</span> <span class="p">:</span> <span class="n">double</span> <span class="p">=</span>
+    <span class="k">let</span> <span class="n">discountsThatApply</span> <span class="p">=</span> <span class="nn">List</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="k">fun</span> <span class="n">discount</span> <span class="p">-&gt;</span> <span class="n">discount</span><span class="p">.</span><span class="nc">Applies</span> <span class="n">cart</span><span class="p">)</span> <span class="n">discounts</span>
+    <span class="k">let</span> <span class="n">cartCalculationFunction</span> <span class="p">=</span>
+      <span class="k">match</span> <span class="n">discountsThatApply</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="bp">[]</span> <span class="p">-&gt;</span> <span class="n">id</span>
+      <span class="p">|</span> <span class="n">x</span> <span class="p">::</span> <span class="n">xs</span> <span class="p">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="nc">ApplyDiscount</span> <span class="c1">// use the first discount that applies only, discard the others</span>
+    <span class="k">let</span> <span class="n">undiscountedPrice</span> <span class="p">=</span> <span class="p">(</span><span class="n">double</span> <span class="n">cart</span><span class="p">.</span><span class="nc">Quantity</span><span class="p">)</span> <span class="p">*</span> <span class="nc">ItemPrice</span>
+    <span class="n">cartCalculationFunction</span> <span class="n">undiscountedPrice</span>
+</code></pre></div></div>
+
+<p>This shared code is then used in the frontend:</p>
+
+<div class="language-fsharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">#</span><span class="n">r</span> <span class="s2">"../node_modules/fable-core/Fable.Core.dll"</span>
+<span class="p">#</span><span class="n">load</span> <span class="s2">"../node_modules/fable-arch/Fable.Arch.Html.fs"</span>
+<span class="p">#</span><span class="n">load</span> <span class="s2">"../node_modules/fable-arch/Fable.Arch.App.fs"</span>
+<span class="p">#</span><span class="n">load</span> <span class="s2">"../node_modules/fable-arch/Fable.Arch.Virtualdom.fs"</span>
+<span class="p">#</span><span class="n">load</span> <span class="s2">"../../backend/src/ClientServerShared.fs"</span>
+<span class="p">#</span><span class="n">r</span> <span class="s2">"../node_modules/fable-powerpack/Fable.PowerPack.dll"</span>
+
+
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nc">Core</span>
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">Core</span><span class="p">.</span><span class="nc">JsInterop</span>
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">Import</span><span class="p">.</span><span class="nc">Browser</span>
+
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nc">Arch</span>
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">Arch</span><span class="p">.</span><span class="nc">App</span>
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">Arch</span><span class="p">.</span><span class="nc">Html</span>
+<span class="k">open</span> <span class="nn">DiscountSample</span><span class="p">.</span><span class="nc">Shared</span>
+<span class="k">open</span> <span class="nn">Fable</span><span class="p">.</span><span class="nc">PowerPack</span>
+
+<span class="k">type</span> <span class="nc">Status</span> <span class="p">=</span>
+  <span class="p">|</span> <span class="nc">Shopping</span>
+  <span class="p">|</span> <span class="nc">TransactionPending</span>
+  <span class="p">|</span> <span class="nc">BuyingFailed</span> <span class="k">of</span> <span class="kt">string</span>
+  <span class="p">|</span> <span class="nc">BuyingSucceeded</span> <span class="k">of</span> <span class="n">double</span>
+
+<span class="k">type</span> <span class="nc">Model</span> <span class="p">=</span>
+  <span class="p">{</span> <span class="nc">Cart</span><span class="p">:</span> <span class="nc">Cart</span>
+    <span class="nc">Status</span><span class="p">:</span> <span class="nc">Status</span>
+  <span class="p">}</span>
+
+<span class="k">let</span> <span class="n">initModel</span> <span class="p">=</span>
+  <span class="p">{</span> <span class="nc">Cart</span> <span class="p">=</span> <span class="p">{</span> <span class="nc">Quantity</span> <span class="p">=</span> <span class="mi">0</span> <span class="p">}</span>
+    <span class="nc">Status</span> <span class="p">=</span> <span class="nc">Shopping</span>
+  <span class="p">}</span>
+
+<span class="k">type</span> <span class="nc">Actions</span> <span class="p">=</span>
+  <span class="p">|</span> <span class="nc">IncreaseQuantity</span>
+  <span class="p">|</span> <span class="nc">DecreaseQuantity</span>
+  <span class="p">|</span> <span class="nc">Buy</span>
+  <span class="p">|</span> <span class="nc">ServerResponseOk</span> <span class="k">of</span> <span class="n">double</span>
+  <span class="p">|</span> <span class="nc">ServerResponseError</span> <span class="k">of</span> <span class="kt">string</span>
+  <span class="p">|</span> <span class="nc">SetStatus</span> <span class="k">of</span> <span class="nc">Status</span>
+
+
+<span class="c1">// Update</span>
+<span class="k">let</span> <span class="n">update</span> <span class="n">model</span> <span class="n">action</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">model'</span> <span class="p">=</span>
+    <span class="k">match</span> <span class="n">action</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="nc">IncreaseQuantity</span> <span class="p">-&gt;</span>
+      <span class="p">{</span> <span class="n">model</span> <span class="k">with</span> <span class="nc">Cart</span> <span class="p">=</span> <span class="p">{</span> <span class="n">model</span><span class="p">.</span><span class="nc">Cart</span> <span class="k">with</span> <span class="nc">Quantity</span> <span class="p">=</span> <span class="n">model</span><span class="p">.</span><span class="nn">Cart</span><span class="p">.</span><span class="nc">Quantity</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="p">|</span> <span class="nc">DecreaseQuantity</span> <span class="p">-&gt;</span>
+      <span class="p">{</span> <span class="n">model</span> <span class="k">with</span> <span class="nc">Cart</span> <span class="p">=</span> <span class="p">{</span> <span class="n">model</span><span class="p">.</span><span class="nc">Cart</span> <span class="k">with</span> <span class="nc">Quantity</span> <span class="p">=</span> <span class="nn">System</span><span class="p">.</span><span class="nn">Math</span><span class="p">.</span><span class="nc">Max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">model</span><span class="p">.</span><span class="nn">Cart</span><span class="p">.</span><span class="nc">Quantity</span> <span class="p">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="p">|</span> <span class="nc">SetStatus</span> <span class="n">status</span> <span class="p">-&gt;</span>
+      <span class="p">{</span> <span class="n">model</span> <span class="k">with</span> <span class="nc">Status</span> <span class="p">=</span> <span class="n">status</span> <span class="p">}</span>
+    <span class="p">|</span> <span class="nc">Buy</span> <span class="p">-&gt;</span> <span class="n">model</span>
+    <span class="p">|</span> <span class="nc">ServerResponseOk</span> <span class="n">price</span> <span class="p">-&gt;</span> <span class="p">{</span> <span class="n">model</span> <span class="k">with</span> <span class="nc">Status</span> <span class="p">=</span> <span class="nc">BuyingSucceeded</span> <span class="n">price</span> <span class="p">}</span>
+    <span class="p">|</span> <span class="nc">ServerResponseError</span> <span class="n">error</span> <span class="p">-&gt;</span> <span class="p">{</span> <span class="n">model</span> <span class="k">with</span> <span class="nc">Status</span> <span class="p">=</span> <span class="nc">BuyingFailed</span> <span class="n">error</span> <span class="p">}</span>
+
+  <span class="k">let</span> <span class="n">delayedCall</span> <span class="n">h</span> <span class="p">=</span>
+    <span class="k">match</span> <span class="n">action</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="nc">Buy</span> <span class="p">-&gt;</span>
+        <span class="k">let</span> <span class="n">promise</span> <span class="p">=</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">PowerPack</span><span class="p">.</span><span class="nn">Fetch</span><span class="p">.</span><span class="n">postRecord</span> <span class="s2">"http://127.0.0.1:8083/test"</span> <span class="n">model</span><span class="p">.</span><span class="nc">Cart</span> <span class="bp">[]</span>
+                      <span class="p">|&gt;</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">PowerPack</span><span class="p">.</span><span class="nn">Promise</span><span class="p">.</span><span class="n">bind</span>
+                          <span class="p">(</span><span class="k">fun</span> <span class="n">response</span> <span class="p">-&gt;</span>
+                            <span class="n">response</span><span class="p">.</span><span class="n">json</span><span class="p">&lt;</span><span class="n">double</span><span class="o">&gt;()</span>
+                          <span class="p">)</span>
+                      <span class="p">|&gt;</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">PowerPack</span><span class="p">.</span><span class="nn">Promise</span><span class="p">.</span><span class="n">map</span>
+                          <span class="p">(</span><span class="k">fun</span> <span class="n">price</span> <span class="p">-&gt;</span>
+                            <span class="n">h</span> <span class="p">(</span><span class="nc">ServerResponseOk</span> <span class="n">price</span><span class="p">)</span>
+                          <span class="p">)</span>
+                      <span class="p">|&gt;</span> <span class="nn">Fable</span><span class="p">.</span><span class="nn">PowerPack</span><span class="p">.</span><span class="nn">Promise</span><span class="p">.</span><span class="n">catch</span>
+                          <span class="p">(</span><span class="k">fun</span> <span class="n">err</span> <span class="p">-&gt;</span>
+                            <span class="n">h</span> <span class="p">(</span><span class="nc">ServerResponseError</span> <span class="n">err</span><span class="p">.</span><span class="nc">Message</span><span class="p">)</span>
+                          <span class="p">)</span>
+
+        <span class="n">h</span> <span class="p">(</span><span class="nc">SetStatus</span> <span class="nc">TransactionPending</span><span class="p">)</span>
+     <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="bp">()</span>
+
+  <span class="c1">// We return the model, and a list of Actions to execute</span>
+  <span class="n">model'</span><span class="p">,</span> <span class="n">delayedCall</span> <span class="p">|&gt;</span> <span class="n">toActionList</span>
+
+<span class="k">let</span> <span class="n">availableDiscounts</span> <span class="p">=</span>
+  <span class="p">[</span> <span class="n">twelveItemsDiscount</span> <span class="p">]</span>
+
+<span class="k">let</span> <span class="n">view</span> <span class="n">model</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">infoText</span> <span class="p">=</span>
+    <span class="k">match</span> <span class="n">model</span><span class="p">.</span><span class="nc">Status</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="nc">Shopping</span> <span class="p">-&gt;</span> <span class="s2">"Please make your selection"</span>
+    <span class="p">|</span> <span class="nc">TransactionPending</span> <span class="p">-&gt;</span> <span class="s2">"Waiting for confirmation from server"</span>
+    <span class="p">|</span> <span class="nc">BuyingFailed</span> <span class="n">msg</span> <span class="p">-&gt;</span> <span class="s2">"Sorry, your purchase failed! The reason was: "</span> <span class="o">+</span> <span class="n">msg</span>
+    <span class="p">|</span> <span class="nc">BuyingSucceeded</span> <span class="n">price</span> <span class="p">-&gt;</span> <span class="s2">"The purchase worked, with a final price of "</span> <span class="o">+</span> <span class="p">(</span><span class="n">price</span><span class="p">.</span><span class="nc">ToString</span><span class="bp">()</span><span class="p">)</span>
+
+  <span class="k">let</span> <span class="n">counterView</span> <span class="n">quantity</span> <span class="p">=</span>
+    <span class="n">div</span> <span class="bp">[]</span>
+      <span class="p">[</span> <span class="n">label</span> <span class="bp">[]</span> <span class="p">[</span> <span class="n">text</span> <span class="p">(</span><span class="s2">"How many items do you want?"</span><span class="p">)</span> <span class="p">]</span>
+        <span class="n">button</span> <span class="p">[</span> <span class="n">onMouseClick</span> <span class="p">(</span><span class="k">fun</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="nc">IncreaseQuantity</span><span class="p">)</span> <span class="p">]</span> <span class="p">[</span> <span class="n">text</span> <span class="s2">"+"</span> <span class="p">]</span>
+        <span class="n">label</span> <span class="bp">[]</span> <span class="p">[</span> <span class="n">text</span> <span class="p">(</span><span class="n">quantity</span><span class="p">.</span><span class="nc">ToString</span><span class="bp">()</span><span class="p">)</span> <span class="p">]</span>
+        <span class="n">button</span> <span class="p">[</span> <span class="n">onMouseClick</span> <span class="p">(</span><span class="k">fun</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="nc">DecreaseQuantity</span><span class="p">)</span> <span class="p">]</span> <span class="p">[</span> <span class="n">text</span> <span class="s2">"-"</span> <span class="p">]</span>
+      <span class="p">]</span>
+
+  <span class="k">let</span> <span class="n">counters</span> <span class="p">=</span>
+    <span class="p">[</span> <span class="n">counterView</span> <span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nn">Cart</span><span class="p">.</span><span class="nc">Quantity</span><span class="p">)</span> <span class="p">]</span>
+
+  <span class="k">let</span> <span class="n">applicableDiscounts</span> <span class="p">=</span>
+    <span class="nn">List</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="k">fun</span> <span class="n">item</span> <span class="p">-&gt;</span> <span class="n">item</span><span class="p">.</span><span class="nc">Applies</span> <span class="n">model</span><span class="p">.</span><span class="nc">Cart</span> <span class="p">)</span> <span class="n">availableDiscounts</span>
+
+  <span class="k">let</span> <span class="n">discountView</span> <span class="p">(</span><span class="n">discount</span> <span class="p">:</span> <span class="nc">Discount</span><span class="p">)</span> <span class="p">=</span>
+    <span class="n">li</span> <span class="bp">[]</span>
+      <span class="p">[</span> <span class="n">label</span> <span class="bp">[]</span> <span class="p">[</span> <span class="n">text</span> <span class="n">discount</span><span class="p">.</span><span class="nc">Name</span> <span class="p">]</span> <span class="p">]</span>
+
+  <span class="k">let</span> <span class="n">discountsView</span> <span class="p">(</span><span class="n">discounts</span> <span class="p">:</span> <span class="nc">Discount</span> <span class="kt">list</span><span class="p">)</span> <span class="p">=</span>
+    <span class="n">ul</span> <span class="p">[</span> <span class="n">classy</span> <span class="s2">"discounts"</span> <span class="p">]</span>
+      <span class="p">(</span><span class="nn">List</span><span class="p">.</span><span class="n">map</span> <span class="n">discountView</span> <span class="n">discounts</span><span class="p">)</span>
+
+  <span class="k">let</span> <span class="n">totalPrice</span> <span class="p">=</span>
+    <span class="n">div</span> <span class="bp">[]</span> <span class="p">[</span> <span class="n">text</span> <span class="p">&lt;|</span> <span class="s2">"The total price is: "</span> <span class="o">+</span> <span class="o">((</span><span class="n">calculatePrice</span> <span class="n">availableDiscounts</span> <span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nc">Cart</span><span class="o">)).</span><span class="nc">ToString</span><span class="bp">()</span><span class="p">)</span> <span class="p">]</span>
+
+  <span class="n">div</span>
+    <span class="bp">[]</span>
+    <span class="p">[</span>
+      <span class="n">label</span>
+        <span class="bp">[]</span>
+        <span class="p">[</span><span class="n">text</span> <span class="s2">"This is your shopping cart: "</span><span class="p">]</span>
+      <span class="n">div</span>
+        <span class="bp">[]</span>
+        <span class="p">[</span> <span class="n">text</span> <span class="n">infoText</span> <span class="p">]</span>
+      <span class="n">br</span> <span class="bp">[]</span>
+      <span class="n">div</span> <span class="bp">[]</span> <span class="n">counters</span>
+      <span class="n">discountsView</span> <span class="n">applicableDiscounts</span>
+      <span class="n">totalPrice</span>
+      <span class="n">button</span>
+        <span class="p">[</span> <span class="n">onMouseClick</span> <span class="p">(</span><span class="k">fun</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="nc">Buy</span><span class="p">)</span>
+          <span class="n">classy</span> <span class="s2">"buy"</span>
+        <span class="p">]</span>
+        <span class="p">[</span> <span class="n">i</span> <span class="p">[</span> <span class="n">classy</span> <span class="s2">"fa fa-bolt"</span> <span class="p">]</span> <span class="bp">[]</span>
+          <span class="n">text</span> <span class="s2">" Buy!"</span>
+        <span class="p">]</span>
+    <span class="p">]</span>
+
+<span class="c1">/// Create our application</span>
+<span class="n">createApp</span> <span class="n">initModel</span> <span class="n">view</span> <span class="n">update</span> <span class="nn">Virtualdom</span><span class="p">.</span><span class="n">createRender</span>
+<span class="p">|&gt;</span> <span class="n">withStartNodeSelector</span> <span class="s2">"#echo"</span>
+<span class="p">|&gt;</span> <span class="n">start</span>
+
+</code></pre></div></div>
+
+<p>And finally the server code using Suave:</p>
+
+<div class="language-fsharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">open</span> <span class="nc">Suave</span>                 <span class="c1">// always open suave</span>
+<span class="k">open</span> <span class="nn">Suave</span><span class="p">.</span><span class="nc">Web</span>             <span class="c1">// for config</span>
+<span class="k">open</span> <span class="nn">Suave</span><span class="p">.</span><span class="nc">Writers</span>
+<span class="k">open</span> <span class="nn">Suave</span><span class="p">.</span><span class="nc">Filters</span>
+<span class="k">open</span> <span class="nn">Suave</span><span class="p">.</span><span class="nc">Successful</span>
+<span class="k">open</span> <span class="nn">Suave</span><span class="p">.</span><span class="nc">Operators</span>
+<span class="k">open</span> <span class="nn">Newtonsoft</span><span class="p">.</span><span class="nc">Json</span>
+<span class="k">open</span> <span class="nn">FSharp</span><span class="p">.</span><span class="nc">Core</span>
+<span class="k">open</span> <span class="nn">DiscountSample</span><span class="p">.</span><span class="nc">Shared</span>
+
+
+<span class="k">type</span> <span class="nc">Error</span> <span class="p">=</span>
+  <span class="p">{</span> <span class="nc">Error</span> <span class="p">:</span> <span class="kt">string</span>
+  <span class="p">}</span>
+
+<span class="k">let</span> <span class="n">discounts</span> <span class="p">=</span> <span class="p">[</span> <span class="n">twelveItemsDiscount</span> <span class="p">]</span>
+
+<span class="k">let</span> <span class="n">serializeJson</span> <span class="n">obj</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">converter</span> <span class="p">=</span> <span class="k">new</span> <span class="nn">Fable</span><span class="p">.</span><span class="nc">JsonConverter</span><span class="bp">()</span>
+  <span class="nn">JsonConvert</span><span class="p">.</span><span class="nc">SerializeObject</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">converter</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="n">deserializeCart</span> <span class="n">str</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">converter</span> <span class="p">=</span> <span class="k">new</span> <span class="nn">Fable</span><span class="p">.</span><span class="nc">JsonConverter</span><span class="bp">()</span>
+  <span class="k">let</span> <span class="n">deserialized</span> <span class="p">=</span> <span class="nn">JsonConvert</span><span class="p">.</span><span class="nc">DeserializeObject</span><span class="p">&lt;</span><span class="nc">Cart</span><span class="o">&gt;(</span><span class="n">str</span><span class="p">,</span> <span class="n">converter</span><span class="p">)</span>
+  <span class="k">let</span> <span class="n">boxed</span> <span class="p">=</span> <span class="n">box</span> <span class="n">deserialized</span>
+  <span class="k">match</span> <span class="n">boxed</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="k">null</span> <span class="p">-&gt;</span>
+      <span class="nc">None</span>
+    <span class="p">|</span> <span class="n">other</span> <span class="p">-&gt;</span>
+      <span class="nc">Some</span> <span class="n">deserialized</span>
+
+
+<span class="k">let</span> <span class="n">deserializeCalculateSerialize</span> <span class="n">json</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">deserialized</span> <span class="p">=</span>
+    <span class="n">json</span>
+    <span class="p">|&gt;</span> <span class="n">deserializeCart</span>
+
+  <span class="k">match</span> <span class="n">deserialized</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="nc">Some</span> <span class="n">cart</span> <span class="p">-&gt;</span>
+      <span class="n">cart</span>
+        <span class="p">|&gt;</span> <span class="n">calculatePrice</span> <span class="n">discounts</span>
+        <span class="p">|&gt;</span> <span class="n">serializeJson</span>
+
+    <span class="p">|</span> <span class="nc">None</span> <span class="p">-&gt;</span>
+      <span class="p">{</span> <span class="nc">Error</span> <span class="p">=</span> <span class="s2">"Could not deserialize"</span> <span class="p">}</span>
+      <span class="p">|&gt;</span> <span class="n">serializeJson</span>
+
+<span class="k">let</span> <span class="n">mapJson</span> <span class="n">f</span> <span class="p">=</span>
+  <span class="n">request</span><span class="p">(</span><span class="k">fun</span> <span class="n">r</span> <span class="p">-&gt;</span>
+    <span class="nn">System</span><span class="p">.</span><span class="nn">Text</span><span class="p">.</span><span class="nn">Encoding</span><span class="p">.</span><span class="nn">UTF8</span><span class="p">.</span><span class="nc">GetString</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">rawForm</span><span class="p">)</span>
+    <span class="p">|&gt;</span> <span class="n">f</span>
+    <span class="p">|&gt;</span> <span class="nn">Successful</span><span class="p">.</span><span class="nc">OK</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="n">setCORSHeaders</span> <span class="p">=</span>
+    <span class="n">setHeader</span>  <span class="s2">"Access-Control-Allow-Origin"</span> <span class="s2">"*"</span>
+    <span class="o">&gt;=&gt;</span> <span class="n">setHeader</span> <span class="s2">"Access-Control-Allow-Headers"</span> <span class="s2">"content-type"</span>
+
+<span class="k">let</span> <span class="n">allow_cors</span> <span class="p">:</span> <span class="nc">WebPart</span> <span class="p">=</span>
+    <span class="n">choose</span> <span class="p">[</span>
+        <span class="nc">OPTIONS</span> <span class="o">&gt;=&gt;</span>
+            <span class="k">fun</span> <span class="n">context</span> <span class="p">-&gt;</span>
+                <span class="n">context</span> <span class="p">|&gt;</span> <span class="p">(</span>
+                    <span class="n">setCORSHeaders</span>
+                    <span class="o">&gt;=&gt;</span> <span class="nc">OK</span> <span class="s2">"CORS approved"</span> <span class="p">)</span>
+    <span class="p">]</span>
+
+<span class="k">let</span> <span class="n">app</span> <span class="p">=</span>
+  <span class="n">choose</span> <span class="p">[</span>
+    <span class="n">allow_cors</span>
+    <span class="nc">POST</span> <span class="o">&gt;=&gt;</span> <span class="n">path</span> <span class="s2">"/test"</span> <span class="o">&gt;=&gt;</span> <span class="p">(</span><span class="n">mapJson</span> <span class="n">deserializeCalculateSerialize</span><span class="p">)</span> <span class="o">&gt;=&gt;</span> <span class="nn">Writers</span><span class="p">.</span><span class="n">setMimeType</span> <span class="s2">"application/json"</span>
+  <span class="p">]</span>
+
+<span class="n">startWebServer</span> <span class="n">defaultConfig</span> <span class="n">app</span>
+</code></pre></div></div>
+
+<h3 id="final-thoughts">Final thoughts</h3>
+
+<p>I think that the ability to use F# on the backend with the full power of the .NET ecosystem but now also share code that does not depend on .NET libraries (like business logic and the core problem domain code) with the frontend is a very exiting development. I’m looking forward to exploring this in more detail in the future :).</p>
+
+<p>I’d also be interested in hearing about people who already use this stack or are exploring one of the other options on using the same language on the frontend and the backend.</p>
+
+<p>Finally I’d like to thank the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: <a href="https://github.com/tpetricek">Tomas Petricek</a>, <a href="https://fsharpforfunandprofit.com/">Scott Wlaschin</a>, <a href="https://github.com/alfonsogarciacaro">Alfonso Garcia Caro</a>, <a href="https://github.com/forki">Steffen Forkmann</a> and <a href="https://sergeytihon.wordpress.com/">Sergey Tihon</a>!</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

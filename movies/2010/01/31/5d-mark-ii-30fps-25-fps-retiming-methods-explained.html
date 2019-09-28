@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>5D mark II 30fps -&gt; 25 fps retiming methods explained</title>
+  <meta name="description" content="As the 5D mark II can still only record in 30 fps because there is no firmware update to record in more useful 25 fps (for pal DVD/TV) or 24 fps (for cinema ...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/movies/2010/01/31/5d-mark-ii-30fps-25-fps-retiming-methods-explained.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>5D mark II 30fps -> 25 fps retiming methods explained</h1>
+<p class="subtitle">January 31, 2010</p>
+
+<p>As the 5D mark II can still only record in 30 fps because there is no firmware update to record in more useful 25 fps (for pal DVD/TV) or 24 fps (for cinema projection), the need to retime footage from 30 fps to 25 fps definitely still exists. There are many methods to do this, but many are not as high quality as one would like. In this blog post I will explain what methods exists for retiming exist, what they look like and in the <a href="/retiming-with-after-effects">next follow up post</a> I will show how to do high quality retiming in After Effects.</p>
+
+<p><br />
+
+First, an overview of the problem: Your camera records in 30 frames per second (fps). You get the stuff into your editing software of choice, set the timeline to 30 fps and edit you film. You export your final film and up to here, everything is fine. But now you need a Pal DVD (to be played in Europe) or a film copy to screen in cinemas (lucky bastard). So now you have the problem of how to go from 30 fps to 25 or 24 fps.</p>
+
+<p><br />
+
+If you had shot a silent film, you could simply play it back a little slower. A hypothetical 5 second film at 30 fps could be played at 25 fps and now be 6 seconds long. Everything would move a little slower, but maybe that could be cool. Unfortunately, if you try this with a film that uses audio, the sound would have to be slowed down as well and thus be significantly lower in pitch.</p>
+
+<p><br />
+
+Since most films nowadays want to use sound, this leaves us with 3 options that slow down the images while maintaining the same duration and thus keep the audio unchanged.</p>
+
+<ul>
+
+    <li>Frame dropping</li>
+
+    <li>Frame blending</li>
+
+    <li>Frame generation (aka Optical Flow Analysis, Pixel Motion, Motion Vectors)</li>
+
+</ul>
+
+<p>All following samples will use PALs 25 fps, the same methods can of course be used to go to 24 fps, just the numbers are slightly different. The sample videos linked to below are all the same clip of some location scouting footage that I edited specifically so that one could study the effects of different retiming methods. Here is the original clip at 30 fps (29.97 to be exact because I converted it to cineform via NeoScene)</p>
+
+<p><object height="340" width="560">
+
+<param value="http://www.youtube.com/v/6d5CbuA_6GU&amp;hl=de_DE&amp;fs=1&amp;" name="movie" />
+
+<param value="true" name="allowFullScreen" />
+
+<param value="always" name="allowscriptaccess" /><embed height="340" width="560" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://www.youtube.com/v/6d5CbuA_6GU&amp;hl=de_DE&amp;fs=1&amp;" />&lt;/embed&gt;</object></p>
+
+<h3><br />
+
+Frame dropping</h3>
+
+<p>The first option is frame dropping. It simply removes every 6th frame. Our 5 second clip from before would still be 5 seconds long, but of the original 150 frames, 25 would have been dropped. Here is a little graphic I made to illustrate what happens.In this example we see 6 frames at 30 fps that need to become 5 frames at 25 fps (so that at both frame rates, the clip would play in exactly 1/5th of a second or 0.2 seconds).</p>
+
+<p><img height="700" width="650" src="/files/frame%20dropping%20illustrated.jpg" alt="" /><br />
+
+Frame dropping leads to a strange jerky sensation that can be seen here. Some people are more sensitive to this than others:</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/Q0aNw2vDmtM&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/Q0aNw2vDmtM&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p><br />
+
+Advantages of this method&nbsp;&nbsp; &nbsp;</p>
+
+<ul>
+
+    <li>It works consistently</li>
+
+    <li>It renders very quickly</li>
+
+    <li>No problems with hard cuts</li>
+
+</ul>
+
+<p>Disadvantages of this method</p>
+
+<ul>
+
+    <li>Looks very strange</li>
+
+</ul>
+
+<h3><br />
+
+Frame blending</h3>
+
+<p>Frame blending always blends two frames together. So the first frame A of our new 25 fps sequence is a blending of frame A and B in the original sequence; the next frame is constructed from B and C and so forth (the exact details how and which frames are blended can vary). Here is an illustration of what happens:</p>
+
+<p><img height="700" width="650" src="/files/frame%20blending%20illustrated.jpg" alt="" /><br />
+
+In this graphics this looks pretty bizarre, but since most individual frames of a film look very much alike, this usually works pretty well. It gets more noticeable when there are quick movements, especially when the scene was filmed with a short shutter time and the objects have little motion blur. Here is a frame where the blending can be seen very well:</p>
+
+<p><img height="338" width="600" src="/files/Frame%20blending%20visible%20copy.jpg" alt="" /><br />
+
+The good thing about frame blending is that it looks relatively pleasant most of the time and it works in any case. One of the problems with it is that it will soften your hard cuts. Here is an example where what used to be a hard cut from this frame<br />
+
+<img height="338" width="600" src="/files/Frame%20blending%20hard%20cut%20softening%20frame%20before%20copy_0.jpg" alt="" /><br />
+
+To this one<br />
+
+<img height="338" width="600" src="/files/Frame%20blending%20hard%20cut%20softening%20frame%20after%20copy.jpg" alt="" /><br />
+
+Gets turned into this blended frame<br />
+
+<img height="338" width="600" src="/files/Frame%20blending%20hard%20cut%20softening%20copy.jpg" alt="" /><br />
+
+Here is the sample clip with frame blending.</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/ZnE5t-gRa3I&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/ZnE5t-gRa3I&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p><br />
+
+In after effects one can protect hard cuts (see <a href="/retiming-with-after-effects">this post</a> for more information on how to do this). The resulting sample can be seen here:</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/RC3Km7X4yxI&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/RC3Km7X4yxI&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p><br />
+
+Advantages of frame blending</p>
+
+<ul>
+
+    <li>It is more pleasant to watch than frame dropping</li>
+
+    <li>It renders quickly</li>
+
+    <li>Most of the time it looks ok</li>
+
+    <li>It works consistently</li>
+
+</ul>
+
+<p>&nbsp;Disadvantages</p>
+
+<ul>
+
+    <li>Extra care needs to be taken to protect hard cuts</li>
+
+    <li>Noticeable &quot;double exposure&quot; effect</li>
+
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Frame generation</h3>
+
+<p>Frame generation is a process that goes by a myriad of names (aka Optical Flow Analysis, Pixel Motion, Motion Vectors, ...). The principle is always the same though: a clever algorithm tries to understand where similar groups of pixels move in the image and calculates in between frames by moving the pixel groups further than they used to move, an extra 1/6th of the original distance to be precise (in this particular case). The upside is that if it works, the image looks perfect and no matter how much movement is in a frame, there will never be the &quot;double exposure&quot; effect seen with frame blending. The downside is that even though these algorithms have gotten very good, sometimes they get badly messed up and produce something like this:</p>
+
+<p><img height="338" width="600" src="/files/Pixel%20motion%20problem%20copy.jpg" alt="" /><br />
+
+This happens basically at every hard cut, so you have to protect your hard cuts against this problem (see <a href="/retiming-with-after-effects">this post</a> for more information on how to do this). However, it can even happen when there are no cuts, e.g. when the lighting changes dramatically (see this blog post for an image where that happened). If that happens, tweaking the parameters can often help, but sometimes you will have to resort to frame blending for a couple of frames where frame generation simply does not work.</p>
+
+<p>Here is an example with pixel motion where hard cuts are unprotected (this sample uses twixtor instead of After Effects, but the results in this case are very much alike):</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/jzEfIxrxwfU&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/jzEfIxrxwfU&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p>And here with hard cuts are protected (native After Effects again):</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/uepvt8P_XRk&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/uepvt8P_XRk&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p>See the bottom of this post for some more clips retimed with the Twixtor plugin.</p>
+
+<p>Advantages</p>
+
+<ul>
+
+    <li>If it works, the quality is very good</li>
+
+</ul>
+
+<p>Disadvantages</p>
+
+<ul>
+
+    <li>Extra care needs to be taken to protect hard cuts</li>
+
+    <li>Can sometimes produce messed up frames, output has to be carefully watched and problems eliminated</li>
+
+    <li>Longer rendertimes</li>
+
+</ul>
+
+<p>&nbsp;</p>
+
+<p>My advice would be to go with frame blending if are in a hurry, and use frame generation if you have time to check and maybe fix the output and want very high quality.&nbsp; In both cases you should remember to protect your hard cuts &ndash; something that to my knowledge can only be done in compositing programs like After Effects. If you have the option to use Twixtor, I can highly recommend it as it seems both more stable and significantly faster than TimeWarp. Details on how to use After Effects for retiming can be found in <a href="/retiming-with-after-effects">my next blog post</a>.<br />
+
+&nbsp;</p>
+
+<p>For the sake of completeness, here are 3 samples of the result when using Twixtor with frame blending and frame generation:</p>
+
+<p>Twixtor frame blending, hard cuts not protected</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/jzEfIxrxwfU&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/jzEfIxrxwfU&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p>&nbsp;</p>
+
+<p>Twixtor frame blending, hard cuts protected</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/kfIzblG1lks&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/kfIzblG1lks&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+<p>&nbsp;</p>
+
+<p>Twixtor frame generation, hard cuts protected</p>
+
+<p><object height="340" width="560">
+
+<param name="movie" value="http://www.youtube.com/v/Jt8HPPna2k0&amp;hl=de_DE&amp;fs=1&amp;" />
+
+<param name="allowFullScreen" value="true" />
+
+<param name="allowscriptaccess" value="always" /><embed height="340" width="560" src="http://www.youtube.com/v/Jt8HPPna2k0&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" />&lt;/embed&gt;</object></p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

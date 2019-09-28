@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tasks and Effects in Elm</title>
+  <meta name="description" content="(Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Archit...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>Tasks and Effects in Elm</h1>
+<p class="subtitle">February 19, 2016</p>
+
+<p>(Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)</p>
+
+<p>This is the second post in a series on some of the concepts in <a href="http://elm-lang.org/">Elm</a> that might be a bit puzzling when you start out with Elm. In the <a href="/2016/02/12/signals-in-elm.html">last post about Signals in Elm</a> I wrote about Signals and how they are behind the scenes of <code class="highlighter-rouge">StartApp.Simple</code>. In this post I get into long running operations like XHRs (aka AJAX). There are two closely related types that are involved in this, <code class="highlighter-rouge">Tasks</code> and <code class="highlighter-rouge">Effects</code>, and the exact differences between can be confusing in the beginning. So let’s dive right in:</p>
+
+<h3 id="tasks">Tasks</h3>
+
+<p><code class="highlighter-rouge">Task</code> is the more basic type (it is defined in Core) and so let’s start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It’s type is thus:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">Task</span> <span class="n">errorType</span> <span class="n">successType</span>
+
+<span class="c1">-- (or, as it is actually written in the library:)</span>
+
+<span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
+</code></pre></div></div>
+
+<p>There are only two values of <code class="highlighter-rouge">Task</code> you can create yourself in your code, without using a separate library. These two ways are two functions:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">succeed</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
+
+<span class="c1">-- and</span>
+
+<span class="n">fail</span> <span class="p">:</span> <span class="n">x</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
+</code></pre></div></div>
+
+<p>These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a <code class="highlighter-rouge">Task</code> with <code class="highlighter-rouge">succeed</code>).</p>
+
+<p>Most of the time you actually get in contact with tasks, these will be created for you by library functions that initialize the task so that it will perform some long running operation when the runtime executes it and handle the result of the operation according to Task semantics (I.e. that some native code will make sure to call fail or succed on the native representation of the task when the operation is finished).</p>
+
+<p>Note that the operation doesn’t start right away! I said “when the runtime executes it”. In purely functional programming languages, inside the language you can never just perform a side effect (something that changes “the world” outside the internal state of your code), and sending an http request surely is a side effect in that sense. This is one of the big mental shifts from imperative programming, where you can always do this, to working with purely functional languages where you can’t.</p>
+
+<p>So how does this actually work? The task you get back <em>represents</em> the long running action. When a library creates it for you, nothing “happens”, it just created a value (of type <code class="highlighter-rouge">Task</code>) that indicates what you would like to happen.</p>
+
+<p>If you look at e.g. the implementation of <a href="https://github.com/evancz/elm-http/blob/3.0.0/src/Native/Http.js">the native part of the send function in http</a> you will see that a <code class="highlighter-rouge">Task</code> is created in native JS code by handing it a callback. This callback is what will get called when the runtime actually executes the task. This is when the actual XHR request is created and performed - only when the runtime executes this callback.</p>
+
+<p>So how do you get the runtime to run this task? By passing it into an outgoing <code class="highlighter-rouge">port</code>. I will go into detail on ports in a later blogpost, but suffice to say that they are a way to send messages between “native” JS and Elm (called an incoming <code class="highlighter-rouge">port</code>) and from Elm to native JS (an outgoing <code class="highlighter-rouge">port</code>). The runtime has some special casing for Tasks that come to it via outgoing ports that make it execute the callback the Task represents.</p>
+
+<p>When the long running native code is done, it will either call <code class="highlighter-rouge">succeed</code> or <code class="highlighter-rouge">fail</code> on the task. In most real life code that uses the Elm Architecture you will set up a “chain” of task processing that will lead to the the end result of the task execution being that a value of your <code class="highlighter-rouge">Action</code> type is routed back through your <code class="highlighter-rouge">update</code> function. This value of your <code class="highlighter-rouge">Action</code> type is the usually tagged with the result of the task (e.g. the decoded Json response of an XHR).</p>
+
+<p>As a last piece of info before we have a look at Effects and how all of this actually looks in an example, let me just mention that Tasks can easily be chained togehter with <code class="highlighter-rouge">andThen</code>, much like promises in JS are chained together.</p>
+
+<h3 id="effects">Effects</h3>
+
+<p>On to <code class="highlighter-rouge">Effects</code>! If you look at the definition for <code class="highlighter-rouge">Effects</code> it’s pretty simple:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="kt">Effects</span> <span class="n">a</span>
+    <span class="o">=</span> <span class="kt">Task</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="n">a</span><span class="p">)</span>
+    <span class="o">|</span> <span class="kt">Tick</span> <span class="p">(</span><span class="kt">Time</span> <span class="o">-&gt;</span> <span class="n">a</span><span class="p">)</span>
+    <span class="o">|</span> <span class="kt">None</span>
+    <span class="o">|</span> <span class="kt">Batch</span> <span class="p">(</span><span class="kt">List</span> <span class="p">(</span><span class="kt">Effects</span> <span class="n">a</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">None</code> and <code class="highlighter-rouge">Batch</code> are helpers, so the basic things an Effect can represent are <code class="highlighter-rouge">Tasks</code> (with error type <code class="highlighter-rouge">Never</code>) and <code class="highlighter-rouge">Ticks</code>. The latter is used for animations if you want to do something at the next animation frame.</p>
+
+<p>It’s very common to turn a <code class="highlighter-rouge">Task</code> into an <code class="highlighter-rouge">Effect</code>, whereas the inverse is usually only ever done by <code class="highlighter-rouge">StartApp</code>/the runtime.</p>
+
+<p>Several libraries use <code class="highlighter-rouge">Task</code> to allow you to work with long running operations - <code class="highlighter-rouge">Http</code> is one, <code class="highlighter-rouge">elm-history</code> is another.</p>
+
+<p>So how is this used? The <a href="https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer">Elm Architecture example 5</a> uses this very central piece of code:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">getRandomGif</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
+<span class="n">getRandomGif</span> <span class="n">topic</span> <span class="o">=</span>
+  <span class="kt">Http</span><span class="o">.</span><span class="n">get</span> <span class="n">decodeImageUrl</span> <span class="p">(</span><span class="n">randomUrl</span> <span class="n">topic</span><span class="p">)</span>
+    <span class="o">|&gt;</span> <span class="kt">Task</span><span class="o">.</span><span class="n">toMaybe</span>
+    <span class="o">|&gt;</span> <span class="kt">Task</span><span class="o">.</span><span class="n">map</span> <span class="kt">NewGif</span>
+    <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span>
+</code></pre></div></div>
+
+<p>Let’s look at what it does. It starts with creating a task that represents the Http <code class="highlighter-rouge">get</code> operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what’s happening:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">getRandomGif</span> <span class="n">topic</span> <span class="o">=</span>
+  <span class="n">getTaskWithError</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Http</span><span class="o">.</span><span class="kt">Error</span> <span class="kt">String</span>
+  <span class="n">getTaskWithError</span> <span class="o">=</span> <span class="kt">Http</span><span class="o">.</span><span class="n">get</span> <span class="n">decodeImageUrl</span> <span class="p">(</span><span class="n">randomUrl</span> <span class="n">topic</span><span class="p">)</span>
+
+  <span class="n">getTaskWithNoErrorAndMaybe</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Never</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="kt">String</span><span class="p">)</span>
+  <span class="n">getTaskWithNoErrorAndMaybe</span> <span class="o">=</span> <span class="kt">Task</span><span class="o">.</span><span class="n">toMaybe</span> <span class="n">getTaskWithError</span>
+
+  <span class="n">getTaskWithNoErrorAndAction</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Never</span> <span class="p">(</span><span class="kt">Action</span><span class="p">)</span>
+  <span class="n">getTaskWithNoErrorAndAction</span> <span class="o">=</span> <span class="kt">Task</span><span class="o">.</span><span class="n">map</span> <span class="kt">NewGif</span> <span class="n">getTaskWithNoErrorAndMaybe</span>
+
+  <span class="n">taskAsEffect</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="kt">Action</span>
+  <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span> <span class="n">getTaskWithNoErrorAndAction</span>
+</code></pre></div></div>
+
+<p>So in the end, Effects in this case just wraps the Task for us. Because we used <code class="highlighter-rouge">toMaybe</code> and then mapped it to the <code class="highlighter-rouge">NewGif</code> type constructor function, this will result in an <code class="highlighter-rouge">Action</code> coming back to us via <code class="highlighter-rouge">update</code> when it is done that is either (<code class="highlighter-rouge">NewGif Nothing</code>) if the http request failed, or (<code class="highlighter-rouge">NewGif "some-url-here"</code>) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the <a href="https://github.com/evancz/elm-effects/blob/master/src/Effects.elm">implementation</a> of Effects.</p>
+
+<p>One thing that is worth looking at is the return type of the function: Effects Action. Effects has a type variable, just like for example List. So this is an Effects that deals with the Action type you define in your application - and this is the really neat part of how to make sure that you can deal with the result of the Task/Effect - the result will just be a value of your Action type!</p>
+
+<p>At this point you may wonder: why have Effects at all? Aren’t they just weird wrappers for Tasks? Let’s quickly take a look again at how the Task case of the Effects type is defined:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="kt">Effects</span> <span class="n">a</span>
+    <span class="o">=</span> <span class="kt">Task</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The way <code class="highlighter-rouge">StartApp</code> is typed, going via <code class="highlighter-rouge">Effects Action</code> constraints all <code class="highlighter-rouge">Tasks</code> to come back with <code class="highlighter-rouge">Actions</code> and have the error type <code class="highlighter-rouge">Never</code>. This is really nice because it means that you don’t have to handle different task types to different ports, but you set up “pipelines” of tasks to effects like with <code class="highlighter-rouge">getRandomGif</code> above and it will all work out in a typesafe manner that the result of your tasks will be sent back to your program’s <code class="highlighter-rouge">update</code> function as <code class="highlighter-rouge">Actions</code>.</p>
+
+<p>Ok, so finally, remember I wrote something about having to send Tasks off to an outgoing port. I you don’t do this, the Tasks will never be executed! If you want to use Effects, the easiest way is to switch from StartApp.Simple to StartApp. This brings three minor changes with it:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">start</code> no longer directly returns a Signal of Html but a record of 3 Signals: one for the html, one for the model, and, crucially for us, one of tasks.</li>
+  <li>The <code class="highlighter-rouge">update</code> function now returns not just the <code class="highlighter-rouge">Model</code>, but a tuple of<code class="highlighter-rouge"> (Model, Effects Action)</code>. I.e. that every case in your update function will have to return both the changed model and an Effect (which will often be <code class="highlighter-rouge">Effects.none</code>)</li>
+  <li><code class="highlighter-rouge">start</code> gets a fourth parameter, <code class="highlighter-rouge">inputs</code>, for incoming <code class="highlighter-rouge">Signals</code>.</li>
+  <li>The tasks part of the record that is returned by <code class="highlighter-rouge">start</code> has to be handed to a port so that the <code class="highlighter-rouge">Tasks/Effects</code> are actually performed by the runtime like so:</li>
+</ol>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span> <span class="o">=</span>
+  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
+    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="n">init</span> <span class="s">"</span><span class="s2">funny cats"</span>
+    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
+    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
+    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="p">}</span>
+
+
+<span class="n">main</span> <span class="o">=</span>
+  <span class="n">app</span><span class="o">.</span><span class="n">html</span>
+
+
+<span class="k">port</span> <span class="n">tasks</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="p">())</span>
+<span class="k">port</span> <span class="n">tasks</span> <span class="o">=</span>
+  <span class="n">app</span><span class="o">.</span><span class="n">tasks</span>
+</code></pre></div></div>
+
+<p>Phew, this got a little long again, but I hope it helps a little to understand how Tasks/Effects work!</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

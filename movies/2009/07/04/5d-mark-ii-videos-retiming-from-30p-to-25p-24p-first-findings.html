@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>5D Mark II videos retiming from 30p to 25p/24p - first findings</title>
+  <meta name="description" content="Two weeks ago, a few friends from my film school took the Canon 5D Mark II to the Ostsee coast to test whether it would be suitable for the short film they w...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/movies/2009/07/04/5d-mark-ii-videos-retiming-from-30p-to-25p-24p-first-findings.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>5D Mark II videos retiming from 30p to 25p/24p - first findings</h1>
+<p class="subtitle">July 4, 2009</p>
+
+<p>Two weeks ago, a few friends from <a href="http://www.filmarche.de">my film school</a> took the <a href="http://www.dpreview.com/reviews/canoneos5dmarkii/">Canon 5D Mark II</a> to the Ostsee coast to test whether it would be suitable for the short film they want to shoot in August. They gave me the material they shot so I&nbsp;could try various retiming methods to see if it was possible to get a decent looking 25p copy of the material. (Update:&nbsp;I&nbsp;have since shot some more tests, read about them <a href="http://www.danyx.com/retiming-with-twixtor-results">here</a>. Update Nr 2:&nbsp;I&nbsp;have written two extensive blog posts on how retiming works and how to do it in After Effects. Find them <a href="/retiming-methods-shootout">here</a>.)</p>
+
+<p>Most technically minded filmmakers will be aware of why the 5D is such a hot topic right now, but for those who aren't, here is a short summary:&nbsp;The 5D is a <a href="http://en.wikipedia.org/wiki/Dslr">DSLR Camera</a> that can record video in 1080 30p (HDTV). Why does this matter?</p>
+
+<!--break-->
+
+<ul>
+
+    <li>The <a href="http://prolost.com/blog/2008/8/20/sensor-size-cheat-sheet-update.html">full frame sensor </a>means very, very little <a href="http://en.wikipedia.org/wiki/Depth_of_field">Depth of Field </a>especially compared to all current video cameras that cost below 20K Euros. It means getting a lot of what we associate with film look without stupid workarounds like <a href="http://en.wikipedia.org/wiki/Depth-of-field_adapter">35mm adaters</a></li>
+
+    <li>It needs very little light. AFAIK it can shoot with significantly less light than the <a href="http://www.red.com/cameras/">RED ONE</a>.</li>
+
+    <li>We can use very good photographic prime lenses that are a lot cheaper than cine lenses.</li>
+
+    <li>More reasons <a href="http://magiclantern.wikia.com/wiki/Magic_Lantern_Firmware_Wiki">are here</a></li>
+
+</ul>
+
+<p>It was inevitable that the worlds of the great DSLR&nbsp;cameras with big sensors and of video cameras with their optimized ergonimics for long shoots would at some point converge, and we are currently seeing some of the first cameras that bridge the (increasingly artificial) gap. Because cameras like the 5D are the first cameras that try to do both, there are many shortcomings. How serious these are for your project is something that only you yourself can decide by testing it, but here is a list with the downsides I&nbsp;regard as being the most serious:</p>
+
+<ul>
+
+    <li>Frame rate fixed to 30p (this is a problem if you want to screen it in Europe on DVD/TV - Pal is 25p - or in cinemas - film is 24 fps)</li>
+
+    <li>Fancy compression (mpeg 4) that can have some weird artefacts</li>
+
+    <li>Nearest Neighbor or similar scaling algorithm - this leads to very bad moir&eacute; when filming subjects with a lot of fine detail</li>
+
+    <li>Crushed blacks /&nbsp;no raw - it makes the images look great right off the camera, but you are very limited in what you can do in your colour correction</li>
+
+    <li><a href="http://dvxuser.com/jason/CMOS-CCD/">Rolling shutter </a>- skewed vertical lines or weird wobbly movement in horizontal motion</li>
+
+    <li>Handling optimized for still photography</li>
+
+    <li>Video recording time limited to about 12 minutes</li>
+
+</ul>
+
+<p>Of these problems, the frame rate thing is the most serious for no budget filmmakers in Europe. If it is impossible to create a PAL Screener DVD, there isn't a lot you are going to be able to do with your film. Also, if you get lucky and your film gets a cinema distribution, you will need a 24 fps version. So, unless Canon ships a firmware update that lets us shoot in 24/25p, the question is:&nbsp;is there anything we can do to create this great camera to shoot shorts and be able to watch them afterwards (in 25p/24p?)</p>
+
+<p>The answer is maybe - there are 4 possible ways to convert video from 30p to 25p that I&nbsp;am aware of:</p>
+
+<ul>
+
+    <li><strong>Play it slower</strong>. Perfect image quality because every frame is played as it was recorded. Everything will get a slight slow motion effect. Unusable for anything containing dialogue. Might be interesting for action /&nbsp;commercials.</li>
+
+    <li><strong>Throw away frames</strong>. Creates very jerky video, IIMHO unusable for anything.</li>
+
+    <li><strong>Retime it using frame blending</strong>. For every output picture, two pictures are blended together (kind of like a double exposure). This works well for scenes with little movement and it produces very predictable results. Gets very noticeable with quick movements or pans.</li>
+
+    <li><strong>Retime it using optical flow analysis</strong> (also called Pixel Motion and similar). Complex algorithms try to analyze where groups of pixels are moving and calculate intermediary frames. Creates cleaner results than frame blending in many cases, but can horribly fail if it gets confused.</li>
+
+</ul>
+
+<p>Most modern NLEs can use the first 3 or all of the above methods. Since I like to use After Effects for things like this because it always puts image quality first and speed second, this is what I&nbsp;tried.&nbsp;</p>
+
+<p>I&nbsp;tried all of the above methods with two shots that I&nbsp;got from my friends. So far, the tests were not very conclusive because only very few scenes were shot with a 180 degree shutter (most used much shorter exposure times because they didn't pack enough ND). We will shoot some more tests next week and I will post those results with some example videos, but here are my findings so far (all tests were done in After Effects at full resolution and screened on a full hd lcd screen):</p>
+
+<ul>
+
+    <li>Frame blending is too noticeable when there is significant subject movement. Camera movement seems to be less noticeable.</li>
+
+    <li>After effects' optical flow analysis can easily get confused (at least with the default settings). Below is a still frame where the Sun just came out behind one the actors and the entire picture was shredded.<img height="283" width="500" alt="" src="/files/vlcsnap-1567684.jpg" /></li>
+
+</ul>
+
+<ul>
+
+    <li>The <a href="http://www.revisionfx.com/products/twixtor/">Twixtor Pro 4.5 Plugin</a> for After Effects seems to produce results that are noticeably more stable. In the two rather difficult tests I&nbsp;rendered there were no visible problems. Also, Twixtor is able to render artificial motion blur with very little additional render time, which should make the output smoother.</li>
+
+</ul>
+
+<p>BTW, when you want to try your own tests, try to figure out what the program will be doing and if it actually makes sense. One possible path that a program might take would be to assume that the material was converted from 24p film to 60i via <a href="http://en.wikipedia.org/wiki/Telecine">2:3 pulldown</a> and you simply want to reverse this process. DON'T do this, it would badly mess up your video!</p>
+
+<p>As I&nbsp;wrote above, my tests were inconclusive thus far. Twixtor looks promising, but it's hard to judge if the resulting material looks correct or if something feels weird. The 5D is a very interesting camera and I&nbsp;would have good use for it's photographic capabilities as well and already own a nice selection of canon lenses. But to know if it will be useful to create a short film suitable for the cinema screens at film festivals I&nbsp;will have to do some more testing (next time I&nbsp;will also upload some example videos, I&nbsp;promise).&nbsp;Of course, if Canon would release a firmware update for 25p I&nbsp;would be in the store the next minute (Canon?&nbsp;Are you listening?!)</p>
+
+<p><a href="http://www.danyx.com/Optimizing-Timewarp-with-Brainstorm">Go on to the next posting in this series</a>.</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

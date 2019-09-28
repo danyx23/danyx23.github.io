@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Modelling a possible Gene Drive in Mosquitoes</title>
+  <meta name="description" content="A while ago I told a fauna-nerd about CRISPR/Cas9 and the potential it has - for genetic modification as well as for diagnostics and similar. I have previous...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2016/02/06/modelling-a-possible-gene-drive-in-mosquitoes.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>Modelling a possible Gene Drive in Mosquitoes</h1>
+<p class="subtitle">February 6, 2016</p>
+
+<p>A while ago I told a fauna-nerd about CRISPR/Cas9 and the potential it has - for genetic modification as well as for diagnostics and similar. I have previously posted articles about CRISPR on <a href="http://ichahnezusammenhaenge.de">Ich ahne Zusammenhänge</a>, a blog I co-author, but I got into a little argument with her about the efficiency and it led me down an interesting path and I wanted to write about it in more detail. Before I start, a little disclaimer: I am by no means an expert on any of this, so please take anything below with a grain of salt. If you notice any errors or have suggestions etc, I am always happy about feedback!</p>
+
+<p>First, some context: with traditional techniques it was already possible to create a single mosquito that is unable to carry the parasite that causes Malaria. But since the parasite has no detrimental effect on the mosquito there would be no evolutionary pressure that would preferable select this particular version of the gene (aka this allele) of our “mutant” mosquito. Since there are so many “wild type” mosquitoes, you would need to outnumber the wild type mosquitoes to have a decent chance to get rid of the wild type trait and it is unrealistic to breed so many mutant mosquitoes.</p>
+
+<p>The really interesting thing about CRISPR is that the tool that performs the genetic modification can itself be coded as DNA. Thus, if you create a mosquito egg cell that has the instructions to build CRISPR/Cas9 with the right targeting and replacement sequence, this cell will modify its own genome (both copies of the target chromosomes) and all the cells that divide from it would have the same gene-altering code. This also means that, if such a mutant mosquito were to mate with a wild type mosquito, the usual laws of Mendellian inheritance would no longer apply - instead of the usual 50:50 chance of getting the mutant allele or the wild type one, almost 100% of the children would get the mutant allele (in practice the mechanisms seems to break down every now and then and initial results suggest that the effectiveness may be <a href="http://www.sciencemag.org/news/2015/03/chain-reaction-spreads-gene-through-insects">around 95-99%</a>). This concept is called a Gene Drive, and as far as I know CRISPR is the only general purpose technique we know of that makes such a thing possible.</p>
+
+<p>The argument that started this article was over the number of generations required for the mutant allele to become expressed in more than half of a local population if you only start with one mosquito. My guess was that this should happen within 20 generations, while she thought it would take significantly more.</p>
+
+<p>I tried to google this but found no good estimates for a very low number of initial mosquitoes. The best I could find where estimates that started with 10% of the population.</p>
+
+<p>So I started thinking about how to arrive at a ballpark estimate. I quickly realized that my single mosquito would very likely die before it would be able to mate. The German saying “Die sterben wie die Fliegen” (they die like flies), may have something to it after all. But if you increase the number to a still very low 200 initial mutant individuals, the likelihood for at least a few successful matings starts to be reasonable.</p>
+
+<p>I ended up modeling the whole idea <a href="https://docs.google.com/spreadsheets/d/1_NSQbbw_WjF3jap0QVmDiOraG-WFAiig6mceE6ZkbvI/edit?usp=sharing">in a spread sheet</a>. I know almost nothing about either modeling populations of insects or the genetic particulars of actual CRISPR methods as they are applied, so all of this is very, very rough. But it’s still some interesting results. I wanted to see how the numbers work out for really big “local” populations. I have no idea if these numbers are anywhere close to reasonable, and there seems to be remarkably little data on the number of mosquitoes in a given area. So I came up with 4 Billion mosquitoes, which I wildly guessed might be the number that live on a small island in the middle of the wet season in a mosquito infested area (so that you can meaningfully talk about a single “population” that is not constantly mixing with mosquitoes from the surroundings).</p>
+
+<p>My modeling has several dramatic weaknesses, e.g. it assumes perfectly random matings without regard to geographic proximity etc which is clearly unrealistic. Another thing is that the numeric factors for successful matings &amp; the fraction of eggs that develop into successfully reproducing adults were tweaked to arrive at stable populations whereas real mosquito populations surely vary wildly in size depending on external factors.</p>
+
+<p>I originally wanted to use <a href="http://www.getguesstimate.com/">Guesstimate</a> to enter ranges of plausible values and have it estimate the final ranges via Monte Carlo simulation (drawing random numbers with given distributions for every ranged variable and calculating the spreadsheet formulas with those), but Guesstimate is still too cumbersome to use for repetitive calculations, so I had to do it with vanilla google docs and with single precise values for the individual factors.</p>
+
+<p>The result for those particular numbers with my guessed parameters was that it would take about 26 generations for those 200 initial mutants to spread their malaria resistance allele to be expressed in the majority of the population (and pretty much totally replace the wild type mosquitoes 2 generations later).</p>
+
+<p>When I was done with this, I was pretty appalled at how hard it is to audit spreadsheets. No wonder Reinhart/Rogoff <a href="http://www.bloomberg.com/bw/articles/2013-04-18/faq-reinhart-rogoff-and-the-excel-error-that-changed-history">made a really embarrassing Excel error</a> back in 2010… Since I have recently started to work with the programming languages Haskell and Elm, I wondered if it would be easier for a non-programmer to understand and verify source code in Elm than it would be to verify excel formulas. I was also looking for something that can be written and run on the web without installing anything. So I wrote the same modeling again in Elm and published it <a href="https://gist.github.com/danyx23/deba145d2e769863b59c">as a gist on github</a>. To run it, copy the code and paste it into <a href="http://elm-lang.org/try">elm-lang.org/try</a>. The results are slightly different because I made the Elm code a little more precise (it doesn’t allow for fractions of a mosquito to mate ;) ).</p>
+
+<p>There are a number of other routes to try. My requirements are that it has to work in the web without installing anything (so that others can easily play with different parameters) and that it should be easy to audit. In my humble opinion, this second requirement excludes vanilla Javascript - a language that, among other things, allows you to redefine its “undefined” value is just too hard to audit.</p>
+
+<p><a href="http://www.purescript.org/">Purescript</a> would have been an interesting choice since they had a self-hosted compiler that was compiled into JS at one point, but it was so much slower than the native one they gave up on it. So like the elm version they now have a Try Purescript website with a compiler running on a hosted machine.</p>
+
+<p>The next thing I actually want to try is <a href="https://develop.open.wolframcloud.com/app/">wolfram alpha</a> which has a slightly nastier syntax but brings many high level functions that might allow me to write a version with Monte Carlo sampling from probability distributions for all parameters in an understandable way without writing too much code. I am also considering writing the code to do a Monte Carlo simulation in Elm but since “Try Elm” doesn’t let you use any additional libraries, I’d have to write a lot of supporting code to be able to perform the simulation.</p>
+
+<p>I’ll blog again about how well Wolfram Alpha performed if it turns out to be a viable alternative. If you have any comments on my methods or ideas for good other ways to simulate this, please let me know in the comments on on <a href="http://twitter.com/danyx23">Twitter</a>!</p>
+
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

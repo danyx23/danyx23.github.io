@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ein Blick in die Welt des Programmierens</title>
+
+		<meta name="description" content="Vom Rechenschieber zum Smartphone">
+		<meta name="author" content="Daniel Bachler">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Ein Blick in die Welt des Programmierens</h1>
+					<h3>Vom Rechenschieber zum Smartphone</h3>
+				</section>
+
+				<section>
+					<section>
+						<h2>Frühe Rechenhilfen</h2>
+						<img src="programming-images/800px-Sliderule_2005.jpg" width="800" height="231">
+						<aside class="notes">
+							Anfang 17. Jhd Logarithmen, Rechenschieber (Astronomie, Militär)
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Mechanische Rechenmaschinen</h2>
+						<img src="programming-images/458px-Charles_Babbage_-_1860.jpg" width="458" height="600">
+						<p>Charles Babbage (1791-1871)</p>
+						<aside class="notes">
+							Difference Engine, Analytical Engine (wäre Turing Complete gewesen)
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Frühe Computer</h2>
+						<img src="programming-images/766px-Human_computers_-_Dryden.jpg" width="766" height="599">
+						<aside class="notes">
+							Hochphase während des 2ten Weltkriegs, viele Frauen.
+							Erste Programmierer waren Frauen weil viele Computer im 2ten Weltkrieg Frauen waren.
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Turing Machine</h2>
+						<ul>
+							<li class="fragment">Lochband</li>
+							<li class="fragment">Lese/Schreibkopf</li>
+							<li class="fragment">Register</li>
+							<li class="fragment">Instruktionstabelle</li>
+						</ul>
+								 		<aside class="notes">
+							30er Jahre; Alan Turing 1912-1954
+						</aside>
+					</section>
+					
+					<section>
+				 		<h2>Von Neumann Architektur</h2>
+				 		<ul>
+							<li class="fragment">Speicher (RAM)</li>
+							<li class="fragment">Prozessor (CPU)</li>
+							<li class="fragment">(Recheineinheit, Steuereinheit, Register)</li>
+							<li class="fragment">Ein/Ausgabewerk</li>
+						</ul>
+								 		<aside class="notes">
+							Etwas vorher von dem deutschen Zuse entwickelt
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Was Prozesssoren tun können</h2>
+				 		<ul>
+							<li class="fragment">Wert aus Speicher laden</li>
+							<li class="fragment">Grundrechnungsarten</li>
+							<li class="fragment">Werte vergleichen (Bedingungen)</li>
+							<li class="fragment">Bedingt "Springen"</li>
+							<li class="fragment">Werte in Speicher schreiben</li>
+						</ul>
+								 		<aside class="notes">
+							
+						</aside>
+					</section>
+				</section>
+
+				<section>
+			 		<h2>Ein simples Programm</h2>
+			 		<pre><code data-trim contenteditable>
+zähler = 0
+:Sprungmarke Schleifenbeginn
+Speicher[1000000 + zähler] = 0
+zähler = zähler + 1
+Springe-Wenn zähler > (1920 * 1080 * 3); :Sprungmarke Schleifenbeginn
+					</code></pre>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Erste elektronische Computer</h2>
+			 		<ul>
+			 			<li>Zuse Z3</li>
+			 			<li>ENIAC</li>
+			 		</ul>
+			 		<img src="programming-images/785px-Eniac.jpg" width="785" height="600">
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Tyranny of Numbers</h2>
+			 		<ul>
+			 			<li>Computer in 50ern sehr groß</li>
+			 			<li>Weitere Komplexität mit Vakuumröhren etc kaum möglich (Verkabelung)</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Integrated Circuits</h2>
+			 		<ul>
+			 			<li>Ende der 50er Halbleitertechnologie entwickelt</li>
+			 			<li>Ganzer Prozessor auf einem Stück Silizium, via Schablone belichtet</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Moores Law</h2>
+			 		<ul>
+			 			<li>Transistordichte verdoppelt sich ca alle 2 Jahre</li>
+			 			<li>Exponentielle Kurve, vertausendfachung ca alle 20 Jahre</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<section>
+				 		<h2>Netzwerke</h2>
+				 		<ul>
+				 			<li>Erste Netzwerke in den 70er Jahren</li>
+				 			<li>Ethernet &amp; das Internet Protocol</li>
+				 		</ul>
+				 		<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+				 		<h2>IP Adressen</h2>
+				 		<ul>
+				 			<li>Private vs öffentliche IP Adressen</li>
+				 			<li>Z.B. 123.4.28.8</li>
+				 			<li>Router die Datenpakete weiterschicken</li>
+				 		</ul>
+				 		<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+				 		<h2>Domain Name Server</h2>
+				 		<ul>
+				 			<li>Router kennen (bzw sind selbst) DNS Server</li>
+				 			<li>Verwandeln Domain Names wie www.google.com in IP Adressen </li>
+				 		</ul>
+				 		<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+				 		<h2>Ports für Anwendungen</h2>
+				 		<ul>
+				 			<li>Z.B. Port 80 für HTTP (WWW)</li>
+				 			<li>Ports wie Abteilungsnummern in Firmen</li>
+				 		</ul>
+				 		<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section>
+				 		<h2>Webseiten</h2>
+				 		<ul>
+				 			<li>HTML sind struktuierte Textdateien für Inhalt</li>
+				 			<li>CSS ist Beschreibung für Aussehen (Farben, Schriften, Layout, ...)</li>
+				 			<li>Javascript für Interaktion</li>
+				 		</ul>
+				 		<aside class="notes">
+							
+						</aside>
+					</section>
+				</section>
+
+				<section>
+			 		<h2>Neue Entwicklungen</h2>
+			 		<ul>
+			 			<li>Taktfrequenz steigt nicht mehr</li>
+			 			<li>Mehrere Prozessorkerne (Gleichzeitigkeit, schwierig zu programmieren)</li>
+			 			<li>Energieeffizienz sehr wichtig (Smartphones)</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Software</h2>
+			 		<ul>
+			 			<li>Maschinencode (Zahlencodes für Operationen)</li>
+			 			<li>Bei den ersten Computern direkt auf Lochkarten eingegeben</li>
+			 			<li>Sehr bald erste Programmiersprachen</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Source Code</h2>
+			 		<ul>
+			 			<li>Textdateien</li>
+			 			<li>Jede Programmiersprache hat Compiler oder Interpreter</li>
+			 			<li>Compiler übersetzt Programmiersprache im Voraus in Maschinencode</li>
+			 			<li>Interpreter übersetzt Programmiersprache in Echtzeit in Maschinencode</li>
+			 		</ul>
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Assembler</h2>
+			 		<p>Statt Zahlencodes Textkürzel</p>
+			 		<p>Heute nur für Hardwaretreiber o.ä.</p>
+			 		<p>Beispiel</p>
+			 		<pre><code data-trim contenteditable>
+mov ecx, -1
+.loop:
+inc ecx
+cmp byte [eax+ecx], 0
+jne .loop
+					</code></pre>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>C</h2>
+			 		<p>Maschinennahe Hochsprache</p>
+			 		<p>Für Betriebssysteme, zeitkritische Anwendungen</p>
+			 		<p>Beispiel</p>
+			 		<pre><code data-trim contenteditable>
+int i = -1;
+while (i &lt; 10)
+{
+	i = i+1;
+}
+					</code></pre>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Python</h2>
+			 		<p>Einfache aber mächtige Scriptsprache</p>
+			 		<p>Kleine bis mittelkomplexe Programme</p>
+			 		<p>Beispiel</p>
+			 		<pre><code data-trim contenteditable>
+var i = -1
+while (i &lt; 10):
+	i = i + 1
+					</code></pre>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Abstraktion</h2>
+			 		<ul>
+			 			<li>Hardwaretreiber</li>
+			 			<li>Betriebssystem: Speichermanagement, Prozesse</li>
+			 			<li>Betriebssystem: Dateien, Grafik, APIs</li>
+			 			<li>Betriebssystem: Grafische Benutzeroberfläche</li>
+			 			<li>APIs</li>
+			 		</ul>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Beispiel Api</h2>
+			 		<p>Mit python eine HTML Datei aus dem Internet laden</p>
+			 		<pre><code data-trim contenteditable>
+import urllib2
+response = urllib2.urlopen('http://www.danyx.com/')
+html = response.read()
+print html
+					</code></pre>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+			 		<h2>Source code verwaltung</h2>
+			 		<ul>
+			 			<li>Echte Programme viele hundert source code files</li>
+			 			<li>Version Control Software zur Verwaltung</li>
+			 			<li>Jede Änderung extra hinterlegt, kann rückgängig gemacht werden.</li>
+			 		</ul>
+
+			 		<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>von Daniel Bachler</h3>
+					<small>Präsentationstool reveal.js von Hakim El Hattab</small>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

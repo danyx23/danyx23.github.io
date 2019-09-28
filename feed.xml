@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel Bachler</title>
+    <description>The personal website of Daniel Bachler - Software Engineer and Photographer
+</description>
+    <link>http://danielbachler.de/</link>
+    <atom:link href="http://danielbachler.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 28 Sep 2019 21:34:48 +0200</pubDate>
+    <lastBuildDate>Sat, 28 Sep 2019 21:34:48 +0200</lastBuildDate>
+    <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Thoughts on fighting climate change effectively</title>
+        <description>&lt;p&gt;In the last few months, climate change has been discussed with renewed vigor in the media and on social networks. More and more people realize that we have a problem but a lot of the current focus doesn’t seem to be directed at the pragmatic goal we should be aiming for: mitigating climate change as far as possible.&lt;/p&gt;
+
+&lt;p&gt;Increased levels of greenhouse gases in our atmosphere are the cause of climate change, and so the metric we need to look at is our global net total greenhouse gas emissions going forward (i.e. the absolute amount of CO2 or other greenhouse gases emitted minus whatever we manage to extract out of the atmosphere through additional trees or via technological means). Reducing our emissions quicly to a low enough level will be a tremendous challenge.&lt;/p&gt;
+
+&lt;p&gt;I wrote this post out of frustration with the current public discourse that doesn’t focus on achieving this goal effectively. I am not a climate scientist and thus this post can only collect a few high level ideas that I consider important but neglected. I tried to collect some numbers that provide a useful frame of reference, but of course they cannot give a complete picture. Take what I write with a healthy dose of skepticism - but I do hope that it will be valuable perspective.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-current-discourse&quot;&gt;The current discourse&lt;/h2&gt;
+
+&lt;p&gt;A lot of the current public discussion focuses on personal consumption lifestyle choices and moral arguments and I think that this is a harmful distraction. As Elizabeth Warren recently said in her poignant style:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;“This is exactly what the fossil fuel industry wants us to talk about. … They want to be able to stir up a lot of controversy around your lightbulbs, around your straws, and around your cheeseburgers, when 70 percent of the pollution, of the carbon that we’re throwing into the air, comes from three industries […] construction, electricity generation and the oil industry” – Elizabeth Warren&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I see three main problems with the personal consumption and lifestyle choices arguments. First, it seems to me that public attention is a very precious good and that one can think of this as a public attention budget that is quite limited. Concentrate too much on actions that have only very minor impact on absolute CO2 emissions and you risk saturating your audience without having much effect. It is therefore important that public attention is focused on getting the big political solutions in place and not waste time debating whether or not eating beef is morally justifiable.&lt;/p&gt;
+
+&lt;p&gt;Second, framing the problem as a moral question of personal consumption choices just does not have enough potential to reduce absolute emissions by a significant margin. Aviation for example accounts for 2% of global emissions. A voluntary consumption cut by rich consumers will not change nearly enough and we have to instead focus on aligning the entire global economy to emit less.&lt;/p&gt;
+
+&lt;p&gt;Third, the current rhetoric of moral arguments often invokes images of catastrophe. Tackling climate change is framed as a binary choice between dramatically changing everything — or extinction. In this lies a real danger of evoking hopelessness: the whole world will not change dramatically all at once, so why bother doing anything at all, especially giving up things you personally enjoy? If the situation is hopeless, shouldn’t we just enjoy it while it lasts?&lt;/p&gt;
+
+&lt;h2 id=&quot;a-different-focus&quot;&gt;A different focus&lt;/h2&gt;
+
+&lt;p&gt;Instead we should aim for solutions that can bring down absolute greenhouse gas emissions effectively and focus minds on the areas that can really make a big difference. As I will outline below, I doubt that we will be able to still achieve a great or good outcome (staying below or 1.5 degrees or 2 degrees Celsius global warming respectively). &lt;label for=&quot;sn-temperature-increase&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-temperature-increase&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Timeline to reach certain temperature thresholds given the emission trajectory. We will pass 1.5 degree Celsius around 2030 in pretty much any scenario - &lt;a href=&quot;https://www.economist.com/briefing/2019/09/21/the-past-present-and-future-of-climate-change&quot;&gt;figure by The Economist&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.economist.com/sites/default/files/imagecache/640-width/images/2019/09/articles/body/20190921_fbc008.png&quot; alt=&quot;Emission scenarios for various emission trajectories&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But if we can focus on areas where we can make big gains for moderate cost then I think it is still very much possible to achieve a moderately bad outcome of somewhat above 2 degree Celsius versus extremely negative outcomes for ecosystems and human livelihoods if we end up over 4 degree Celsius as is our current trajectory.&lt;/p&gt;
+
+&lt;p&gt;If the reduction of absolute greenhouse gases is our goal, I think we should focus public discussion on the following three main areas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;span class=&quot;newthought&quot;&gt;a steadily increasing emission tax&lt;/span&gt;   or carbon tax to align profit incentives with emission reductions goals and let the market help with figuring out which emissions are the cheapest to replace first.&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;newthought&quot;&gt;more research, development and bootstrapping of technologies&lt;/span&gt;  to reduce emissions — especially in the neglected agricultural and steel/cement producing sectors as well as electricity storage&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;newthought&quot;&gt;a creative diplomatic effort&lt;/span&gt;  to create strong (trade) incentives for the big emerging economies to refrain from deploying coal for electricity production&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;an-outline-of-the-problem&quot;&gt;An outline of the problem&lt;/h2&gt;
+
+&lt;p&gt;To frame the discussion, I think it is useful to recall a few important numbers. The scientific opinion of the UN’s panel for climate research, the IPCC, is that we should try to constraint global temperature rise by 2100 to ideally 1.5 or at most 2 degree Celsius versus pre-industrial average global temperature.&lt;/p&gt;
+
+&lt;p&gt;A greenhouse gas emission budget can be calculated which expresses how many Gigatons of CO2 equivalent we can still put into the atmosphere to stay within a given temperature target. For 1.5 degrees, we have about 400 Gigatons left &lt;label for=&quot;sn-remaining-budget-1-5&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-remaining-budget-1-5&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Estimates for the budget to stay below a certain temperature target vary quite a bit but most are in this ballpark; this one is from the &lt;a href=&quot;https://www.mcc-berlin.net/en/research/co2-budget.html&quot;&gt;German MCC institute&lt;/a&gt;; Wikipedia has a &lt;a href=&quot;https://en.wikipedia.org/wiki/Emissions_budget&quot;&gt;good overview&lt;/a&gt; of other estimates &lt;/span&gt;. We currently emit around 45 Gigatons CO2 equivalent per year (around 35 Gigatons CO2 as well as Methane from agriculture that is equivalent to another roughly 10 Gigatons of CO2 in its effect). &lt;label for=&quot;mf-emission-paths&quot; class=&quot;margin-toggle&quot;&gt;⊕&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;mf-emission-paths&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;marginnote&quot;&gt;&lt;img class=&quot;fullwidth&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Emission_paths_for_reaching_the_Paris_Agreement.jpg/800px-Emission_paths_for_reaching_the_Paris_Agreement.jpg&quot; /&gt;&lt;br /&gt;Trajectories for attemting to stay within a 600Gigaton CO2 budget - &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Emission_paths_for_reaching_the_Paris_Agreement.jpg&quot;&gt;figure by Stefan Rahmstorf via Wikipedia&lt;/a&gt;&lt;/span&gt; If you do the math, this means we can go on emitting at the current level for around 9 years and then have to go to 0 net emissions immediately; hardly a realistic scenario. A smooth curve that reduces emissions steadily would still have to reduce emissions year on a year on an unprecedented level for all countries and all sectors simultaneously. Whichever way you turn it, the 1.5 degree target looks pretty unrealistic at this point.&lt;/p&gt;
+
+&lt;p&gt;To stay within 2 degrees warming, we have about another 800 Gigatons left. This gives us another 18 years or so at current emission to be distributed over the next few decades. Unfortunately, the trend curve of global emissions does not point down — it is instead still rising:&lt;/p&gt;
+
+&lt;p&gt;
+&lt;iframe src=&quot;https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&amp;amp;year=2016&amp;amp;time=1900..2017&amp;amp;country=OWID_WRL&quot; style=&quot;width: 100%; height: 600px; border: 0px none;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It is worth noting that the higher the temperature increase will end up being, the worse the repercussions for our ecosystems and our habitable areas and global living standards will be. Thus, even if we slightly miss the 2 degree target, this would be a much better outcome than the ~3.5-4 degree increase we are currently on a trajectory towards. &lt;label for=&quot;sn-glen-peters&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-glen-peters&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://www.cicero.oslo.no/no/posts/klima/stylised-pathways-to-well-below-2c&quot;&gt;This article by Glen Peters&lt;/a&gt;, a climate scientist at the Cicero institute for climate research in Oslo is a sobering look at the feasibility of staying below 2 degrees &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ourworldindata.org/uploads/2018/04/Greenhouse-gas-emission-scenarios-01.png&quot; alt=&quot;Emission scenarios for various emission trajectories&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If we look at emissions by region we see that absolute emissions have started to slowly decline in the last few years in both Europe and the US, although at a very slow pace. At the same time, the emissions of especially China rose very quickly as it becomes wealthier and has big construction and energy needs. Climate diplomacy should therefore be an important part of the solution, but let’s first look at the things that rich countries (such as Germany, where I live) can do by themselves.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;iframe src=&quot;https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&amp;amp;year=2016&amp;amp;time=1900..2017&amp;amp;country=BRA+CHN+EU-28+IND+USA&quot; style=&quot;width: 100%; height: 600px; border: 0px none;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;the-case-for-a-carbon-tax&quot;&gt;The case for a carbon tax&lt;/h2&gt;
+
+&lt;p&gt;Quite a few climate activists on the left argue that Capitalism is to blame for climate change and that to combat climate change we should reach for non market based solutions; consumption overall should be lowered, either voluntarily or, if necessary and possible, by force. I think that this is wrong and that we should instead try to come up with incentives and mechanisms that align capitalist interests with reducing emissions. GDP growth is no intrinsically linked to growing resource consumption as the service sector can be a driver of GDP growth. Emissions and GDP growth are already decoupling in rich economies with emissions slowly falling and GDP steadily increasing — we now have to speed this process up. One great way of doing this is a carbon tax that would be levied on all forms of fossil fuels. At a sufficient level it would bring corporations and people to reduce their emissions just so they pay less in taxes. It would mean that areas where switching to clean sources of energy are cheapest would do so first, out of pure monetary considerations.&lt;/p&gt;
+
+&lt;p&gt;An emissions trading scheme if designed well could also work instead of a carbon tax; here, a fixed number of certificates for emissions is generated by the state and these are then traded in a market where polluters have to buy certificates for their emissions. The end result of both strategies when designed well is similar, just the way of getting there is different. In a trading scheme the emissions are fixed and the price is cleared by the market; when using a carbon tax, the price for emissions is set and the emissions fall accordingly. I slightly prefer a carbon tax because the stable and increasing price can be used for long term planning. It is also more transparent: the price for heating oil for the normal consumer would carry the same markup as that paid for industry that burns coal for steel production per unit of CO2 emissions. But both would be fine if the details are right.&lt;/p&gt;
+
+&lt;p&gt;Even an imperfect tax would already be a good step. Three things are important to get right: first, a carbon tax has to include all sources of energy that come from fossil fuels, including coal used for electricity production. Second, the tax has to start at a high enough level (35-70 Euro / ton of CO2 is thought to be an acceptable level and is also what international oil companies anticipated and used for the past few years internally to decide long term investments &lt;label for=&quot;sn-vox-overview&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-vox-overview&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Estimates for the social cost of a ton of CO2 vary substantially. The &lt;a href=&quot;https://www.smartcitiesdive.com/news/carbon-pricing-paris-agreement-emissions-goals/533139/&quot;&gt;35 to 70 EUR / ton of CO2 is referenced here e.g.&lt;/a&gt;. Vox has a good overview of &lt;a href=&quot;https://www.vox.com/energy-and-environment/2018/7/20/17584376/carbon-tax-congress-republicans-cost-economy&quot;&gt;carbon tax proposals&lt;/a&gt; that talks about various issues of carbon taxes &lt;/span&gt;). Third, it has to subsequently increase year by year by at least 3% &lt;label for=&quot;sn-tax-rise&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-tax-rise&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;(a 3% annual would mean a doubling of the tax every 25 years, a more ambitous 7% annual rise would double the price every 10 years) &lt;/span&gt; to constantly raise the pressure on emitters.&lt;/p&gt;
+
+&lt;p&gt;One of the most important effects of a carbon tax (at a high enough level) is that it would make running existing coal power plants uneconomic in the near future. Electricity produced by coal is one of the largest single sources of global CO2 emissions at around 10 Gigatons of CO2 or roughly 30% of all CO2 emissions &lt;label for=&quot;sn-coal-power&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-coal-power&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://www.iea.org/geco/emissions/&quot;&gt;Source: IEA&lt;/a&gt; &lt;/span&gt;. By making emissions from firing coal more expensive, the markets would have an incentive to switch to lower emission alternatives.&lt;/p&gt;
+
+&lt;p&gt;Looking at the transport sector, modern cars emit a ton of CO2 for roughly every 8.000 kilometers they drive &lt;label for=&quot;sn-co2-per-km&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-co2-per-km&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;The EU mandates that new cars can only emit a certain amount of CO2 per driven kilometer. It targets fleet wide averages, the current of 130g CO2 / km is from 2015, for 2021 a &lt;a href=&quot;https://ec.europa.eu/clima/policies/transport/vehicles/cars_en&quot;&gt;lowering to 95 g CO2 / km is planned&lt;/a&gt;  &lt;/span&gt;. Coincidentally, the amount of CO2 emitted when travelling by airplane in modern passengers airplanes at close to capacity is roughly similar for the distance travelled - traveling 1000 km via plane produces roughly the same emissions as travelling the same distance alone in a car &lt;label for=&quot;sn-flight-emissions&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-flight-emissions&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://www.carbonindependent.org/22.html&quot;&gt;Carbonindependent&lt;/a&gt; has an overview that shows how this comparison is calculated. Raw CO2 Emissions are actually lower per passenger kilometer at around 90g CO2/km but emitting them at high altitude is probably significantly worse for the climate and so the number that is used is 180g CO2/km, somewhat higher than that of cars. It shows how crazy inefficient our cars are with their heavy weight and poor energy efficiency.  &lt;/span&gt;. Kerosene, the fuel for jets, is not taxed at all for international flights, which definitely has to be rectified. If you were to apply a carbon tax to Kerosene as well at initially 50 € / ton, a plane ticket for a return flight of a distance of 1000 km would incur additional initial taxes of around 15 Euros.&lt;/p&gt;
+
+&lt;p&gt;In transport one interesting thing is that taxation is so different in different areas for historic reasons. Petrol and diesel for cars is taxed quite substantially already in many European countries, in Germany for example at 65 cents / liter for petrol which comes down to around 250 € / ton of CO2 &lt;label for=&quot;sn-petrol-taxes&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-petrol-taxes&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;I have created a Nextjournal notebook with &lt;a href=&quot;https://nextjournal.com/danielbachler/climate-change-calculations&quot;&gt;this and various other auxiliary calculations&lt;/a&gt; &lt;/span&gt;. The revenue of the tax is in parts used to pay for roads etc but in the context of a carbon tax it can already be seen as increasing the wholesale price by a government decreed level.&lt;/p&gt;
+
+&lt;p&gt;In Europe the goal should thus be to create a carbon tax that acts as a minimum base line of taxation for all uses of fossil fuels (especially coal and kerosene), while leaving the higher petrol prices where they are at the moment but maybe shifting how the revenues are used (see below).&lt;/p&gt;
+
+&lt;p&gt;In the US to the best of my knowledge the current level of taxation is far too low (and there are even tax breaks for certain forms of fossil fuels). In the US as well as in other rich countries where fossil fuels aren’t taxed at this minimum level, introducing a carbon tax should be a main political goal.&lt;/p&gt;
+
+&lt;p&gt;To make such a tax politically viable and avoid broad opposition, the windfall from such a tax should be directly sent to citizens as quarterly or yearly flat per capita cash payments (as opposed to lowering income taxes or similar which would be less visible and would benefit richer people more). This way companies and individuals could each try to lower their particular fossil fuel consumption to pay less tax and the proceeds would be distributed equally, thus being very regressive in effect since a few hundred euro a year are a much bigger benefit for a poor family than for a rich one.&lt;/p&gt;
+
+&lt;p&gt;If a carbon tax would be levied at 50 € / ton, the tax income for a country like the US given its current emissions would be around 240 billion €, so every resident would be paid around 750 € per year &lt;label for=&quot;sn-us-carbon-tax&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-us-carbon-tax&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;This and other calculations in this post can be found in this &lt;a href=&quot;https://nextjournal.com/danielbachler/climate-change-calculations&quot;&gt;Nextjournal notebook&lt;/a&gt; &lt;/span&gt;. Inequality is a big concern when it comes to energy taxes since often rural populations are both poorer and have higher energy consumption needs per capita. However, since the tax would be collected from industry as well as individuals but the proceeds be paid out to individuals only, the immediate additional expenses from fuel and heating should be offset by the payouts for most people, including poorer rural families (indirectly the costs for energy intensive products would rise by the additional taxes incurred in their production but I think that such effects would not be as visible to consumers and consumed more by higher income segments)&lt;/p&gt;
+
+&lt;p&gt;Vested interests in energy intensive export industry will rally against this on the grounds that it will disadvantage them versus their international competitors. Here I would argue that this is not a strong enough reason against such a tax given the overall benefits. Additionally, by pioneering low carbon technologies they will be in a much better position internationally in the medium term when other countries follow suit. But in the end it will be a political fight to get companies to accept this.&lt;/p&gt;
+
+&lt;h2 id=&quot;research-and-technology&quot;&gt;Research and technology&lt;/h2&gt;
+
+&lt;p&gt;The second area I think we should focus on is investment in research and development of climate change mitigation technology. Rich countries should lead the way here and heavily invest in such research and share the proceeds generously with poorer countries. We need to think about different time horizons and find solutions to help over the short term (the next ten years), the medium term (the next 25 years) and the longer term (technology that will only be ready in the second half of the century). We should raise budgets for research and development drastically — the earlier we get new technology to a point where it can be used, the more impact it will have over the course of the 21st century. We need innovation in many sectors, but here are a few promising areas and ideas:&lt;/p&gt;
+
+&lt;p&gt;For the short term, one area of research and development to focus on are sectors with big emissions that have been neglected so far, like agriculture and construction. To get an idea of the magnitudes, consider that if we could half the emissions of producing concrete we would do much more for the planet than if we got rid of all air traffic (aviation accounts for roughly 2% of global emissions, concrete use for 8% &lt;label for=&quot;sn-cement&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-cement&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Chatham house is a good resource on &lt;a href=&quot;https://reader.chathamhouse.org/making-concrete-change-innovation-low-carbon-cement-and-concrete#&quot;&gt;lowering cement emissions&lt;/a&gt;. Gatesnotes has a great broader overview of &lt;a href=&quot;https://www.gatesnotes.com/Energy/A-question-to-ask-about-every-climate-plan&quot;&gt;ideas around construction that incorporates plastic and steel&lt;/a&gt; &lt;/span&gt;). Among the promising research ideas for agriculture is the idea that adding a little bit of certain algae to the feed of cattle drastically reduces their Methane emissions &lt;label for=&quot;sn-algae&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-algae&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;MIT Technology review has a &lt;a href=&quot;https://www.technologyreview.com/s/612452/how-seaweed-could-shrink-livestocks-global-carbon-hoofprint/&quot;&gt;good article&lt;/a&gt; about this &lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Electricity production is responsible for a large part of CO2 emissions because a lot of it is produced by burning coal, oil or gas. Luckily with photovoltaics and wind power we already have cost competitive alternatives, but the big missing part is electricity storage on a grid scale. Chemical batteries are expensive, toxic and have limited live times. The main tool we have to shift electricity production in time is water pump storage, where excess electricity is used to pump water up into the dams of hydro power stations and then released again when demand is high. Innovations will be desperately needed in this area and should be a big focus of research. One interesting approach for electricity storage is the idea of stacking concrete blocks on top of each other to use them similar to pump storage, like Energy Vault is planning to do &lt;label for=&quot;sn-energy-vault&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-energy-vault&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;See &lt;a href=&quot;https://energyvault.com/&quot;&gt;the Energy Vault website&lt;/a&gt; for an animation of how this could work. If this could be scaled up it would make a great combination for large scale solar installations &lt;/span&gt;. This would be a good short to mid term focus.&lt;/p&gt;
+
+&lt;p&gt;Finally for the long term we should start doing research and development for alternative means of “negative  emissions”, for example carbon capture and storage, where carbon is extracted from the athomsphere and stored underground or turned into hard form and used in other ways &lt;label for=&quot;sn-ccs&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-ccs&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;http://carbon.ycombinator.com/&quot;&gt;Ycombinator has a great overview of some approaches in this space&lt;/a&gt; &lt;/span&gt;. We should also put more research into a viable plan B for the case where we can’t get enough global cooperation to reduce CO2 levels enough and carbon capture turns out too expensive and we need to try and cool our planet directly with geoengineering. It would be best if we never need to use such solutions, but it would be prudent to start developing them now — just in case.&lt;/p&gt;
+
+&lt;p&gt;We should also try to be clever in how we push technologies that are getting to the cusp of viability by designing competitions with big prizes for commercialization (Similar to what the US military arm DARPA did in the early 2010s for self driving vehicles). We should also subsidize carbon mitigating technologies that are not competitive yet. Germany half-knowingly did something like this in the 2000s with their subsidy for solar power - it created a solar industry (first in Germany, then in China) which led to the rapid tumbling of prices of production. Because of this we now have solar energy that is so cheap that in many places it is cheaper than coal for new power plants. (But at the same time we of course have German consumers fed up with high prices that make it hard to get off the dirty lignite coal — getting the balance right in theses things is hard).&lt;/p&gt;
+
+&lt;h2 id=&quot;climate-diplomacy&quot;&gt;Climate diplomacy&lt;/h2&gt;
+
+&lt;p&gt;But neither a wide use of carbon taxes in rich countries nor strong research programs will make much of a difference if we do not also focus on another crucial element: climate diplomacy. Today, China emits more greenhouse gases than the US and Europe combined. Both India and China are rapidly building coal power plants. As their wealth and living standards improve, many not-yet rich countries will need energy and construction on a large scale (yes, some of the emissions attributed to China are for products that are exported to rich countries but this is only about ~13% of China’s total emissions &lt;label for=&quot;sn-china-export&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-china-export&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;a href=&quot;https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#co2-embedded-in-trade&quot;&gt;Our World in Data&lt;/a&gt; has more information on this topic &lt;/span&gt;). In absolute terms, coming up with good solutions to reduce these emissions is of paramount importance.&lt;/p&gt;
+
+&lt;p&gt;Here I think we should get creative with trade deal incentives and similar offerings. If the EU could strike an attractive deal with China that would hinge on the condition of replacing (or refraining from building) coal power with clean alternatives, then this might be a tremendously effective way of reducing emissions. Additionally, such a deal could provide a blueprint for other countries as well — the greener you build your electricity grid etc, the more we open our markets for you. An example of this could be that “low emission beef” could be exempt from import duties.&lt;/p&gt;
+
+&lt;p&gt;A historic blueprint we could use as inspiration is the Marshall plan. Europe, the US and Japan should think about ways of using direct investment and similar tools on a large scale to create clean energy in emerging economies. Another area that is worth thinking about is how to reward countries with forests for not destroying those in favor of short term profits. The challenge will be to create good incentive structures and modes of governance; it must not become a form of eco-colonialism. If we get this right, it could have a huge return investment in terms of greenhouse gas emissions.&lt;/p&gt;
+
+&lt;p&gt;In this post I focused on net absolute CO2 emissions but very often you hear different arguments that are based on per-capita emissions or historic total emissions. They can be a backdrop for political solutions but in the end the only thing that matters going forward are absolute emissions. Indeed, rich nations got rich by consuming vast amounts of carbon based energy and still consume more fossil fuels per capita. But high historic emissions in the rich world can’t translate into emerging economies now using similar amounts of fossil fuels. The moral dimension of the argument should translate into a strong research effort and sharing the results freely, thus helping other countries walk a better path towards prosperity while still becoming rich. Add to this that most of the “low-hanging fruit” regarding CO2 emissions will be found in the world’s coal power stations that are active now or currently under construction, many of which in the emerging economies. We all have to reduce our greenhouse gas emissions, but we shouldn’t let per capita arguments get in the way of efficient solutions.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-we-do&quot;&gt;What can we do?&lt;/h2&gt;
+
+&lt;p&gt;This problem of tackling climate change is very hard — our governance structures and decision horizons are ill aligned with the scale and duration of the problem of climate change. The situation is bad, but we have the power to drastically lessen a potentially terrible outcome for the wider ecosystems, ourselves in the future and for future generations.&lt;/p&gt;
+
+&lt;p&gt;So what are we to do as individuals? I think the primary focus should be to push politics and public discourse to concentrate on effective means to reduce total global emissions via any means that work. In the rich countries we should make sure to do our own part and not look hypocrite (looking at you, German lignite plants) — but the best leverage for the overall picture will be to unleash the power of technology and market incentives while making sure that they help the currently growing countries the most.&lt;/p&gt;
+
+&lt;p&gt;If you are a politician (or know one), try shifting the position of your party towards effective means of greenhouse gas emission reduction. If you are a journalist (or know one), I think it would be great to use the limited airtime the topic of global warming has to focus minds on the big payoffs, not on small individual contributions. If you are neither, think about where you can influence public discourse in other ways - attending demonstrations, writing about it, or making the case face to face. In all of these efforts, the focus should be efficient reduction of absolute global CO2 emissions and aiming for big wins in all areas where they are possible and to demonstrate that as voters we want a carbon tax and similar measures to be enacted.&lt;/p&gt;
+
+&lt;p&gt;If you are in science or technology, consider switching to research or engineering related to global warming, especially in currently under-appreciated areas. So far the only time I would say international coordination in favour of climate policy worked well was around banning CFCs to stop the destruction of the Ozone layer (which also had a huge mitigating effect and avoided even faster global warming). Political action was only viable because technological alternatives were available (and affordable). In many areas today I think we are still missing economically viable alternatives to current greenhouse gas emitting technology. Bret Victor’s essay &lt;a href=&quot;http://worrydream.com/ClimateChange/&quot;&gt;“What can a technologist do about climate change?”&lt;/a&gt; is an excellent resource on framing the climate change problem and thinking about technological solutions.&lt;/p&gt;
+
+&lt;p&gt;If you are in diplomacy or a think tank, consider switching to a role where you can come up with creative ideas for climate diplomacy. This is a space that I think is currently woefully neglected to a point where even the European Green parties don’t seem to give it much thought. We need to push this idea into the political mainstream.&lt;/p&gt;
+
+&lt;p&gt;Finally, I think it’s important that global warming becomes a major point in making voting decisions — basically a party without a clear agenda to effectively reduce greenhouse gases should stop being a viable option for as many people as possible. It is my hope that this will play out more and more at least in Europe and create competition on this topic between parties. Where currently the various green parties are often seen as the only ones even aiming to do anything in this space there is a big underexplored political space for liberal or center-conservative parties to try to put forward more pragmatic and economically attractive alternatives to the often very ideological party programs of the greens. I would love to see conservative parties giving greens a hard time on global warming topics for mainstream voters — however unrealistic this may seem at the moment.&lt;/p&gt;
+
+&lt;p&gt;Working against climate change will be a major challenge for all of us for the rest of our lives. There will be many setbacks and counter trends. But this makes it all the more important to try to target efforts at big absolute reductions that are supported by a large public and not get lost in inconsequential arguments about things that don’t have much potential for bringing absolute emissions down. Let’s work on this.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Sep 2019 00:00:00 +0200</pubDate>
+        <link>http://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Interviewed by the Working Draft podcast (German)</title>
+        <description>&lt;p&gt;The frontend programming podcast &lt;a href=&quot;https://workingdraft.de/&quot;&gt;Working Draft&lt;/a&gt; interviewed me recently and we talked about Elm and F# . &lt;a href=&quot;https://workingdraft.de/396/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Sep 2019 00:00:00 +0200</pubDate>
+        <link>http://danielbachler.de/2019/09/10/interview-with-working-draft.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2019/09/10/interview-with-working-draft.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The state of software engineering</title>
+        <description>&lt;p&gt;The field of software engineering is in a strange place today. A lot of the mainstream tools and concepts look less like deliberate choices made by intelligent people anticipating change and more like ad-hoc reuse of things some people were already familiar with, despite the problems this may cause at scale. Things I consider to be concrete examples of this are all the major programming languages (Java, C#, Python, C++ that don’t even have &lt;a href=&quot;https://en.wikipedia.org/wiki/Algebraic_data_type&quot;&gt;algebraic data types&lt;/a&gt; that are around since the 70ies), docker containers (where the usual way of constructing them leads to linear dependencies which lead to &lt;a href=&quot;https://grahamc.com/blog/nix-and-layered-docker-images&quot;&gt;poor composability&lt;/a&gt;), YAML as a configuration format (with its &lt;a href=&quot;https://arp242.net/yaml-config.html#surprising-behaviour&quot;&gt;many pitfalls and high complexity&lt;/a&gt;), Microservices as almost a default architecture choice - the list goes on. This is not to say that I don’t consider these things useful in certain situations - it just strikes me as odd that the majority of our industry sees little problem with the status quo of defaulting to these options and that there are so few attempt at improving things.&lt;/p&gt;
+
+&lt;p&gt;Maybe my experiences with &lt;a href=&quot;https://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; and &lt;a href=&quot;https://fsharp.org/&quot;&gt;F#&lt;/a&gt; have spoiled me - I was lucky enough to use both on my job for the last three years. I feel like so many of the problems I regularly encountered in the previous ten years of doing mostly C#, some Ruby, Python, Javascript and C++ - are just gone. In Elm (and with some caveats in F#) you don’t need to worry about null values or exceptions; you don’t spend your time discussing pointless ontological questions and creating strange inheritance hierarchies that couple logic depending solely on the answer to the question “Can you say A IS-A B?”.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/customer-employee.png&quot; alt=&quot;Customer and Employee inherit from Person&quot; title=&quot;Customer and Employee inherit from Person&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/tightly-coupled.png&quot; alt=&quot;Should the code for them be tightly coupled?&quot; title=&quot;Should the code for them be tightly coupled?&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/is-a-person.png&quot; alt=&quot;Customer IS-A Person! Employee IS-A Person!&quot; title=&quot;Customer IS-A Person! Employee IS-A Person!&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In Elm, F# and similar languages, you write functions that deal with data, you model data in different forms accurately with algebraic data types and you let the compiler use the types to check if the shape of your data matches in all places. Because values are immutable, state changes only in a few well defined places. Elaborate “magic” like two-way databinding is replaced with simpler patterns like the &lt;a href=&quot;https://medium.com/@l.mugnaini/the-elm-architecture-tea-animation-3efc555e8faf&quot;&gt;Elm architecture&lt;/a&gt;. Such patterns look a bit more verbose in the beginning, but as the application that uses it grows it always behaves predictably. This is something I have never seen with two-way data binding UI frameworks at non-trivial scale.&lt;/p&gt;
+
+&lt;p&gt;Of course types are not everything and using Elm or &lt;a href=&quot;https://www.haskell.org/&quot;&gt;Haskell&lt;/a&gt; etc. to implement some software will not magically make it bug free. But what they afford you to do is to concentrate on the interesting parts of your code and test more interesting properties since the technicalities are taken care of by a compiler. Refactoring complex pieces of software becomes a mundane tasks of following compiler errors instead of the Russian roulette it is in languages without static typing or with a poor type system. Since software tends to grow in size and requirements tend to change, I consider this to be a big advantage.&lt;/p&gt;
+
+&lt;p&gt;All that is not so say that languages like Elm, F#, Haskell and &lt;a href=&quot;http://www.purescript.org/&quot;&gt;Purescript&lt;/a&gt; cannot improve further. By listening to the excellent &lt;a href=&quot;https://futureofcoding.org/&quot;&gt;Future of coding&lt;/a&gt; podcast I found &lt;a href=&quot;https://pharo.org/&quot;&gt;Pharo&lt;/a&gt;, a language strongly inspired by Smalltalk, and the &lt;a href=&quot;https://gtoolkit.com/&quot;&gt;Glamorous toolkit&lt;/a&gt;. The Glamorous toolkit places a high value on an interactive canvas that can be used to understand your code. How great would it be if there were a standard way for an ML family language to ship interactive debugging UIs with standard libraries that aid in your debugging and REPL experience? Think e.g. a monadic probability library that visualizes distributions while you work with it in the REPL.&lt;/p&gt;
+
+&lt;p&gt;The power of Erlangs VM with hot code swapping and &lt;a href=&quot;http://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html&quot;&gt;supervision trees&lt;/a&gt; is very desirable, even more so if messages could be typed with something like &lt;a href=&quot;http://groups.inf.ed.ac.uk/abcd/session-implementations.html&quot;&gt;session types&lt;/a&gt;. Algebraic effects like in the &lt;a href=&quot;http://www.eff-lang.org/&quot;&gt;Eff language&lt;/a&gt; look like a very promising way for handling side effects (I/O, concurrency, exceptions, …), so they can be separated from the pure code but without the pain of monad transformer stacks. &lt;a href=&quot;https://www.datomic.com/&quot;&gt;Datomic&lt;/a&gt; which is built in &lt;a href=&quot;https://clojure.org/&quot;&gt;Clojure&lt;/a&gt; is a really interesting way of dealing with data queries and between that and &lt;a href=&quot;https://en.wikipedia.org/wiki/Prolog&quot;&gt;Prolog&lt;/a&gt; I think there is a lot of unexplored scope of embedding reasoning/analytics engines in ML family languages.&lt;/p&gt;
+
+&lt;p&gt;I find it strange that not more programmers see the value of ML like languages for larger projects. Do so few know these languages in enough detail? Is the inertia so powerful, the desire to stay with what you already know? Many of the excuses of a few years ago, like bad editor tooling or small ecosystems apply less and less (and some languages have a strong FFI that lets you tap into other languages’ ecosystems).&lt;/p&gt;
+
+&lt;p&gt;Maybe one of the reasons is that evaluating technologies is often done on small examples where ease of setup and the speed of getting started are most important. Problems that only arise in bigger projects show up too late and by this time get confused as “this is just what programming in a large project looks like”.&lt;/p&gt;
+
+&lt;p&gt;At my job we have one relatively complex backend written in Python - because at the time GraphQL support in ML languages was not developed far enough. To give praise where it is due, the Django admin interface was also a huge time saver - oh how I would love something like it to exist in F# for the &lt;a href=&quot;https://safe-stack.github.io/&quot;&gt;SAFE stack&lt;/a&gt;! We were very fast initially in getting the first version out but now every non-trivial change is a pain and we are just so slow in that codebase compared to the F# backends (and we make more mistakes). If I hadn’t had the F# experience, I might’ve mistaken this slowing down for an inevitable fact of refactoring code.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-coffee.png&quot; alt=&quot;That's a lot of coffee&quot; title=&quot;That's a lot of coffee&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-python.png&quot; alt=&quot;It's a lot of python&quot; title=&quot;It's a lot of python&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Maybe none of this is so surprising given how young our field is. The first people who worked with textual instructions for computers did so from around 1950 - if you assume that the working lifetime of a person is around 40 years then this is not even two generations ago. In that time we scaled from a few hundred to maybe around 20 million programmers. Pretty much all other engineering professions or crafts developed over much longer timespans and with an only moderate change in the number of practitioners from decade to decade. They had time to try ideas and evaluate their outcome over long timespans and to develop cultural institutions like guilds or engineering societies. To complicate matters, computers kept getting faster at an insane pace for most of the last 70 years - so received wisdom from a generation ago is often no longer applicable. Maybe these are just growing pains of a still relatively new field then?&lt;/p&gt;
+
+&lt;p&gt;I would be more relaxed about this if it were not for the fact that the stakes are getting higher all the time. We are putting software into ever more areas of human life and into ever more critical situations - but the tools that are mainstream in our profession are error prone and limit our expressivity. Software development is still so often at the same time intellectually challenging and incredibly boring even in the best of cases.&lt;/p&gt;
+
+&lt;p&gt;Some things give me hope, e.g. &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt; is a great new language that improves many things for system programming from the previous status quo - and it seems to gain traction lately (Microsoft Security &lt;a href=&quot;https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/&quot;&gt;recommended it recently&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;But when it comes to mainstream adoption, we are still so far behind what is easily possible today. So much software is buggy and needs crazy amounts of development time and is just so brittle all around. Metaphors are always problematic, but it feels a bit like as an industry we insist on building skyscrapers with clay and neglect to learn how to work with steel and concrete for no good reason.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/building-a-skyscraper.png&quot; alt=&quot;What are you building? Skyscraper.&quot; title=&quot;What are you building? Skyscraper.&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/with-clay.png&quot; alt=&quot;With clay bricks? Sure.&quot; title=&quot;With clay bricks? Sure.&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/no-time-to-learn-that.png&quot; alt=&quot;Don't you think steel would be better? Don't have time learn that.&quot; title=&quot;Don't you think steel would be better? Don't have time learn that.&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I try to spread the word about these ideas with things like the &lt;a href=&quot;https://www.meetup.com/Friendly-Functional-Programming-Meetup-Berlin/&quot;&gt;Friendly Functional Programming Meetup Berlin&lt;/a&gt; that I run together with Michael, but I often feel like such events mostly reach those that already see the value of functional programming. I think our best bet is to work on creating entire toolchains that work well for pragmatic applications and then showcasing those. I think Elm did a good job on the web frontend side; the &lt;a href=&quot;https://safe-stack.github.io/&quot;&gt;SAFE stack&lt;/a&gt; does so quite well on the backend as well as the frontend; and &lt;a href=&quot;https://docs.servant.dev/en/stable/&quot;&gt;Servant&lt;/a&gt; does a great job at showing how useful full type level representations of HTTP APIs are because they let you type check both the client and server of a REST API at compile time from the same type definitions.&lt;/p&gt;
+
+&lt;p&gt;I think as enthusiasts of these languages we should talk more about the pragmatic ways these powerful tools can enable us to do more work in less time to a higher quality standard. We should try less to explain Kleisli composition to outsiders (not that this is not useful, but the focus should be on the former IMHO). Maybe then we will find ourselves in a future where software is built on top of good abstractions, at high speed, and can be safely changed and modified. Let’s work towards that future.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Aug 2019 00:00:00 +0200</pubDate>
+        <link>http://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Interviewed by paqmind on Elm, Purescript, F# etc</title>
+        <description>&lt;p&gt;The programming blog &lt;a href=&quot;https://paqmind.com&quot;&gt;paqmind&lt;/a&gt; interviewed me recently and we talked about Elm, Purescript, F# and other programming languages I love. &lt;a href=&quot;https://paqmind.com/blog/interview-with-danyx23/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
+        <link>http://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>My talk about Elm at GOTO Berlin 2017 is online!</title>
+        <description>&lt;p&gt;Last Autumn I gave a talk at the &lt;a href=&quot;https://gotober.com/&quot;&gt;GOTO Berlin&lt;/a&gt; conference on the &lt;a href=&quot;http://elm-lang.org/&quot;&gt;programming language Elm&lt;/a&gt;. I tried to convey why I think it is a very useful tool for web development, how it can live up to it’s promise of “Zero Runtime Errors” and what it feels like to develop production apps with it. Have a look and let me know your feedback in the comments or &lt;a href=&quot;http://twitter.com/danyx23&quot;&gt;on twitter&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ehtn81p06Ow&quot;&gt;&lt;img src=&quot;https://img.youtube.com/vi/ehtn81p06Ow/0.jpg&quot; alt=&quot;My talk about the Elm programming language at GOTO Berlin 2017&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Mar 2018 00:00:00 +0200</pubDate>
+        <link>http://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Using F# on both the frontend and the backend</title>
+        <description>&lt;p&gt;&lt;em&gt;Note: This post was written in 2016. Since then, the introduction of the &lt;a href=&quot;https://safe-stack.github.io/&quot;&gt;SAFE stack&lt;/a&gt; has significantly improved the sitation in F#, but the basic ideas of this blog post are still valid - they are just a lot nicer now :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When the call for the &lt;a href=&quot;https://sergeytihon.wordpress.com/tag/fsadvent/&quot;&gt;F# Advent Calendar&lt;/a&gt; came up I thought that this would be a great opportunity to finally check out a technology stack that intrigued me for quite a while now: Using F# on the backend (which by now works well on linux/osx as well as windows) and also on the frontend, via &lt;a href=&quot;http://fable.io/&quot;&gt;Fable&lt;/a&gt;, the F# to Javascript compiler backend. I have played a bit with F# in the past but I wanted to see how well this particular combination works in practice.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-same-language-on-the-backend-and-the-frontend&quot;&gt;The same language on the backend and the frontend&lt;/h3&gt;
+
+&lt;p&gt;Using the same language on the server and the client has many benefits in my opinion, chief among them the ability to reuse data definitions and business logic. Even though many modern web sites shoulder a lot of complexity on the client to guide the user and give immediate feedback, the backend usually has to replicate most of this logic to verify the client submissions and guard against malicious clients. Discount rules are a prime example of such code that is often replicated in both the frontend and the backend.&lt;/p&gt;
+
+&lt;p&gt;The first language that will probably come to mind for this job is Javascript. Since the advent of Node, Javascript is available on the backend as well as in the browser, and, with Electron, even for desktop apps with a native feel. Heavy performance tuning has made Javascript reasonably fast. However, I think that its dynamically typed nature makes Javascript a very problematic choice for non-trivial software projects. Static type checking can catch many bugs before they ever hit production and it can free your developers to concentrate on testing the properties of their code that are actually interesting.&lt;/p&gt;
+
+&lt;p&gt;A very desirable property for a type system is for it to have Algebraic Data Types. This means that, in addition to Product types (think classes or records) where ALL stated fields exist for every instance, they also support Sum types (Discriminated Unions in F#) where every value adheres to exactly one of several strictly predefined layouts. Together, Product and Sum types allow a much richer modelling where you can make illegal states irrepresentable (see this &lt;a href=&quot;http://blog.ploeh.dk/2016/11/28/easy-domain-modelling-with-types/&quot;&gt;recent article by Marc Seemann&lt;/a&gt; on the benefits of ADTs). Having Sum types also allows languages to get rid of nulls - a very desirable trait since a big fraction of errors in dynamically typed languages or such with weak type systems are NullReferenceExceptions or the infamous “undefined is not a function”.&lt;/p&gt;
+
+&lt;h3 id=&quot;possible-languages&quot;&gt;Possible languages&lt;/h3&gt;
+
+&lt;p&gt;Ok, now that I have outlined desirable feature, let us look for languages that meet these two core requirements (a strong, static type system with ADTs and being usable via cross-compilation to Javascript on both the browser frontend and the backend). Not a lot of options remain. The ones I know are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;Typescript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.purescript.org/&quot;&gt;Purescript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fable.io/&quot;&gt;F#/Fable&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bloomberg.github.io/bucklescript/&quot;&gt;OCaml/Bucklescript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ghcjs/ghcjs&quot;&gt;Haskell/ghcjs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of these are interesting languages. Here is my very personal reasoning for choosing among these languages: Typescript is a superset of Javascript with type annotations that, since version 2.0, has support for union types. It is a big improvement over raw Javascript, but I think that one still feels a lot of the odd language design decisions underneath it, so I will disregard it for now.&lt;/p&gt;
+
+&lt;p&gt;The javascript compiler backends for OCaml and Haskell have a relatively small set of Javascript library bindings available and are IMHO harder to interface with native Javascript libraries - for now I don’t think that they are immediately usable if you want to write user interfaces with them.&lt;/p&gt;
+
+&lt;p&gt;This leaves me with F#/Fable and Purescript. Purescript was designed from the beginning with Javascript as the compile target in mind. Quite a few important Javascript libraries have been annotated with type definitions for Purescript and are thus readily usable, and if they are not, the Purescript FFI was built for Javascript and is very straightforward to use. Additionally, the type system of Purescript is very powerful and feels a bit like a modern refresh of Haskell’s type system.&lt;/p&gt;
+
+&lt;p&gt;So what about F#/Fable? The basic story is similar to OCaml/Haskell in that you have to create FFI definitions and these are only available for a few libraries so far. What is really neat about Fable though is that there is a way to bootstrap Fable FFI files from Typescript definitions via &lt;a href=&quot;https://www.npmjs.com/package/ts2fable&quot;&gt;ts2fable&lt;/a&gt; - and those are available for a huge number of important Javascript libraries. I think that this lowers the pain of interfacing with native Javascript libraries enough for F#/Fable to be a reasonable choice.&lt;/p&gt;
+
+&lt;h3 id=&quot;f-versus-purescript&quot;&gt;F# versus Purescript&lt;/h3&gt;
+
+&lt;p&gt;Purescript is definitely an interesting contender that I want to study more in the future, but this blog post is about F#, so, let us ask the obvious question: why use F# instead of Purescript? YMMV but I see F# to have an interesting advantage on the server side since IMO on the backend the .NET platform is a more solid runtime than Node. Since F# compiles to IL and can interface with any .NET library, it has access to a huge amount of libraries that interface with all sorts of systems, parse files etc. It also supports strong multi-threading primitives and F# even has support to cross compile to the GPU - this makes it much more interesting for numerically intense workloads than Node.&lt;/p&gt;
+
+&lt;p&gt;This means that if you either already have a big chunk of business logic written in a .NET language or if you need to do high performance computations on the server, F# is IMO a more attractive choice than Purescript. Additionally, because F# is more in the tradition of pragmatic functional languages like OCaml than the Haskell tradition of that Purescript adopted, it offers the escape hatches of mutability and side effects within the normal control flow (this is arguably also dangerous, but debating this is for another post).&lt;/p&gt;
+
+&lt;p&gt;The downside of F#/Fable is that the same language is bolted onto two different runtimes with slightly different semantics. One example of such a mismatch is that the fixed-point arithmetic datatype Decimal of the .NET platform does not exist in Javascript of course and is thus silently converted to a double. For many cases this is fine but it is definitely something to be aware of (&lt;a href=&quot;http://fable.io/docs/compatibility.html&quot;&gt;a longer list is here&lt;/a&gt; )&lt;/p&gt;
+
+&lt;p&gt;Alright, so this is why I think it makes sense to use the same language on the backend and frontend, some of my criteria for choosing a language and why F# is the candidate I want to use.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-proof-of-concept-idea&quot;&gt;The proof of concept idea&lt;/h3&gt;
+
+&lt;p&gt;Let’s finally get to some &lt;a href=&quot;https://github.com/danyx23/FableSuaveSharedCode&quot;&gt;code&lt;/a&gt;! Be warned that some of this is probably not exactly idiomatic F# code since I haven’t used the language much until now :)&lt;/p&gt;
+
+&lt;p&gt;The basic idea for my little proof of concept was:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write a frontend in F# that is the most primitive shopping cart you can imagine - it just has one product and the user can use buttons to increase/decrease the quantity.&lt;/li&gt;
+  &lt;li&gt;Have a type that defines a discount, consisting of: a name, a function that checks whether the discount applies and one that modifies the price. Reuse these data types and functions between the frontend and the backend&lt;/li&gt;
+  &lt;li&gt;On the frontend, use &lt;a href=&quot;https://github.com/fable-compiler/fable-arch&quot;&gt;Fable-Arch&lt;/a&gt; to bring the clarity of the &lt;a href=&quot;https://guide.elm-lang.org/architecture/&quot;&gt;Elm Architecture&lt;/a&gt; to F#&lt;/li&gt;
+  &lt;li&gt;Bundle up the generated Javascript into an Electron app to see how well this works&lt;/li&gt;
+  &lt;li&gt;Since the Electron Desktop app is based on the Chromium engine, use the power of CSS and icon fonts to pep up the UI a little by just dropping in some CSS from a third party.&lt;/li&gt;
+  &lt;li&gt;Try &lt;a href=&quot;http://suave.io&quot;&gt;Suave&lt;/a&gt; as a http server with a functional design. Reuse the type definitions and discount calculation code. Handle Json-Serialization and CORS headers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-implementation&quot;&gt;The implementation&lt;/h3&gt;
+
+&lt;p&gt;The entire setup is on github at &lt;a href=&quot;https://github.com/danyx23/FableSuaveSharedCode&quot;&gt;https://github.com/danyx23/FableSuaveSharedCode&lt;/a&gt; where you can just clone it and run both the Suave server and the electron based client.&lt;/p&gt;
+
+&lt;p&gt;Since this is a proof of concept, the actual code is maybe less interesting than the setup around it, but for completness sake, what follows are the three main file that are the essence of the two programs. First, the shared code that defines the Cart and Discount types, a concrete instance of the Discount type that gives a 90% discount at twelve items and the function to calculate the price for a cart given a list of potentially applicable discounts&lt;/p&gt;
+
+&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DiscountSample&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doesTwelveItemsDiscountApply&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;false&lt;/span&gt;
+
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;12 Items - 90% off!&quot;&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doesTwelveItemsDiscountApply&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsThatApply&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cartCalculationFunction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsThatApply&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// use the first discount that applies only, discard the others&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undiscountedPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemPrice&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cartCalculationFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undiscountedPrice&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This shared code is then used in the frontend:&lt;/p&gt;
+
+&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-core/Fable.Core.dll&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.Html.fs&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.App.fs&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.Virtualdom.fs&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../../backend/src/ClientServerShared.fs&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-powerpack/Fable.PowerPack.dll&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Core&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Core&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsInterop&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Browser&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Arch&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Arch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;App&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Arch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;DiscountSample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PowerPack&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Actions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// Update&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;promise&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;postRecord&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://127.0.0.1:8083/test&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;catch&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// We return the model, and a list of Actions to execute&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toActionList&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Please make your selection&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Waiting for confirmation from server&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Sorry, your purchase failed! The reason was: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;The purchase worked, with a final price of &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counterView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;How many items do you want?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counters&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counterView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;applicableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;discounts&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;The total price is: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;
+    &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;This is your shopping cart: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counters&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;discountsView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;applicableDiscounts&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;totalPrice&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;buy&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fa fa-bolt&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; Buy!&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;/// Create our application&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;createApp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initModel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Virtualdom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;createRender&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withStartNodeSelector&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#echo&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And finally the server code using Suave:&lt;/p&gt;
+
+&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Suave&lt;/span&gt;                 &lt;span class=&quot;c1&quot;&gt;// always open suave&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Web&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;// for config&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Writers&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Filters&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Successful&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Operators&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Newtonsoft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Json&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;FSharp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Core&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;DiscountSample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsonConverter&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;nn&quot;&gt;JsonConvert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SerializeObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCart&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsonConverter&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;JsonConvert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;DeserializeObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boxed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boxed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCalculateSerialize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCart&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Could not deserialize&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;UTF8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GetString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rawForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Successful&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setCORSHeaders&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;setHeader&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;Access-Control-Allow-Origin&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setHeader&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Access-Control-Allow-Headers&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;content-type&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;allow_cors&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WebPart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;OPTIONS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;setCORSHeaders&lt;/span&gt;
+                    &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OK&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CORS approved&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;allow_cors&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;POST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/test&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCalculateSerialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Writers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setMimeType&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;application/json&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;startWebServer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultConfig&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h3&gt;
+
+&lt;p&gt;I think that the ability to use F# on the backend with the full power of the .NET ecosystem but now also share code that does not depend on .NET libraries (like business logic and the core problem domain code) with the frontend is a very exiting development. I’m looking forward to exploring this in more detail in the future :).&lt;/p&gt;
+
+&lt;p&gt;I’d also be interested in hearing about people who already use this stack or are exploring one of the other options on using the same language on the frontend and the backend.&lt;/p&gt;
+
+&lt;p&gt;Finally I’d like to thank the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: &lt;a href=&quot;https://github.com/tpetricek&quot;&gt;Tomas Petricek&lt;/a&gt;, &lt;a href=&quot;https://fsharpforfunandprofit.com/&quot;&gt;Scott Wlaschin&lt;/a&gt;, &lt;a href=&quot;https://github.com/alfonsogarciacaro&quot;&gt;Alfonso Garcia Caro&lt;/a&gt;, &lt;a href=&quot;https://github.com/forki&quot;&gt;Steffen Forkmann&lt;/a&gt; and &lt;a href=&quot;https://sergeytihon.wordpress.com/&quot;&gt;Sergey Tihon&lt;/a&gt;!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Dec 2016 00:00:00 +0100</pubDate>
+        <link>http://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Ports in Elm</title>
+        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
+
+&lt;p&gt;This is the third post in a series of posts about &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt;. In my &lt;a href=&quot;/2016/02/12/signals-in-elm.html&quot;&gt;first post about Signals in Elm&lt;/a&gt; I briefly mentioned ports. Since they are the only way to communicate with “native” Javascript, they certainly warrant a closer look. If you haven’t checked out the last post in this series on &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;tasks and effects&lt;/a&gt; I suggest you do that now as this post will build on these concepts.&lt;/p&gt;
+
+&lt;p&gt;So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, &lt;code class=&quot;highlighter-rouge&quot;&gt;port&lt;/code&gt;. If a Port is defined to be of a Non-Signal type (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;port initialUrl : String&lt;/code&gt;) then it is a “one time” message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal&lt;/code&gt; of some type (e.g. a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal String&lt;/code&gt;). Ports can not send and receive values of any type but only a subset - the big two groups of values that can’t be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the &lt;a href=&quot;http://elm-lang.org/guide/interop&quot;&gt;elm guide page on interop&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a simple example, let’s create a pair of ports to send &lt;code class=&quot;highlighter-rouge&quot;&gt;String&lt;/code&gt;s from Elm to Js, do something with it in native JS, and then send the &lt;code class=&quot;highlighter-rouge&quot;&gt;String&lt;/code&gt;s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs).&lt;/p&gt;
+
+&lt;h3 id=&quot;outgoing-ports&quot;&gt;Outgoing ports&lt;/h3&gt;
+
+&lt;p&gt;Since we want to send stuff several times, not just once, we need to declare both ports as &lt;code class=&quot;highlighter-rouge&quot;&gt;Signals&lt;/code&gt;. Let’s start with the outgoing port and on the Elm side:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;-- how do we get a Signal here for the implementation?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a simple outgoing port definition, but somehow we have to implement this port - we need a way to get a Signal that we can “trigger” in our elm app and that will be received on the JS side. Let’s see how the JS side will look like before coming back to Elm:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// do something with the string, send it to be encrypted etc&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pretty straigthforward. We use the &lt;code class=&quot;highlighter-rouge&quot;&gt;subscribe&lt;/code&gt; method to register a callback that will be called with the &lt;code class=&quot;highlighter-rouge&quot;&gt;message&lt;/code&gt; string value every time the Signal fires at the Elm side. Ok, but how do we finish implementing this on the Elm side?&lt;/p&gt;
+
+&lt;p&gt;There are two ways to do this - one is to create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and use &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; to send our messages, the other is to create a custom version of &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; that returns an additional value for things to send to the port in &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt;. I have implemented both attempts as gists, here is the &lt;a href=&quot;https://gist.github.com/danyx23/e42ceedaccf0c4a556b8&quot;&gt;one with the Mailbox&lt;/a&gt; and once with a &lt;a href=&quot;https://gist.github.com/danyx23/6004778b9322dc716373&quot;&gt;modified StartApp&lt;/a&gt;. For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let’s hook up the Mailbox:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This initalizes the &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and fills in the hole we had before - the Signal we use as a port will just be the &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal&lt;/code&gt; of our new &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt;. But how do we actually send anything to this Mailbox? By creating an Effect, like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- and this is our update function that now returns a tuple of (Model, Effect):&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;TextChanged&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- create the Effect here&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- other cases ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last line in &lt;code class=&quot;highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; may be a bit confusing - what are we mapping there? Let’s take a look at the type of &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox.send&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This means that the &lt;code class=&quot;highlighter-rouge&quot;&gt;success&lt;/code&gt; type of the task we get back from send is &lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt; (aka Unit) which acts a bit similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;void&lt;/code&gt; in C like languages, i.e. it represents “no actual value”. Let me desugar &lt;code class=&quot;highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; so it is clearer what types we are working with:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(Note that instead of first converting to &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects ()&lt;/code&gt; and then mapping that I could also have mapped the &lt;code class=&quot;highlighter-rouge&quot;&gt;Task x ()&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Task x Action&lt;/code&gt; and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; value. We are only interested in performing the side effect of sending the message and it will not have a reasonable “payload” that should be routed through update. But because of how &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; are typed in &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt;, we do need to have an &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; in the end and so we introduce a &lt;code class=&quot;highlighter-rouge&quot;&gt;Noop&lt;/code&gt; value that explicitly does nothing when it is processed in &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don’t do this, the Tasks you create via Effects will never be executed by the runtime:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?&lt;/p&gt;
+
+&lt;h3 id=&quot;incoming-ports&quot;&gt;Incoming Ports&lt;/h3&gt;
+
+&lt;p&gt;Let’s start on the Javascript side. We will define an incoming port called &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call &lt;code class=&quot;highlighter-rouge&quot;&gt;send&lt;/code&gt; to send a value back to Elm)&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;encryptedMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Encypted: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// actually encypting the message is ommited&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptionCompleted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptedMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that I not only had to modify &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptString&lt;/code&gt; but also pass in an initial value at the time when we initialize Elm with the call to &lt;code class=&quot;highlighter-rouge&quot;&gt;Elm.embed&lt;/code&gt;. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because &lt;code class=&quot;highlighter-rouge&quot;&gt;Signals&lt;/code&gt; in Elm always need an initial value. Let’s add this incoming port on the Elm side to complete the example:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that this time the port we have defined has no “implementation” in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.start&lt;/code&gt; call?&lt;/p&gt;
+
+&lt;p&gt;In the last post, when we switched from StartApp.Simple to StartApp, I mentioned &lt;code class=&quot;highlighter-rouge&quot;&gt;inputs&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;inputs&lt;/code&gt; is a &lt;code class=&quot;highlighter-rouge&quot;&gt;List of (Signal of Action)&lt;/code&gt;, i.e. Signals that fire &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt; that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; as a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of String&lt;/code&gt; and we need a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Action&lt;/code&gt; for inputs. Sounds like we need a map again:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;EncryptedValueReceived&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And voilà! We have a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Actions&lt;/code&gt; that we can put into the inputs part of start.&lt;/p&gt;
+
+&lt;p&gt;So just to recap, let’s go through the example again: Whenever the user enters text we process the &lt;code class=&quot;highlighter-rouge&quot;&gt;TextChanged&lt;/code&gt; value in our &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function and not only update the model but also create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt;. This is then returned by &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; and, because we wired the &lt;code class=&quot;highlighter-rouge&quot;&gt;tasks&lt;/code&gt; part returned by &lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; to an outgoing &lt;code class=&quot;highlighter-rouge&quot;&gt;port&lt;/code&gt;, it is handed to the runtime. This leads, on the native JS side, to a call of &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptString&lt;/code&gt; (because this is the function we registered with &lt;code class=&quot;highlighter-rouge&quot;&gt;subscribe&lt;/code&gt;). In it we pretended to do some encryption and then sent the value back with &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted.send&lt;/code&gt; (again, you can send values at any time, it only happens in our example that we send one value back for every value we receive on the JS side). This &lt;code class=&quot;highlighter-rouge&quot;&gt;send&lt;/code&gt; call leads the &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; Signal to fire, with the string value we sent from the JS side. This is than &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt;ped into an &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; value, namely &lt;code class=&quot;highlighter-rouge&quot;&gt;EncryptedValueReceived&lt;/code&gt;, and because this is hooked up to the inputs part of StartApp it triggers the same chain through &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; as any other events. In &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; we then handle processing of this &lt;code class=&quot;highlighter-rouge&quot;&gt;EncryptedValueReceived&lt;/code&gt; value and the whole exercise is complete.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://danielbachler.de/2016/02/26/ports-in-elm.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2016/02/26/ports-in-elm.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Tasks and Effects in Elm</title>
+        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
+
+&lt;p&gt;This is the second post in a series on some of the concepts in &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; that might be a bit puzzling when you start out with Elm. In the &lt;a href=&quot;/2016/02/12/signals-in-elm.html&quot;&gt;last post about Signals in Elm&lt;/a&gt; I wrote about Signals and how they are behind the scenes of &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt;. In this post I get into long running operations like XHRs (aka AJAX). There are two closely related types that are involved in this, &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt;, and the exact differences between can be confusing in the beginning. So let’s dive right in:&lt;/p&gt;
+
+&lt;h3 id=&quot;tasks&quot;&gt;Tasks&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; is the more basic type (it is defined in Core) and so let’s start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It’s type is thus:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;errorType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successType&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- (or, as it is actually written in the library:)&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There are only two values of &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; you can create yourself in your code, without using a separate library. These two ways are two functions:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;succeed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- and&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fail&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;succeed&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Most of the time you actually get in contact with tasks, these will be created for you by library functions that initialize the task so that it will perform some long running operation when the runtime executes it and handle the result of the operation according to Task semantics (I.e. that some native code will make sure to call fail or succed on the native representation of the task when the operation is finished).&lt;/p&gt;
+
+&lt;p&gt;Note that the operation doesn’t start right away! I said “when the runtime executes it”. In purely functional programming languages, inside the language you can never just perform a side effect (something that changes “the world” outside the internal state of your code), and sending an http request surely is a side effect in that sense. This is one of the big mental shifts from imperative programming, where you can always do this, to working with purely functional languages where you can’t.&lt;/p&gt;
+
+&lt;p&gt;So how does this actually work? The task you get back &lt;em&gt;represents&lt;/em&gt; the long running action. When a library creates it for you, nothing “happens”, it just created a value (of type &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt;) that indicates what you would like to happen.&lt;/p&gt;
+
+&lt;p&gt;If you look at e.g. the implementation of &lt;a href=&quot;https://github.com/evancz/elm-http/blob/3.0.0/src/Native/Http.js&quot;&gt;the native part of the send function in http&lt;/a&gt; you will see that a &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; is created in native JS code by handing it a callback. This callback is what will get called when the runtime actually executes the task. This is when the actual XHR request is created and performed - only when the runtime executes this callback.&lt;/p&gt;
+
+&lt;p&gt;So how do you get the runtime to run this task? By passing it into an outgoing &lt;code class=&quot;highlighter-rouge&quot;&gt;port&lt;/code&gt;. I will go into detail on ports in a later blogpost, but suffice to say that they are a way to send messages between “native” JS and Elm (called an incoming &lt;code class=&quot;highlighter-rouge&quot;&gt;port&lt;/code&gt;) and from Elm to native JS (an outgoing &lt;code class=&quot;highlighter-rouge&quot;&gt;port&lt;/code&gt;). The runtime has some special casing for Tasks that come to it via outgoing ports that make it execute the callback the Task represents.&lt;/p&gt;
+
+&lt;p&gt;When the long running native code is done, it will either call &lt;code class=&quot;highlighter-rouge&quot;&gt;succeed&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;fail&lt;/code&gt; on the task. In most real life code that uses the Elm Architecture you will set up a “chain” of task processing that will lead to the the end result of the task execution being that a value of your &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; type is routed back through your &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function. This value of your &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; type is the usually tagged with the result of the task (e.g. the decoded Json response of an XHR).&lt;/p&gt;
+
+&lt;p&gt;As a last piece of info before we have a look at Effects and how all of this actually looks in an example, let me just mention that Tasks can easily be chained togehter with &lt;code class=&quot;highlighter-rouge&quot;&gt;andThen&lt;/code&gt;, much like promises in JS are chained together.&lt;/p&gt;
+
+&lt;h3 id=&quot;effects&quot;&gt;Effects&lt;/h3&gt;
+
+&lt;p&gt;On to &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt;! If you look at the definition for &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; it’s pretty simple:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Tick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;None&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Batch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Batch&lt;/code&gt; are helpers, so the basic things an Effect can represent are &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; (with error type &lt;code class=&quot;highlighter-rouge&quot;&gt;Never&lt;/code&gt;) and &lt;code class=&quot;highlighter-rouge&quot;&gt;Ticks&lt;/code&gt;. The latter is used for animations if you want to do something at the next animation frame.&lt;/p&gt;
+
+&lt;p&gt;It’s very common to turn a &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; into an &lt;code class=&quot;highlighter-rouge&quot;&gt;Effect&lt;/code&gt;, whereas the inverse is usually only ever done by &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt;/the runtime.&lt;/p&gt;
+
+&lt;p&gt;Several libraries use &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; to allow you to work with long running operations - &lt;code class=&quot;highlighter-rouge&quot;&gt;Http&lt;/code&gt; is one, &lt;code class=&quot;highlighter-rouge&quot;&gt;elm-history&lt;/code&gt; is another.&lt;/p&gt;
+
+&lt;p&gt;So how is this used? The &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer&quot;&gt;Elm Architecture example 5&lt;/a&gt; uses this very central piece of code:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s look at what it does. It starts with creating a task that represents the Http &lt;code class=&quot;highlighter-rouge&quot;&gt;get&lt;/code&gt; operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what’s happening:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;taskAsEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So in the end, Effects in this case just wraps the Task for us. Because we used &lt;code class=&quot;highlighter-rouge&quot;&gt;toMaybe&lt;/code&gt; and then mapped it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif&lt;/code&gt; type constructor function, this will result in an &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; coming back to us via &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; when it is done that is either (&lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif Nothing&lt;/code&gt;) if the http request failed, or (&lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif &quot;some-url-here&quot;&lt;/code&gt;) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the &lt;a href=&quot;https://github.com/evancz/elm-effects/blob/master/src/Effects.elm&quot;&gt;implementation&lt;/a&gt; of Effects.&lt;/p&gt;
+
+&lt;p&gt;One thing that is worth looking at is the return type of the function: Effects Action. Effects has a type variable, just like for example List. So this is an Effects that deals with the Action type you define in your application - and this is the really neat part of how to make sure that you can deal with the result of the Task/Effect - the result will just be a value of your Action type!&lt;/p&gt;
+
+&lt;p&gt;At this point you may wonder: why have Effects at all? Aren’t they just weird wrappers for Tasks? Let’s quickly take a look again at how the Task case of the Effects type is defined:&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The way &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; is typed, going via &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; constraints all &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; to come back with &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt; and have the error type &lt;code class=&quot;highlighter-rouge&quot;&gt;Never&lt;/code&gt;. This is really nice because it means that you don’t have to handle different task types to different ports, but you set up “pipelines” of tasks to effects like with &lt;code class=&quot;highlighter-rouge&quot;&gt;getRandomGif&lt;/code&gt; above and it will all work out in a typesafe manner that the result of your tasks will be sent back to your program’s &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function as &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ok, so finally, remember I wrote something about having to send Tasks off to an outgoing port. I you don’t do this, the Tasks will never be executed! If you want to use Effects, the easiest way is to switch from StartApp.Simple to StartApp. This brings three minor changes with it:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; no longer directly returns a Signal of Html but a record of 3 Signals: one for the html, one for the model, and, crucially for us, one of tasks.&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function now returns not just the &lt;code class=&quot;highlighter-rouge&quot;&gt;Model&lt;/code&gt;, but a tuple of&lt;code class=&quot;highlighter-rouge&quot;&gt; (Model, Effects Action)&lt;/code&gt;. I.e. that every case in your update function will have to return both the changed model and an Effect (which will often be &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects.none&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; gets a fourth parameter, &lt;code class=&quot;highlighter-rouge&quot;&gt;inputs&lt;/code&gt;, for incoming &lt;code class=&quot;highlighter-rouge&quot;&gt;Signals&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The tasks part of the record that is returned by &lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; has to be handed to a port so that the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks/Effects&lt;/code&gt; are actually performed by the runtime like so:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;funny cats&quot;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Phew, this got a little long again, but I hope it helps a little to understand how Tasks/Effects work!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Signals in Elm</title>
+        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
+
+&lt;p&gt;I have rewritten a webapp from React/Redux to &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; over the last few weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I have participated in the Elm google group quite a bit lately and I noticed that even though the Elm docs are really good, there are some concepts that are a bit hard to understand and to differentiate from each other. I am therefore starting a mini-series of posts about different concepts in Elm. This first one is about Signals - and why you don’t see them much in many smaller Elm programs even though they are always there.&lt;/p&gt;
+
+&lt;p&gt;These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the &lt;a href=&quot;http://www.lambdacat.com/road-to-elm-index/&quot;&gt;great primer “Road to Elm”&lt;/a&gt; by Lambdacat and then studied the &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial&quot;&gt;Elm Architecture Tutorials&lt;/a&gt; a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). If you already know about Signals, you may want to jump ahead to the next post about &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;tasks and effects&lt;/a&gt; or the one after that about &lt;a href=&quot;/2016/02/26/ports-in-elm.html&quot;&gt;ports&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-signals&quot;&gt;What are Signals?&lt;/h3&gt;
+
+&lt;p&gt;Elm uses a very nice unidirectional architecture for the flow of:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;displayed website ➞ user actions ➞ new application state ➞ displayed website
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;All the code you write in a typical Elm program comes together in just two pure functions: &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt;. Update takes a user action and the previous application state and creates a new application state, and view takes an application state and renders it into a virtual dom representation (that then gets efficiently displayed by batching diffs to the DOM a la React). For more background on unidirectional UIs in general see André Staltz’ excellent blog post &lt;a href=&quot;http://staltz.com/unidirectional-user-interface-architectures.html&quot;&gt;Unidirectional User Interface Architectures&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the key concepts in Elm is that of a Signal. A Signal is a value that can change over time. One of the conceptually simplest signals is the current time - every second the signal “fires” with the new time value (seconds passed since epoch or whatever). Another example could be the coordinates of the mouse cursor in the current window. When the mouse is still, no values are fired by the Signal - but whenever the user moves the mouse, new values are sent. (This is actually one of the examples at &lt;a href=&quot;http://elm-lang.org/examples/mouse-position&quot;&gt;elm-lang.org/examples&lt;/a&gt;). Signals are a bit similar to EventEmmitters or Observables in Javascript - the key difference is that they exist for the entire lifetime of the program and always have an initial value.&lt;/p&gt;
+
+&lt;p&gt;Signals don’t provide any access to their history - they only provide the current value. But even a simple counter example needs to track the number of clicks that happened so far. Since Elm is a pure language with no mutable state, how do you keep track of the current click-count? We’ll come back to that question, but first let’s look at how &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt; works that you probably know from the &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial&quot;&gt;Elm Architecture Tutorials&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;StartApp hides a bit of wiring from you, but I think it helps to understand how &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.start&lt;/code&gt; does its magic. What the &lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; function does is hook up a &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; (something where messages go when you send them to the address e.g. in an onClick handler) so that they lead to a new html emmited to main. This is the heart of the unidirectional UI approach. The user clicks a button, this leads to a message being sent to the mailbox. The mailbox has a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal&lt;/code&gt; that fires whenever a message is sent to it. This &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal&lt;/code&gt; is of your applications &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; type, i.e. it fires &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; values. Eventually this leads to a full cycle through your &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt; functions and thus to a new version of your Virtual Dom.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at the intermediary types more closely: we start with a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Actions&lt;/code&gt;. This then gets turned into a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Models&lt;/code&gt; (so everytime a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; is fired this action value is run through &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; together with the last model state to get the new model state). This finally gets turned into a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Html&lt;/code&gt; (whenever the &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Model&lt;/code&gt; fires, we run it through the &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt; function to arrive at a new Html to display). This is then handed to &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; so that the Elm runtime can display it for us.&lt;/p&gt;
+
+&lt;p&gt;Note that when I wrote about the update function, I said “together with the last model state”. This brings us back to our question from above - how can you work with history or state in Elm? The answer is in the function called &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal.foldp&lt;/code&gt; (“fold from the past”). If you aren’t familiar with folds yet, they are another name for reduce functions (as in map/reduce). It logically reduces all the values from the entire history with a given function and returns the value - in our case it uses the inital Model and reduces all Actions that were sent to our program to arrive at a current Model. (the implementation actually just caches the last current value and works from there of course).&lt;/p&gt;
+
+&lt;p&gt;At this point, if you want to really dive into it, let’s look at how &lt;a href=&quot;https://github.com/evancz/start-app&quot;&gt;StartApp.Simple&lt;/a&gt; is actually implemented (I added comments and type annotation to every named value)&lt;/p&gt;
+
+&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Config&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Html&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- create the main Mailbox. It is of type &quot;Mailbox (Maybe action)&quot; and is&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- initialized with an &quot;empty&quot; value of Nothing&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;-- here the address is set up. Since the Mailbox is of Maybe action,&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- everything that is sent to address is &quot;wrapped&quot; in the Just type&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- constructor and forwarded to the Mailbox&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forwardTo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;-- This local version of update just wraps config.update to&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- take care of the Maybe part of the action that will be&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- processed (so that the update function the user provides)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- can simply operate as Action -&amp;gt; Model -&amp;gt; Model)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;crash&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;This should never happen.&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;-- set up a signal of new models that foldp-s over&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- the actions signal. This is the central piece&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- that makes the elm architecture work the way it does.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- The update function will process one Action and&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- the old Model state to the new model State, the&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- Signal that triggers it all is the Mailbox' Signal&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- we set up at the top&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foldp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- Finally, map over it with the view function. This&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- turns the Signal of Models into a Signal of Htmls&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- that can be rendered&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt; is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt;. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.&lt;/p&gt;
+
+&lt;p&gt;The next post in the series deals with &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;Tasks and Effects&lt;/a&gt;, while the final post is all about &lt;a href=&quot;/2016/02/26/ports-in-elm.html&quot;&gt;ports&lt;/a&gt;. I hope you enjoyed the article and if you have any feedback please let me know!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://danielbachler.de/2016/02/12/signals-in-elm.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2016/02/12/signals-in-elm.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Slides for my talk about Elm at Berlin.js</title>
+        <description>&lt;p&gt;Last month I had the oppertunity to talk about &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; at the very friendly &lt;a href=&quot;http://berlinjs.org&quot;&gt;Berlin.js&lt;/a&gt; Javascript usergroup. If you don’t know about elm, it’s a pretty new, small language designed to create websites. The language is purely functional, nicely small, and modelled on Haskell and OCaml. Have a look at the slides if you are interested and follow the links on the third-to-last slide for more information! (If you use the arrow keys for navigating don’t miss the slides that extend downwards - or just use the spacebar to see all).&lt;/p&gt;
+
+&lt;iframe src=&quot;//slides.com/danielbachler/fearless-refactoring-with-elm/embed&quot; width=&quot;900&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 11 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</link>
+        <guid isPermaLink="true">http://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

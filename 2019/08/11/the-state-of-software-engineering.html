@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The state of software engineering</title>
+  <meta name="description" content="The field of software engineering is in a strange place today. A lot of the mainstream tools and concepts look less like deliberate choices made by intellige...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2019/08/11/the-state-of-software-engineering.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>The state of software engineering</h1>
+<p class="subtitle">August 11, 2019</p>
+
+<p>The field of software engineering is in a strange place today. A lot of the mainstream tools and concepts look less like deliberate choices made by intelligent people anticipating change and more like ad-hoc reuse of things some people were already familiar with, despite the problems this may cause at scale. Things I consider to be concrete examples of this are all the major programming languages (Java, C#, Python, C++ that don’t even have <a href="https://en.wikipedia.org/wiki/Algebraic_data_type">algebraic data types</a> that are around since the 70ies), docker containers (where the usual way of constructing them leads to linear dependencies which lead to <a href="https://grahamc.com/blog/nix-and-layered-docker-images">poor composability</a>), YAML as a configuration format (with its <a href="https://arp242.net/yaml-config.html#surprising-behaviour">many pitfalls and high complexity</a>), Microservices as almost a default architecture choice - the list goes on. This is not to say that I don’t consider these things useful in certain situations - it just strikes me as odd that the majority of our industry sees little problem with the status quo of defaulting to these options and that there are so few attempt at improving things.</p>
+
+<p>Maybe my experiences with <a href="https://elm-lang.org/">Elm</a> and <a href="https://fsharp.org/">F#</a> have spoiled me - I was lucky enough to use both on my job for the last three years. I feel like so many of the problems I regularly encountered in the previous ten years of doing mostly C#, some Ruby, Python, Javascript and C++ - are just gone. In Elm (and with some caveats in F#) you don’t need to worry about null values or exceptions; you don’t spend your time discussing pointless ontological questions and creating strange inheritance hierarchies that couple logic depending solely on the answer to the question “Can you say A IS-A B?”.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/files/customer-employee.png" alt="Customer and Employee inherit from Person" title="Customer and Employee inherit from Person" /></td>
+      <td><img src="/files/tightly-coupled.png" alt="Should the code for them be tightly coupled?" title="Should the code for them be tightly coupled?" /></td>
+      <td><img src="/files/is-a-person.png" alt="Customer IS-A Person! Employee IS-A Person!" title="Customer IS-A Person! Employee IS-A Person!" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In Elm, F# and similar languages, you write functions that deal with data, you model data in different forms accurately with algebraic data types and you let the compiler use the types to check if the shape of your data matches in all places. Because values are immutable, state changes only in a few well defined places. Elaborate “magic” like two-way databinding is replaced with simpler patterns like the <a href="https://medium.com/@l.mugnaini/the-elm-architecture-tea-animation-3efc555e8faf">Elm architecture</a>. Such patterns look a bit more verbose in the beginning, but as the application that uses it grows it always behaves predictably. This is something I have never seen with two-way data binding UI frameworks at non-trivial scale.</p>
+
+<p>Of course types are not everything and using Elm or <a href="https://www.haskell.org/">Haskell</a> etc. to implement some software will not magically make it bug free. But what they afford you to do is to concentrate on the interesting parts of your code and test more interesting properties since the technicalities are taken care of by a compiler. Refactoring complex pieces of software becomes a mundane tasks of following compiler errors instead of the Russian roulette it is in languages without static typing or with a poor type system. Since software tends to grow in size and requirements tend to change, I consider this to be a big advantage.</p>
+
+<p>All that is not so say that languages like Elm, F#, Haskell and <a href="http://www.purescript.org/">Purescript</a> cannot improve further. By listening to the excellent <a href="https://futureofcoding.org/">Future of coding</a> podcast I found <a href="https://pharo.org/">Pharo</a>, a language strongly inspired by Smalltalk, and the <a href="https://gtoolkit.com/">Glamorous toolkit</a>. The Glamorous toolkit places a high value on an interactive canvas that can be used to understand your code. How great would it be if there were a standard way for an ML family language to ship interactive debugging UIs with standard libraries that aid in your debugging and REPL experience? Think e.g. a monadic probability library that visualizes distributions while you work with it in the REPL.</p>
+
+<p>The power of Erlangs VM with hot code swapping and <a href="http://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html">supervision trees</a> is very desirable, even more so if messages could be typed with something like <a href="http://groups.inf.ed.ac.uk/abcd/session-implementations.html">session types</a>. Algebraic effects like in the <a href="http://www.eff-lang.org/">Eff language</a> look like a very promising way for handling side effects (I/O, concurrency, exceptions, …), so they can be separated from the pure code but without the pain of monad transformer stacks. <a href="https://www.datomic.com/">Datomic</a> which is built in <a href="https://clojure.org/">Clojure</a> is a really interesting way of dealing with data queries and between that and <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> I think there is a lot of unexplored scope of embedding reasoning/analytics engines in ML family languages.</p>
+
+<p>I find it strange that not more programmers see the value of ML like languages for larger projects. Do so few know these languages in enough detail? Is the inertia so powerful, the desire to stay with what you already know? Many of the excuses of a few years ago, like bad editor tooling or small ecosystems apply less and less (and some languages have a strong FFI that lets you tap into other languages’ ecosystems).</p>
+
+<p>Maybe one of the reasons is that evaluating technologies is often done on small examples where ease of setup and the speed of getting started are most important. Problems that only arise in bigger projects show up too late and by this time get confused as “this is just what programming in a large project looks like”.</p>
+
+<p>At my job we have one relatively complex backend written in Python - because at the time GraphQL support in ML languages was not developed far enough. To give praise where it is due, the Django admin interface was also a huge time saver - oh how I would love something like it to exist in F# for the <a href="https://safe-stack.github.io/">SAFE stack</a>! We were very fast initially in getting the first version out but now every non-trivial change is a pain and we are just so slow in that codebase compared to the F# backends (and we make more mistakes). If I hadn’t had the F# experience, I might’ve mistaken this slowing down for an inevitable fact of refactoring code.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/files/a-lot-of-coffee.png" alt="That's a lot of coffee" title="That's a lot of coffee" /></td>
+      <td><img src="/files/a-lot-of-python.png" alt="It's a lot of python" title="It's a lot of python" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Maybe none of this is so surprising given how young our field is. The first people who worked with textual instructions for computers did so from around 1950 - if you assume that the working lifetime of a person is around 40 years then this is not even two generations ago. In that time we scaled from a few hundred to maybe around 20 million programmers. Pretty much all other engineering professions or crafts developed over much longer timespans and with an only moderate change in the number of practitioners from decade to decade. They had time to try ideas and evaluate their outcome over long timespans and to develop cultural institutions like guilds or engineering societies. To complicate matters, computers kept getting faster at an insane pace for most of the last 70 years - so received wisdom from a generation ago is often no longer applicable. Maybe these are just growing pains of a still relatively new field then?</p>
+
+<p>I would be more relaxed about this if it were not for the fact that the stakes are getting higher all the time. We are putting software into ever more areas of human life and into ever more critical situations - but the tools that are mainstream in our profession are error prone and limit our expressivity. Software development is still so often at the same time intellectually challenging and incredibly boring even in the best of cases.</p>
+
+<p>Some things give me hope, e.g. <a href="https://www.rust-lang.org/">Rust</a> is a great new language that improves many things for system programming from the previous status quo - and it seems to gain traction lately (Microsoft Security <a href="https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/">recommended it recently</a>).</p>
+
+<p>But when it comes to mainstream adoption, we are still so far behind what is easily possible today. So much software is buggy and needs crazy amounts of development time and is just so brittle all around. Metaphors are always problematic, but it feels a bit like as an industry we insist on building skyscrapers with clay and neglect to learn how to work with steel and concrete for no good reason.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/files/building-a-skyscraper.png" alt="What are you building? Skyscraper." title="What are you building? Skyscraper." /></td>
+      <td><img src="/files/with-clay.png" alt="With clay bricks? Sure." title="With clay bricks? Sure." /></td>
+      <td><img src="/files/no-time-to-learn-that.png" alt="Don't you think steel would be better? Don't have time learn that." title="Don't you think steel would be better? Don't have time learn that." /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I try to spread the word about these ideas with things like the <a href="https://www.meetup.com/Friendly-Functional-Programming-Meetup-Berlin/">Friendly Functional Programming Meetup Berlin</a> that I run together with Michael, but I often feel like such events mostly reach those that already see the value of functional programming. I think our best bet is to work on creating entire toolchains that work well for pragmatic applications and then showcasing those. I think Elm did a good job on the web frontend side; the <a href="https://safe-stack.github.io/">SAFE stack</a> does so quite well on the backend as well as the frontend; and <a href="https://docs.servant.dev/en/stable/">Servant</a> does a great job at showing how useful full type level representations of HTTP APIs are because they let you type check both the client and server of a REST API at compile time from the same type definitions.</p>
+
+<p>I think as enthusiasts of these languages we should talk more about the pragmatic ways these powerful tools can enable us to do more work in less time to a higher quality standard. We should try less to explain Kleisli composition to outsiders (not that this is not useful, but the focus should be on the former IMHO). Maybe then we will find ourselves in a future where software is built on top of good abstractions, at high speed, and can be safely changed and modified. Let’s work towards that future.</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

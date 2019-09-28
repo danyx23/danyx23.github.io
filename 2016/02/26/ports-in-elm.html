@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ports in Elm</title>
+  <meta name="description" content="(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may s...">
+
+  <script src="https://kit.fontawesome.com/98871ddfec.js" crossorigin="anonymous"></script>
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="https://use.typekit.net/hil6otl.css">
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="http://danielbachler.de/2016/02/26/ports-in-elm.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+    <script>
+        (function(d) {
+            var config = {
+                        kitId: 'hil6otl',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+  <script src="/js/modernizr-custom.js"></script>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+
+  <nav class="site-nav site-header">
+    <div class="nav-inner">
+      <a class="site-title" href="/">DANIELBACHLER.DE</a>
+      <!--
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      -->
+      <div class="trigger">
+        <a class="page-link" href="/">Blog</a>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/cv.html">CV</a>
+          
+        
+          
+          <a class="page-link" href="/about.html">About me</a>
+          
+        
+      </div>
+    </div>
+    </nav>
+
+</header>
+
+
+<article class="group">
+  <h1>Ports in Elm</h1>
+<p class="subtitle">February 26, 2016</p>
+
+<p>(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)</p>
+
+<p>This is the third post in a series of posts about <a href="http://elm-lang.org/">Elm</a>. In my <a href="/2016/02/12/signals-in-elm.html">first post about Signals in Elm</a> I briefly mentioned ports. Since they are the only way to communicate with “native” Javascript, they certainly warrant a closer look. If you haven’t checked out the last post in this series on <a href="/2016/02/19/tasks-and-effects-in-elm.html">tasks and effects</a> I suggest you do that now as this post will build on these concepts.</p>
+
+<p>So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, <code class="highlighter-rouge">port</code>. If a Port is defined to be of a Non-Signal type (e.g. <code class="highlighter-rouge">port initialUrl : String</code>) then it is a “one time” message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a <code class="highlighter-rouge">Signal</code> of some type (e.g. a <code class="highlighter-rouge">Signal String</code>). Ports can not send and receive values of any type but only a subset - the big two groups of values that can’t be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the <a href="http://elm-lang.org/guide/interop">elm guide page on interop</a>.</p>
+
+<p>As a simple example, let’s create a pair of ports to send <code class="highlighter-rouge">String</code>s from Elm to Js, do something with it in native JS, and then send the <code class="highlighter-rouge">String</code>s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs).</p>
+
+<h3 id="outgoing-ports">Outgoing ports</h3>
+
+<p>Since we want to send stuff several times, not just once, we need to declare both ports as <code class="highlighter-rouge">Signals</code>. Let’s start with the outgoing port and on the Elm side:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">port</span> <span class="n">requestEncryption</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
+<span class="k">port</span> <span class="n">requestEncryption</span> <span class="o">=</span>
+  <span class="c1">-- how do we get a Signal here for the implementation?</span>
+</code></pre></div></div>
+
+<p>This is a simple outgoing port definition, but somehow we have to implement this port - we need a way to get a Signal that we can “trigger” in our elm app and that will be received on the JS side. Let’s see how the JS side will look like before coming back to Elm:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'root'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">myapp</span> <span class="o">=</span> <span class="nx">Elm</span><span class="p">.</span><span class="nx">embed</span><span class="p">(</span><span class="nx">Elm</span><span class="p">.</span><span class="nx">MyApp</span><span class="p">,</span> <span class="nx">div</span><span class="p">);</span>
+<span class="nx">myapp</span><span class="p">.</span><span class="nx">ports</span><span class="p">.</span><span class="nx">requestEncryption</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">encryptString</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">encryptString</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// do something with the string, send it to be encrypted etc</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Pretty straigthforward. We use the <code class="highlighter-rouge">subscribe</code> method to register a callback that will be called with the <code class="highlighter-rouge">message</code> string value every time the Signal fires at the Elm side. Ok, but how do we finish implementing this on the Elm side?</p>
+
+<p>There are two ways to do this - one is to create a new <code class="highlighter-rouge">Mailbox</code> and use <code class="highlighter-rouge">Effects</code> to send our messages, the other is to create a custom version of <code class="highlighter-rouge">StartApp</code> that returns an additional value for things to send to the port in <code class="highlighter-rouge">update</code>. I have implemented both attempts as gists, here is the <a href="https://gist.github.com/danyx23/e42ceedaccf0c4a556b8">one with the Mailbox</a> and once with a <a href="https://gist.github.com/danyx23/6004778b9322dc716373">modified StartApp</a>. For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let’s hook up the Mailbox:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">portRequestEncryptionMailbox</span> <span class="p">:</span> <span class="kt">Mailbox</span> <span class="kt">String</span>
+<span class="n">portRequestEncryptionMailbox</span> <span class="o">=</span>
+  <span class="n">mailbox</span> <span class="s">"</span><span class="s2">"</span>
+
+<span class="k">port</span> <span class="n">requestEncryption</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
+<span class="k">port</span> <span class="n">requestEncryption</span> <span class="o">=</span>
+  <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">signal</span>
+</code></pre></div></div>
+
+<p>This initalizes the <code class="highlighter-rouge">Mailbox</code> and fills in the hole we had before - the Signal we use as a port will just be the <code class="highlighter-rouge">Signal</code> of our new <code class="highlighter-rouge">Mailbox</code>. But how do we actually send anything to this Mailbox? By creating an Effect, like so:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sendStringToBeEncrypted</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
+<span class="n">sendStringToBeEncrypted</span> <span class="n">clearText</span> <span class="o">=</span>
+  <span class="kt">Signal</span><span class="o">.</span><span class="n">send</span> <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">address</span> <span class="n">clearText</span>
+  <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span>
+  <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="o">\</span><span class="n">_</span> <span class="o">-&gt;</span> <span class="kt">Noop</span><span class="p">)</span>
+
+<span class="c1">-- and this is our update function that now returns a tuple of (Model, Effect):</span>
+<span class="n">update</span> <span class="p">:</span> <span class="kt">Action</span> <span class="o">-&gt;</span> <span class="kt">Model</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Model</span><span class="o">,</span> <span class="kt">Effects</span> <span class="kt">Action</span><span class="p">)</span>
+<span class="n">update</span> <span class="n">action</span> <span class="n">model</span> <span class="o">=</span>
+  <span class="k">case</span> <span class="n">action</span> <span class="k">of</span>
+    <span class="kt">TextChanged</span> <span class="n">text</span> <span class="o">-&gt;</span>
+      <span class="p">(</span> <span class="p">{</span> <span class="n">model</span> <span class="o">|</span> <span class="n">clearText</span> <span class="o">=</span> <span class="n">text</span> <span class="p">}</span>
+      <span class="o">,</span> <span class="n">sendStringToBeEncrypted</span> <span class="n">text</span> <span class="c1">-- create the Effect here</span>
+      <span class="p">)</span>
+    <span class="c1">-- other cases ...</span>
+</code></pre></div></div>
+
+<p>The last line in <code class="highlighter-rouge">sendStringToBeEncrypted</code> may be a bit confusing - what are we mapping there? Let’s take a look at the type of <code class="highlighter-rouge">Mailbox.send</code>:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">send</span> <span class="p">:</span> <span class="kt">Address</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="p">()</span>
+</code></pre></div></div>
+
+<p>This means that the <code class="highlighter-rouge">success</code> type of the task we get back from send is <code class="highlighter-rouge">()</code> (aka Unit) which acts a bit similar to <code class="highlighter-rouge">void</code> in C like languages, i.e. it represents “no actual value”. Let me desugar <code class="highlighter-rouge">sendStringToBeEncrypted</code> so it is clearer what types we are working with:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sendStringToBeEncrypted</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
+<span class="n">sendStringToBeEncrypted</span> <span class="n">clearText</span> <span class="o">=</span>
+  <span class="n">sendTask</span> <span class="p">:</span> <span class="kt">Task</span> <span class="n">x</span> <span class="p">()</span>
+  <span class="n">sendTask</span> <span class="o">=</span> <span class="kt">Signal</span><span class="o">.</span><span class="n">send</span> <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">address</span> <span class="n">clearText</span>
+
+  <span class="n">effectOfUnit</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="p">()</span>
+  <span class="n">effectOfUnit</span> <span class="o">=</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span> <span class="n">sendTask</span>
+
+  <span class="n">effectOfAction</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="kt">Action</span>
+  <span class="n">effectOfAction</span> <span class="o">=</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="o">\</span><span class="n">_</span> <span class="o">-&gt;</span> <span class="kt">Noop</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>(Note that instead of first converting to <code class="highlighter-rouge">Effects ()</code> and then mapping that I could also have mapped the <code class="highlighter-rouge">Task x ()</code> to <code class="highlighter-rouge">Task x Action</code> and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual <code class="highlighter-rouge">Action</code> value. We are only interested in performing the side effect of sending the message and it will not have a reasonable “payload” that should be routed through update. But because of how <code class="highlighter-rouge">Effects</code> are typed in <code class="highlighter-rouge">StartApp</code>, we do need to have an <code class="highlighter-rouge">Effects Action</code> in the end and so we introduce a <code class="highlighter-rouge">Noop</code> value that explicitly does nothing when it is processed in <code class="highlighter-rouge">update</code>.</p>
+
+<p>At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don’t do this, the Tasks you create via Effects will never be executed by the runtime:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span> <span class="o">=</span>
+  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
+    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="n">init</span>
+    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
+    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
+    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="p">}</span>
+
+<span class="k">port</span> <span class="n">tasks</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="p">())</span>
+<span class="k">port</span> <span class="n">tasks</span> <span class="o">=</span>
+  <span class="n">app</span><span class="o">.</span><span class="n">tasks</span>
+</code></pre></div></div>
+
+<p>Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?</p>
+
+<h3 id="incoming-ports">Incoming Ports</h3>
+
+<p>Let’s start on the Javascript side. We will define an incoming port called <code class="highlighter-rouge">encryptionCompleted</code> on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call <code class="highlighter-rouge">send</code> to send a value back to Elm)</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'root'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">myapp</span> <span class="o">=</span> <span class="nx">Elm</span><span class="p">.</span><span class="nx">embed</span><span class="p">(</span><span class="nx">Elm</span><span class="p">.</span><span class="nx">MyApp</span><span class="p">,</span> <span class="nx">div</span><span class="p">,</span> <span class="p">{</span><span class="na">encryptionCompleted</span> <span class="p">:</span> <span class="s2">""</span><span class="p">});</span>
+<span class="nx">myapp</span><span class="p">.</span><span class="nx">ports</span><span class="p">.</span><span class="nx">requestEncryption</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">encryptString</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">encryptString</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">encryptedMessage</span> <span class="o">=</span> <span class="s2">"Encypted: "</span> <span class="o">+</span> <span class="nx">message</span><span class="p">;</span> <span class="c1">// actually encypting the message is ommited</span>
+    <span class="nx">myapp</span><span class="p">.</span><span class="nx">ports</span><span class="p">.</span><span class="nx">encryptionCompleted</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">encryptedMessage</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Note that I not only had to modify <code class="highlighter-rouge">encryptString</code> but also pass in an initial value at the time when we initialize Elm with the call to <code class="highlighter-rouge">Elm.embed</code>. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because <code class="highlighter-rouge">Signals</code> in Elm always need an initial value. Let’s add this incoming port on the Elm side to complete the example:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">port</span> <span class="n">encryptionCompleted</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
+
+</code></pre></div></div>
+
+<p>Note that this time the port we have defined has no “implementation” in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our <code class="highlighter-rouge">StartApp.start</code> call?</p>
+
+<p>In the last post, when we switched from StartApp.Simple to StartApp, I mentioned <code class="highlighter-rouge">inputs</code>. <code class="highlighter-rouge">inputs</code> is a <code class="highlighter-rouge">List of (Signal of Action)</code>, i.e. Signals that fire <code class="highlighter-rouge">Actions</code> that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined <code class="highlighter-rouge">encryptionCompleted</code> as a <code class="highlighter-rouge">Signal of String</code> and we need a <code class="highlighter-rouge">Signal of Action</code> for inputs. Sounds like we need a map again:</p>
+
+<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">encryptedString</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">Action</span>
+<span class="n">encryptedString</span> <span class="o">=</span>
+  <span class="kt">Signal</span><span class="o">.</span><span class="n">map</span> <span class="kt">EncryptedValueReceived</span> <span class="n">encryptionCompleted</span>
+
+<span class="n">app</span> <span class="o">=</span>
+  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
+    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="p">(</span><span class="n">init</span><span class="o">,</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">none</span><span class="p">)</span>
+    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
+    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
+    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[</span> <span class="n">encryptedString</span> <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>And voilà! We have a <code class="highlighter-rouge">Signal of Actions</code> that we can put into the inputs part of start.</p>
+
+<p>So just to recap, let’s go through the example again: Whenever the user enters text we process the <code class="highlighter-rouge">TextChanged</code> value in our <code class="highlighter-rouge">update</code> function and not only update the model but also create a new <code class="highlighter-rouge">Effects</code>. This is then returned by <code class="highlighter-rouge">update</code> and, because we wired the <code class="highlighter-rouge">tasks</code> part returned by <code class="highlighter-rouge">start</code> to an outgoing <code class="highlighter-rouge">port</code>, it is handed to the runtime. This leads, on the native JS side, to a call of <code class="highlighter-rouge">encryptString</code> (because this is the function we registered with <code class="highlighter-rouge">subscribe</code>). In it we pretended to do some encryption and then sent the value back with <code class="highlighter-rouge">encryptionCompleted.send</code> (again, you can send values at any time, it only happens in our example that we send one value back for every value we receive on the JS side). This <code class="highlighter-rouge">send</code> call leads the <code class="highlighter-rouge">encryptionCompleted</code> Signal to fire, with the string value we sent from the JS side. This is than <code class="highlighter-rouge">map</code>ped into an <code class="highlighter-rouge">Action</code> value, namely <code class="highlighter-rouge">EncryptedValueReceived</code>, and because this is hooked up to the inputs part of StartApp it triggers the same chain through <code class="highlighter-rouge">update</code> as any other events. In <code class="highlighter-rouge">update</code> we then handle processing of this <code class="highlighter-rouge">EncryptedValueReceived</code> value and the whole exercise is complete.</p>
+
+<p>Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!</p>
+
+
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6822886-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
