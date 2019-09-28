@@ -588,7 +588,7 @@ html.about {
 }
 
 article.group, .about-me {
-  padding-top: 140px;
+  padding-top: calc(140px + 2.3rem);
 }
 
 .about-text, .about-image {
