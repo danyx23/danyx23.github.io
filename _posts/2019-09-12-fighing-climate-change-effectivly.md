@@ -43,7 +43,7 @@ A greenhouse gas emission budget can be calculated which expresses how many Giga
 To stay within 2 degrees warming, we have about another 800 Gigatons left. This gives us another 18 years or so at current emission to be distributed over the next few decades. Unfortunately, the trend curve of global emissions does not point down — it is instead still rising:
 
 <p>
-<iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&year=2016&time=1965..2017&country=OWID_WRL" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&year=2016&time=1900..2017&country=OWID_WRL" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 </p>
 
 It is worth noting that the higher the temperature increase will end up being, the worse the repercussions for our ecosystems and our habitable areas and global living standards will be. Thus, even if we slightly miss the 2 degree target, this would be a much better outcome than the ~3.5-4 degree increase we are currently on a trajectory towards. {% sidenote 'sn-glen-peters' '[This article by Glen Peters](https://www.cicero.oslo.no/no/posts/klima/stylised-pathways-to-well-below-2c), a climate scientist at the Cicero institute for climate research in Oslo is a sobering look at the feasibility of staying below 2 degrees' %}
