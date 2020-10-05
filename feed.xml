@@ -4,11 +4,11 @@
     <title>Daniel Bachler</title>
     <description>The personal website of Daniel Bachler - Software Engineer and Photographer
 </description>
-    <link>http://danielbachler.de/</link>
-    <atom:link href="http://danielbachler.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Dec 2019 21:33:08 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Dec 2019 21:33:08 +0100</lastBuildDate>
-    <generator>Jekyll v3.7.3</generator>
+    <link>https://danielbachler.de/</link>
+    <atom:link href="https://danielbachler.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 05 Oct 2020 19:50:35 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Oct 2020 19:50:35 +0200</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Thoughts on fighting climate change effectively</title>
@@ -144,8 +144,8 @@
 &lt;p&gt;Working against climate change will be a major challenge for all of us for the rest of our lives. There will be many setbacks and counter trends. But this makes it all the more important to try to target efforts at big absolute reductions that are supported by a large public and not get lost in inconsequential arguments about things that don’t have much potential for bringing absolute emissions down. Let’s work on this. &lt;label for=&quot;sn-thanks&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-thanks&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Many thanks to all the people who have read drafts of this post and given their feedback, especially Teresa, Jonathan, Fredrik and Timo. &lt;/span&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Sep 2019 00:00:00 +0200</pubDate>
-        <link>http://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</guid>
+        <link>https://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</guid>
         
         
       </item>
@@ -155,8 +155,8 @@
         <description>&lt;p&gt;The frontend programming podcast &lt;a href=&quot;https://workingdraft.de/&quot;&gt;Working Draft&lt;/a&gt; interviewed me recently and we talked about Elm and F# . &lt;a href=&quot;https://workingdraft.de/396/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Sep 2019 00:00:00 +0200</pubDate>
-        <link>http://danielbachler.de/2019/09/10/interview-with-working-draft.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2019/09/10/interview-with-working-draft.html</guid>
+        <link>https://danielbachler.de/2019/09/10/interview-with-working-draft.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2019/09/10/interview-with-working-draft.html</guid>
         
         
       </item>
@@ -170,9 +170,9 @@
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/customer-employee.png&quot; alt=&quot;Customer and Employee inherit from Person&quot; title=&quot;Customer and Employee inherit from Person&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/tightly-coupled.png&quot; alt=&quot;Should the code for them be tightly coupled?&quot; title=&quot;Should the code for them be tightly coupled?&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/is-a-person.png&quot; alt=&quot;Customer IS-A Person! Employee IS-A Person!&quot; title=&quot;Customer IS-A Person! Employee IS-A Person!&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/customer-employee.jpg&quot; alt=&quot;Customer and Employee inherit from Person&quot; title=&quot;Customer and Employee inherit from Person&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/tightly-coupled.jpg&quot; alt=&quot;Should the code for them be tightly coupled?&quot; title=&quot;Should the code for them be tightly coupled?&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/is-a-person.jpg&quot; alt=&quot;Customer IS-A Person! Employee IS-A Person!&quot; title=&quot;Customer IS-A Person! Employee IS-A Person!&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -194,8 +194,8 @@
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-coffee.png&quot; alt=&quot;That's a lot of coffee&quot; title=&quot;That's a lot of coffee&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-python.png&quot; alt=&quot;It's a lot of python&quot; title=&quot;It's a lot of python&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-coffee.jpg&quot; alt=&quot;That&#39;s a lot of coffee&quot; title=&quot;That&#39;s a lot of coffee&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/a-lot-of-python.jpg&quot; alt=&quot;It&#39;s a lot of python&quot; title=&quot;It&#39;s a lot of python&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -211,9 +211,9 @@
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/building-a-skyscraper.png&quot; alt=&quot;What are you building? Skyscraper.&quot; title=&quot;What are you building? Skyscraper.&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/with-clay.png&quot; alt=&quot;With clay bricks? Sure.&quot; title=&quot;With clay bricks? Sure.&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;img src=&quot;/files/no-time-to-learn-that.png&quot; alt=&quot;Don't you think steel would be better? Don't have time learn that.&quot; title=&quot;Don't you think steel would be better? Don't have time learn that.&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/building-a-skyscraper.jpg&quot; alt=&quot;What are you building? Skyscraper.&quot; title=&quot;What are you building? Skyscraper.&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/with-clay.jpg&quot; alt=&quot;With clay bricks? Sure.&quot; title=&quot;With clay bricks? Sure.&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;/files/no-time-to-learn-that.jpg&quot; alt=&quot;Don&#39;t you think steel would be better? Don&#39;t have time learn that.&quot; title=&quot;Don&#39;t you think steel would be better? Don&#39;t have time learn that.&quot; /&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -223,8 +223,8 @@
 &lt;p&gt;I think as enthusiasts of these languages we should talk more about the pragmatic ways these powerful tools can enable us to do more work in less time to a higher quality standard. We should try less to explain Kleisli composition to outsiders (not that this is not useful, but the focus should be on the former IMHO). Maybe then we will find ourselves in a future where software is built on top of good abstractions, at high speed, and can be safely changed and modified. Let’s work towards that future.&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Aug 2019 00:00:00 +0200</pubDate>
-        <link>http://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</guid>
+        <link>https://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</guid>
         
         
       </item>
@@ -234,8 +234,8 @@
         <description>&lt;p&gt;The programming blog &lt;a href=&quot;https://paqmind.com&quot;&gt;paqmind&lt;/a&gt; interviewed me recently and we talked about Elm, Purescript, F# and other programming languages I love. &lt;a href=&quot;https://paqmind.com/blog/interview-with-danyx23/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</guid>
+        <link>https://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</guid>
         
         
       </item>
@@ -247,8 +247,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ehtn81p06Ow&quot;&gt;&lt;img src=&quot;https://img.youtube.com/vi/ehtn81p06Ow/0.jpg&quot; alt=&quot;My talk about the Elm programming language at GOTO Berlin 2017&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Mar 2018 00:00:00 +0200</pubDate>
-        <link>http://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</guid>
+        <link>https://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</guid>
         
         
       </item>
@@ -403,7 +403,7 @@
 
 &lt;span class=&quot;c1&quot;&gt;// Update&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -436,7 +436,7 @@
      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// We return the model, and a list of Actions to execute&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toActionList&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;model&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toActionList&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
@@ -589,8 +589,8 @@
 &lt;p&gt;Finally I’d like to thank the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: &lt;a href=&quot;https://github.com/tpetricek&quot;&gt;Tomas Petricek&lt;/a&gt;, &lt;a href=&quot;https://fsharpforfunandprofit.com/&quot;&gt;Scott Wlaschin&lt;/a&gt;, &lt;a href=&quot;https://github.com/alfonsogarciacaro&quot;&gt;Alfonso Garcia Caro&lt;/a&gt;, &lt;a href=&quot;https://github.com/forki&quot;&gt;Steffen Forkmann&lt;/a&gt; and &lt;a href=&quot;https://sergeytihon.wordpress.com/&quot;&gt;Sergey Tihon&lt;/a&gt;!&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Dec 2016 00:00:00 +0100</pubDate>
-        <link>http://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</guid>
+        <link>https://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</guid>
         
         
       </item>
@@ -609,14 +609,14 @@
 
 &lt;p&gt;Since we want to send stuff several times, not just once, we need to declare both ports as &lt;code class=&quot;highlighter-rouge&quot;&gt;Signals&lt;/code&gt;. Let’s start with the outgoing port and on the Elm side:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;-- how do we get a Signal here for the implementation?&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;port requestEncryption : Signal String
+port requestEncryption =
+  -- how do we get a Signal here for the implementation?
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This is a simple outgoing port definition, but somehow we have to implement this port - we need a way to get a Signal that we can “trigger” in our elm app and that will be received on the JS side. Let’s see how the JS side will look like before coming back to Elm:&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;root&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
@@ -629,69 +629,69 @@
 
 &lt;p&gt;There are two ways to do this - one is to create a new &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and use &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; to send our messages, the other is to create a custom version of &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; that returns an additional value for things to send to the port in &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt;. I have implemented both attempts as gists, here is the &lt;a href=&quot;https://gist.github.com/danyx23/e42ceedaccf0c4a556b8&quot;&gt;one with the Mailbox&lt;/a&gt; and once with a &lt;a href=&quot;https://gist.github.com/danyx23/6004778b9322dc716373&quot;&gt;modified StartApp&lt;/a&gt;. For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let’s hook up the Mailbox:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;portRequestEncryptionMailbox : Mailbox String
+portRequestEncryptionMailbox =
+  mailbox &quot;&quot;
 
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+port requestEncryption : Signal String
+port requestEncryption =
+  portRequestEncryptionMailbox.signal
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This initalizes the &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and fills in the hole we had before - the Signal we use as a port will just be the &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal&lt;/code&gt; of our new &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt;. But how do we actually send anything to this Mailbox? By creating an Effect, like so:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;sendStringToBeEncrypted : String -&amp;gt; Effects Action
+sendStringToBeEncrypted clearText =
+  Signal.send portRequestEncryptionMailbox.address clearText
+  |&amp;gt; Effects.task
+  |&amp;gt; Effects.map (\_ -&amp;gt; Noop)
 
-&lt;span class=&quot;c1&quot;&gt;-- and this is our update function that now returns a tuple of (Model, Effect):&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;TextChanged&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- create the Effect here&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- other cases ...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+-- and this is our update function that now returns a tuple of (Model, Effect):
+update : Action -&amp;gt; Model -&amp;gt; (Model, Effects Action)
+update action model =
+  case action of
+    TextChanged text -&amp;gt;
+      ( { model | clearText = text }
+      , sendStringToBeEncrypted text -- create the Effect here
+      )
+    -- other cases ...
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The last line in &lt;code class=&quot;highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; may be a bit confusing - what are we mapping there? Let’s take a look at the type of &lt;code class=&quot;highlighter-rouge&quot;&gt;Mailbox.send&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;send : Address a -&amp;gt; a -&amp;gt; Task x ()
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This means that the &lt;code class=&quot;highlighter-rouge&quot;&gt;success&lt;/code&gt; type of the task we get back from send is &lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt; (aka Unit) which acts a bit similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;void&lt;/code&gt; in C like languages, i.e. it represents “no actual value”. Let me desugar &lt;code class=&quot;highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; so it is clearer what types we are working with:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;sendStringToBeEncrypted : String -&amp;gt; Effects Action
+sendStringToBeEncrypted clearText =
+  sendTask : Task x ()
+  sendTask = Signal.send portRequestEncryptionMailbox.address clearText
 
-  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt;
+  effectOfUnit : Effects ()
+  effectOfUnit = Effects.task sendTask
 
-  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  effectOfAction : Effects Action
+  effectOfAction = Effects.map (\_ -&amp;gt; Noop)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(Note that instead of first converting to &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects ()&lt;/code&gt; and then mapping that I could also have mapped the &lt;code class=&quot;highlighter-rouge&quot;&gt;Task x ()&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Task x Action&lt;/code&gt; and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; value. We are only interested in performing the side effect of sending the message and it will not have a reasonable “payload” that should be routed through update. But because of how &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; are typed in &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt;, we do need to have an &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; in the end and so we introduce a &lt;code class=&quot;highlighter-rouge&quot;&gt;Noop&lt;/code&gt; value that explicitly does nothing when it is processed in &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don’t do this, the Tasks you create via Effects will never be executed by the runtime:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;app =
+  StartApp.start
+    { init = init
+    , update = update
+    , view = view
+    , inputs = []
+    }
 
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+port tasks : Signal (Task.Task Never ())
+port tasks =
+  app.tasks
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?&lt;/p&gt;
 
@@ -699,7 +699,7 @@
 
 &lt;p&gt;Let’s start on the Javascript side. We will define an incoming port called &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call &lt;code class=&quot;highlighter-rouge&quot;&gt;send&lt;/code&gt; to send a value back to Elm)&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;root&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
@@ -711,26 +711,26 @@
 
 &lt;p&gt;Note that I not only had to modify &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptString&lt;/code&gt; but also pass in an initial value at the time when we initialize Elm with the call to &lt;code class=&quot;highlighter-rouge&quot;&gt;Elm.embed&lt;/code&gt;. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because &lt;code class=&quot;highlighter-rouge&quot;&gt;Signals&lt;/code&gt; in Elm always need an initial value. Let’s add this incoming port on the Elm side to complete the example:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;port encryptionCompleted : Signal String
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Note that this time the port we have defined has no “implementation” in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.start&lt;/code&gt; call?&lt;/p&gt;
 
 &lt;p&gt;In the last post, when we switched from StartApp.Simple to StartApp, I mentioned &lt;code class=&quot;highlighter-rouge&quot;&gt;inputs&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;inputs&lt;/code&gt; is a &lt;code class=&quot;highlighter-rouge&quot;&gt;List of (Signal of Action)&lt;/code&gt;, i.e. Signals that fire &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt; that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined &lt;code class=&quot;highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; as a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of String&lt;/code&gt; and we need a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Action&lt;/code&gt; for inputs. Sounds like we need a map again:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;EncryptedValueReceived&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;encryptedString : Signal Action
+encryptedString =
+  Signal.map EncryptedValueReceived encryptionCompleted
 
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+app =
+  StartApp.start
+    { init = (init, Effects.none)
+    , view = view
+    , update = update
+    , inputs = [ encryptedString ]
+    }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And voilà! We have a &lt;code class=&quot;highlighter-rouge&quot;&gt;Signal of Actions&lt;/code&gt; that we can put into the inputs part of start.&lt;/p&gt;
 
@@ -739,8 +739,8 @@
 &lt;p&gt;Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!&lt;/p&gt;
 </description>
         <pubDate>Fri, 26 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://danielbachler.de/2016/02/26/ports-in-elm.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2016/02/26/ports-in-elm.html</guid>
+        <link>https://danielbachler.de/2016/02/26/ports-in-elm.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2016/02/26/ports-in-elm.html</guid>
         
         
       </item>
@@ -755,21 +755,21 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; is the more basic type (it is defined in Core) and so let’s start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It’s type is thus:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;errorType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successType&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;Task errorType successType
 
-&lt;span class=&quot;c1&quot;&gt;-- (or, as it is actually written in the library:)&lt;/span&gt;
+-- (or, as it is actually written in the library:)
 
-&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Task x a
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;There are only two values of &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; you can create yourself in your code, without using a separate library. These two ways are two functions:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;succeed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;succeed : a -&amp;gt; Task x a
 
-&lt;span class=&quot;c1&quot;&gt;-- and&lt;/span&gt;
+-- and
 
-&lt;span class=&quot;n&quot;&gt;fail&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+fail : x -&amp;gt; Task x a
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a &lt;code class=&quot;highlighter-rouge&quot;&gt;Task&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;succeed&lt;/code&gt;).&lt;/p&gt;
 
@@ -791,12 +791,12 @@
 
 &lt;p&gt;On to &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt;! If you look at the definition for &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects&lt;/code&gt; it’s pretty simple:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Tick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;None&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Batch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;type Effects a
+    = Task (Task.Task Never a)
+    | Tick (Time -&amp;gt; a)
+    | None
+    | Batch (List (Effects a))
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;None&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Batch&lt;/code&gt; are helpers, so the basic things an Effect can represent are &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; (with error type &lt;code class=&quot;highlighter-rouge&quot;&gt;Never&lt;/code&gt;) and &lt;code class=&quot;highlighter-rouge&quot;&gt;Ticks&lt;/code&gt;. The latter is used for animations if you want to do something at the next animation frame.&lt;/p&gt;
 
@@ -806,29 +806,29 @@
 
 &lt;p&gt;So how is this used? The &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer&quot;&gt;Elm Architecture example 5&lt;/a&gt; uses this very central piece of code:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;getRandomGif : String -&amp;gt; Effects Action
+getRandomGif topic =
+  Http.get decodeImageUrl (randomUrl topic)
+    |&amp;gt; Task.toMaybe
+    |&amp;gt; Task.map NewGif
+    |&amp;gt; Effects.task
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Let’s look at what it does. It starts with creating a task that represents the Http &lt;code class=&quot;highlighter-rouge&quot;&gt;get&lt;/code&gt; operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what’s happening:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;getRandomGif topic =
+  getTaskWithError : Task Http.Error String
+  getTaskWithError = Http.get decodeImageUrl (randomUrl topic)
 
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt;
+  getTaskWithNoErrorAndMaybe : Task Never (Maybe String)
+  getTaskWithNoErrorAndMaybe = Task.toMaybe getTaskWithError
 
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt;
+  getTaskWithNoErrorAndAction : Task Never (Action)
+  getTaskWithNoErrorAndAction = Task.map NewGif getTaskWithNoErrorAndMaybe
 
-  &lt;span class=&quot;n&quot;&gt;taskAsEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  taskAsEffect : Effects Action
+  Effects.task getTaskWithNoErrorAndAction
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;So in the end, Effects in this case just wraps the Task for us. Because we used &lt;code class=&quot;highlighter-rouge&quot;&gt;toMaybe&lt;/code&gt; and then mapped it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif&lt;/code&gt; type constructor function, this will result in an &lt;code class=&quot;highlighter-rouge&quot;&gt;Action&lt;/code&gt; coming back to us via &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; when it is done that is either (&lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif Nothing&lt;/code&gt;) if the http request failed, or (&lt;code class=&quot;highlighter-rouge&quot;&gt;NewGif &quot;some-url-here&quot;&lt;/code&gt;) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the &lt;a href=&quot;https://github.com/evancz/elm-effects/blob/master/src/Effects.elm&quot;&gt;implementation&lt;/a&gt; of Effects.&lt;/p&gt;
 
@@ -836,9 +836,9 @@
 
 &lt;p&gt;At this point you may wonder: why have Effects at all? Aren’t they just weird wrappers for Tasks? Let’s quickly take a look again at how the Task case of the Effects type is defined:&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;type Effects a
+    = Task (Task.Task Never a)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The way &lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; is typed, going via &lt;code class=&quot;highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; constraints all &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; to come back with &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt; and have the error type &lt;code class=&quot;highlighter-rouge&quot;&gt;Never&lt;/code&gt;. This is really nice because it means that you don’t have to handle different task types to different ports, but you set up “pipelines” of tasks to effects like with &lt;code class=&quot;highlighter-rouge&quot;&gt;getRandomGif&lt;/code&gt; above and it will all work out in a typesafe manner that the result of your tasks will be sent back to your program’s &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function as &lt;code class=&quot;highlighter-rouge&quot;&gt;Actions&lt;/code&gt;.&lt;/p&gt;
 
@@ -851,29 +851,29 @@
   &lt;li&gt;The tasks part of the record that is returned by &lt;code class=&quot;highlighter-rouge&quot;&gt;start&lt;/code&gt; has to be handed to a port so that the &lt;code class=&quot;highlighter-rouge&quot;&gt;Tasks/Effects&lt;/code&gt; are actually performed by the runtime like so:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;funny cats&quot;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;app =
+  StartApp.start
+    { init = init &quot;funny cats&quot;
+    , update = update
+    , view = view
+    , inputs = []
+    }
 
 
-&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
+main =
+  app.html
 
 
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+port tasks : Signal (Task.Task Never ())
+port tasks =
+  app.tasks
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Phew, this got a little long again, but I hope it helps a little to understand how Tasks/Effects work!&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</guid>
+        <link>https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</guid>
         
         
       </item>
@@ -907,59 +907,59 @@
 
 &lt;p&gt;At this point, if you want to really dive into it, let’s look at how &lt;a href=&quot;https://github.com/evancz/start-app&quot;&gt;StartApp.Simple&lt;/a&gt; is actually implemented (I added comments and type annotation to every named value)&lt;/p&gt;
 
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Config&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Html&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- create the main Mailbox. It is of type &quot;Mailbox (Maybe action)&quot; and is&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- initialized with an &quot;empty&quot; value of Nothing&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-elm&quot;&gt;start : Config model action -&amp;gt; Signal Html
+start config =
+  let
+    -- create the main Mailbox. It is of type &quot;Mailbox (Maybe action)&quot; and is
+    -- initialized with an &quot;empty&quot; value of Nothing
+    actions : Mailbox (Maybe action)
+    actions =
+      Signal.mailbox Nothing
 
-    &lt;span class=&quot;c1&quot;&gt;-- here the address is set up. Since the Mailbox is of Maybe action,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- everything that is sent to address is &quot;wrapped&quot; in the Just type&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- constructor and forwarded to the Mailbox&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forwardTo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt;
+    -- here the address is set up. Since the Mailbox is of Maybe action,
+    -- everything that is sent to address is &quot;wrapped&quot; in the Just type
+    -- constructor and forwarded to the Mailbox
+    address : Address action
+    address =
+      Signal.forwardTo actions.address Just
 
-    &lt;span class=&quot;c1&quot;&gt;-- This local version of update just wraps config.update to&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- take care of the Maybe part of the action that will be&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- processed (so that the update function the user provides)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- can simply operate as Action -&amp;gt; Model -&amp;gt; Model)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
+    -- This local version of update just wraps config.update to
+    -- take care of the Maybe part of the action that will be
+    -- processed (so that the update function the user provides)
+    -- can simply operate as Action -&amp;gt; Model -&amp;gt; Model)
+    update : Maybe action -&amp;gt; model -&amp;gt; model
+    update maybeAction model =
+      case maybeAction of
+        Just action -&amp;gt;
+            config.update action model
 
-        &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;crash&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;This should never happen.&quot;&lt;/span&gt;
+        Nothing -&amp;gt;
+            Debug.crash &quot;This should never happen.&quot;
 
-    &lt;span class=&quot;c1&quot;&gt;-- set up a signal of new models that foldp-s over&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- the actions signal. This is the central piece&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- that makes the elm architecture work the way it does.&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- The update function will process one Action and&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- the old Model state to the new model State, the&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- Signal that triggers it all is the Mailbox' Signal&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- we set up at the top&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foldp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- Finally, map over it with the view function. This&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- turns the Signal of Models into a Signal of Htmls&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- that can be rendered&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    -- set up a signal of new models that foldp-s over
+    -- the actions signal. This is the central piece
+    -- that makes the elm architecture work the way it does.
+    -- The update function will process one Action and
+    -- the old Model state to the new model State, the
+    -- Signal that triggers it all is the Mailbox&#39; Signal
+    -- we set up at the top
+    model : Signal model
+    model =
+      Signal.foldp update config.model actions.signal
+  in
+    -- Finally, map over it with the view function. This
+    -- turns the Signal of Models into a Signal of Htmls
+    -- that can be rendered
+    Signal.map (config.view address) model
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt; is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;view&lt;/code&gt;. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.&lt;/p&gt;
 
 &lt;p&gt;The next post in the series deals with &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;Tasks and Effects&lt;/a&gt;, while the final post is all about &lt;a href=&quot;/2016/02/26/ports-in-elm.html&quot;&gt;ports&lt;/a&gt;. I hope you enjoyed the article and if you have any feedback please let me know!&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://danielbachler.de/2016/02/12/signals-in-elm.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2016/02/12/signals-in-elm.html</guid>
+        <link>https://danielbachler.de/2016/02/12/signals-in-elm.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2016/02/12/signals-in-elm.html</guid>
         
         
       </item>
@@ -971,8 +971,8 @@
 &lt;iframe src=&quot;//slides.com/danielbachler/fearless-refactoring-with-elm/embed&quot; width=&quot;900&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Thu, 11 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</link>
-        <guid isPermaLink="true">http://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</guid>
+        <link>https://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</guid>
         
         
       </item>

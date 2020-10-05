@@ -20,8 +20,8 @@
   <link rel="stylesheet" type="text/css" href="/css/tufte.css">
 
   <!-- <link rel="stylesheet" href="/css/main.css"> -->
-  <link rel="canonical" href="http://danielbachler.de/2016/02/12/signals-in-elm.html">
-  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+  <link rel="canonical" href="https://danielbachler.de/2016/02/12/signals-in-elm.html">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="https://danielbachler.de/feed.xml">
     <script>
         (function(d) {
             var config = {
@@ -341,51 +341,51 @@
 
 <p>At this point, if you want to really dive into it, let’s look at how <a href="https://github.com/evancz/start-app">StartApp.Simple</a> is actually implemented (I added comments and type annotation to every named value)</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">start</span> <span class="p">:</span> <span class="kt">Config</span> <span class="n">model</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="kt">Signal</span> <span class="kt">Html</span>
-<span class="n">start</span> <span class="n">config</span> <span class="o">=</span>
-  <span class="k">let</span>
-    <span class="c1">-- create the main Mailbox. It is of type "Mailbox (Maybe action)" and is</span>
-    <span class="c1">-- initialized with an "empty" value of Nothing</span>
-    <span class="n">actions</span> <span class="p">:</span> <span class="kt">Mailbox</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="n">action</span><span class="p">)</span>
-    <span class="n">actions</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">mailbox</span> <span class="kt">Nothing</span>
+<pre><code class="language-elm">start : Config model action -&gt; Signal Html
+start config =
+  let
+    -- create the main Mailbox. It is of type "Mailbox (Maybe action)" and is
+    -- initialized with an "empty" value of Nothing
+    actions : Mailbox (Maybe action)
+    actions =
+      Signal.mailbox Nothing
 
-    <span class="c1">-- here the address is set up. Since the Mailbox is of Maybe action,</span>
-    <span class="c1">-- everything that is sent to address is "wrapped" in the Just type</span>
-    <span class="c1">-- constructor and forwarded to the Mailbox</span>
-    <span class="n">address</span> <span class="p">:</span> <span class="kt">Address</span> <span class="n">action</span>
-    <span class="n">address</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">forwardTo</span> <span class="n">actions</span><span class="o">.</span><span class="n">address</span> <span class="kt">Just</span>
+    -- here the address is set up. Since the Mailbox is of Maybe action,
+    -- everything that is sent to address is "wrapped" in the Just type
+    -- constructor and forwarded to the Mailbox
+    address : Address action
+    address =
+      Signal.forwardTo actions.address Just
 
-    <span class="c1">-- This local version of update just wraps config.update to</span>
-    <span class="c1">-- take care of the Maybe part of the action that will be</span>
-    <span class="c1">-- processed (so that the update function the user provides)</span>
-    <span class="c1">-- can simply operate as Action -&gt; Model -&gt; Model)</span>
-    <span class="n">update</span> <span class="p">:</span> <span class="kt">Maybe</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="n">model</span> <span class="o">-&gt;</span> <span class="n">model</span>
-    <span class="n">update</span> <span class="n">maybeAction</span> <span class="n">model</span> <span class="o">=</span>
-      <span class="k">case</span> <span class="n">maybeAction</span> <span class="k">of</span>
-        <span class="kt">Just</span> <span class="n">action</span> <span class="o">-&gt;</span>
-            <span class="n">config</span><span class="o">.</span><span class="n">update</span> <span class="n">action</span> <span class="n">model</span>
+    -- This local version of update just wraps config.update to
+    -- take care of the Maybe part of the action that will be
+    -- processed (so that the update function the user provides)
+    -- can simply operate as Action -&gt; Model -&gt; Model)
+    update : Maybe action -&gt; model -&gt; model
+    update maybeAction model =
+      case maybeAction of
+        Just action -&gt;
+            config.update action model
 
-        <span class="kt">Nothing</span> <span class="o">-&gt;</span>
-            <span class="kt">Debug</span><span class="o">.</span><span class="n">crash</span> <span class="s">"</span><span class="s2">This should never happen."</span>
+        Nothing -&gt;
+            Debug.crash "This should never happen."
 
-    <span class="c1">-- set up a signal of new models that foldp-s over</span>
-    <span class="c1">-- the actions signal. This is the central piece</span>
-    <span class="c1">-- that makes the elm architecture work the way it does.</span>
-    <span class="c1">-- The update function will process one Action and</span>
-    <span class="c1">-- the old Model state to the new model State, the</span>
-    <span class="c1">-- Signal that triggers it all is the Mailbox' Signal</span>
-    <span class="c1">-- we set up at the top</span>
-    <span class="n">model</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="n">model</span>
-    <span class="n">model</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">foldp</span> <span class="n">update</span> <span class="n">config</span><span class="o">.</span><span class="n">model</span> <span class="n">actions</span><span class="o">.</span><span class="n">signal</span>
-  <span class="k">in</span>
-    <span class="c1">-- Finally, map over it with the view function. This</span>
-    <span class="c1">-- turns the Signal of Models into a Signal of Htmls</span>
-    <span class="c1">-- that can be rendered</span>
-    <span class="kt">Signal</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">view</span> <span class="n">address</span><span class="p">)</span> <span class="n">model</span>
-</code></pre></div></div>
+    -- set up a signal of new models that foldp-s over
+    -- the actions signal. This is the central piece
+    -- that makes the elm architecture work the way it does.
+    -- The update function will process one Action and
+    -- the old Model state to the new model State, the
+    -- Signal that triggers it all is the Mailbox' Signal
+    -- we set up at the top
+    model : Signal model
+    model =
+      Signal.foldp update config.model actions.signal
+  in
+    -- Finally, map over it with the view function. This
+    -- turns the Signal of Models into a Signal of Htmls
+    -- that can be rendered
+    Signal.map (config.view address) model
+</code></pre>
 
 <p><code class="highlighter-rouge">StartApp.Simple</code> is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply <code class="highlighter-rouge">update</code> and <code class="highlighter-rouge">view</code>. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.</p>
 

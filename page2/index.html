@@ -21,8 +21,8 @@
   <link rel="stylesheet" type="text/css" href="/css/tufte.css">
 
   <!-- <link rel="stylesheet" href="/css/main.css"> -->
-  <link rel="canonical" href="http://danielbachler.de/page2/">
-  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="http://danielbachler.de/feed.xml">
+  <link rel="canonical" href="https://danielbachler.de/page2/">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Bachler" href="https://danielbachler.de/feed.xml">
     <script>
         (function(d) {
             var config = {
@@ -676,10 +676,10 @@
 
 <p>Since we want to send stuff several times, not just once, we need to declare both ports as <code class="highlighter-rouge">Signals</code>. Let’s start with the outgoing port and on the Elm side:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">port</span> <span class="n">requestEncryption</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
-<span class="k">port</span> <span class="n">requestEncryption</span> <span class="o">=</span>
-  <span class="c1">-- how do we get a Signal here for the implementation?</span>
-</code></pre></div></div>
+<pre><code class="language-elm">port requestEncryption : Signal String
+port requestEncryption =
+  -- how do we get a Signal here for the implementation?
+</code></pre>
 
 <p>This is a simple outgoing port definition, but somehow we have to implement this port - we need a way to get a Signal that we can “trigger” in our elm app and that will be received on the JS side. Let’s see how the JS side will look like before coming back to Elm:</p>
 
@@ -696,69 +696,69 @@
 
 <p>There are two ways to do this - one is to create a new <code class="highlighter-rouge">Mailbox</code> and use <code class="highlighter-rouge">Effects</code> to send our messages, the other is to create a custom version of <code class="highlighter-rouge">StartApp</code> that returns an additional value for things to send to the port in <code class="highlighter-rouge">update</code>. I have implemented both attempts as gists, here is the <a href="https://gist.github.com/danyx23/e42ceedaccf0c4a556b8">one with the Mailbox</a> and once with a <a href="https://gist.github.com/danyx23/6004778b9322dc716373">modified StartApp</a>. For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let’s hook up the Mailbox:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">portRequestEncryptionMailbox</span> <span class="p">:</span> <span class="kt">Mailbox</span> <span class="kt">String</span>
-<span class="n">portRequestEncryptionMailbox</span> <span class="o">=</span>
-  <span class="n">mailbox</span> <span class="s">"</span><span class="s2">"</span>
+<pre><code class="language-elm">portRequestEncryptionMailbox : Mailbox String
+portRequestEncryptionMailbox =
+  mailbox ""
 
-<span class="k">port</span> <span class="n">requestEncryption</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
-<span class="k">port</span> <span class="n">requestEncryption</span> <span class="o">=</span>
-  <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">signal</span>
-</code></pre></div></div>
+port requestEncryption : Signal String
+port requestEncryption =
+  portRequestEncryptionMailbox.signal
+</code></pre>
 
 <p>This initalizes the <code class="highlighter-rouge">Mailbox</code> and fills in the hole we had before - the Signal we use as a port will just be the <code class="highlighter-rouge">Signal</code> of our new <code class="highlighter-rouge">Mailbox</code>. But how do we actually send anything to this Mailbox? By creating an Effect, like so:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sendStringToBeEncrypted</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
-<span class="n">sendStringToBeEncrypted</span> <span class="n">clearText</span> <span class="o">=</span>
-  <span class="kt">Signal</span><span class="o">.</span><span class="n">send</span> <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">address</span> <span class="n">clearText</span>
-  <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span>
-  <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="o">\</span><span class="n">_</span> <span class="o">-&gt;</span> <span class="kt">Noop</span><span class="p">)</span>
+<pre><code class="language-elm">sendStringToBeEncrypted : String -&gt; Effects Action
+sendStringToBeEncrypted clearText =
+  Signal.send portRequestEncryptionMailbox.address clearText
+  |&gt; Effects.task
+  |&gt; Effects.map (\_ -&gt; Noop)
 
-<span class="c1">-- and this is our update function that now returns a tuple of (Model, Effect):</span>
-<span class="n">update</span> <span class="p">:</span> <span class="kt">Action</span> <span class="o">-&gt;</span> <span class="kt">Model</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Model</span><span class="o">,</span> <span class="kt">Effects</span> <span class="kt">Action</span><span class="p">)</span>
-<span class="n">update</span> <span class="n">action</span> <span class="n">model</span> <span class="o">=</span>
-  <span class="k">case</span> <span class="n">action</span> <span class="k">of</span>
-    <span class="kt">TextChanged</span> <span class="n">text</span> <span class="o">-&gt;</span>
-      <span class="p">(</span> <span class="p">{</span> <span class="n">model</span> <span class="o">|</span> <span class="n">clearText</span> <span class="o">=</span> <span class="n">text</span> <span class="p">}</span>
-      <span class="o">,</span> <span class="n">sendStringToBeEncrypted</span> <span class="n">text</span> <span class="c1">-- create the Effect here</span>
-      <span class="p">)</span>
-    <span class="c1">-- other cases ...</span>
-</code></pre></div></div>
+-- and this is our update function that now returns a tuple of (Model, Effect):
+update : Action -&gt; Model -&gt; (Model, Effects Action)
+update action model =
+  case action of
+    TextChanged text -&gt;
+      ( { model | clearText = text }
+      , sendStringToBeEncrypted text -- create the Effect here
+      )
+    -- other cases ...
+</code></pre>
 
 <p>The last line in <code class="highlighter-rouge">sendStringToBeEncrypted</code> may be a bit confusing - what are we mapping there? Let’s take a look at the type of <code class="highlighter-rouge">Mailbox.send</code>:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">send</span> <span class="p">:</span> <span class="kt">Address</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="p">()</span>
-</code></pre></div></div>
+<pre><code class="language-elm">send : Address a -&gt; a -&gt; Task x ()
+</code></pre>
 
 <p>This means that the <code class="highlighter-rouge">success</code> type of the task we get back from send is <code class="highlighter-rouge">()</code> (aka Unit) which acts a bit similar to <code class="highlighter-rouge">void</code> in C like languages, i.e. it represents “no actual value”. Let me desugar <code class="highlighter-rouge">sendStringToBeEncrypted</code> so it is clearer what types we are working with:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sendStringToBeEncrypted</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
-<span class="n">sendStringToBeEncrypted</span> <span class="n">clearText</span> <span class="o">=</span>
-  <span class="n">sendTask</span> <span class="p">:</span> <span class="kt">Task</span> <span class="n">x</span> <span class="p">()</span>
-  <span class="n">sendTask</span> <span class="o">=</span> <span class="kt">Signal</span><span class="o">.</span><span class="n">send</span> <span class="n">portRequestEncryptionMailbox</span><span class="o">.</span><span class="n">address</span> <span class="n">clearText</span>
+<pre><code class="language-elm">sendStringToBeEncrypted : String -&gt; Effects Action
+sendStringToBeEncrypted clearText =
+  sendTask : Task x ()
+  sendTask = Signal.send portRequestEncryptionMailbox.address clearText
 
-  <span class="n">effectOfUnit</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="p">()</span>
-  <span class="n">effectOfUnit</span> <span class="o">=</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span> <span class="n">sendTask</span>
+  effectOfUnit : Effects ()
+  effectOfUnit = Effects.task sendTask
 
-  <span class="n">effectOfAction</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="kt">Action</span>
-  <span class="n">effectOfAction</span> <span class="o">=</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="o">\</span><span class="n">_</span> <span class="o">-&gt;</span> <span class="kt">Noop</span><span class="p">)</span>
-</code></pre></div></div>
+  effectOfAction : Effects Action
+  effectOfAction = Effects.map (\_ -&gt; Noop)
+</code></pre>
 
 <p>(Note that instead of first converting to <code class="highlighter-rouge">Effects ()</code> and then mapping that I could also have mapped the <code class="highlighter-rouge">Task x ()</code> to <code class="highlighter-rouge">Task x Action</code> and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual <code class="highlighter-rouge">Action</code> value. We are only interested in performing the side effect of sending the message and it will not have a reasonable “payload” that should be routed through update. But because of how <code class="highlighter-rouge">Effects</code> are typed in <code class="highlighter-rouge">StartApp</code>, we do need to have an <code class="highlighter-rouge">Effects Action</code> in the end and so we introduce a <code class="highlighter-rouge">Noop</code> value that explicitly does nothing when it is processed in <code class="highlighter-rouge">update</code>.</p>
 
 <p>At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don’t do this, the Tasks you create via Effects will never be executed by the runtime:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span> <span class="o">=</span>
-  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
-    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="n">init</span>
-    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
-    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
-    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="p">}</span>
+<pre><code class="language-elm">app =
+  StartApp.start
+    { init = init
+    , update = update
+    , view = view
+    , inputs = []
+    }
 
-<span class="k">port</span> <span class="n">tasks</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="p">())</span>
-<span class="k">port</span> <span class="n">tasks</span> <span class="o">=</span>
-  <span class="n">app</span><span class="o">.</span><span class="n">tasks</span>
-</code></pre></div></div>
+port tasks : Signal (Task.Task Never ())
+port tasks =
+  app.tasks
+</code></pre>
 
 <p>Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?</p>
 
@@ -778,26 +778,26 @@
 
 <p>Note that I not only had to modify <code class="highlighter-rouge">encryptString</code> but also pass in an initial value at the time when we initialize Elm with the call to <code class="highlighter-rouge">Elm.embed</code>. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because <code class="highlighter-rouge">Signals</code> in Elm always need an initial value. Let’s add this incoming port on the Elm side to complete the example:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">port</span> <span class="n">encryptionCompleted</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">String</span>
+<pre><code class="language-elm">port encryptionCompleted : Signal String
 
-</code></pre></div></div>
+</code></pre>
 
 <p>Note that this time the port we have defined has no “implementation” in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our <code class="highlighter-rouge">StartApp.start</code> call?</p>
 
 <p>In the last post, when we switched from StartApp.Simple to StartApp, I mentioned <code class="highlighter-rouge">inputs</code>. <code class="highlighter-rouge">inputs</code> is a <code class="highlighter-rouge">List of (Signal of Action)</code>, i.e. Signals that fire <code class="highlighter-rouge">Actions</code> that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined <code class="highlighter-rouge">encryptionCompleted</code> as a <code class="highlighter-rouge">Signal of String</code> and we need a <code class="highlighter-rouge">Signal of Action</code> for inputs. Sounds like we need a map again:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">encryptedString</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="kt">Action</span>
-<span class="n">encryptedString</span> <span class="o">=</span>
-  <span class="kt">Signal</span><span class="o">.</span><span class="n">map</span> <span class="kt">EncryptedValueReceived</span> <span class="n">encryptionCompleted</span>
+<pre><code class="language-elm">encryptedString : Signal Action
+encryptedString =
+  Signal.map EncryptedValueReceived encryptionCompleted
 
-<span class="n">app</span> <span class="o">=</span>
-  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
-    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="p">(</span><span class="n">init</span><span class="o">,</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">none</span><span class="p">)</span>
-    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
-    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
-    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[</span> <span class="n">encryptedString</span> <span class="p">]</span>
-    <span class="p">}</span>
-</code></pre></div></div>
+app =
+  StartApp.start
+    { init = (init, Effects.none)
+    , view = view
+    , update = update
+    , inputs = [ encryptedString ]
+    }
+</code></pre>
 
 <p>And voilà! We have a <code class="highlighter-rouge">Signal of Actions</code> that we can put into the inputs part of start.</p>
 
@@ -822,21 +822,21 @@
 
 <p><code class="highlighter-rouge">Task</code> is the more basic type (it is defined in Core) and so let’s start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It’s type is thus:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">Task</span> <span class="n">errorType</span> <span class="n">successType</span>
+<pre><code class="language-elm">Task errorType successType
 
-<span class="c1">-- (or, as it is actually written in the library:)</span>
+-- (or, as it is actually written in the library:)
 
-<span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
-</code></pre></div></div>
+Task x a
+</code></pre>
 
 <p>There are only two values of <code class="highlighter-rouge">Task</code> you can create yourself in your code, without using a separate library. These two ways are two functions:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">succeed</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
+<pre><code class="language-elm">succeed : a -&gt; Task x a
 
-<span class="c1">-- and</span>
+-- and
 
-<span class="n">fail</span> <span class="p">:</span> <span class="n">x</span> <span class="o">-&gt;</span> <span class="kt">Task</span> <span class="n">x</span> <span class="n">a</span>
-</code></pre></div></div>
+fail : x -&gt; Task x a
+</code></pre>
 
 <p>These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a <code class="highlighter-rouge">Task</code> with <code class="highlighter-rouge">succeed</code>).</p>
 
@@ -858,12 +858,12 @@
 
 <p>On to <code class="highlighter-rouge">Effects</code>! If you look at the definition for <code class="highlighter-rouge">Effects</code> it’s pretty simple:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="kt">Effects</span> <span class="n">a</span>
-    <span class="o">=</span> <span class="kt">Task</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="n">a</span><span class="p">)</span>
-    <span class="o">|</span> <span class="kt">Tick</span> <span class="p">(</span><span class="kt">Time</span> <span class="o">-&gt;</span> <span class="n">a</span><span class="p">)</span>
-    <span class="o">|</span> <span class="kt">None</span>
-    <span class="o">|</span> <span class="kt">Batch</span> <span class="p">(</span><span class="kt">List</span> <span class="p">(</span><span class="kt">Effects</span> <span class="n">a</span><span class="p">))</span>
-</code></pre></div></div>
+<pre><code class="language-elm">type Effects a
+    = Task (Task.Task Never a)
+    | Tick (Time -&gt; a)
+    | None
+    | Batch (List (Effects a))
+</code></pre>
 
 <p><code class="highlighter-rouge">None</code> and <code class="highlighter-rouge">Batch</code> are helpers, so the basic things an Effect can represent are <code class="highlighter-rouge">Tasks</code> (with error type <code class="highlighter-rouge">Never</code>) and <code class="highlighter-rouge">Ticks</code>. The latter is used for animations if you want to do something at the next animation frame.</p>
 
@@ -873,29 +873,29 @@
 
 <p>So how is this used? The <a href="https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer">Elm Architecture example 5</a> uses this very central piece of code:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">getRandomGif</span> <span class="p">:</span> <span class="kt">String</span> <span class="o">-&gt;</span> <span class="kt">Effects</span> <span class="kt">Action</span>
-<span class="n">getRandomGif</span> <span class="n">topic</span> <span class="o">=</span>
-  <span class="kt">Http</span><span class="o">.</span><span class="n">get</span> <span class="n">decodeImageUrl</span> <span class="p">(</span><span class="n">randomUrl</span> <span class="n">topic</span><span class="p">)</span>
-    <span class="o">|&gt;</span> <span class="kt">Task</span><span class="o">.</span><span class="n">toMaybe</span>
-    <span class="o">|&gt;</span> <span class="kt">Task</span><span class="o">.</span><span class="n">map</span> <span class="kt">NewGif</span>
-    <span class="o">|&gt;</span> <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span>
-</code></pre></div></div>
+<pre><code class="language-elm">getRandomGif : String -&gt; Effects Action
+getRandomGif topic =
+  Http.get decodeImageUrl (randomUrl topic)
+    |&gt; Task.toMaybe
+    |&gt; Task.map NewGif
+    |&gt; Effects.task
+</code></pre>
 
 <p>Let’s look at what it does. It starts with creating a task that represents the Http <code class="highlighter-rouge">get</code> operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what’s happening:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">getRandomGif</span> <span class="n">topic</span> <span class="o">=</span>
-  <span class="n">getTaskWithError</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Http</span><span class="o">.</span><span class="kt">Error</span> <span class="kt">String</span>
-  <span class="n">getTaskWithError</span> <span class="o">=</span> <span class="kt">Http</span><span class="o">.</span><span class="n">get</span> <span class="n">decodeImageUrl</span> <span class="p">(</span><span class="n">randomUrl</span> <span class="n">topic</span><span class="p">)</span>
+<pre><code class="language-elm">getRandomGif topic =
+  getTaskWithError : Task Http.Error String
+  getTaskWithError = Http.get decodeImageUrl (randomUrl topic)
 
-  <span class="n">getTaskWithNoErrorAndMaybe</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Never</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="kt">String</span><span class="p">)</span>
-  <span class="n">getTaskWithNoErrorAndMaybe</span> <span class="o">=</span> <span class="kt">Task</span><span class="o">.</span><span class="n">toMaybe</span> <span class="n">getTaskWithError</span>
+  getTaskWithNoErrorAndMaybe : Task Never (Maybe String)
+  getTaskWithNoErrorAndMaybe = Task.toMaybe getTaskWithError
 
-  <span class="n">getTaskWithNoErrorAndAction</span> <span class="p">:</span> <span class="kt">Task</span> <span class="kt">Never</span> <span class="p">(</span><span class="kt">Action</span><span class="p">)</span>
-  <span class="n">getTaskWithNoErrorAndAction</span> <span class="o">=</span> <span class="kt">Task</span><span class="o">.</span><span class="n">map</span> <span class="kt">NewGif</span> <span class="n">getTaskWithNoErrorAndMaybe</span>
+  getTaskWithNoErrorAndAction : Task Never (Action)
+  getTaskWithNoErrorAndAction = Task.map NewGif getTaskWithNoErrorAndMaybe
 
-  <span class="n">taskAsEffect</span> <span class="p">:</span> <span class="kt">Effects</span> <span class="kt">Action</span>
-  <span class="kt">Effects</span><span class="o">.</span><span class="n">task</span> <span class="n">getTaskWithNoErrorAndAction</span>
-</code></pre></div></div>
+  taskAsEffect : Effects Action
+  Effects.task getTaskWithNoErrorAndAction
+</code></pre>
 
 <p>So in the end, Effects in this case just wraps the Task for us. Because we used <code class="highlighter-rouge">toMaybe</code> and then mapped it to the <code class="highlighter-rouge">NewGif</code> type constructor function, this will result in an <code class="highlighter-rouge">Action</code> coming back to us via <code class="highlighter-rouge">update</code> when it is done that is either (<code class="highlighter-rouge">NewGif Nothing</code>) if the http request failed, or (<code class="highlighter-rouge">NewGif "some-url-here"</code>) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the <a href="https://github.com/evancz/elm-effects/blob/master/src/Effects.elm">implementation</a> of Effects.</p>
 
@@ -903,9 +903,9 @@
 
 <p>At this point you may wonder: why have Effects at all? Aren’t they just weird wrappers for Tasks? Let’s quickly take a look again at how the Task case of the Effects type is defined:</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="kt">Effects</span> <span class="n">a</span>
-    <span class="o">=</span> <span class="kt">Task</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="n">a</span><span class="p">)</span>
-</code></pre></div></div>
+<pre><code class="language-elm">type Effects a
+    = Task (Task.Task Never a)
+</code></pre>
 
 <p>The way <code class="highlighter-rouge">StartApp</code> is typed, going via <code class="highlighter-rouge">Effects Action</code> constraints all <code class="highlighter-rouge">Tasks</code> to come back with <code class="highlighter-rouge">Actions</code> and have the error type <code class="highlighter-rouge">Never</code>. This is really nice because it means that you don’t have to handle different task types to different ports, but you set up “pipelines” of tasks to effects like with <code class="highlighter-rouge">getRandomGif</code> above and it will all work out in a typesafe manner that the result of your tasks will be sent back to your program’s <code class="highlighter-rouge">update</code> function as <code class="highlighter-rouge">Actions</code>.</p>
 
@@ -918,23 +918,23 @@
   <li>The tasks part of the record that is returned by <code class="highlighter-rouge">start</code> has to be handed to a port so that the <code class="highlighter-rouge">Tasks/Effects</code> are actually performed by the runtime like so:</li>
 </ol>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span> <span class="o">=</span>
-  <span class="kt">StartApp</span><span class="o">.</span><span class="n">start</span>
-    <span class="p">{</span> <span class="n">init</span> <span class="o">=</span> <span class="n">init</span> <span class="s">"</span><span class="s2">funny cats"</span>
-    <span class="o">,</span> <span class="n">update</span> <span class="o">=</span> <span class="n">update</span>
-    <span class="o">,</span> <span class="n">view</span> <span class="o">=</span> <span class="n">view</span>
-    <span class="o">,</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="p">}</span>
+<pre><code class="language-elm">app =
+  StartApp.start
+    { init = init "funny cats"
+    , update = update
+    , view = view
+    , inputs = []
+    }
 
 
-<span class="n">main</span> <span class="o">=</span>
-  <span class="n">app</span><span class="o">.</span><span class="n">html</span>
+main =
+  app.html
 
 
-<span class="k">port</span> <span class="n">tasks</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="p">(</span><span class="kt">Task</span><span class="o">.</span><span class="kt">Task</span> <span class="kt">Never</span> <span class="p">())</span>
-<span class="k">port</span> <span class="n">tasks</span> <span class="o">=</span>
-  <span class="n">app</span><span class="o">.</span><span class="n">tasks</span>
-</code></pre></div></div>
+port tasks : Signal (Task.Task Never ())
+port tasks =
+  app.tasks
+</code></pre>
 
 <p>Phew, this got a little long again, but I hope it helps a little to understand how Tasks/Effects work!</p>
 
@@ -974,51 +974,51 @@
 
 <p>At this point, if you want to really dive into it, let’s look at how <a href="https://github.com/evancz/start-app">StartApp.Simple</a> is actually implemented (I added comments and type annotation to every named value)</p>
 
-<div class="language-elm highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">start</span> <span class="p">:</span> <span class="kt">Config</span> <span class="n">model</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="kt">Signal</span> <span class="kt">Html</span>
-<span class="n">start</span> <span class="n">config</span> <span class="o">=</span>
-  <span class="k">let</span>
-    <span class="c1">-- create the main Mailbox. It is of type "Mailbox (Maybe action)" and is</span>
-    <span class="c1">-- initialized with an "empty" value of Nothing</span>
-    <span class="n">actions</span> <span class="p">:</span> <span class="kt">Mailbox</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="n">action</span><span class="p">)</span>
-    <span class="n">actions</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">mailbox</span> <span class="kt">Nothing</span>
+<pre><code class="language-elm">start : Config model action -&gt; Signal Html
+start config =
+  let
+    -- create the main Mailbox. It is of type "Mailbox (Maybe action)" and is
+    -- initialized with an "empty" value of Nothing
+    actions : Mailbox (Maybe action)
+    actions =
+      Signal.mailbox Nothing
 
-    <span class="c1">-- here the address is set up. Since the Mailbox is of Maybe action,</span>
-    <span class="c1">-- everything that is sent to address is "wrapped" in the Just type</span>
-    <span class="c1">-- constructor and forwarded to the Mailbox</span>
-    <span class="n">address</span> <span class="p">:</span> <span class="kt">Address</span> <span class="n">action</span>
-    <span class="n">address</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">forwardTo</span> <span class="n">actions</span><span class="o">.</span><span class="n">address</span> <span class="kt">Just</span>
+    -- here the address is set up. Since the Mailbox is of Maybe action,
+    -- everything that is sent to address is "wrapped" in the Just type
+    -- constructor and forwarded to the Mailbox
+    address : Address action
+    address =
+      Signal.forwardTo actions.address Just
 
-    <span class="c1">-- This local version of update just wraps config.update to</span>
-    <span class="c1">-- take care of the Maybe part of the action that will be</span>
-    <span class="c1">-- processed (so that the update function the user provides)</span>
-    <span class="c1">-- can simply operate as Action -&gt; Model -&gt; Model)</span>
-    <span class="n">update</span> <span class="p">:</span> <span class="kt">Maybe</span> <span class="n">action</span> <span class="o">-&gt;</span> <span class="n">model</span> <span class="o">-&gt;</span> <span class="n">model</span>
-    <span class="n">update</span> <span class="n">maybeAction</span> <span class="n">model</span> <span class="o">=</span>
-      <span class="k">case</span> <span class="n">maybeAction</span> <span class="k">of</span>
-        <span class="kt">Just</span> <span class="n">action</span> <span class="o">-&gt;</span>
-            <span class="n">config</span><span class="o">.</span><span class="n">update</span> <span class="n">action</span> <span class="n">model</span>
+    -- This local version of update just wraps config.update to
+    -- take care of the Maybe part of the action that will be
+    -- processed (so that the update function the user provides)
+    -- can simply operate as Action -&gt; Model -&gt; Model)
+    update : Maybe action -&gt; model -&gt; model
+    update maybeAction model =
+      case maybeAction of
+        Just action -&gt;
+            config.update action model
 
-        <span class="kt">Nothing</span> <span class="o">-&gt;</span>
-            <span class="kt">Debug</span><span class="o">.</span><span class="n">crash</span> <span class="s">"</span><span class="s2">This should never happen."</span>
+        Nothing -&gt;
+            Debug.crash "This should never happen."
 
-    <span class="c1">-- set up a signal of new models that foldp-s over</span>
-    <span class="c1">-- the actions signal. This is the central piece</span>
-    <span class="c1">-- that makes the elm architecture work the way it does.</span>
-    <span class="c1">-- The update function will process one Action and</span>
-    <span class="c1">-- the old Model state to the new model State, the</span>
-    <span class="c1">-- Signal that triggers it all is the Mailbox' Signal</span>
-    <span class="c1">-- we set up at the top</span>
-    <span class="n">model</span> <span class="p">:</span> <span class="kt">Signal</span> <span class="n">model</span>
-    <span class="n">model</span> <span class="o">=</span>
-      <span class="kt">Signal</span><span class="o">.</span><span class="n">foldp</span> <span class="n">update</span> <span class="n">config</span><span class="o">.</span><span class="n">model</span> <span class="n">actions</span><span class="o">.</span><span class="n">signal</span>
-  <span class="k">in</span>
-    <span class="c1">-- Finally, map over it with the view function. This</span>
-    <span class="c1">-- turns the Signal of Models into a Signal of Htmls</span>
-    <span class="c1">-- that can be rendered</span>
-    <span class="kt">Signal</span><span class="o">.</span><span class="n">map</span> <span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">view</span> <span class="n">address</span><span class="p">)</span> <span class="n">model</span>
-</code></pre></div></div>
+    -- set up a signal of new models that foldp-s over
+    -- the actions signal. This is the central piece
+    -- that makes the elm architecture work the way it does.
+    -- The update function will process one Action and
+    -- the old Model state to the new model State, the
+    -- Signal that triggers it all is the Mailbox' Signal
+    -- we set up at the top
+    model : Signal model
+    model =
+      Signal.foldp update config.model actions.signal
+  in
+    -- Finally, map over it with the view function. This
+    -- turns the Signal of Models into a Signal of Htmls
+    -- that can be rendered
+    Signal.map (config.view address) model
+</code></pre>
 
 <p><code class="highlighter-rouge">StartApp.Simple</code> is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply <code class="highlighter-rouge">update</code> and <code class="highlighter-rouge">view</code>. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.</p>
 
