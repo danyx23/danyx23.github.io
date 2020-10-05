@@ -11,7 +11,7 @@ email: daniel@danielbachler.de
 description: > # this means to ignore newlines until "baseurl:"
   The personal website of Daniel Bachler - Software Engineer and Photographer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://danielbachler.de" # the base hostname & protocol for your site
+url: "https://danielbachler.de" # the base hostname & protocol for your site
 twitter_username: danyx23
 github_username:  danyx23
 paginate: 5
