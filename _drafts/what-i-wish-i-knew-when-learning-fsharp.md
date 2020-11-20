@@ -32,6 +32,8 @@ I never trust articles that never mention any down sides - so here are some that
 
 Both the .NET and the Javascript compilation targets (see below for more) are garbage collected. There is some support for memory pinning etc for FFI purposes but in general if you can't afford GC F# is not for you.
 
+The .NET ecosystem is dominated by C#, a language with exceptions, nulls and a heavy lean on classes with inheritance hierarchies as the main design tool. F# tries to favor Result values over Exceptions, makes it hard to create types that have null as a possible value and prefers functions, interfaces and simple algebraic data types over classes and inheritance. Because of this divide you do have to understand C# well enough to consume libraries and to translate some concepts.
+
 If you mainly do machine learning then the library and ecosystem in Python is much more developed than that on .NET.
 
 It has relatively weak metaprogramming capabilities and it doesn't have higher kinded types. This means that there is a ceiling to the abstractions and terse-ness of your code vs something like Haskell - if you know you'll need or want that then Haskell is a better choice.
@@ -97,6 +99,8 @@ The [F-Sharp language overview](https://docs.microsoft.com/en-in/dotnet/fsharp/l
 
 Since you probably know some other programming language already the [Rosetta Code project](http://rosettacode.org/wiki/Category:F_Sharp) can be a good starting point to quickly learn how to do common things in F#.
 
+
+QUESTION: move the stuff below into it's own blog post?
 
 ### Json
 

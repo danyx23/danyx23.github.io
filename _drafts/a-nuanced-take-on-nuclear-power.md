@@ -16,4 +16,4 @@ Nuclear power plants need a certain size for thermal efficency. They also requir
 This bias towards big installations means that they will always be big infrastructure projects
 As such they tend to have cost overruns and delays and competition and market forces don't work well
 Even if we could make small firms compete, we wouldn't want half-finished reactor buildings or irradiated cores to be standing around if a startup goes bust
-In electricity markets they are a poor 
+In electricity markets they are a poor
