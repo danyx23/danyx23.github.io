@@ -22,4 +22,4 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-gems: [jekyll-paginate, jekyll-gist]
+plugins: [jekyll-paginate, jekyll-gist, jekyll-feed, jekyll-toc]

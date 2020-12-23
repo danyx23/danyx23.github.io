@@ -4,3 +4,5 @@ _site
 .idea/
 presentations/.hg/
 presentations/.gitignore
+vendor/
+.jekyll-cache

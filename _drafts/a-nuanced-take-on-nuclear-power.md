@@ -16,4 +16,10 @@ Nuclear power plants need a certain size for thermal efficency. They also requir
 This bias towards big installations means that they will always be big infrastructure projects
 As such they tend to have cost overruns and delays and competition and market forces don't work well
 Even if we could make small firms compete, we wouldn't want half-finished reactor buildings or irradiated cores to be standing around if a startup goes bust
-In electricity markets they are a poor
+They are not a good intermittent power provider - it's pretty cheap per MWh to keep them running once built but hard to turn them on and off. Yet for complementing renewables outside of a base load level we need mostly good intermittent power sources.
+
+My personal policy preference:
+Invest more public money into research and building research reactors of advanced reactor designes (ideally all of: passively safe, breeding capacity to use old spent fuel, low proliferation risk, long lifetime, relatively simple and scalable construction)
+Prioritize decomissioning of coal power plants over old nuclear (i.e. don't turn off old nuclear plants that withstand current safety standards before you have turned off most remaining coal)
+Treat advanced nuclear fission as a potentially useful supplement for baseload or some remote locations but acknowledge that renewables + battery storage will be the major focus of electricity generation
+Acknowledge that by the time advanced nuclear reactors can be built nuclear fusion might be the preferred solution (ITER is still 15 years away from completion but various smaller new test reactors might be quicker to finish)
