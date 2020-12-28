@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Thoughts on fighting climate change effectively
+toc: true
 ---
 
 In the last few months, climate change has been discussed with renewed vigor in the media and on social networks. More and more people realize that we have a problem but a lot of the current focus doesn’t seem to be directed at the pragmatic goal we should be aiming for: mitigating climate change as far as possible.

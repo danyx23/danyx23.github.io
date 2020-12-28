@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Tasks and Effects in Elm
+excerpt_separator: <!--more-->
 ---
 (Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)
 
 This is the second post in a series on some of the concepts in [Elm](http://elm-lang.org/) that might be a bit puzzling when you start out with Elm. In the [last post about Signals in Elm]({% post_url 2016-02-12-signals-in-elm %}) I wrote about Signals and how they are behind the scenes of `StartApp.Simple`. In this post I get into long running operations like XHRs (aka AJAX). There are two closely related types that are involved in this, `Tasks` and `Effects`, and the exact differences between can be confusing in the beginning. So let's dive right in:
+
+<!--more-->
 
 ### Tasks
 

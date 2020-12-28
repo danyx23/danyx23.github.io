@@ -3,10 +3,13 @@ layout: post
 title: 920 Milligray website finished
 created: 1310828255
 categories: []
+excerpt_separator: <!--more-->
 ---
 <p><a href="http://www.920milligray.com"><img width="780" height="134" src="/files/milligray-banner.jpg" alt="" /></a></p>
 
 <p>I finally finished work on the website for the film I am currently working on, <a href="http://920milligray.com">920 Milligray</a>. The design was done by Marius Wawer and I built the html page and set up a <a href="http://www.drupal.org">drupal cms</a> for the future (it currently only serves the FAQ page).</p>
+
+<!--more-->
 
 <p>920 Milligray is going to be a drama centred on Katja, a young girl who barely knew the world before the catastrophe, and her older brother Uwe. The film is set in a post apocalyptic Europe and is currently in development. BTW, we are actively looking for production companies to get on board so if you know someone who might be interested, please tell them about the project!</p>
 

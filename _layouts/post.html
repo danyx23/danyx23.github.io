@@ -4,4 +4,20 @@ layout: default
 <h1>{{ page.title}}</h1>
 <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
 
-{{ content }}
+{% assign toc = content | toc_only %}
+{% assign tocwords = toc | number_of_words %}
+{% assign content_with_anchors = content | inject_anchors %}
+
+
+<article id="markdown-content">
+    {% if tocwords > 0 %}
+    <div id="table-of-contents">
+        <div class="marginnote">
+            <h4>Contents of this post:</h4>
+            {{ toc }}
+        </div>
+    </div>
+    {% endif %}
+
+    {{ content_with_anchors }}
+</article>

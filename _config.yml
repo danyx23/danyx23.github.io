@@ -15,11 +15,11 @@ url: "https://danielbachler.de" # the base hostname & protocol for your site
 twitter_username: danyx23
 github_username:  danyx23
 paginate: 5
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'old-content']
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
 
-plugins: [jekyll-paginate, jekyll-gist, jekyll-feed, jekyll-toc]
+plugins: [jekyll-paginate, jekyll-gist, jekyll-feed, jekyll-toc] # add jekyll-feed again!

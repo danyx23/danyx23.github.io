@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Signals in Elm
+excerpt_separator: <!--more-->
 ---
 (Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)
 
 I have rewritten a webapp from React/Redux to [Elm](http://elm-lang.org/) over the last few weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I have participated in the Elm google group quite a bit lately and I noticed that even though the Elm docs are really good, there are some concepts that are a bit hard to understand and to differentiate from each other. I am therefore starting a mini-series of posts about different concepts in Elm. This first one is about Signals - and why you don't see them much in many smaller Elm programs even though they are always there.
+
+<!--more-->
 
 These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the [great primer "Road to Elm"](http://www.lambdacat.com/road-to-elm-index/) by Lambdacat and then studied the [Elm Architecture Tutorials](https://github.com/evancz/elm-architecture-tutorial) a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). If you already know about Signals, you may want to jump ahead to the next post about [tasks and effects]({% post_url 2016-02-19-tasks-and-effects-in-elm %}) or the one after that about [ports]({% post_url 2016-02-26-ports-in-elm %})
 
