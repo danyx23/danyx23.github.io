@@ -80,7 +80,7 @@ Unless you are familiar with and really want to use the old Visual Studio I woul
 
 VS, VS Code and Rider all offer integrated debugging (step through, see values, break on exception etc). Call stacks in code using computation expressions can be a bit hard to parse because the wiring of the Bind implementation is interwoven with your own code but for most needs this is a pretty nice debugging experience; definitely better than with a lot of other statically typed functional programming languages.
 
-There is a repl (`dotnet fsi` when you are on dotnet core 3+) and there is some support for loading files with their dependencies into it or to use libraries in scripts and evaluate parts of that in the interactive repl of your editor. This experience is not as great as with Lisps but works ok (with .NET Core Version 5 the story for referencing third party packages got a lot better so if you tried the repl experience before and were disappointed it is worth checking it out again).
+There is a repl (`dotnet fsi` when you are on dotnet core 3+) and there is  support for loading files with their dependencies into it or to use libraries in scripts and evaluate parts of that in the interactive repl of your editor. This experience is not as great as with Lisps but works ok (with .NET Core Version 5 the story for referencing third party packages got a lot better so if you tried the repl experience before and were disappointed it is worth checking it out again).
 
 ## The standard library
 
@@ -132,6 +132,8 @@ I feel Fable is a very pragmatic solution that enables the very interesting poss
 
 If you are interested in Fable for writing frontend application then [the Elmish Book](https://zaid-ajaj.github.io/the-elmish-book/#/) is a great resource that explains all the moving pieces to create complex web apps using Fable.
 
+A list of Fable libraries is maintained at the [Awesome Fable](https://github.com/kunjee17/awesome-fable) repository.
+
 ### The SAFE Stack
 
 Worth a special mention is the [SAFE stack](https://safe-stack.github.io/). This is a preconfigured template that sets up F# on the backend (using ASP.NET core via either the straight forward [Giraffe library](https://github.com/giraffe-fsharp/Giraffe) or the more opinionated [Saturn library](https://saturnframework.org/)), and on the frontend (using Fable 2 as of late 2020). The SAFE template can either be used in a barebones configuration or in a more opinionated, fully fledged version that comes with frontend and backend testing libraries, Bulma preselected as a style framework, a choice of type safe automated communication between frontend and backend and so forth.
@@ -150,15 +152,47 @@ The [Awesome F#](https://github.com/fsprojects/awesome-fsharp) list is a great o
 
 Every December there is also the tradition of the [F# Advent Calendar](https://sergeytihon.com/2020/10/22/f-advent-calendar-in-english-2020/) where various members of the community write a blog post about something F# related that interests them. It's a good way to discover interesting uses of F#.
 
+
+## Community
+
+The [F# Foundation website](https://fsharp.org/) is a good starting point to learn more about the various parts of the language etc. The F# Foundation manages various web properties and among others the fsharp github organisation.
+
+Don Syme [@dsyme](https://twitter.com/dsyme) is the primary creator of the language and has worked on it since the precursors of F# in the late 90ies at Microsoft (F# grew out of the desire to have an ML language for the .NET Platform that was not yet released at the time - you can find out more about the history [here](https://fsharp.org/history/hopl-final/hopl-fsharp.pdf)). At Microsoft there are a few more people working on F# and Visual F# (the Visual Studio integration), the most visible of whom is probably Philip Carter [@_cartermp](https://twitter.com/_cartermp).
+
+Over the last 8 years or so the .NET Framework became cross platform with .NET Core and F# could be used outside of Visual Studio and also targeting Javascript. In this development, Krzysztof Cieślak [@k_cieslak](https://twitter.com/k_cieslak) was very important as the author of the VS Code extension Ionide, as was Steffen Forkmann [@sforkmann](https://twitter.com/sforkmann) who created Paket, a Nuget package manager that uses lockfiles and avoids problems the official Nuget manager has.
+
+Alfonso Garcia-Caro [@alfonsogcnunez](https://twitter.com/alfonsogcnunez) is the creator of Fable, the Javascript backend for F#. Isaac Abraham [@isaac_abraham](https://twitter.com/isaac_abraham) is the author of "[Get Programming with F#](https://www.manning.com/books/get-programming-with-f-sharp)" which I heard good things about and one of the initiators of the SAFE stack (the preconfigured template for F# on .NET Core on the server and F# using Fable on the Frontend for a full stack F# experience).
+
+Scott Wlaschin [@ScottWlaschin](https://twitter.com/ScottWlaschin) is the author of the wonderful F# learning resource [FSharpForFunAndProfit](https://fsharpforfunandprofit.com/) and the very nice general Domain Driven Design book "[Domain Modeling Made Functional](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/)".
+
+Sergey Tihon [@sergey_tihon](https://twitter.com/sergey_tihon) runs [F# Weekly](https://sergeytihon.com/category/f-weekly/), a great resource to keep up to date with developments in the F# world.
+
+Zaid Ajaj [@zaid_ajaj](https://twitter.com/zaid_ajaj) is the author of numerous projects in the Falbe universe and [the Elmish Book](https://zaid-ajaj.github.io/the-elmish-book/#/), a great, free resource that explains Fable, the Elmish state management library and so forth including tips on creating larger applications and workflows.
+
+There are of course many more people who work on the F# ecosystem or talk and write about it and I could never list them all - but the above list is a small overview of some key people in the ecosystem that you might want to follow on twitter.
+
+The F# community is overall very welcoming and friendly. As often with small niche communities that are close to another, more mainstream ecosystem, there is some occasional frustration, e.g. about F# not receiving more support from Microsoft. The reddit channel F# is apparently frequented by a few strange people, so you may prefer to stick to the [F# slack](https://fsharp.org/guides/slack/) or [Forums](https://forums.fsharp.org/).
+
+F# is a topic at many FP friendly conferences but there are also two F# specific conferences: [Open FSharp](https://www.openfsharp.org/) and [Fable Conf](https://fable.io/fableconf/#home).
+
+
 ## Common gotchas
 
 This is necessarily an incomplete list but here are a few things that can baffle beginners or where it may help to have been warned about differences in philosophy of different corners of the ecosystem. I concentrate here on things that are helpful to know when you start to read tutorials or open source F# code.
 
+### Generic type parameters and list, option etc
+
+Generics (aka parametric polymorphism) make it possible to write types that are parametrized by one or more other types which is e.g. useful for properly typed collection classes. In C# the syntax is always using angle brackets and uppercase type variables, e.g. List<T>. In F#, generic type variables when declaring new generic types have to use a single quote prefix like so (lower case is more common but both exist): `'a`, so a type definition with a generic type is defined as `List<'T>`. Because of F#s OCaml heritage, there is an alternative syntax for declaring concrete instances of generic types which is a postfix notation like so: `'T list`. The angle bracket syntax is by convention preferred for all but 4 generic types which are `list`, `array`, `ref` and `option`. This is a bit random trivia but it is helpful to know this when reading F# so I wanted to mention it.
+
+```fsharp
+let intOptionA : int list = [ 3; 4 ]
+let intOptionB : List<int> = [ 3; 4 ] // same as above
+```
 
 ### Collections
 The .NET Framework version 1 didn't have generics (parametric polymorphism), so the old collection classes in System.Collections all have the items as untyped objects {% sidenote 'sn-arraylist' 'e.g. `System.Collections.ArrayList` which is a dynamically growing vector type that contains `object`s - `object` is the implicit base type of every type in .NET' %}. Version 2 added generics and so we now have new versions of the collection classes in System.Collections.Generic {% sidenote 'sn-list' 'e.g. `System.Collections.Generic.List<T>` in there which is a dynamically growing vector with items of type T that is specified at the instantiation point' %}.
 
-To increase the confusion, F# brings it's own philosophy on collection classes coming from the OCaml tradition and this is in some parts a bit at odds with the .NET standard library naming and live in the FSharp.Collections namespace that is open by default. In F# there are five main collection types: `List<T>` (immutable single linked lists) created with the literal syntax `[ 1; 2; 3]`; `Array<T>` which are mutable fixed size .NET arrays that are contiguous in memory and created with the literal syntax `[| 1; 2; 3|]`; `Seq<T>` which are lazy iterators (the IEnumerable interface in C#) created with the literal syntax `seq { yield 1; yield 2; yield 3}`; `Set<T>` which is an immutable set implemented as a sorted tree that has no native literal syntax; and `Map<K, V>` which are immutable key/value maps/dictionaries implemented as ordered trees that have no native literal syntax.
+To increase the confusion, F# brings it's own philosophy on collection classes coming from the OCaml tradition and this is in some parts a bit at odds with the .NET standard library naming. The F# collections live in the FSharp.Collections namespace that is open by default and contains the following 5 main collection types: `List<T>` (immutable single linked lists) created with the literal syntax `[ 1; 2; 3]`; `Array<T>` which are mutable fixed size .NET arrays that are contiguous in memory and created with the literal syntax `[| 1; 2; 3|]`; `Seq<T>` which are lazy iterators (the IEnumerable interface in C#) created with the literal syntax `seq { yield 1; yield 2; yield 3}`; `Set<T>` which is an immutable set implemented as a sorted tree that has no native literal syntax; and `Map<K, V>` which are immutable key/value maps/dictionaries implemented as ordered trees that have no native literal syntax.
 
 ```fsharp
 let linkedList = [ 1; 2; 3]
@@ -168,9 +202,19 @@ let set = Set([1; 2; 3])
 let map = Map([ ("first", 42); ("second", 23)])
 ```
 
-Functions that operate on these collections are in modules of the same name, so to map over a Seq you write `seq { yield 1 } |> Seq.map (fun x -> x + 1)`; to map over an array is `[| 1 |] |> Array.map (fun x -> x + 1)` and so forth.
+Functions that operate on these collections are in modules of the same name:
 
-Which is all fine so far, only that when you then look for C# code of some library you will never see these collection classes and instead see the main collections from the standard library which are mutable: `System.Collections.Generic.List<T>` which is a mutable, dynamically resized vector; and `System.Collections.Generic.Dictionary<K, V>` which is a mutable Hashmap. So in F# code unless there is an open statement for System.Collections.Generic the type List will mean the F# immutable linked list, but in C# code or if the System.Collections.Generic namespace is opened, List refers to the mutable dynamically resized vector.
+```fsharp
+let incrementedSequence =
+    lazySequence
+    |> Seq.map (fun x -> x + 1)
+
+let incrementedArray =
+    fixedArray
+    |> Array.map (fun x -> x + 1)
+```
+
+Which is all fine so far, but what can be a bit confusing when getting started is that if you look for C# code of some library you will never see these collection classes and instead see the main collections from the standard library which are mutable: `System.Collections.Generic.List<T>` which is a mutable, dynamically resized vector; and `System.Collections.Generic.Dictionary<K, V>` which is a mutable Hashmap. So in F# code unless there is an open statement for System.Collections.Generic the type List will mean the F# immutable linked list, but in C# code or if the System.Collections.Generic namespace is opened, List refers to the mutable dynamically resized vector.
 
 ```fsharp
 open System.Collections.Generic
@@ -178,16 +222,9 @@ let mutableVector = List<int>(seq {yield 1; yield 2; yield 3})
 mutableVector.[1] <- 23
 mutableVector.Add(55) // add 55 as the last (4tht) element
 ```
-### Generic type parameters and list, option etc
-
-Generics (aka parametric polymorphism) make it possible to write types that are parametrized by one or more other types which is e.g. useful for properly typed collection classes. In C# the syntax is always using angle brackets and uppercase type variables, e.g. List<T>. In F#, generic type variables when declaring new generic types have to use a single quote prefix like so (lower case is more common but both exist): `'a`, so a type definition with a generic type is defined as `List<'T>`. Because of F#s OCaml heritage, there is an alternative syntax for declaring concrete instances of generic types which is a postfix notation like so: `'T list`. The angle bracket syntax is by convention preferred for all but 4 generic types which are `list`, `array`, `ref` and `option`. This is a bit random trivia but it is helpful to know this when reading F# so I wanted to mention it.
-
-```fsharp
-let intOptionA : int option = Some 3
-let intOptionB : Option<int> = Some 3 // same as above
-```
 
 ### Async
+
 Async operations are designed to allow efficient use of non-blocking IO, by freeing the thread they are called on to sleep until the operating system is done with the IO and will then resume your thread at the point where it left off. Many methods in both the standard library and third party libraries exist in both an async version and a sync (blocking) version where the latter is a little easier to use for cases where you don't mind the blocking (but it's usually good style to use the async version). As an example, the `CsvFile` class from the commonly used FSharp.Data library has a static method `AsyncLoad(...)` that returns an `Async<CsvFile>`, i.e. the fact that this operation is async is also visible in the return type: in this case an async computation that, when all the non-blocking io is completed, will return a CsvFile instance.
 
 Async is relatively similar to promises or futures in other languages, but where these are usually started immediately, in F# an async value is not immediately "run" on your behalf. This can seem a bit annoying because you have to manually start it at some point in your code {% sidenote 'sn-async' 'Usually at the top of your console program you somewhere have an `Async.RunSynchronously(myAsyncComputation)` call or in the case of a webserver handler function the framework you use handles this for you and you just supply a function that returns an async value' %}. But the upside is that it composes much better and you can assemble deeply nested async workflows and then decide if you want to execute and block until done, execute and be notified, execute multiple async values in parallel etc.
@@ -216,13 +253,86 @@ let csvProcessingFunction() : Async<unit> =
     }
 ```
 
-This is a function that returns an Async of unit (no return value). The body is using the async computation expression. The first let binding to the variable prefix is a normal binding, i.e. the string value on the right hand side is bound to the name on the left hand side. The second let bang binding is a bit different. Here the right hand side is a the ReadAllTextAsync function that returns a Task<string> which is then passed to Async.AwaitTask to convert to Async<string> (see below for Async vs Task).
+This is a function that returns an Async of unit (no return value). The body is using the async computation expression. The first let binding to the variable prefix is a normal binding, i.e. the string value on the right hand side is bound to the name on the left hand side. The second let bang binding is a bit different. Here the right hand side is a the ReadAllTextAsync function that returns a `Task<string>` which is then passed to Async.AwaitTask to convert to `Async<string>` (see below for Async vs Task).
 
-What the let! is doing now is that it looks up the implementation for the async { } computation expression and lets it "deal with" the async value. Once this is done the content of the async, in this case a string value is bound to fileContent {% sidenote 'sn-computation-expression' 'What is actually happening is that the F# compiler breaks the function into continuation chunks at these points. The Bind function which is one of the two mandatory function of a computation expression implementation then gives the implementation for how to deal with a wrapped value and a continuation function that receives an unwrapped value and returns a wrapped value again' %}. The result of ReadAllTextAsync is a Task so it is piped here to Async.AwaitTask which turns it into an Async value. If you were to use a normal let (without the !) then the fileContent would contain the Async<string> value and we wouldn't be able to make use of the result of this async computation yet. do! is simalar, the difference being that here no value is bound, just a statement executed for its side effect.
+What the `let!` is doing now is that it looks up the implementation for the `async { }` computation expression and lets it "deal with" the async value. Once this is done the content of the async, in this case a string value is bound to fileContent {% sidenote 'sn-computation-expression' 'What is actually happening is that the F# compiler breaks the function into continuation chunks at these points. The Bind function which is one of the two mandatory function of a computation expression implementation then gives the implementation for how to deal with a wrapped value and a continuation function that receives an unwrapped value and returns a wrapped value again' %}. The result of `ReadAllTextAsync` is a Task so it is piped here to `Async.AwaitTask` which turns it into an Async value. If you were to use a normal let (without the !) then the fileContent would contain the `Async<string>` value and we wouldn't be able to make use of the result of this async computation yet. do! is simalar, the difference being that here no value is bound, just a statement executed for its side effect.
 
 ### Async vs Task
 
 Async came to F# in version 2.0 around 2010 and a bit later in C# 5 (released in 2012), C# and the standard library came out with a very similar but somewhat different approach to async. Unfortunately the two approaches did not use the same types to represent this in an easily compatible way, even if they represent semantically very similar concepts. I assume that this might have to do with different desired default behaviour. As described above, Async's are not evaluated until run whereas Tasks in most uses are immediately started (just like Promises and Futures in most languages). Because C# is the dominant language in .NET, most third party libraries you use will return a `Task<T>` value when performing asynchronous computations. One actual benefit that C#'s Task implementation has is that is has a lower overhead. For IO bound operations this doesn't matter much but when a task is CPU bound and a lot of very short lived Tasks are created then they will generally outperform their Async counter part. When using C# libraries in F# you can easily convert between Task and Async (using Async.AwaitTask as shown above and Async.StartAsTask) and default to Async, but when writing an F# library that should be easily consumable from C# it's better to use the Task type.
+
+### Semicolons vs newlines in lists and records
+
+Something that can be confusing for newcomers is that many literals can either be created on the same line with semicolons as separators or using newlines with the correct indentation. The following examples show this:
+
+```fsharp
+let list1 = [ 1; 2; 3]
+let list2 =
+    [ 1
+      2
+      3 ]
+type RecordA = { FieldA : string; FieldB : int}
+type RecordB =
+    { FieldA : string
+      FieldB : int }
+```
+
+### Anonymous records
+
+F# 4.6 introduced anonymous records with a slightly different syntax from normal records. They are useful for cases where a full records seems overkill but a tuple misses some information, for example for color triples or similar. Because of some constraints with regards to the .NET runtime, anonymous records can have some surprising behaviour, e.g. two values with the same shape become the same anonymous record type when declared in the same assembly, but different ones across assembly borders. This means that using anonymous records is fine for returning semi-complex data in a slightly ad-hoc way from functions but they should be promoted to proper records when used in a more public API.
+
+```fsharp
+// using a named record
+type NamedFullName =
+    { FirstName : string
+      LastName : string }
+
+let name1: NamedFullName =
+    { FirstName = "Albert"
+      LastName = "Einstein" }
+
+// using an anonymous record that also has a BirthDate
+
+let name2 =
+    {| FirstName = "Roger"
+       LastName = "Penrose"
+       BirthDate = System.DateTime(1931, 8, 8) |}
+
+```
+
+### Modules vs member functions
+
+A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to replace a value in a string you can either do `"Teststring".Length` or you can use `String.length "Teststring"`. The functionality is different between the two, e.g. replace only exists as a member function, map only in the module. Just another little oddity that is good to be aware of.
+
+### Operator precedence
+
+If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. >== for monadic bind, <*> for lifting binary functions ets. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell's various lens libraries are not really feasible.
+
+### Type inference order and the obsession with the |> pipe operator
+
+The F# compiler works in a single pass which has some consequences that can trip up newcomers. The obvious one is that in an F# project, the order of files matters and inside files the order of declarations is relevant as you can only ever use types, values and functions that have been already declared "further up". The only exception to this is if you declare a rec module or use mutually recursive type definitions. This may seem really annoying at first but turns out to work very well in practice when navigating larger programs.
+
+The other, less obvious result of the single pass is that even within expressions the F# compile can sometimes fail type inference for earlier tokens that would become clear when taking later parts into account when e.g. using member functions. Consider this example:
+
+```fsharp
+let strLength =
+    List.map (fun x -> x.Length) ["hello"; "world"]
+```
+
+In this form the compiler rejects it. If you rearrange it a bit so that the type parameter for List becomes fixed by putting the string array first and piping it into the rest then it works:
+
+```fsharp
+let strLength =
+    ["hello"; "world"]
+    |> List.map (fun x -> x.Length)
+```
+
+Arguably this reads nicer but it sometimes feels a bit silly to have to do this. Note that this is only necessary because we wanted to access a member in the lambda function - if we had used a normal function then it would have worked:
+
+```fsharp
+let strLength =
+    List.map String.length ["hello"; "world"]
+```
 
 ### The Open keyword, Namespaces and Modules
 
@@ -242,7 +352,9 @@ module ModuleB =
         { RecordMember : ModuleA.SomeRecord }
 ```
 
-All of this seems straightforward enough but the confusion comes when you use namespaces, modules, values and types with the open keyword. This allows you to omit the namespace/module/class part of a type/function/value, i.e. instead of `System.IO.File` you can first `open System.IO` and then just use `File` to mean the same type. Open's override each other in turn so if another namespace/module is opened later that also defines a File then it will resolve to the one that was opened further down in the file.
+All of this seems straightforward enough but the confusion comes when you use namespaces, modules, values and types with the open keyword. This allows you to omit the namespace/module/class part of a type/function/value, i.e. instead of `System.IO.File` you can first `open System.IO` and then just use `File` to mean the same type.
+
+Open's override each other in turn so if another namespace/module is opened later that also defines a File then it will resolve to the one that was opened further down in the file.
 
 ```fsharp
 let someFn() : List<int> =
@@ -257,15 +369,36 @@ let someOtherFn() : List<int> =
                          // so we have to construct it explicitly
 ```
 
-There is no import aliasing as there is in Haskell or Python. You can alias values, functions, types and modules, but not namespaces. These aliases actually bind new values/functions/types/modules which is problematic if you are used to how this works in other languages because it is not limited to the file where this aliasing occurs (i.e. if you declare an alias like this `type MyFile = System.IO.File` in the f# source file A.fs and then in file B.fs that comes later in the source ordering open the namespace or module of A then MyFile will be in scope!)
+There is no proper import aliasing as there is in Haskell or Python. You can alias values, functions, types and modules, but not namespaces. These aliases actually bind new values/functions/types/modules which is problematic if you are used to how this works in other languages because it is not limited to the file where this aliasing occurs (i.e. if you declare an alias like this `type File = System.IO.File` in the f# source file A.fs and then in file B.fs that comes later in the source ordering open the namespace or module of A then File will be in scope!)
+
+```fsharp
+// File A
+module ModuleA =
+    type File = System.IO.File
+    // ... do something with File
+
+// File B
+module ModuleB =
+    open ModuleA
+
+    type SomeRecord =
+        { SomeFile : File } // This type alias was declared in File A!
+```
 
 My recommended way of dealing with this is to use aliases but define them as private so that they are only visible within the same type/module, like so: `type private MyFile = System.IO.File`. Then use open only when you know that you will use a lot of the contents of that namespace module and are aware of the potential shadowing.
 
 ```fsharp
-type private List<'T> = System.Collections.Generic.List<'T>
-// now List<int> refers to System.Collectsions.Generic.List<int>
-// but we don't have to worry about this definition polluting
-// other files downstream of this one
+// File A
+module ModuleA =
+    type private File = System.IO.File
+    // ... do something with File
+
+// File B
+module ModuleB =
+    open ModuleA
+
+    type SomeRecord =
+        { SomeFile : File } // This is now a compiler error
 ```
 
 ### Null
@@ -317,38 +450,12 @@ match result with
 
 Just like with null values you have to deal with exceptions anyhow and some people argue that therefore exceptions should be used for all error cases. Others argue that Result should be preferred, maybe even trying to wrap all third party exceptions and using Result pretty much the only way of handling error cases. It seems that most real world solutions fall somewhere in between, dealing with third party exceptions while preferring Result for their own application code.
 
-### Modules vs member functions
-
-Another slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to replace a value in a string you can either do `"Teststring".Length` or you can use `String.length "Teststring"`. The functionality is different between the two, e.g. replace only exists as a member function, map only in the module. Just another little oddity that is good to be aware of.
-
 ### Scripts
 
 F# code can either be created as F# projects organized by one or more .fsproj files that are compiled into one library/executable each or an F# script file (usually given the file extension .fsx instead of .fs) can be compiled and executed in one go in scripting mode. For scripting mode there were some large changes with .NET core 5 that came out in late 2020 that radically improved how third party libraries can be referenced and since then it is a lot nicer to use. There are still occasional issues with editor support in script files though.
 
 F# also has a repl that in dotnet core since 3.0 is started with `dotnet fsi`. It can also be used interactively from most browsers so that you can select a bunch of source code and send it to the repl to evaluate and the repl session will retain state until reset.
 
-
-## Community
-
-The [F# Foundation website](https://fsharp.org/) is a good starting point to learn more about the various parts of the language etc. The F# Foundation manages various web properties and among others the fsharp github organisation.
-
-Don Syme [@dsyme](https://twitter.com/dsyme) is the primary creator of the language and has worked on it since the precursors of F# in the late 90ies at Microsoft (F# grew out of the desire to have an ML language for the .NET Platform that was not yet released at the time - you can find out more about the history [here](https://fsharp.org/history/hopl-final/hopl-fsharp.pdf)). At Microsoft there are a few more people working on F# and Visual F# (the Visual Studio integration), the most visible of whom is probably Philip Carter [@_cartermp](https://twitter.com/_cartermp).
-
-Over the last 8 years or so the .NET Framework became cross platform with .NET Core and F# could be used outside of Visual Studio and also targeting Javascript. In this development, Krzysztof Cieślak [@k_cieslak](https://twitter.com/k_cieslak) was very important as the author of the VS Code extension Ionide, as was Steffen Forkmann [@sforkmann](https://twitter.com/sforkmann) who created Paket, a Nuget package manager that uses lockfiles and avoids problems the official Nuget manager has.
-
-Alfonso Garcia-Caro [@alfonsogcnunez](https://twitter.com/alfonsogcnunez) is the creator of Fable, the Javascript backend for F#. Isaac Abraham [@isaac_abraham](https://twitter.com/isaac_abraham) is the author of "[Get Programming with F#](https://www.manning.com/books/get-programming-with-f-sharp)" which I heard good things about and one of the initiators of the SAFE stack (the preconfigured template for F# on .NET Core on the server and F# using Fable on the Frontend for a full stack F# experience).
-
-Scott Wlaschin [@ScottWlaschin](https://twitter.com/ScottWlaschin) is the author of the wonderful F# learning resource [FSharpForFunAndProfit](https://fsharpforfunandprofit.com/) and the very nice general Domain Driven Design book "[Domain Modeling Made Functional](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/)".
-
-Sergey Tihon [@sergey_tihon](https://twitter.com/sergey_tihon) runs [F# Weekly](https://sergeytihon.com/category/f-weekly/), a great resource to keep up to date with developments in the F# world.
-
-Zaid Ajaj [@zaid_ajaj](https://twitter.com/zaid_ajaj) is the author of numerous projects in the Falbe universe and [the Elmish Book](https://zaid-ajaj.github.io/the-elmish-book/#/), a great, free resource that explains Fable, the Elmish state management library and so forth including tips on creating larger applications and workflows.
-
-There are of course many more people who work on the F# ecosystem or talk and write about it and I could never list them all - but the above list is a small overview of some key people in the ecosystem that you might want to follow on twitter.
-
-The F# community is overall very welcoming and friendly. As often with small niche communities that are close to another, more mainstream ecosystem, there is some occasional frustration, e.g. about F# not receiving more support from Microsoft. The reddit channel F# is apparently frequented by a few strange people, so you may prefer to stick to the [F# slack](https://fsharp.org/guides/slack/) or [Forums](https://forums.fsharp.org/).
-
-F# is a topic at many FP friendly conferences but there are also two F# specific conferences: [Open FSharp](https://www.openfsharp.org/) and [Fable Conf](https://fable.io/fableconf/#home).
 
 ## Into the future
 
