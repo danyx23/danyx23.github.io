@@ -310,11 +310,22 @@
 </header>
 
 
-<article class="group">
-  <h1>Incremental backups made easy</h1>
+<main>
+    <div class="main-content">
+        <h1>Incremental backups made easy</h1>
 <p class="subtitle">December 11, 2011</p>
 
-<p>In my <a href="/node/121">last post</a> I wrote in length about backups but I omitted one thing: how to make incremental backups that use so called hard links and that barely take more space than 1:1 backups (on both windows and osx). First though, let me explain what is so nice about this concept.</p>
+
+
+
+
+
+<article id="markdown-content">
+    
+
+    <p>In my <a href="/node/121">last post</a> I wrote in length about backups but I omitted one thing: how to make incremental backups that use so called hard links and that barely take more space than 1:1 backups (on both windows and osx). First though, let me explain what is so nice about this concept.</p>
+
+<!--more-->
 
 <h3 id="backups-with-a-history">Backups with a history</h3>
 
@@ -336,9 +347,10 @@
 
 <p>rsync is an open source application that is used to copy data. Since version 3 or so it supports creating snapshot copies using hardlinks. On OSX the tool <a href="http://rdutoit.home.comcast.net/~rdutoit/pub/robsoft/pages/softw.html">backuplist+</a> allows you to easily create incremental backups by checking the &quot;Incremental backups&quot; check box and entering how many past snapshots to keep. On windows <a href="http://qtdtools.doering-thomas.de/">QtdSync</a> allows you to do the same thing if you change the backup type from &quot;synchronisation&quot; to &quot;incremental&quot;.</p>
 
-
-
 </article>
+
+    </div>
+</main>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

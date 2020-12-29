@@ -310,11 +310,20 @@
 </header>
 
 
-<article class="group">
-  <h1>Blessed be darcs</h1>
+<main>
+    <div class="main-content">
+        <h1>Blessed be darcs</h1>
 <p class="subtitle">January 15, 2006</p>
 
-<p>During the last days I started to install some long-overdue updates to some webservers I manage. The problem was this: a long time ago I installed some webapps written mostly in php. People started to use them and demanded modifications. Nothing big really, but enough to make updates a pain - which led to no security updates in a long time. I started to use the brilliant version control software <a title="darcs" href="http://abridgegame.org/darcs/">darcs</a> along with the very convenient script <a title="darcs_load_dirs at the darcs wiki" href="http://darcs.net/DarcsWiki/HintsAndTips">darcs_load_dirs</a> to install the updates. To get them on debian do apt-get install darcs darcs_load_dirs. I really recomend darcs for this (as opposed to e.g. <a title="Subversion" href="http://subversion.tigris.org">subversion</a> which I use at work) because it's very easy to setup/use from commandline and has a very powerfull automated merging mechanism.</p>
+
+
+
+
+
+<article id="markdown-content">
+    
+
+    <p>During the last days I started to install some long-overdue updates to some webservers I manage. The problem was this: a long time ago I installed some webapps written mostly in php. People started to use them and demanded modifications. Nothing big really, but enough to make updates a pain - which led to no security updates in a long time. I started to use the brilliant version control software <a title="darcs" href="http://abridgegame.org/darcs/">darcs</a> along with the very convenient script <a title="darcs_load_dirs at the darcs wiki" href="http://darcs.net/DarcsWiki/HintsAndTips">darcs_load_dirs</a> to install the updates. To get them on debian do apt-get install darcs darcs_load_dirs. I really recomend darcs for this (as opposed to e.g. <a title="Subversion" href="http://subversion.tigris.org">subversion</a> which I use at work) because it's very easy to setup/use from commandline and has a very powerfull automated merging mechanism.</p>
 <p>Disclaimer: Although I use version management in one form or another for quite some time now, I am very new to darcs so some of the things I did could be cumbersome or wrong - read it at your own risk :).&nbsp;</p>
 <p>The process is basically this: create a new darcs dir somewhere that will receive the upstream updates of the software. I called it current.</p>
 <blockquote><p>mkdir current<br />cd current<br />darcs init</p></blockquote>
@@ -333,8 +342,10 @@
 <blockquote><p>darcs add * -r<br />darcs record <br /></p></blockquote>
 <p>again. BTW: <a title="Lefants homepage" href="http://lefant.net">fabian</a> started to put the entire etc dir of the servers he administers under darcs control!<br /></p>
 
-
 </article>
+
+    </div>
+</main>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -310,11 +310,20 @@
 </header>
 
 
-<article class="group">
-  <h1>The state of software engineering</h1>
+<main>
+    <div class="main-content">
+        <h1>The state of software engineering</h1>
 <p class="subtitle">August 11, 2019</p>
 
-<p>The field of software engineering is in a strange place today. A lot of the mainstream tools and concepts look less like deliberate choices made by intelligent people anticipating change and more like ad-hoc reuse of things some people were already familiar with, despite the problems this may cause at scale. Things I consider to be concrete examples of this are all the major programming languages (Java, C#, Python, C++ that don’t even have <a href="https://en.wikipedia.org/wiki/Algebraic_data_type">algebraic data types</a> that are around since the 70ies), docker containers (where the usual way of constructing them leads to linear dependencies which lead to <a href="https://grahamc.com/blog/nix-and-layered-docker-images">poor composability</a>), YAML as a configuration format (with its <a href="https://arp242.net/yaml-config.html#surprising-behaviour">many pitfalls and high complexity</a>), Microservices as almost a default architecture choice - the list goes on. This is not to say that I don’t consider these things useful in certain situations - it just strikes me as odd that the majority of our industry sees little problem with the status quo of defaulting to these options and that there are so few attempt at improving things.</p>
+
+
+
+
+
+<article id="markdown-content">
+    
+
+    <p>The field of software engineering is in a strange place today. A lot of the mainstream tools and concepts look less like deliberate choices made by intelligent people anticipating change and more like ad-hoc reuse of things some people were already familiar with, despite the problems this may cause at scale. Things I consider to be concrete examples of this are all the major programming languages (Java, C#, Python, C++ that don’t even have <a href="https://en.wikipedia.org/wiki/Algebraic_data_type">algebraic data types</a> that are around since the 70ies), docker containers (where the usual way of constructing them leads to linear dependencies which lead to <a href="https://grahamc.com/blog/nix-and-layered-docker-images">poor composability</a>), YAML as a configuration format (with its <a href="https://arp242.net/yaml-config.html#surprising-behaviour">many pitfalls and high complexity</a>), Microservices as almost a default architecture choice - the list goes on. This is not to say that I don’t consider these things useful in certain situations - it just strikes me as odd that the majority of our industry sees little problem with the status quo of defaulting to these options and that there are so few attempt at improving things.</p>
 
 <p>Maybe my experiences with <a href="https://elm-lang.org/">Elm</a> and <a href="https://fsharp.org/">F#</a> have spoiled me - I was lucky enough to use both on my job for the last three years. I feel like so many of the problems I regularly encountered in the previous ten years of doing mostly C#, some Ruby, Python, Javascript and C++ - are just gone. In Elm (and with some caveats in F#) you don’t need to worry about null values or exceptions; you don’t spend your time discussing pointless ontological questions and creating strange inheritance hierarchies that couple logic depending solely on the answer to the question “Can you say A IS-A B?”.</p>
 
@@ -373,8 +382,10 @@
 
 <p>I think as enthusiasts of these languages we should talk more about the pragmatic ways these powerful tools can enable us to do more work in less time to a higher quality standard. We should try less to explain Kleisli composition to outsiders (not that this is not useful, but the focus should be on the former IMHO). Maybe then we will find ourselves in a future where software is built on top of good abstractions, at high speed, and can be safely changed and modified. Let’s work towards that future.</p>
 
-
 </article>
+
+    </div>
+</main>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -310,11 +310,20 @@
 </header>
 
 
-<article class="group">
-  <h1>High quality retiming from 30 to 25 fps using After Effects</h1>
+<main>
+    <div class="main-content">
+        <h1>High quality retiming from 30 to 25 fps using After Effects</h1>
 <p class="subtitle">February 22, 2010</p>
 
-<p>This is a follow-up post to this <a href="/retiming-methods-shootout">general explaination of retiming methods</a>.</p>
+
+
+
+
+
+<article id="markdown-content">
+    
+
+    <p>This is a follow-up post to this <a href="/retiming-methods-shootout">general explaination of retiming methods</a>.</p>
 
 <p>This is my favourite way to retime footage from 30 fps to 25 fps in high quality with After Effects. This method does not use any 3rd party plugins like Twixtor. Off we go:</p>
 
@@ -347,12 +356,12 @@ Note the length of your footage in frames. Now calculate the new end point: &lt;
     <span class="nx">t</span> <span class="o">=</span> <span class="p">(</span><span class="nx">time</span> <span class="o">+</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">frameDuration</span><span class="p">)</span> <span class="o">-</span> <span class="nx">marker</span><span class="p">.</span><span class="nx">key</span><span class="p">(</span><span class="nx">n</span><span class="p">).</span><span class="nx">time</span><span class="p">;</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">t</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="nx">thisComp</span><span class="p">.</span><span class="nx">frameDuration</span><span class="p">)</span>
-		<span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">effect</span><span class="p">(</span><span class="s2">"Timewarp"</span><span class="p">)(</span><span class="mi">4</span><span class="p">))</span>
+		<span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">effect</span><span class="p">(</span><span class="dl">"</span><span class="s2">Timewarp</span><span class="dl">"</span><span class="p">)(</span><span class="mi">4</span><span class="p">))</span>
     <span class="k">else</span>
-        <span class="nx">effect</span><span class="p">(</span><span class="s2">"Timewarp"</span><span class="p">)(</span><span class="mi">4</span><span class="p">)</span>
+        <span class="nx">effect</span><span class="p">(</span><span class="dl">"</span><span class="s2">Timewarp</span><span class="dl">"</span><span class="p">)(</span><span class="mi">4</span><span class="p">)</span>
 <span class="p">}</span>
 <span class="k">else</span>
-	<span class="nx">effect</span><span class="p">(</span><span class="s2">"Timewarp"</span><span class="p">)(</span><span class="mi">4</span><span class="p">)</span>
+	<span class="nx">effect</span><span class="p">(</span><span class="dl">"</span><span class="s2">Timewarp</span><span class="dl">"</span><span class="p">)(</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>It will keep the animated value unless there is a layer marker present at the current or the next frame in which case it will round the time to make sure that no blending across the hard cut occurs.</p>
@@ -365,8 +374,10 @@ Note the length of your footage in frames. Now calculate the new end point: &lt;
 
 <p>If you get messed up frames in between you can either switch back to frame blending for the few frames that require it or <a href="/Optimizing-Timewarp-with-Brainstorm">use brainstorm</a> to optimize the optical flow analysis parameters of Timewarp.</p>
 
-
 </article>
+
+    </div>
+</main>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
