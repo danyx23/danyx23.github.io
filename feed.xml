@@ -6,9 +6,24 @@
 </description>
     <link>https://danielbachler.de/</link>
     <atom:link href="https://danielbachler.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Dec 2020 16:28:49 +0100</pubDate>
-    <lastBuildDate>Tue, 29 Dec 2020 16:28:49 +0100</lastBuildDate>
+    <pubDate>Thu, 04 Mar 2021 18:42:12 +0100</pubDate>
+    <lastBuildDate>Thu, 04 Mar 2021 18:42:12 +0100</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>What I like about F# is online on youtube</title>
+        <description>&lt;p&gt;This Tuesday I gave a talk at the fantastic (currently zoom only) &lt;a href=&quot;https://www.meetup.com/Berlin-Functional-Programming-Group&quot;&gt;Berlin Functional Programming Meetup&lt;/a&gt; about F#. I gave a brief introduction to the language, then showed how to download and analyze some historic weather data and serve this up as a small SPA web app. Below you can play the recording - have a look and &lt;a href=&quot;https://twitter.com/intent/tweet?screen_name=DanyX23&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;let me know&lt;/a&gt; if you have any feedback.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/0CMnvI8ArRg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!--more--&gt;
+</description>
+        <pubDate>Thu, 04 Mar 2021 00:00:00 +0100</pubDate>
+        <link>https://danielbachler.de/2021/03/04/what-i-like-about-fsharp-is-online-on-youtube.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2021/03/04/what-i-like-about-fsharp-is-online-on-youtube.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>What I wish I knew when learning F#</title>
@@ -1332,94 +1347,6 @@
         <pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
         <link>https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Signals in Elm</title>
-        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
-
-&lt;p&gt;I have rewritten a webapp from React/Redux to &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; over the last few weeks and am really enjoying the language so far. Elm is a compile to Javascript, purely functional language that was built specifically to create web UIs with it. It is inspired by several functional programming languages, especially Haskell and OCaml. I have participated in the Elm google group quite a bit lately and I noticed that even though the Elm docs are really good, there are some concepts that are a bit hard to understand and to differentiate from each other. I am therefore starting a mini-series of posts about different concepts in Elm. This first one is about Signals - and why you don’t see them much in many smaller Elm programs even though they are always there.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;These blog posts assume that you already know a little bit about Elm, e.g. you have gone through the &lt;a href=&quot;http://www.lambdacat.com/road-to-elm-index/&quot;&gt;great primer “Road to Elm”&lt;/a&gt; by Lambdacat and then studied the &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial&quot;&gt;Elm Architecture Tutorials&lt;/a&gt; a little. OTOH, if you already use Tasks and Ports extensively you will find most of this a bit boring :). If you already know about Signals, you may want to jump ahead to the next post about &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;tasks and effects&lt;/a&gt; or the one after that about &lt;a href=&quot;/2016/02/26/ports-in-elm.html&quot;&gt;ports&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-signals&quot;&gt;What are Signals?&lt;/h3&gt;
-
-&lt;p&gt;Elm uses a very nice unidirectional architecture for the flow of:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;displayed website ➞ user actions ➞ new application state ➞ displayed website
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;All the code you write in a typical Elm program comes together in just two pure functions: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt;. Update takes a user action and the previous application state and creates a new application state, and view takes an application state and renders it into a virtual dom representation (that then gets efficiently displayed by batching diffs to the DOM a la React). For more background on unidirectional UIs in general see André Staltz’ excellent blog post &lt;a href=&quot;http://staltz.com/unidirectional-user-interface-architectures.html&quot;&gt;Unidirectional User Interface Architectures&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;One of the key concepts in Elm is that of a Signal. A Signal is a value that can change over time. One of the conceptually simplest signals is the current time - every second the signal “fires” with the new time value (seconds passed since epoch or whatever). Another example could be the coordinates of the mouse cursor in the current window. When the mouse is still, no values are fired by the Signal - but whenever the user moves the mouse, new values are sent. (This is actually one of the examples at &lt;a href=&quot;http://elm-lang.org/examples/mouse-position&quot;&gt;elm-lang.org/examples&lt;/a&gt;). Signals are a bit similar to EventEmmitters or Observables in Javascript - the key difference is that they exist for the entire lifetime of the program and always have an initial value.&lt;/p&gt;
-
-&lt;p&gt;Signals don’t provide any access to their history - they only provide the current value. But even a simple counter example needs to track the number of clicks that happened so far. Since Elm is a pure language with no mutable state, how do you keep track of the current click-count? We’ll come back to that question, but first let’s look at how &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt; works that you probably know from the &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial&quot;&gt;Elm Architecture Tutorials&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;StartApp hides a bit of wiring from you, but I think it helps to understand how &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp.start&lt;/code&gt; does its magic. What the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; function does is hook up a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; (something where messages go when you send them to the address e.g. in an onClick handler) so that they lead to a new html emmited to main. This is the heart of the unidirectional UI approach. The user clicks a button, this leads to a message being sent to the mailbox. The mailbox has a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal&lt;/code&gt; that fires whenever a message is sent to it. This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal&lt;/code&gt; is of your applications &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; type, i.e. it fires &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; values. Eventually this leads to a full cycle through your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt; functions and thus to a new version of your Virtual Dom.&lt;/p&gt;
-
-&lt;p&gt;Let’s look at the intermediary types more closely: we start with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Actions&lt;/code&gt;. This then gets turned into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Models&lt;/code&gt; (so everytime a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; is fired this action value is run through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; together with the last model state to get the new model state). This finally gets turned into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Html&lt;/code&gt; (whenever the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Model&lt;/code&gt; fires, we run it through the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt; function to arrive at a new Html to display). This is then handed to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; so that the Elm runtime can display it for us.&lt;/p&gt;
-
-&lt;p&gt;Note that when I wrote about the update function, I said “together with the last model state”. This brings us back to our question from above - how can you work with history or state in Elm? The answer is in the function called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal.foldp&lt;/code&gt; (“fold from the past”). If you aren’t familiar with folds yet, they are another name for reduce functions (as in map/reduce). It logically reduces all the values from the entire history with a given function and returns the value - in our case it uses the inital Model and reduces all Actions that were sent to our program to arrive at a current Model. (the implementation actually just caches the last current value and works from there of course).&lt;/p&gt;
-
-&lt;p&gt;At this point, if you want to really dive into it, let’s look at how &lt;a href=&quot;https://github.com/evancz/start-app&quot;&gt;StartApp.Simple&lt;/a&gt; is actually implemented (I added comments and type annotation to every named value)&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Config&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Html&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- create the main Mailbox. It is of type &quot;Mailbox (Maybe action)&quot; and is&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- initialized with an &quot;empty&quot; value of Nothing&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;-- here the address is set up. Since the Mailbox is of Maybe action,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- everything that is sent to address is &quot;wrapped&quot; in the Just type&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- constructor and forwarded to the Mailbox&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forwardTo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;-- This local version of update just wraps config.update to&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- take care of the Maybe part of the action that will be&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- processed (so that the update function the user provides)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- can simply operate as Action -&amp;gt; Model -&amp;gt; Model)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maybeAction&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;Just&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-
-        &lt;span class=&quot;kt&quot;&gt;Nothing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;crash&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;This should never happen.&quot;&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;-- set up a signal of new models that foldp-s over&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- the actions signal. This is the central piece&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- that makes the elm architecture work the way it does.&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- The update function will process one Action and&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- the old Model state to the new model State, the&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- Signal that triggers it all is the Mailbox' Signal&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- we set up at the top&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foldp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- Finally, map over it with the view function. This&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- turns the Signal of Models into a Signal of Htmls&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- that can be rendered&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt; is quite clever in how it uses a Signal under the hood but as a user who just wants to write some interactive web app you never need to deal with Signals directly and can just supply &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt;. It all works fine until you need to message back and forth with native javascript. For that, you will need to use Ports, and understanding Signals first will be very helpful for that. The other thing StartApp.Simple does not let you do is perform long running operations, like e.g. send XHR requests.&lt;/p&gt;
-
-&lt;p&gt;The next post in the series deals with &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;Tasks and Effects&lt;/a&gt;, while the final post is all about &lt;a href=&quot;/2016/02/26/ports-in-elm.html&quot;&gt;ports&lt;/a&gt;. I hope you enjoyed the article and if you have any feedback please let me know!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 12 Feb 2016 00:00:00 +0100</pubDate>
-        <link>https://danielbachler.de/2016/02/12/signals-in-elm.html</link>
-        <guid isPermaLink="true">https://danielbachler.de/2016/02/12/signals-in-elm.html</guid>
         
         
       </item>
