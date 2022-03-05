@@ -23,3 +23,9 @@ Invest more public money into research and building research reactors of advance
 Prioritize decomissioning of coal power plants over old nuclear (i.e. don't turn off old nuclear plants that withstand current safety standards before you have turned off most remaining coal)
 Treat advanced nuclear fission as a potentially useful supplement for baseload or some remote locations but acknowledge that renewables + battery storage will be the major focus of electricity generation
 Acknowledge that by the time advanced nuclear reactors can be built nuclear fusion might be the preferred solution (ITER is still 15 years away from completion but various smaller new test reactors might be quicker to finish)
+
+
+Sources/Reference points
+
+Pretty bad article contra nuclear power in DW: https://www.dw.com/en/nuclear-climate-mycle-schneider-renewables-fukushima/a-56712368
+https://news.mit.edu/2020/reasons-nuclear-overruns-1118

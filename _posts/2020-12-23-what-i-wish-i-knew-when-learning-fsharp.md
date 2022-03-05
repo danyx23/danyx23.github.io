@@ -302,11 +302,11 @@ let name2 =
 
 ### Modules vs member functions
 
-A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to replace a value in a string you can either do `"Teststring".Length` or you can use `String.length "Teststring"`. The functionality is different between the two, e.g. replace only exists as a member function, map only in the module. Just another little oddity that is good to be aware of.
+A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to get the length of a string you can either do `"Teststring".Length` or you can use `String.length "Teststring"`. The functionality in this case is identical but some other similar cases also behave a bit differently. Just another little oddity that is good to be aware of.
 
 ### Operator precedence
 
-If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. >== for monadic bind, <*> for lifting binary functions ets. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell's various lens libraries are not really feasible.
+If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. >== for monadic bind, <*> for lifting binary functions etc. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell's various lens libraries are not really feasible.
 
 ### Type inference order and the obsession with the |> pipe operator
 
