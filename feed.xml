@@ -6,9 +6,175 @@
 </description>
     <link>https://danielbachler.de/</link>
     <atom:link href="https://danielbachler.de/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 May 2021 21:24:15 +0200</pubDate>
-    <lastBuildDate>Sun, 02 May 2021 21:24:15 +0200</lastBuildDate>
+    <pubDate>Sun, 27 Oct 2024 12:21:46 -0500</pubDate>
+    <lastBuildDate>Sun, 27 Oct 2024 12:21:46 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>If you are worried about dangerous AI you should be in favour of banning remote controlled weapons</title>
+        <description>&lt;p&gt;I’m a bit puzzled by public discourse on AI safety. It is great that the general topic has now reached mainstream media - merely a year ago this was very much a fringe topic. Nowadays it has become a primary discussion point in high-level political gatherings and has inspired numerous op-eds in prominent publications.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, most discussions advocating for increased AI safety recommend either „more alignment research“, stringent regulation, or total abstinence. While I believe that alignment research is a valuable endeavour, I am sceptical about the overall effectiveness it will have. As for regulation, I am in favour of transparency legislation that ensures visibility into ongoing AI research and training. Heavy handed regulation on the other hand could obstruct very important gains, such as making LLMs confabulate/hallucinate less. Since these main recommendations seem limited to me, I think we should consider more scenarios and contemplate possible short term actions.&lt;/p&gt;
+
+&lt;p&gt;Let us entertain the idea that superhuman AI agents will become possible within the next decade. I would characterize such systems as computer systems that can interface with the internet and that, unlike today‘s LLMs, can make effective long term plans, learn continuously from single counterexamples and perform basically almost all tasks that a human can do via a computer at a higher level than the average human. At the same time they would of course be faster and would be very proficient both in coding and hacking computer systems. &lt;/p&gt;
+
+&lt;p&gt;I want to entertain this idea not because I think it is a very likely outcome, but rather because I think it is within the realm of the possible, given the wide uncertainty about the development of AI in the near to medium future. Additionally, I would not have predicted today’s state of AI correctly ten years ago (which I think is true for a very large percentage of humanity) and so I want to consider a wider set of outcomes going forward.&lt;/p&gt;
+
+&lt;p&gt;If we take the above possibility as a possible trajectory then what could we do today to make that world a lot better and safer? As the title of this post suggests, I think the number one thing that we should be discussing is how to outlaw or at least strongly limit the number and capabilities of remote controlled and autonomous weapons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Jean-Michel Basquiat - Riding with Death.jpg&quot; alt=&quot;Jean-Michel Basquiat - Riding with Death&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Riding with Death - Jean-Michel Basquiat, 1988&lt;/p&gt;
+
+&lt;p&gt;This idea had a bit of traction in public discourse a few years ago when petitions like the &lt;a href=&quot;https://futureoflife.org/open-letter/lethal-autonomous-weapons-pledge/&quot;&gt;Lethal Autonomous Weapons Pledge&lt;/a&gt; from the &lt;a href=&quot;https://futureoflife.org/&quot;&gt;Future of Life institute&lt;/a&gt; were created. However, it seems to have lost momentum since then. I also believe that for AI safety concerns, autonomous and remote controlled weapons are equivalent. If powerful AI systems were very capable of hacking computer systems, then they could take over remote controlled weapons just as well as autonomous weapons, making both of them very dangerous.&lt;/p&gt;
+
+&lt;p&gt;Imagine that a very capable AI decides to bomb the White House or the EU parliament. It might want to do so either because it was deliberately instructed to do this by a malicious actor or because by pursuing some other optimisation goal it thinks that it would be more successful if the WH or EU parliament or whatever else would not exist (similar to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Instrumental_convergence#Paperclip_maximizer&quot;&gt;paper clip maximiser idea&lt;/a&gt;). &lt;/p&gt;
+
+&lt;p&gt;A world in which the military bases of the world are full of remote controlled armed drones or artillery is one in which this AI would have a much higher probability of succeeding. If dropping bombs or firing weapons is something that only humans at the site can do then it would be much harder (and hopefully close to impossible) to execute such a plan. A human pilot would hopefully not bomb their own seat of government even if they were sent plausible sounding commands to do so.&lt;/p&gt;
+
+&lt;p&gt;I am aware of course that with the predator drones that the US has employed in Iraq and Afghanistan, and the Turkish and Iranian drones employed by both sides in the war in Ukraine, we are well into this world of remote controlled armed weapons.&lt;/p&gt;
+
+&lt;p&gt;Militaries around the world along with their Defence industries suppliers will undoubtedly present many arguments in favour of remote controlled weapons. They will claim that of course their systems will be impossible to hack. They will argue that even if their country would voluntarily forgo such systems, their potential enemies would not.&lt;/p&gt;
+
+&lt;p&gt;I believe that the best scenario would involve securing a comprehensive international treaty banning remote-controlled and autonomous weapons. I believe this is a goal worth fighting for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Jean-Michel Basquiat - (Sans titre) Boxer.jpg&quot; alt=&quot;Sans titre (Boxer) - Jean Michel Basquiat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sans titre (Boxer) - Jean Michel Basquiat, 1982&lt;/p&gt;
+
+&lt;p&gt;However, even if this turns out to not be realistic, I would like to see the public discourse on AI safety place greater emphasis on this issue and attempt to shift the Overton window. It would be highly valuable to put global militaries on the defensive in this regard.  At the very least, they should maintain a strictly limited arsenal of remote-controlled weapons; establish protocols that necessitate manual arming of weapons, exclusively performed by humans through unhackable command chains (i.e. as close to as we can get); and ensure that the procurement of remote-controlled weapons undergoes far greater oversight compared to other weapon systems. &lt;/p&gt;
+
+&lt;p&gt;The higher the destructive potential of a weapons system, the harder it must be for militaries to operate them remotely. Nuclear weapons are of course at the top of the list here that must never be remote controlled - but there are plenty of very deadly weapons in our arsenals today and we should try very hard to firewall all of those against remote or autonomous control.&lt;/p&gt;
+
+&lt;p&gt;Addressing this issue now is likely to be much easier than tackling it in ten years’ time. Today, the existing arsenals of remote controlled and autonomous systems are very limited and thus the resistance of militaries will be smaller than once large sums will have been invested in stocking those weapons. Acting sooner rather than later could make a crucial difference in preventing the widespread adoption and expansion of these potentially dangerous systems.&lt;/p&gt;
+
+&lt;p&gt;Remote-controlled and autonomous weapons are not the only systems that can and should be strengthened today to mitigate adverse outcomes in a potential fast take-off AI future. Making our financial systems and stock markets more robust and hardening important communications infrastructure are also very worthwhile. But if we would pick one of those areas to start working on today, I think it should be strongly limiting remote weapons.&lt;/p&gt;
+
+&lt;p&gt;(Note: this post was published &lt;a href=&quot;https://aihorizon.substack.com/p/if-you-are-worried-about-dangerous&quot;&gt;also on my Substack&lt;/a&gt;)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Jun 2023 00:00:00 -0500</pubDate>
+        <link>https://danielbachler.de/2023/06/11/autonomous-weapons.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2023/06/11/autonomous-weapons.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Learning in the age of ChatGPT</title>
+        <description>&lt;p&gt;My wife has recently started learning Spanish in preparation for a trip to Mexico and Colombia. She uses a mix of Duolingo and Zoom conversations with a native speaker through &lt;a href=&quot;https://www.italki.com/&quot;&gt;iTalki&lt;/a&gt;. Duolingo is good for gamification, and it helps her practice phrase translation and vocabulary training every day. The conversations via iTalki are excellent for actually talking to other humans. However, between the two, she recently mentioned that she was missing something - an interaction a bit like conversations but with a stronger emphasis on correcting her mistakes. Her conversation partner does provide some corrections, but they can feel unnatural in a conversation and thus don’t occur frequently.&lt;/p&gt;
+
+&lt;p&gt;I asked her if she would like to try using ChatGPT as a teacher and she was up for it. I prompted ChatGPT with the following prompt: &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;„Please assume the role of a native Spanish speaker conversation partner. You will ask me questions about my trip through Colombia. If I make a mistake or if my reply is not worded as a native speaker would say this then please gently tell me what a native speaker would say instead before asking the next follow up question.“&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ChatGPT readily complied and my wife was sold after two paragraphs back and forth.&lt;/p&gt;
+
+&lt;p&gt;Having an infinitely patient personal tutor that assumes the role you need is a really powerful concept. I have used variations of this for my work. It is fascinating to see how using GPT makes a much wider area of your profession available to you. I am fluent in five programming languages and can somewhat work in maybe ten more. There are many other interesting or useful programming languages that might be a slightly better fit for a problem, but the effort of learning a new language is often not worth the benefit. This calculation changes with GPT. All of a sudden, writing small programs in a language that I am not at all familiar with goes from “very tedious” to “not as fast” as one of the languages I know well. This doesn’t scale to big programs because understanding things at scale usually requires a deep understanding of the language, but quite often being able to write a simple tool in the optimal language is very valuable. Simon Willison has written a &lt;a href=&quot;https://simonwillison.net/2023/Mar/27/ai-enhanced-development/&quot;&gt;great post&lt;/a&gt; on a similar observation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Pablo Picasso - Girl with a Mandolin.jpg&quot; alt=&quot;Girl with a Mandolin - Pablo Picasso&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“Girl with a Mandolin” by Pablo Picasso&lt;/p&gt;
+
+&lt;p&gt;I also think that having a digital assistant at hand that can write simple pieces of code could unleash a new golden era of automation. It used to be the case that if you wanted something specific to happen automatically in your workflow, you either had to know how to code and be willing to put in the time to learn the API of the relevant tools, or you had to be lucky and the vendor of the tool had to already support this kind of automation in the UI. With GPT, it is now vastly more feasible to write little scripts, etc., without knowing how to program. This kind of use hits a complexity ceiling quickly, of course, but the fact that all of a sudden, the number of people who can reasonably attempt automating stuff goes from “all software developers” to roughly “all humans” is pretty wild. Hillel Wayne wrote about this possibility a while ago in his &lt;a href=&quot;https://buttondown.email/hillelwayne/archive/gpt-is-revolutionary/&quot;&gt;excellent newsletter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Coming back to the idea of your own, personal non-human tutor - I wonder if some people might prefer opening up to a machine that they know will not judge them. A lot of people have substantial areas of middle or high school math that they never truly understood but were afraid to admit not truly understanding. If I can just ask my infinitely patient, non-judgemental personal teacher to walk me through trigonometry again, it might just click, finally.&lt;/p&gt;
+
+&lt;p&gt;Reflecting on all of this and trying to put it into a bigger context, I wonder about the added benefit that something like a personal tutor could have for pupils, especially in poor countries with poor educational outcomes. Of course, there are many problems in impoverished countries that will not be helped by adding GPT - if kids don’t spend much time in school, a personal tutor will not help. Similarly, GPT is probably not a great solution for teaching kids to read and write in the first place. However, once kids get far enough along in school, I assume that a lot of potential brilliance is wasted due to individual students not receiving enough attention or teachers not being very well-educated themselves.&lt;/p&gt;
+
+&lt;p&gt;I can definitely imagine that with a bit of work, a specially crafted solution that uses something like GPT could be very useful in helping kids achieve higher educational outcomes. Such a system would have to be prompted with the goal of the lesson and be able to keep some notes on students’ weaknesses - but then it could explain and question the student at whichever pace the student needs. Such a system could be pretty inexpensive to run, once you manage to have a simple internet-connected device available for each student (and with smart-phones becoming cheaper all the time, this might not be a significant hurdle).&lt;/p&gt;
+
+&lt;p&gt;The scale of the challenge of educating kids better in poor countries is certainly big enough to warrant more attention. I just had a look at Nigeria as an example. It is home to 220 million people and &lt;a href=&quot;https://ourworldindata.org/grapher/comparison-of-world-population-projections?time=earliest..2050&amp;amp;country=~NGA&quot;&gt;projected to grow to 380&lt;/a&gt; million by 2050. The median age is &lt;a href=&quot;https://ourworldindata.org/grapher/median-age?country=~NGA&quot;&gt;17 years old&lt;/a&gt;. About 200 million children will need to go through school in the next 3 decades in Nigeria alone. Wouldn’t it be great if this new technology could be used to help many of them realize their potential?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Jacob Lawrence - Panel 58 - In the North the Negro had better educational facilities.jpg&quot; alt=&quot;“Panel 58 - In the North the Negro had better educational facilities” by Jacob Lawrence&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“Panel 58 - In the North the Negro had better educational facilities” by Jacob Lawrence&lt;/p&gt;
+
+&lt;p&gt;I am pretty excited about what LLMs will do for our ability to learn things more efficiently. If you haven’t used ChatGPT yet to learn something or write a little script for yourself then I suggest &lt;a href=&quot;https://chat.openai.com/&quot;&gt;giving it a try&lt;/a&gt;. You might have to experiment a bit with a good start prompt and you may have to remind it again in a longer chat to remember its role and instructions. If you run into an issue with coding just copy paste the error message into the conversation with GPT. Give it a spin - the outcomes can be quite remarkable.&lt;/p&gt;
+
+&lt;p&gt;(Note: this post was published &lt;a href=&quot;https://aihorizon.substack.com/p/learning-in-the-age-of-chatgpt&quot;&gt;also on my Substack&lt;/a&gt;)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Apr 2023 00:00:00 -0500</pubDate>
+        <link>https://danielbachler.de/2023/04/26/learning-in-the-age-of-chatgpt.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2023/04/26/learning-in-the-age-of-chatgpt.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Will we know if a company is close to transformative artificial intelligence?</title>
+        <description>&lt;p&gt;Over the last few years it seemed like we were able to observe the cutting edge of AI research more or less in the open and more or less in real time. Some was in the form of public demos, some in academic papers, others directly in products. As the capabilities of these systems advance, however, I think we need to wonder if this will remain true, and consider the repercussions of what would happen if this changes.&lt;/p&gt;
+
+&lt;p&gt;When I talk about new capabilities I mean things that would be a substantial improvement over the status quo of GPT4 or similar systems. To give a few examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The ability to form memories cheaply and quickly and be able to access them when relevant. Currently, every ChatGPT session is a tabula rasa. For instance if you mentioned where you live in a previous session, ChatGPT won’t remember it in the next. There are of course workarounds that are already used that basically duplicate part of the chat history into a new chat or allow some more sophisticated forms of relevant text recall via so called embeddings. But the former is limited by the text length the input to an LLM (Large Language Model) can have and the latter is limited by semantic similarity between the memory and the current context which is only a subset of how humans access memory. Both are pretty far from the kind of automatic, context sensitive memory formation (and forgetting!) that humans are capable of. &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Being able to learn to avoid specific outcomes based on single counterexamples. Current LLMs are trained for a given time but once the training is over and they are used in “Inference mode” ( i.e. to complete text) they cannot learn anything new. This is again very much unlike how humans behave. We might be able to find workarounds for dealing with this with modified prompts but a system that could continue to learn and to learn from single counter examples would be substantially more powerful than current systems.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Excelling at strategic long term goal planning and execution over long time horizons with fuzzy outcomes. This is maybe the most important of these. Today’s LLMs can be coaxed into outlining some semblance of a plan for non-trivial tasks, but this is currently quite limited. Because LLMs don’t learn anything new and have no sense of time passing, using them to execute actions over a long time span would need a lot of guidance that regularly invokes the LLM and encodes a timeline of what happened and what the overall plan was into text form (a bit like what the main character in the movie &lt;a href=&quot;https://www.imdb.com/title/tt0209144/&quot;&gt;Memento&lt;/a&gt; does). For many interesting, long run tasks, it would be desirable if AI systems would be more autonomous than that - if they would “exist continuously” in time, have a sense of time passing and be able to actively query the internet or the wider world and act on their own.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A system with such added capabilities would have a much wider set of applications than today‘s prompt answer systems like ChatGPT. Do you think the company that makes a breakthrough in one of those areas would immediately make it available to the public, either as a demo or paid product? Or might it keep the system secret and try to use it for its own benefit?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Rene Magritte - La Clef des champs.jpg&quot; alt=&quot;Rene Magritte, La Clef des champs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Are we sure we are seeing what tech companies are up to? Rene Magritte, La Clef des champs&lt;/p&gt;
+
+&lt;p&gt;What could such benefits be? One obvious one is financial trading. To caricature this idea for added effect: There is a good chance that the first sentient digital being would be imprisoned by a tech company to trade stocks. Of course you don’t really need sentience - a system that is just really good at ingesting lots of information quickly and that can devise, modify and execute trading strategies efficiently might outperform both human traders and today’s high frequency trading systems. What does it do to our society, if one company has a consistent edge on everyone else in financial trading?&lt;/p&gt;
+
+&lt;p&gt;Another possible benefit might be substantial advances in automated software development, including the development of better AIs. The systems of today like Github Copilot are pretty good at generating code at a very small scale but they are not very useful for making coordinated changes to complex systems. If a single company had a system that were able to make complex changes automatically, then that company might be able to create and improve software at a higher speed, at much lower cost, than others.&lt;/p&gt;
+
+&lt;p&gt;It is of course possible that keeping this information secret would be hard; that the details of the breakthrough would quickly become common knowledge which would then be an incentive to turn it into a product (e.g. as virtual co-workers that you interact with over slack or similar but that have memory and can interact with other employees on their own to execute complex tasks that span days or weeks). But it seems equally possible that a single player could hold on to the key element of improvement for long enough to give it a substantial edge.&lt;/p&gt;
+
+&lt;p&gt;Over the past 200 years, capitalism has relied on companies to drive a significant portion of societal development and innovation. This could give companies tremendous power so we developed anti-trust legislation and other mechanisms to avoid outright monopolies. We used tools like patents that grant state guaranteed exclusivity in return for sharing the blueprints of a technology. We relied on the fact that in the physical world, substantially scaling production is something that happens over the course of years. It also helped that knowledge disseminates over similar timelines. Together, these effects mostly assured that no single entity could accrue too high a share of the whole economy.&lt;/p&gt;
+
+&lt;p&gt;Will this still be the case with AI? Progress in AI could be very quick to deploy and scale up - GPTChat has been used by over 100 million users within 2 months of being made public.  If a single company achieves a breakthrough, there is a genuine risk of it quickly becoming a dominant force. I think you don‘t have to be a socialist to see that having a single economic entity having a large advantage in this technology could be a huge problem.&lt;/p&gt;
+
+&lt;p&gt;What are we to do? Stepping back from how we happen to organize society and our economy today, I think it is fair to say that if AI becomes a very powerful tool then we would want this to benefit mankind at large. Yet with the system we have in place today I think there is a very significant chance that it will instead make a few already very powerful tech companies even more powerful, very likely to an extremely unhealthy degree.&lt;/p&gt;
+
+&lt;p&gt;Much capital is currently invested into AI precisely because the returns could be very large. We will not be able to reconfigure how we develop AI - there is no way to make this happen in academia instead. &lt;/p&gt;
+
+&lt;p&gt;So the best possible thing that I can think of is, at the very least, to put laws in place that allow public visibility into all AI developments at companies at more or less real time. Because the US is the most likely place for progress to happen, it seems to be the most important one to target for this. This would probably need a combination of an obligation to publicly document all AI research in a timely manner (e.g. quarterly); hefty fines for non-compliance; and whistleblower protection for employees who sound the alarm bell if the content of reports deviates from reality.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Pablo Picasso - Las Meninas.jpg&quot; alt=&quot;Pablo Picasso, Las Meninas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Staring into an AI research project - Pablo Picasso, Las Meninas&lt;/p&gt;
+
+&lt;p&gt;Getting the details right of this will be far from trivial - what constitutes a “research project” that requires reporting? How can you get reports at a fine enough granularity that actually tell you something interesting? You wouldn’t want all or the research activity a company does to be lumped together as one project of “progressing AI”. Writing good laws is hard, let alone at a rapidly developing technological frontier like this. Maybe biohazard regulation could be a guiding light and maybe “artificial intelligence hazard” might be a good umbrella term for this kind of regulation.&lt;/p&gt;
+
+&lt;p&gt;Having such visibility legislation in place will by no means make sure that the race towards ever more powerful AI will lead to equitable outcomes - but it would at least help the public understand what is going on so that we can attempt to make changes to the rules of the game if things get hot.&lt;/p&gt;
+
+&lt;p&gt;OpenAI has &lt;a href=&quot;https://twitter.com/jjvincent/status/1636065237500588033&quot;&gt;recently changed course on these matters&lt;/a&gt; - in the past they argued that sharing information was important as part of „being a good citizen“ in the AI space. Recently they have started to argue that it would be dangerous to make details of their training data or of their models public as others might be able to use these for nefarious purposes. This of course coincides conveniently with a breakpoint in their ability to commercialize their technology via subscriptions or to license their technology to other companies. &lt;/p&gt;
+
+&lt;p&gt;Whether companies should be incentivised to reveal technical details of their systems or their training data is a separate question - but I think it is crucial that we force them to reveal some meta information of all their R&amp;amp;D projects. This should include information on how much compute and data they are investing in those programs and what their purpose and aims are. I think a world in which all US tech companies were forced to reveal such information once a quarter would be one that stands a better chance of avoiding bad outcomes in AI. &lt;/p&gt;
+
+&lt;p&gt;I’m curious to hear what others think. Let me know your thoughts via email or on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; and if you enjoy this substack please share it with others - thanks!&lt;/p&gt;
+
+&lt;p&gt;(Note: this post was published &lt;a href=&quot;https://aihorizon.substack.com/p/will-we-know-if-a-company-is-close&quot;&gt;also on my Substack&lt;/a&gt;)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Mar 2023 00:00:00 -0500</pubDate>
+        <link>https://danielbachler.de/2023/03/26/will-we-know-if-a-company-is-close-to-transformative-ai.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2023/03/26/will-we-know-if-a-company-is-close-to-transformative-ai.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>I joined Our World In Data as Principal Software Engineer</title>
+        <description>&lt;p&gt;I just joined the fantastic team at &lt;a href=&quot;https://ourworldindata.org/&quot;&gt;Our World In Data&lt;/a&gt;! At Our World In Data we build a website with the same name that compiles data and research on the most pressing global problems. Go check it out if you don’t know it yet!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 May 2021 00:00:00 -0500</pubDate>
+        <link>https://danielbachler.de/2021/05/03/joined-our-world-in-data.html</link>
+        <guid isPermaLink="true">https://danielbachler.de/2021/05/03/joined-our-world-in-data.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>What I like about F# is online on youtube</title>
@@ -18,7 +184,7 @@
 
 &lt;!--more--&gt;
 </description>
-        <pubDate>Thu, 04 Mar 2021 00:00:00 +0100</pubDate>
+        <pubDate>Thu, 04 Mar 2021 00:00:00 -0600</pubDate>
         <link>https://danielbachler.de/2021/03/04/what-i-like-about-fsharp-is-online-on-youtube.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2021/03/04/what-i-like-about-fsharp-is-online-on-youtube.html</guid>
         
@@ -315,11 +481,11 @@
 
 &lt;h3 id=&quot;modules-vs-member-functions&quot;&gt;Modules vs member functions&lt;/h3&gt;
 
-&lt;p&gt;A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to replace a value in a string you can either do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Teststring&quot;.Length&lt;/code&gt; or you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String.length &quot;Teststring&quot;&lt;/code&gt;. The functionality is different between the two, e.g. replace only exists as a member function, map only in the module. Just another little oddity that is good to be aware of.&lt;/p&gt;
+&lt;p&gt;A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to get the length of a string you can either do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Teststring&quot;.Length&lt;/code&gt; or you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String.length &quot;Teststring&quot;&lt;/code&gt;. The functionality in this case is identical but some other similar cases also behave a bit differently. Just another little oddity that is good to be aware of.&lt;/p&gt;
 
 &lt;h3 id=&quot;operator-precedence&quot;&gt;Operator precedence&lt;/h3&gt;
 
-&lt;p&gt;If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. &amp;gt;== for monadic bind, &amp;lt;*&amp;gt; for lifting binary functions ets. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell’s various lens libraries are not really feasible.&lt;/p&gt;
+&lt;p&gt;If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. &amp;gt;== for monadic bind, &amp;lt;*&amp;gt; for lifting binary functions etc. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell’s various lens libraries are not really feasible.&lt;/p&gt;
 
 &lt;h3 id=&quot;type-inference-order-and-the-obsession-with-the--pipe-operator&quot;&gt;Type inference order and the obsession with the |&amp;gt; pipe operator&lt;/h3&gt;
 
@@ -470,7 +636,7 @@
 
 &lt;p&gt;All in all I think F# is a very valuable tool to learn and use. It is ready to use in production for a wide range of problems, and I think it is great fun to use. If you haven’t yet then do give it a try and let me know if you run into any issues that you think are worth including here1&lt;/p&gt;
 </description>
-        <pubDate>Wed, 23 Dec 2020 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 23 Dec 2020 00:00:00 -0600</pubDate>
         <link>https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2020/12/23/what-i-wish-i-knew-when-learning-fsharp.html</guid>
         
@@ -610,7 +776,7 @@
 
 &lt;p&gt;Working against climate change will be a major challenge for all of us for the rest of our lives. There will be many setbacks and counter trends. But this makes it all the more important to try to target efforts at big absolute reductions that are supported by a large public and not get lost in inconsequential arguments about things that don’t have much potential for bringing absolute emissions down. Let’s work on this. &lt;label for=&quot;sn-thanks&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-thanks&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Many thanks to all the people who have read drafts of this post and given their feedback, especially Teresa, Jonathan, Fredrik and Timo. &lt;/span&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 12 Sep 2019 00:00:00 +0200</pubDate>
+        <pubDate>Thu, 12 Sep 2019 00:00:00 -0500</pubDate>
         <link>https://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2019/09/12/fighing-climate-change-effectivly.html</guid>
         
@@ -621,7 +787,7 @@
         <title>Interviewed by the Working Draft podcast (German)</title>
         <description>&lt;p&gt;The frontend programming podcast &lt;a href=&quot;https://workingdraft.de/&quot;&gt;Working Draft&lt;/a&gt; interviewed me recently and we talked about Elm and F# . &lt;a href=&quot;https://workingdraft.de/396/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Sep 2019 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 10 Sep 2019 00:00:00 -0500</pubDate>
         <link>https://danielbachler.de/2019/09/10/interview-with-working-draft.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2019/09/10/interview-with-working-draft.html</guid>
         
@@ -689,7 +855,7 @@
 
 &lt;p&gt;I think as enthusiasts of these languages we should talk more about the pragmatic ways these powerful tools can enable us to do more work in less time to a higher quality standard. We should try less to explain Kleisli composition to outsiders (not that this is not useful, but the focus should be on the former IMHO). Maybe then we will find ourselves in a future where software is built on top of good abstractions, at high speed, and can be safely changed and modified. Let’s work towards that future.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 11 Aug 2019 00:00:00 +0200</pubDate>
+        <pubDate>Sun, 11 Aug 2019 00:00:00 -0500</pubDate>
         <link>https://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2019/08/11/the-state-of-software-engineering.html</guid>
         
@@ -700,653 +866,9 @@
         <title>Interviewed by paqmind on Elm, Purescript, F# etc</title>
         <description>&lt;p&gt;The programming blog &lt;a href=&quot;https://paqmind.com&quot;&gt;paqmind&lt;/a&gt; interviewed me recently and we talked about Elm, Purescript, F# and other programming languages I love. &lt;a href=&quot;https://paqmind.com/blog/interview-with-danyx23/&quot;&gt;Hop over to the interview&lt;/a&gt; and let me know on &lt;a href=&quot;https://twitter.com/danyx23&quot;&gt;twitter&lt;/a&gt; if you have any comments!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 21 Aug 2018 00:00:00 -0500</pubDate>
         <link>https://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</link>
         <guid isPermaLink="true">https://danielbachler.de/2018/08/21/interview-with-paqmind-elm-fsharp-purescript.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>My talk about Elm at GOTO Berlin 2017 is online!</title>
-        <description>&lt;p&gt;Last Autumn I gave a talk at the &lt;a href=&quot;https://gotober.com/&quot;&gt;GOTO Berlin&lt;/a&gt; conference on the &lt;a href=&quot;http://elm-lang.org/&quot;&gt;programming language Elm&lt;/a&gt;. I tried to convey why I think it is a very useful tool for web development, how it can live up to it’s promise of “Zero Runtime Errors” and what it feels like to develop production apps with it. Have a look and let me know your feedback in the comments or &lt;a href=&quot;http://twitter.com/danyx23&quot;&gt;on twitter&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ehtn81p06Ow&quot;&gt;&lt;img src=&quot;https://img.youtube.com/vi/ehtn81p06Ow/0.jpg&quot; alt=&quot;My talk about the Elm programming language at GOTO Berlin 2017&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Mar 2018 00:00:00 +0200</pubDate>
-        <link>https://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</link>
-        <guid isPermaLink="true">https://danielbachler.de/2018/03/26/talk-about-elm-at-goto-berlin.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Using F# on both the frontend and the backend</title>
-        <description>&lt;p&gt;&lt;em&gt;Note: This post was written in 2016. Since then, the introduction of the &lt;a href=&quot;https://safe-stack.github.io/&quot;&gt;SAFE stack&lt;/a&gt; has significantly improved the sitation in F#, but the basic ideas of this blog post are still valid - they are just a lot nicer now :)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;When the call for the &lt;a href=&quot;https://sergeytihon.wordpress.com/tag/fsadvent/&quot;&gt;F# Advent Calendar&lt;/a&gt; came up I thought that this would be a great opportunity to finally check out a technology stack that intrigued me for quite a while now: Using F# on the backend (which by now works well on linux/osx as well as windows) and also on the frontend, via &lt;a href=&quot;http://fable.io/&quot;&gt;Fable&lt;/a&gt;, the F# to Javascript compiler backend. I have played a bit with F# in the past but I wanted to see how well this particular combination works in practice.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;the-same-language-on-the-backend-and-the-frontend&quot;&gt;The same language on the backend and the frontend&lt;/h3&gt;
-
-&lt;p&gt;Using the same language on the server and the client has many benefits in my opinion, chief among them the ability to reuse data definitions and business logic. Even though many modern web sites shoulder a lot of complexity on the client to guide the user and give immediate feedback, the backend usually has to replicate most of this logic to verify the client submissions and guard against malicious clients. Discount rules are a prime example of such code that is often replicated in both the frontend and the backend.&lt;/p&gt;
-
-&lt;p&gt;The first language that will probably come to mind for this job is Javascript. Since the advent of Node, Javascript is available on the backend as well as in the browser, and, with Electron, even for desktop apps with a native feel. Heavy performance tuning has made Javascript reasonably fast. However, I think that its dynamically typed nature makes Javascript a very problematic choice for non-trivial software projects. Static type checking can catch many bugs before they ever hit production and it can free your developers to concentrate on testing the properties of their code that are actually interesting.&lt;/p&gt;
-
-&lt;p&gt;A very desirable property for a type system is for it to have Algebraic Data Types. This means that, in addition to Product types (think classes or records) where ALL stated fields exist for every instance, they also support Sum types (Discriminated Unions in F#) where every value adheres to exactly one of several strictly predefined layouts. Together, Product and Sum types allow a much richer modelling where you can make illegal states irrepresentable (see this &lt;a href=&quot;http://blog.ploeh.dk/2016/11/28/easy-domain-modelling-with-types/&quot;&gt;recent article by Marc Seemann&lt;/a&gt; on the benefits of ADTs). Having Sum types also allows languages to get rid of nulls - a very desirable trait since a big fraction of errors in dynamically typed languages or such with weak type systems are NullReferenceExceptions or the infamous “undefined is not a function”.&lt;/p&gt;
-
-&lt;h3 id=&quot;possible-languages&quot;&gt;Possible languages&lt;/h3&gt;
-
-&lt;p&gt;Ok, now that I have outlined desirable feature, let us look for languages that meet these two core requirements (a strong, static type system with ADTs and being usable via cross-compilation to Javascript on both the browser frontend and the backend). Not a lot of options remain. The ones I know are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;Typescript&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.purescript.org/&quot;&gt;Purescript&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://fable.io/&quot;&gt;F#/Fable&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bloomberg.github.io/bucklescript/&quot;&gt;OCaml/Bucklescript&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ghcjs/ghcjs&quot;&gt;Haskell/ghcjs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;All of these are interesting languages. Here is my very personal reasoning for choosing among these languages: Typescript is a superset of Javascript with type annotations that, since version 2.0, has support for union types. It is a big improvement over raw Javascript, but I think that one still feels a lot of the odd language design decisions underneath it, so I will disregard it for now.&lt;/p&gt;
-
-&lt;p&gt;The javascript compiler backends for OCaml and Haskell have a relatively small set of Javascript library bindings available and are IMHO harder to interface with native Javascript libraries - for now I don’t think that they are immediately usable if you want to write user interfaces with them.&lt;/p&gt;
-
-&lt;p&gt;This leaves me with F#/Fable and Purescript. Purescript was designed from the beginning with Javascript as the compile target in mind. Quite a few important Javascript libraries have been annotated with type definitions for Purescript and are thus readily usable, and if they are not, the Purescript FFI was built for Javascript and is very straightforward to use. Additionally, the type system of Purescript is very powerful and feels a bit like a modern refresh of Haskell’s type system.&lt;/p&gt;
-
-&lt;p&gt;So what about F#/Fable? The basic story is similar to OCaml/Haskell in that you have to create FFI definitions and these are only available for a few libraries so far. What is really neat about Fable though is that there is a way to bootstrap Fable FFI files from Typescript definitions via &lt;a href=&quot;https://www.npmjs.com/package/ts2fable&quot;&gt;ts2fable&lt;/a&gt; - and those are available for a huge number of important Javascript libraries. I think that this lowers the pain of interfacing with native Javascript libraries enough for F#/Fable to be a reasonable choice.&lt;/p&gt;
-
-&lt;h3 id=&quot;f-versus-purescript&quot;&gt;F# versus Purescript&lt;/h3&gt;
-
-&lt;p&gt;Purescript is definitely an interesting contender that I want to study more in the future, but this blog post is about F#, so, let us ask the obvious question: why use F# instead of Purescript? YMMV but I see F# to have an interesting advantage on the server side since IMO on the backend the .NET platform is a more solid runtime than Node. Since F# compiles to IL and can interface with any .NET library, it has access to a huge amount of libraries that interface with all sorts of systems, parse files etc. It also supports strong multi-threading primitives and F# even has support to cross compile to the GPU - this makes it much more interesting for numerically intense workloads than Node.&lt;/p&gt;
-
-&lt;p&gt;This means that if you either already have a big chunk of business logic written in a .NET language or if you need to do high performance computations on the server, F# is IMO a more attractive choice than Purescript. Additionally, because F# is more in the tradition of pragmatic functional languages like OCaml than the Haskell tradition of that Purescript adopted, it offers the escape hatches of mutability and side effects within the normal control flow (this is arguably also dangerous, but debating this is for another post).&lt;/p&gt;
-
-&lt;p&gt;The downside of F#/Fable is that the same language is bolted onto two different runtimes with slightly different semantics. One example of such a mismatch is that the fixed-point arithmetic datatype Decimal of the .NET platform does not exist in Javascript of course and is thus silently converted to a double. For many cases this is fine but it is definitely something to be aware of (&lt;a href=&quot;http://fable.io/docs/compatibility.html&quot;&gt;a longer list is here&lt;/a&gt; )&lt;/p&gt;
-
-&lt;p&gt;Alright, so this is why I think it makes sense to use the same language on the backend and frontend, some of my criteria for choosing a language and why F# is the candidate I want to use.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-proof-of-concept-idea&quot;&gt;The proof of concept idea&lt;/h3&gt;
-
-&lt;p&gt;Let’s finally get to some &lt;a href=&quot;https://github.com/danyx23/FableSuaveSharedCode&quot;&gt;code&lt;/a&gt;! Be warned that some of this is probably not exactly idiomatic F# code since I haven’t used the language much until now :)&lt;/p&gt;
-
-&lt;p&gt;The basic idea for my little proof of concept was:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Write a frontend in F# that is the most primitive shopping cart you can imagine - it just has one product and the user can use buttons to increase/decrease the quantity.&lt;/li&gt;
-  &lt;li&gt;Have a type that defines a discount, consisting of: a name, a function that checks whether the discount applies and one that modifies the price. Reuse these data types and functions between the frontend and the backend&lt;/li&gt;
-  &lt;li&gt;On the frontend, use &lt;a href=&quot;https://github.com/fable-compiler/fable-arch&quot;&gt;Fable-Arch&lt;/a&gt; to bring the clarity of the &lt;a href=&quot;https://guide.elm-lang.org/architecture/&quot;&gt;Elm Architecture&lt;/a&gt; to F#&lt;/li&gt;
-  &lt;li&gt;Bundle up the generated Javascript into an Electron app to see how well this works&lt;/li&gt;
-  &lt;li&gt;Since the Electron Desktop app is based on the Chromium engine, use the power of CSS and icon fonts to pep up the UI a little by just dropping in some CSS from a third party.&lt;/li&gt;
-  &lt;li&gt;Try &lt;a href=&quot;http://suave.io&quot;&gt;Suave&lt;/a&gt; as a http server with a functional design. Reuse the type definitions and discount calculation code. Handle Json-Serialization and CORS headers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;the-implementation&quot;&gt;The implementation&lt;/h3&gt;
-
-&lt;p&gt;The entire setup is on github at &lt;a href=&quot;https://github.com/danyx23/FableSuaveSharedCode&quot;&gt;https://github.com/danyx23/FableSuaveSharedCode&lt;/a&gt; where you can just clone it and run both the Suave server and the electron based client.&lt;/p&gt;
-
-&lt;p&gt;Since this is a proof of concept, the actual code is maybe less interesting than the setup around it, but for completness sake, what follows are the three main file that are the essence of the two programs. First, the shared code that defines the Cart and Discount types, a concrete instance of the Discount type that gives a 90% discount at twelve items and the function to calculate the price for a cart given a list of potentially applicable discounts&lt;/p&gt;
-
-&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DiscountSample&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doesTwelveItemsDiscountApply&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;true&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;false&lt;/span&gt;
-
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;12 Items - 90% off!&quot;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doesTwelveItemsDiscountApply&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsThatApply&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cartCalculationFunction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsThatApply&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ApplyDiscount&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// use the first discount that applies only, discard the others&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undiscountedPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemPrice&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cartCalculationFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undiscountedPrice&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This shared code is then used in the frontend:&lt;/p&gt;
-
-&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-core/Fable.Core.dll&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.Html.fs&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.App.fs&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-arch/Fable.Arch.Virtualdom.fs&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../../backend/src/ClientServerShared.fs&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;../node_modules/fable-powerpack/Fable.PowerPack.dll&quot;&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Core&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Core&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsInterop&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Browser&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Arch&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Arch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;App&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Arch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;DiscountSample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PowerPack&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initModel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Actions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt;
-
-
-&lt;span class=&quot;c1&quot;&gt;// Update&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;promise&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;postRecord&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://127.0.0.1:8083/test&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-                            &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-                            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ServerResponseOk&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;PowerPack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;catch&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-                            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ServerResponseError&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-        &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SetStatus&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-     &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// We return the model, and a list of Actions to execute&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delayedCall&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toActionList&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Shopping&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Please make your selection&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TransactionPending&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Waiting for confirmation from server&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingFailed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Sorry, your purchase failed! The reason was: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BuyingSucceeded&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;The purchase worked, with a final price of &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counterView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;How many items do you want?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IncreaseQuantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;+&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DecreaseQuantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counters&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counterView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Quantity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;applicableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Applies&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountsView&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discount&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;discounts&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discountView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;The total price is: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;availableDiscounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ToString&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;
-    &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;This is your shopping cart: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counters&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;discountsView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;applicableDiscounts&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;totalPrice&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onMouseClick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;buy&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classy&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fa fa-bolt&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;[]&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; Buy!&quot;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;/// Create our application&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;createApp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initModel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Virtualdom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;createRender&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;withStartNodeSelector&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#echo&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And finally the server code using Suave:&lt;/p&gt;
-
-&lt;div class=&quot;language-fsharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Suave&lt;/span&gt;                 &lt;span class=&quot;c1&quot;&gt;// always open suave&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Web&lt;/span&gt;             &lt;span class=&quot;c1&quot;&gt;// for config&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Writers&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Filters&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Successful&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Suave&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Operators&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Newtonsoft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Json&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;FSharp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Core&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;DiscountSample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Shared&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;twelveItemsDiscount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsonConverter&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;nn&quot;&gt;JsonConvert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SerializeObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCart&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Fable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;JsonConverter&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;JsonConvert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;DeserializeObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Cart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boxed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boxed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCalculateSerialize&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCart&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserialized&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;cart&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculatePrice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;discounts&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Could not deserialize&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializeJson&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;UTF8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GetString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rawForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Successful&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setCORSHeaders&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;setHeader&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;Access-Control-Allow-Origin&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setHeader&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Access-Control-Allow-Headers&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;content-type&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;allow_cors&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WebPart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;OPTIONS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;setCORSHeaders&lt;/span&gt;
-                    &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OK&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;CORS approved&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;allow_cors&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;POST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/test&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapJson&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deserializeCalculateSerialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Writers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setMimeType&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;application/json&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;startWebServer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaultConfig&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h3&gt;
-
-&lt;p&gt;I think that the ability to use F# on the backend with the full power of the .NET ecosystem but now also share code that does not depend on .NET libraries (like business logic and the core problem domain code) with the frontend is a very exiting development. I’m looking forward to exploring this in more detail in the future :).&lt;/p&gt;
-
-&lt;p&gt;I’d also be interested in hearing about people who already use this stack or are exploring one of the other options on using the same language on the frontend and the backend.&lt;/p&gt;
-
-&lt;p&gt;Finally I’d like to thank the numerous great people in the F# universe who keep improving this ecosystem and create examples and blogposts about them - to name just a few that I learned from the most about F#: &lt;a href=&quot;https://github.com/tpetricek&quot;&gt;Tomas Petricek&lt;/a&gt;, &lt;a href=&quot;https://fsharpforfunandprofit.com/&quot;&gt;Scott Wlaschin&lt;/a&gt;, &lt;a href=&quot;https://github.com/alfonsogarciacaro&quot;&gt;Alfonso Garcia Caro&lt;/a&gt;, &lt;a href=&quot;https://github.com/forki&quot;&gt;Steffen Forkmann&lt;/a&gt; and &lt;a href=&quot;https://sergeytihon.wordpress.com/&quot;&gt;Sergey Tihon&lt;/a&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 10 Dec 2016 00:00:00 +0100</pubDate>
-        <link>https://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</link>
-        <guid isPermaLink="true">https://danielbachler.de/2016/12/10/f-sharp-on-the-frontend-and-the-backend.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Ports in Elm</title>
-        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals, the mechanism described in this post, have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
-
-&lt;p&gt;This is the third post in a series of posts about &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt;. In my &lt;a href=&quot;/2016/02/12/signals-in-elm.html&quot;&gt;first post about Signals in Elm&lt;/a&gt; I briefly mentioned ports. Since they are the only way to communicate with “native” Javascript, they certainly warrant a closer look. If you haven’t checked out the last post in this series on &lt;a href=&quot;/2016/02/19/tasks-and-effects-in-elm.html&quot;&gt;tasks and effects&lt;/a&gt; I suggest you do that now as this post will build on these concepts.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;So what are Ports, exactly? They are basically a way to send messages from Elm to native JS or from JS to Elm. They are defined in Elm with their own keyword, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt;. If a Port is defined to be of a Non-Signal type (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port initialUrl : String&lt;/code&gt;) then it is a “one time” message (at init time of the Elm code), i.e. such ports can be used if you want to send initialization values from JS to Elm at init time (and never afterwards). More frequently it will be a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal&lt;/code&gt; of some type (e.g. a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal String&lt;/code&gt;). Ports can not send and receive values of any type but only a subset - the big two groups of values that can’t be used are functions and union types (Maybe is the only exception to this rule). All the details can be found on the &lt;a href=&quot;http://elm-lang.org/guide/interop&quot;&gt;elm guide page on interop&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As a simple example, let’s create a pair of ports to send &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String&lt;/code&gt;s from Elm to Js, do something with it in native JS, and then send the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String&lt;/code&gt;s back. One case where something like this might be useful would be to encrypt values using a native library (using one of the new Browser crypto APIs).&lt;/p&gt;
-
-&lt;h3 id=&quot;outgoing-ports&quot;&gt;Outgoing ports&lt;/h3&gt;
-
-&lt;p&gt;Since we want to send stuff several times, not just once, we need to declare both ports as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signals&lt;/code&gt;. Let’s start with the outgoing port and on the Elm side:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;-- how do we get a Signal here for the implementation?&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This is a simple outgoing port definition, but somehow we have to implement this port - we need a way to get a Signal that we can “trigger” in our elm app and that will be received on the JS side. Let’s see how the JS side will look like before coming back to Elm:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// do something with the string, send it to be encrypted etc&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Pretty straigthforward. We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subscribe&lt;/code&gt; method to register a callback that will be called with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; string value every time the Signal fires at the Elm side. Ok, but how do we finish implementing this on the Elm side?&lt;/p&gt;
-
-&lt;p&gt;There are two ways to do this - one is to create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt; to send our messages, the other is to create a custom version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; that returns an additional value for things to send to the port in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt;. I have implemented both attempts as gists, here is the &lt;a href=&quot;https://gist.github.com/danyx23/e42ceedaccf0c4a556b8&quot;&gt;one with the Mailbox&lt;/a&gt; and once with a &lt;a href=&quot;https://gist.github.com/danyx23/6004778b9322dc716373&quot;&gt;modified StartApp&lt;/a&gt;. For the rest of the blogpost I will refer to the first version since it works with the vanilla StartApp. Ok, let’s hook up the Mailbox:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Mailbox&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;mailbox&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestEncryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This initalizes the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt; and fills in the hole we had before - the Signal we use as a port will just be the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal&lt;/code&gt; of our new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mailbox&lt;/code&gt;. But how do we actually send anything to this Mailbox? By creating an Effect, like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;-- and this is our update function that now returns a tuple of (Model, Effect):&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;TextChanged&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- create the Effect here&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- other cases ...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The last line in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; may be a bit confusing - what are we mapping there? Let’s take a look at the type of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mailbox.send&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This means that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;success&lt;/code&gt; type of the task we get back from send is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt; (aka Unit) which acts a bit similar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;void&lt;/code&gt; in C like languages, i.e. it represents “no actual value”. Let me desugar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sendStringToBeEncrypted&lt;/code&gt; so it is clearer what types we are working with:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sendStringToBeEncrypted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;portRequestEncryptionMailbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clearText&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;effectOfUnit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendTask&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;effectOfAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Noop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;(Note that instead of first converting to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects ()&lt;/code&gt; and then mapping that I could also have mapped the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task x ()&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task x Action&lt;/code&gt; and then converted the Task to Effects). This may still seem a bit weird but it may help to realize that in this particular case of sending a message to a mailbox we are explicitly not interested in an actual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; value. We are only interested in performing the side effect of sending the message and it will not have a reasonable “payload” that should be routed through update. But because of how &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt; are typed in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp&lt;/code&gt;, we do need to have an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; in the end and so we introduce a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Noop&lt;/code&gt; value that explicitly does nothing when it is processed in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;At this point it is important to remember that StartApp.start returns a record that contains a tasks field and this has to be wired to an outgoing port - if you don’t do this, the Tasks you create via Effects will never be executed by the runtime:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ok great, this is the outgoing part of the ports - how about handling stuff that comes into our Elm program?&lt;/p&gt;
-
-&lt;h3 id=&quot;incoming-ports&quot;&gt;Incoming Ports&lt;/h3&gt;
-
-&lt;p&gt;Let’s start on the Javascript side. We will define an incoming port called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; on the Elm side, and here we see how to send messages to it from JS. (Note that this example simplifies the logic a little and immediately after receiving a message from the outgoing port it sends an encrypted value back to Elm via the incoming port - in practice encryptString would probably call an API that returns a promise and only when this is fullfilled call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;send&lt;/code&gt; to send a value back to Elm)&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Elm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestEncryption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encryptString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;encryptedMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Encypted: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// actually encypting the message is ommited&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;myapp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptionCompleted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encryptedMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note that I not only had to modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptString&lt;/code&gt; but also pass in an initial value at the time when we initialize Elm with the call to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Elm.embed&lt;/code&gt;. The third parameter takes the initial value of every incoming Signal we define on the Elm side - it is required because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signals&lt;/code&gt; in Elm always need an initial value. Let’s add this incoming port on the Elm side to complete the example:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note that this time the port we have defined has no “implementation” in Elm. That is because, viewed from Elm, this is just an external input - a Signal we can use to trigger behaviour in our app. But how can we do that? How can we wire up this Signal into our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp.start&lt;/code&gt; call?&lt;/p&gt;
-
-&lt;p&gt;In the last post, when we switched from StartApp.Simple to StartApp, I mentioned &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inputs&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inputs&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List of (Signal of Action)&lt;/code&gt;, i.e. Signals that fire &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Actions&lt;/code&gt; that will be combined with the Signal of the main mailbox that is administered by StartApp. So this is exactly what we want to have for this little program so it can react to the Signal that represents the port - the only thing that is missing is that we have defined &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of String&lt;/code&gt; and we need a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Action&lt;/code&gt; for inputs. Sounds like we need a map again:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;EncryptedValueReceived&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCompleted&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptedString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And voilà! We have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signal of Actions&lt;/code&gt; that we can put into the inputs part of start.&lt;/p&gt;
-
-&lt;p&gt;So just to recap, let’s go through the example again: Whenever the user enters text we process the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextChanged&lt;/code&gt; value in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; function and not only update the model but also create a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt;. This is then returned by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; and, because we wired the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tasks&lt;/code&gt; part returned by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; to an outgoing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt;, it is handed to the runtime. This leads, on the native JS side, to a call of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptString&lt;/code&gt; (because this is the function we registered with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subscribe&lt;/code&gt;). In it we pretended to do some encryption and then sent the value back with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptionCompleted.send&lt;/code&gt; (again, you can send values at any time, it only happens in our example that we send one value back for every value we receive on the JS side). This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;send&lt;/code&gt; call leads the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;encryptionCompleted&lt;/code&gt; Signal to fire, with the string value we sent from the JS side. This is than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&lt;/code&gt;ped into an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; value, namely &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EncryptedValueReceived&lt;/code&gt;, and because this is hooked up to the inputs part of StartApp it triggers the same chain through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; as any other events. In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; we then handle processing of this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EncryptedValueReceived&lt;/code&gt; value and the whole exercise is complete.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading through this long post! I hope it was useful and I appreciate any feedback you might have!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Feb 2016 00:00:00 +0100</pubDate>
-        <link>https://danielbachler.de/2016/02/26/ports-in-elm.html</link>
-        <guid isPermaLink="true">https://danielbachler.de/2016/02/26/ports-in-elm.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Tasks and Effects in Elm</title>
-        <description>&lt;p&gt;(Disclaimer: This post was written about Elm 0.16. Signals have since been deprecated. The concepts in this post may still help understand how the Elm Architecture works internally, but the actual code has changed significantly)&lt;/p&gt;
-
-&lt;p&gt;This is the second post in a series on some of the concepts in &lt;a href=&quot;http://elm-lang.org/&quot;&gt;Elm&lt;/a&gt; that might be a bit puzzling when you start out with Elm. In the &lt;a href=&quot;/2016/02/12/signals-in-elm.html&quot;&gt;last post about Signals in Elm&lt;/a&gt; I wrote about Signals and how they are behind the scenes of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp.Simple&lt;/code&gt;. In this post I get into long running operations like XHRs (aka AJAX). There are two closely related types that are involved in this, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt;, and the exact differences between can be confusing in the beginning. So let’s dive right in:&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;tasks&quot;&gt;Tasks&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; is the more basic type (it is defined in Core) and so let’s start with this one. A Task represents a long-running operation that can fail (with an error type) or succeed (with a success type). It’s type is thus:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;errorType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successType&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;-- (or, as it is actually written in the library:)&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;There are only two values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; you can create yourself in your code, without using a separate library. These two ways are two functions:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;succeed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;-- and&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;fail&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;These are ways to create task values without actually doing any long-running operations. This can be useful if you want to combine a long running task and a simple value in some way and process them further (you would then turn the simple value into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;succeed&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Most of the time you actually get in contact with tasks, these will be created for you by library functions that initialize the task so that it will perform some long running operation when the runtime executes it and handle the result of the operation according to Task semantics (I.e. that some native code will make sure to call fail or succed on the native representation of the task when the operation is finished).&lt;/p&gt;
-
-&lt;p&gt;Note that the operation doesn’t start right away! I said “when the runtime executes it”. In purely functional programming languages, inside the language you can never just perform a side effect (something that changes “the world” outside the internal state of your code), and sending an http request surely is a side effect in that sense. This is one of the big mental shifts from imperative programming, where you can always do this, to working with purely functional languages where you can’t.&lt;/p&gt;
-
-&lt;p&gt;So how does this actually work? The task you get back &lt;em&gt;represents&lt;/em&gt; the long running action. When a library creates it for you, nothing “happens”, it just created a value (of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt;) that indicates what you would like to happen.&lt;/p&gt;
-
-&lt;p&gt;If you look at e.g. the implementation of &lt;a href=&quot;https://github.com/evancz/elm-http/blob/3.0.0/src/Native/Http.js&quot;&gt;the native part of the send function in http&lt;/a&gt; you will see that a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; is created in native JS code by handing it a callback. This callback is what will get called when the runtime actually executes the task. This is when the actual XHR request is created and performed - only when the runtime executes this callback.&lt;/p&gt;
-
-&lt;p&gt;So how do you get the runtime to run this task? By passing it into an outgoing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt;. I will go into detail on ports in a later blogpost, but suffice to say that they are a way to send messages between “native” JS and Elm (called an incoming &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt;) and from Elm to native JS (an outgoing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;port&lt;/code&gt;). The runtime has some special casing for Tasks that come to it via outgoing ports that make it execute the callback the Task represents.&lt;/p&gt;
-
-&lt;p&gt;When the long running native code is done, it will either call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;succeed&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fail&lt;/code&gt; on the task. In most real life code that uses the Elm Architecture you will set up a “chain” of task processing that will lead to the the end result of the task execution being that a value of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; type is routed back through your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; function. This value of your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; type is the usually tagged with the result of the task (e.g. the decoded Json response of an XHR).&lt;/p&gt;
-
-&lt;p&gt;As a last piece of info before we have a look at Effects and how all of this actually looks in an example, let me just mention that Tasks can easily be chained togehter with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;andThen&lt;/code&gt;, much like promises in JS are chained together.&lt;/p&gt;
-
-&lt;h3 id=&quot;effects&quot;&gt;Effects&lt;/h3&gt;
-
-&lt;p&gt;On to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt;! If you look at the definition for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects&lt;/code&gt; it’s pretty simple:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Tick&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;None&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Batch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Batch&lt;/code&gt; are helpers, so the basic things an Effect can represent are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; (with error type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Never&lt;/code&gt;) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ticks&lt;/code&gt;. The latter is used for animations if you want to do something at the next animation frame.&lt;/p&gt;
-
-&lt;p&gt;It’s very common to turn a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; into an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effect&lt;/code&gt;, whereas the inverse is usually only ever done by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp&lt;/code&gt;/the runtime.&lt;/p&gt;
-
-&lt;p&gt;Several libraries use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Task&lt;/code&gt; to allow you to work with long running operations - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Http&lt;/code&gt; is one, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elm-history&lt;/code&gt; is another.&lt;/p&gt;
-
-&lt;p&gt;So how is this used? The &lt;a href=&quot;https://github.com/evancz/elm-architecture-tutorial#example-5-random-gif-viewer&quot;&gt;Elm Architecture example 5&lt;/a&gt; uses this very central piece of code:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Let’s look at what it does. It starts with creating a task that represents the Http &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get&lt;/code&gt; operation and then builds a chain on top of this. I will deconstruct this from using the pipe operator to normal function calls with type annotations to hopefully explain what’s happening:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getRandomGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Error&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decodeImageUrl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randomUrl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;topic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Maybe&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toMaybe&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithError&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NewGif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndMaybe&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;taskAsEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Action&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getTaskWithNoErrorAndAction&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;So in the end, Effects in this case just wraps the Task for us. Because we used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toMaybe&lt;/code&gt; and then mapped it to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NewGif&lt;/code&gt; type constructor function, this will result in an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Action&lt;/code&gt; coming back to us via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; when it is done that is either (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NewGif Nothing&lt;/code&gt;) if the http request failed, or (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NewGif &quot;some-url-here&quot;&lt;/code&gt;) if it succeeds. If you want to understand how this wiring happens I would suggest looking at the &lt;a href=&quot;https://github.com/evancz/elm-effects/blob/master/src/Effects.elm&quot;&gt;implementation&lt;/a&gt; of Effects.&lt;/p&gt;
-
-&lt;p&gt;One thing that is worth looking at is the return type of the function: Effects Action. Effects has a type variable, just like for example List. So this is an Effects that deals with the Action type you define in your application - and this is the really neat part of how to make sure that you can deal with the result of the Task/Effect - the result will just be a value of your Action type!&lt;/p&gt;
-
-&lt;p&gt;At this point you may wonder: why have Effects at all? Aren’t they just weird wrappers for Tasks? Let’s quickly take a look again at how the Task case of the Effects type is defined:&lt;/p&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Effects&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The way &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StartApp&lt;/code&gt; is typed, going via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects Action&lt;/code&gt; constraints all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tasks&lt;/code&gt; to come back with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Actions&lt;/code&gt; and have the error type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Never&lt;/code&gt;. This is really nice because it means that you don’t have to handle different task types to different ports, but you set up “pipelines” of tasks to effects like with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getRandomGif&lt;/code&gt; above and it will all work out in a typesafe manner that the result of your tasks will be sent back to your program’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; function as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Actions&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ok, so finally, remember I wrote something about having to send Tasks off to an outgoing port. I you don’t do this, the Tasks will never be executed! If you want to use Effects, the easiest way is to switch from StartApp.Simple to StartApp. This brings three minor changes with it:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; no longer directly returns a Signal of Html but a record of 3 Signals: one for the html, one for the model, and, crucially for us, one of tasks.&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update&lt;/code&gt; function now returns not just the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Model&lt;/code&gt;, but a tuple of&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; (Model, Effects Action)&lt;/code&gt;. I.e. that every case in your update function will have to return both the changed model and an Effect (which will often be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Effects.none&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; gets a fourth parameter, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inputs&lt;/code&gt;, for incoming &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Signals&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;The tasks part of the record that is returned by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; has to be handed to a port so that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tasks/Effects&lt;/code&gt; are actually performed by the runtime like so:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-elm highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;StartApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;funny cats&quot;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-
-&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Signal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Never&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Phew, this got a little long again, but I hope it helps a little to understand how Tasks/Effects work!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 19 Feb 2016 00:00:00 +0100</pubDate>
-        <link>https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</link>
-        <guid isPermaLink="true">https://danielbachler.de/2016/02/19/tasks-and-effects-in-elm.html</guid>
         
         
       </item>

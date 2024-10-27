@@ -296,6 +296,8 @@
           
         
           
+        
+          
           <a class="page-link" href="/cv.html">CV</a>
           
         
@@ -676,12 +678,12 @@
 <h3 id="modules-vs-member-functions">
 <a class="anchor" href="#modules-vs-member-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modules vs member functions</h3>
 
-<p>A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to replace a value in a string you can either do <code class="language-plaintext highlighter-rouge">"Teststring".Length</code> or you can use <code class="language-plaintext highlighter-rouge">String.length "Teststring"</code>. The functionality is different between the two, e.g. replace only exists as a member function, map only in the module. Just another little oddity that is good to be aware of.</p>
+<p>A slightly confusing issue is that for several common topics like String there exist both member functions that are called on concrete instances but also an F# module for this type. The member function approach is the one that is used in C#, the module approach is additionally available in F#. This means that if you want to get the length of a string you can either do <code class="language-plaintext highlighter-rouge">"Teststring".Length</code> or you can use <code class="language-plaintext highlighter-rouge">String.length "Teststring"</code>. The functionality in this case is identical but some other similar cases also behave a bit differently. Just another little oddity that is good to be aware of.</p>
 
 <h3 id="operator-precedence">
 <a class="anchor" href="#operator-precedence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operator precedence</h3>
 
-<p>If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. &gt;== for monadic bind, &lt;*&gt; for lifting binary functions ets. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell’s various lens libraries are not really feasible.</p>
+<p>If you know other ML family languages then you might be tempted to define some operators for 2-ary functions, e.g. &gt;== for monadic bind, &lt;*&gt; for lifting binary functions etc. This works in theory but is somewhat discouraged and the operator characters and their associated precedence is hardcoded in the language. This means that e.g. overriding addition or multiplication for custom vector types or adding bind is not a problem, but complex operator hierarchies like e.g. in Haskell’s various lens libraries are not really feasible.</p>
 
 <h3 id="type-inference-order-and-the-obsession-with-the--pipe-operator">
 <a class="anchor" href="#type-inference-order-and-the-obsession-with-the--pipe-operator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Type inference order and the obsession with the |&gt; pipe operator</h3>

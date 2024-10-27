@@ -303,6 +303,8 @@
           
         
           
+        
+          
           <a class="page-link" href="/cv.html">CV</a>
           
         
@@ -322,6 +324,94 @@
         <div class="home">
 
     <!-- This loops through the paginated posts -->
+    
+    <article>
+        <h1><a href="/movies/2006/01/18/idea-for-a-movie-from-slashdot.html">Idea for a movie from slashdot</a></h1>
+        <p class="author">
+          <span class="date">18 January 2006</span>
+        </p>
+
+        <div class="content">
+        <p>A comment on an article at <a title="slashdot" href="http://slashdot.org/">slashdot</a> on a new <em>trauma pill </em>seems to be promising stuff for a movie script. Maybe I'll write something around this theme. <a href="http://science.slashdot.org/article.pl?sid=06/01/18/0629251">The article at slashdot.</a> From the comment:</p>
+<blockquote><p>Of course, rape victims will be made victims twice because they will not be able to both use this pill to prevent the psychological damage and be considered a reliable witness. Defense Lawyers will say, just as you have assumed, that her memories were changed and there's no way she could identify her attacker reliably. And gullible people on the jury will go for it. &quot;We can give you this pill that will help you be whole, but you'll have to give up on having a solid prosecution against your attacker.&quot; What a choice. Ironically, I would imagine that by reducing the tramatic effect of the attack, the victims memories might actually be more reliable.&nbsp;</p></blockquote>
+
+        </div>
+
+        
+        
+
+        
+    </article>
+    
+    <article>
+        <h1><a href="/coding/2006/01/15/blessed-be-darcs.html">Blessed be darcs</a></h1>
+        <p class="author">
+          <span class="date">15 January 2006</span>
+        </p>
+
+        <div class="content">
+        <p>During the last days I started to install some long-overdue updates to some webservers I manage. The problem was this: a long time ago I installed some webapps written mostly in php. People started to use them and demanded modifications. Nothing big really, but enough to make updates a pain - which led to no security updates in a long time. I started to use the brilliant version control software <a title="darcs" href="http://abridgegame.org/darcs/">darcs</a> along with the very convenient script <a title="darcs_load_dirs at the darcs wiki" href="http://darcs.net/DarcsWiki/HintsAndTips">darcs_load_dirs</a> to install the updates. To get them on debian do apt-get install darcs darcs_load_dirs. I really recomend darcs for this (as opposed to e.g. <a title="Subversion" href="http://subversion.tigris.org">subversion</a> which I use at work) because it's very easy to setup/use from commandline and has a very powerfull automated merging mechanism.</p>
+<p>Disclaimer: Although I use version management in one form or another for quite some time now, I am very new to darcs so some of the things I did could be cumbersome or wrong - read it at your own risk :).&nbsp;</p>
+<p>The process is basically this: create a new darcs dir somewhere that will receive the upstream updates of the software. I called it current.</p>
+<blockquote><p>mkdir current<br />cd current<br />darcs init</p></blockquote>
+<p>Now copy the base version (the version you started with originally) into the darcs managed dir. To find out which version you used, checkout changelog or some such file.</p>
+<blockquote><p>cp ~/base-version . -r<br />darcs add * -r<br />darcs record -am &quot;Imported base version&quot;<br /></p></blockquote>
+<p>This adds the base version to the repository and creates the first revision. Now we will create a branch (a copy of the repository in darcs) to hold our modifications.</p>
+<blockquote><p>cd ..<br />mkdir currentWithLocalChanges<br />cd currentWithLocalChanges<br />darcs get ../current<br /></p></blockquote>
+<p>Now copy all the relevant files from your modified install into the currentWithLocalChanges dir. You will probably have to add the new files, then you might want to review the changes and record them.</p>
+<blockquote><p>cd current<br />cp ~/installedVersion . -r<br />darcs add * -r<br />darcs whatsnew<br />darcs record -am &quot;imported local changes&quot;<br /></p></blockquote>
+<p>Now apply all the new versions. For this, I simply downloaded every subsequent release (just to be sure, you can also do this directly with the new upstream version as shown in the example below) new source packages that contain the whole new source and unzipped them into <br />its own folder. Use darcs_load_dirs to check for differences and record them.</p>
+<blockquote><p>cd ../current<br />darcs_load_dirs ../newVersion <br /></p></blockquote>
+<p>This automatically records the changes. You can take a look with darcs changes [-s]. Now you simply pull them over to your locally changed version:</p>
+<blockquote><p>cd ../currentWithLocalChanges/current<br />darcs pull ../../current<br /></p></blockquote>
+<p>Bad packages (like phpbb, which really sucks) will have quite a few merge-conflicts that you have to resolve by hand now (altough darcs is really superb when it comes to automated merging). Good packages (like drupal) will work automatically because they can be extended with new pluginfiles, and not with changes to the original files.</p>
+<p>When you need to make changes again, just do a </p>
+<blockquote><p>darcs add * -r<br />darcs record <br /></p></blockquote>
+<p>again. BTW: <a title="Lefants homepage" href="http://lefant.net">fabian</a> started to put the entire etc dir of the servers he administers under darcs control!<br /></p>
+
+        </div>
+
+        
+        
+
+        
+    </article>
+    
+    <article>
+        <h1><a href="/coding/2006/01/02/system-randomint-seed-changed-between-net-1-1-and-2-0.html">System.Random(int seed) changed between .NET 1.1 and 2.0</a></h1>
+        <p class="author">
+          <span class="date">02 January 2006</span>
+        </p>
+
+        <div class="content">
+        <p>Using the brilliant tool Reflector I found out that there is a breaking change in the constructor of System.Random between .NET Framework 1.1 and 2.0 - the random numbers generated by the same seed in both versions are different. Since this is not documented anywhere I thought I'd post it here. (Of course this is usually not a problem, but I relied on a certain sequence with a given seed for Unittesting).</p>
+
+        </div>
+
+        
+        
+
+        
+    </article>
+    
+    <article>
+        <h1><a href="/2005/12/30/emotionsbewilligung-23-517-finished-a-new-dvd-and-a-new-photo-of-me.html">Emotionsbewilligung 23/517 finished, a new DVD and a new photo of me</a></h1>
+        <p class="author">
+          <span class="date">30 December 2005</span>
+        </p>
+
+        <div class="content">
+        <p>My latest movie,<a title="Emotionsbewilligung" href="/taxonomy_menu/2/2/20"> &quot;Emotionsbewilligung 23/517&quot;</a> is done. I will publish it at UTV next month and make it available in high quality via <a title="Bittorrent on wikipedia" href="http://en.wikipedia.org/wiki/Bittorrent">Bittorrent</a>. The movie is released under a <a title="The license under which the movie is released" href="http://creativecommons.org/licenses/by-nc-nd/2.0/de/">creative commons license</a>, so feel free to copy it and share it with your friends (or strangers) or show it in public as long as you conform to the license restrictions (basically: you may do nothing comercial with it, don't modify it and you have to mention my name as the author. Please note that you may only show/copy the entire movie, as I regard showing only part of it as an act of modification which is not allowed wihtout my written consent.)</p>
+<p>I also assembled a DVD with all the movies I directed until now. Currently the only way to get is is by <a title="Contact me!" href="/contact">contacting me</a>, in due time I will release it via Bittorrent.</p>
+<p>In other news I uploaded a new <a href="/photo">photo of myself</a>.&nbsp;</p>
+
+        </div>
+
+        
+        
+
+        
+    </article>
     
     <article>
         <h1><a href="/emotionsbewilligung%2023/517/2005/12/19/emotionsbewilligung-23-517-finished.html">Emotionsbewilligung 23/517 finished</a></h1>
@@ -345,86 +435,13 @@
         
     </article>
     
-    <article>
-        <h1><a href="/emotionsbewilligung%2023/517/2005/12/08/working-on-a-new-movie-emotionsbewilligung-23-517.html">Working on a new movie: "Emotionsbewilligung 23/517"</a></h1>
-        <p class="author">
-          <span class="date">08 December 2005</span>
-        </p>
-
-        <div class="content">
-        <p>I am currently working on my first movie since moving to Berlin - it's a short for the admission to the <a href="http://www.dffb.de/" title="DFFB">DFFB</a> film academy here in Berlin. The movie tells the story of Paul, a young man who has filed an application for an &quot;allowance of emotions&quot; about 7 months ago, but he still hasn't received it. Upon inquiring, he is told that the allowance was denied - to learn the reason why, he has to file a protest. Whether this is a good idea remains to be seen...</p>
-<p>Shooting has been completed last week, I am currently busy cutting the film. It will probably be finished by mid-december, and will go online at <a href="http://www.utv.at" title="UTV">UTV</a> early next year. Stay tuned for more info! <br />&nbsp;</p>
-<p>&nbsp;</p>
-
-        </div>
-
-        
-        
-
-        
-    </article>
-    
-    <article>
-        <h1><a href="/coding/2005/11/21/a-backup-script-that-hibernates-the-computer.html">A backup script that hibernates the computer</a></h1>
-        <p class="author">
-          <span class="date">21 November 2005</span>
-        </p>
-
-        <div class="content">
-        <p>I just completed a first version of a backup-script that shuts a few apps down that lock important files, starts a backup-process and waits 'till completion, then sends the computer into hibernate. I run this script now before I go to bed, this way everything gets backed up at a time when I know it doesn't bother me, yet as soon as it's done it goes into hibernate mode to save electicity.</p>
-<p>The script is attached below. It is written using the nifty <a title="Autohotkey scripting utility" href="http://www.autohotkey.com/">AutoHotKey</a> software. It uses <a title="Peters Backup" href="http://pbackup.sourceforge.net/">peters backup</a> as a backup solution and <a title="Wizmo hibernate utility" href="http://grc.com/wizmo/wizmo.htm">Wizmo</a> to send the computer into hibernate mode. The script is a simple textfile so adjust anything according to your needs. I left all the paths I used in the script so that you have an idea of a real-world scenario. </p>
-
-        </div>
-
-        
-        
-
-        
-    </article>
-    
-    <article>
-        <h1><a href="/coding/2005/11/17/work-using-files-as-locks-with-the-net-framework.html">@ work: using files as locks with the .NET Framework</a></h1>
-        <p class="author">
-          <span class="date">17 November 2005</span>
-        </p>
-
-        <div class="content">
-        <p>I recently implemented a custom locking mechanism for files that works through creating a file with the same name and .lock appended. When the file exists, another user of my program has the file locked, when it does not exist the file is not locked. Inside the lock file I store only the name of the user who owns the lock, so that communication can take place between the users.</p>
-
-<p>For this, I wanted to open the .lock file with the option FileOptions.DeleteOnClose and FileShare.Read . This however, does not work, because DeleteOnClose does not allow FileSharing! Since this is not documented anywhere and apperently never came up in any newsgroup, I thought I’d post it here. The solution it seems is to take care of deleting the file when you close it.</p>
-
-        </div>
-
-        
-        
-
-        
-    </article>
-    
-    <article>
-        <h1><a href="/2005/11/17/photos-from-paris.html">Photos from Paris</a></h1>
-        <p class="author">
-          <span class="date">17 November 2005</span>
-        </p>
-
-        <div class="content">
-        <p>Photos are online now from our trip to paris in early october. <a href="/gallery2/v/travel/">Check them out</a>.</p>
-
-        </div>
-
-        
-        
-
-        
-    </article>
-    
 
     <!-- Pagination links -->
     <div class="pagination">
       
       <a href="/page12" class="previous"><i class="fas fa-arrow-left"></i></a>
       
-      <span class="page_number ">Page: 13 of 18</span>
+      <span class="page_number ">Page: 13 of 19</span>
       
       <a href="/page14" class="next"><i class="fas fa-arrow-right"></i></a>
       
