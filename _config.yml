@@ -15,7 +15,7 @@ url: "https://danielbachler.de" # the base hostname & protocol for your site
 twitter_username: danyx23
 github_username:  danyx23
 paginate: 5
-exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'old-content']
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'old-content', 'justfile', '_config.yml']
 
 # Build settings
 markdown: kramdown
