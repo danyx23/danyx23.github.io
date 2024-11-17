@@ -411,4 +411,6 @@ main { flex: 1 1 content; overflow-y: scroll; }
 
 .main-content { width: 87.5%; margin-left: auto; margin-right: auto; padding-left: 12.5%; max-width: 1400px; }
 
+ul { width: 55%; margin-left: 1.5rem; list-style-type: disc; }
+
 /*# sourceMappingURL=tufte.css.map */

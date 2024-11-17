@@ -271,6 +271,8 @@ p + h3, p + h2, p + h4, p + h5 { margin-top: 1.5em; }
 
 .cv-table .cv-time { min-width: 6em; }
 
+ul { list-style: disc; }
+
 /* Ostrich Sans */
 @font-face { font-family: 'Ostrich Sans Inline'; src: url("../fonts/ostrich-sans-inline-regular.eot"); src: local("☺"), url("../fonts/ostrich-sans-inline-regular.woff") format("woff"), url("../fonts/ostrich-sans-inline-regular.ttf") format("truetype"), url("../fonts/ostrich-sans-inline-regular.svg") format("svg"); font-weight: normal; font-style: normal; }
 
