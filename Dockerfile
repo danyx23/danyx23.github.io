@@ -1,20 +1,18 @@
-# Use the official Jekyll Docker image as the base
-FROM jekyll/jekyll:4.2.0
+# Use official Ruby image (multi-arch: supports arm64 and amd64)
+FROM ruby:3.2
 
-# Set the working directory inside the container
+# Install build dependencies
+RUN apt-get update && apt-get install -y build-essential
+
+# Set the working directory
 WORKDIR /srv/jekyll
 
-# Copy over your Gemfile to install necessary gems
-COPY Gemfile /srv/jekyll/Gemfile
-
-# Install bundler if not already available
-RUN gem install bundler:1.16.1
-
-# Install the gems from your Gemfile
+# Copy Gemfile and install dependencies
+COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 # Expose the port Jekyll uses
 EXPOSE 4000
 
 # Set the default command to serve the Jekyll site
-CMD ["jekyll", "serve", "--force-polling", "--livereload"]
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--force_polling", "--livereload"]

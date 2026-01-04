@@ -14,16 +14,20 @@ This is a **Jekyll-based personal website** hosted at [danielbachler.de](https:/
 
 ## Running Locally
 
+Uses Docker with `ruby:3.2` base image (multi-arch: works on both arm64 and amd64).
+
 ```bash
-# Build the Docker image (first time only)
+# Build the Docker image (first time or after Gemfile changes)
 docker build -t jekyll-danyx .
 
 # Serve with live reload
-docker run -p 4000:4000 -v $(pwd):/srv/jekyll docker.io/library/jekyll-danyx
+docker run --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-danyx
 
 # Or use justfile (requires nushell)
-just preview   # serve with watch
-just build     # build only
+just build-docker   # build image
+just preview        # serve with watch
+just build          # build only
+just preview-quick  # serve without building image (slower, uses ruby:3.2 directly)
 ```
 
 Site will be available at `http://localhost:4000`
