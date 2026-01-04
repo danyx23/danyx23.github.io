@@ -37,23 +37,8 @@ html, body { height: 100%; }
 
 html{
     text-align: baseline;
-    font-size: 11px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
+    font-size: clamp(11px, 0.5vw + 10px, 17px);
   }
-
-@media screen and (min-width: 800px){ html{ font-size: 12px;} }
-
-@media screen and (min-width: 900px){ html{ font-size: 13px;} }
-
-@media screen and (min-width: 1000px){ html{ font-size: 14px;} }
-
-@media screen and (min-width: 1100px){ html{ font-size: 15px; } }
-
-@media screen and (min-width: 1200px){ html{ font-size: 16px; } }
-
-@media screen and (min-width: 1300px){ html{ font-size: 17px; } }
 
 // sets link style according to values in _settings.scss
 .mathblock{
@@ -193,6 +178,28 @@ th, td{ font-size: 1.2rem;
 
 article { position: relative;
           padding: 1rem 0rem 2.5rem 0rem; } // reduced top and bottom padding by 50%
+
+/* Home page article cards */
+.home article {
+    padding: 1.5rem;
+    margin: 0 -1.5rem 2rem -1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+    
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .read-more {
+        margin-top: 1rem;
+        font-size: 0.9em;
+        opacity: 0.7;
+    }
+}
 
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
@@ -430,11 +437,8 @@ hr.slender {
     border: 0;
     height: 1px;
     margin-top: 1.4rem;
-    margin-bottom:1.4rem;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin-bottom: 1.4rem;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 // End of front listing page stuff
 
@@ -452,8 +456,7 @@ hr.slender {
 @media print {
 
     * {
-    -webkit-transition: none !important;
-    transition: none !important;
+        transition: none !important;
     }
     *,
     *:before,
@@ -550,16 +553,9 @@ html.about {
 .no-touchevents body.about {
   background: url('../img/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
-.photo-of-daniel {
-  width: 30%;
-  background: url('../img/DanielBachler.jpg') no-repeat bottom center;
-  background-size: cover;
-}
+/* .photo-of-daniel class removed - no longer used */
 
 
 .site-header {
@@ -636,39 +632,28 @@ html.about {
 
 
 
-/* Links: replicate underline that clears descenders */
+/* Links: modern underline that clears descenders */
 a:link,
 a:visited {
     color: inherit;
 }
 
-.no-tufte-underline:link {
-    background: unset;
-    text-shadow: unset;
-}
-
 article a:link, .page-content a:link, .tufte-underline, .hover-tufte-underline:hover {
-    text-decoration: none;
-    background: -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient($bg-color, $bg-color), -webkit-linear-gradient(currentColor, currentColor);
-    background: linear-gradient($bg-color, $bg-color), linear-gradient($bg-color, $bg-color), linear-gradient(currentColor, currentColor);
-    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    text-shadow: 0.03em 0 $bg-color, -0.03em 0 $bg-color, 0 0.03em $bg-color, 0 -0.03em $bg-color, 0.06em 0 $bg-color, -0.06em 0 $bg-color, 0.09em 0 $bg-color, -0.09em 0 $bg-color, 0.12em 0 $bg-color, -0.12em 0 $bg-color, 0.15em 0 $bg-color, -0.15em 0 $bg-color;
-    background-position: 0% 93%, 100% 93%, 0% 93%;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    a:link, .tufte-underline, .hover-tufte-underline:hover {
-        background-position-y: 87%, 87%, 87%;
-    }
-}
-
-a:link::selection,
-a:link::-moz-selection {
-    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+a:link::selection {
     background: #b4d5fe;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible {
+    outline: 2px solid $contrast-color;
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
 .pagination {
@@ -722,3 +707,72 @@ main {
 ul { width: 55%;
      margin-left: 1.5rem;
      list-style-type: disc; }
+
+/* About page sections with visual rhythm */
+.about-intro {
+  margin-bottom: 2.5rem;
+}
+
+.lead {
+  font-size: 1.5em;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+  
+  &:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.section-title {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.snail-mail {
+  font-style: normal;
+  opacity: 0.8;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+
+.credits-section {
+  border-bottom: none !important;
+}
+
+.about-text .attribution {
+  font-size: 0.85em;
+  opacity: 0.7;
+  line-height: 1.7;
+}
+
+.about-text .contacts {
+  width: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  
+  li {
+    list-style: none;
+    margin-right: 1rem;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

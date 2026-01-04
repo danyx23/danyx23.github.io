@@ -1,72 +1,57 @@
 ---
+layout: about
 title: About me
 ---
-<!DOCTYPE html>
-<html>
 
-{% include head.html %}
-
-<body class="about">
-
-{% include header.html %}
-
-<div class="page-content">
-    <div class="wrapper about-me">
-        <div class="about-image"><img src="/img/DanielBachler.jpg"></div>
-        <div class="about-text">
-            <p>
-                Hi! I’m Daniel.
-            </p>
-
-            <p>
-                I’m a software engineer and my current role is Head of Engineering at the amazing <a href="https://ourworldindata.org/">Our World In Data</a> where we develop tools for our authors and audience to explore data on important long term trends relevant to human development. With my wonderful wife I also run the photography studio <a href="https://www.iconoclash-photography.com">Iconoclash Photography</a>. I really like programming languages from the ML family (F#, Elm, Haskell, ...).
-            </p>
-
-            <p>
-                I'm excited and concerned about the fast development of AI in roughly equal terms and I write about this topic occasionally on my <a href="https://aihorizon.substack.com/">AI Horizon substack</a>.
-            </p>
-
-            <p> I studied film directing and a couple of the films I made <a href="https://vimeo.com/album/3796617" target="blank">are still online at vimeo</a>.
-            </p>
-
-            <p>
-                To get in touch, just drop me an email at <a href="mailto:daniel@danielbachler.de">daniel@danielbachler.de</a>. You can also find me at twitter, github etc:
-                <ul class="contacts">
-            <li>{% include icon-twitter.html %}</li>
-            <li>{% include icon-github.html %}</li>
-            <li>{% include icon-linkedin.html %}</li>
-            <li>{% include icon-facebook.html %}</li>
-                </ul>
-            </p>
-
-            <p>
-                My snail mail address is:<br>
-                Daniel Bachler<br>
-                Wrangelstr 3<br>
-                10997 Berlin<br>
-                Germany
-            </p>
-
-            <p class="attribution">Credits<br>
-                This site was designed by me and built with Jekyll. Big thanks to <a href="http://www.clayharmon.com/">Clay Harmon</a> for creating <a href="https://github.com/clayh53/tufte-jekyll">Tufte Jekyll</a> which enables the fantastic sidenotes used in some of the newer blog posts, and to <a href="https://www.daveliepmann.com/">Dave Liepmann</a> for <a href=" https://edwardtufte.github.io/tufte-css/">creating the CSS it is based on</a>. It is set in <a
-                        href="https://www.emigre.com/Fonts/Mr-Eaves-Sans-and-Modern">Mr Eaves Sanse</a> and <a
-                        href="https://www.theleagueofmoveabletype.com/ostrich-sans">Ostrich Sans Inline</a>. The
-                background image as well as the profile image on this page is © <a href="http://teresamarenzi.com">Teresa
-                    Marenzi</a>. The social media icons
-                are by <a href="https://fontawesome.com/">Font Awesome</a>
-            </p></div>
-    </div>
+<div class="about-intro">
+    <p class="lead">Hi! I'm Daniel.</p>
 </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-6822886-2', 'auto');
-  ga('send', 'pageview');
+<section class="about-section">
+    <h2 class="section-title">What I Do</h2>
+    <p>
+        I'm a software engineer and my current role is Head of Engineering at the amazing <a href="https://ourworldindata.org/">Our World In Data</a> where we develop tools for our authors and audience to explore data on important long term trends relevant to human development. With my wonderful wife I also run the photography studio <a href="https://www.iconoclash-photography.com">Iconoclash Photography</a>. I really like programming languages from the ML family (F#, Elm, Haskell, ...).
+    </p>
+</section>
 
-</script>
-</body>
+<section class="about-section">
+    <h2 class="section-title">AI &amp; Writing</h2>
+    <p>
+        I'm excited and concerned about the fast development of AI in roughly equal terms and I write about this topic occasionally on my <a href="https://aihorizon.substack.com/">AI Horizon substack</a>.
+    </p>
+</section>
 
-</html>
+<section class="about-section">
+    <h2 class="section-title">Background</h2>
+    <p>
+        I studied film directing and a couple of the films I made <a href="https://vimeo.com/album/3796617" target="_blank" rel="noopener">are still online at Vimeo</a>.
+    </p>
+</section>
+
+<section class="about-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>
+        Drop me an email at <a href="mailto:daniel@danielbachler.de">daniel@danielbachler.de</a>. You can also find me on:
+    </p>
+
+    <ul class="contacts">
+        <li>{% include icon-twitter.html %}</li>
+        <li>{% include icon-github.html %}</li>
+        <li>{% include icon-linkedin.html %}</li>
+        <li>{% include icon-facebook.html %}</li>
+    </ul>
+
+    <address class="snail-mail">
+        Daniel Bachler<br>
+        Wrangelstr 3<br>
+        10997 Berlin<br>
+        Germany
+    </address>
+</section>
+
+<section class="about-section credits-section">
+    <h2 class="section-title">Credits</h2>
+    <p class="attribution">
+        This site was designed by me and built with Jekyll. Big thanks to <a href="http://www.clayharmon.com/">Clay Harmon</a> for creating <a href="https://github.com/clayh53/tufte-jekyll">Tufte Jekyll</a> which enables the fantastic sidenotes used in some of the newer blog posts, and to <a href="https://www.daveliepmann.com/">Dave Liepmann</a> for <a href="https://edwardtufte.github.io/tufte-css/">creating the CSS it is based on</a>. It is set in <a href="https://www.emigre.com/Fonts/Mr-Eaves-Sans-and-Modern">Mr Eaves Sans</a> and <a href="https://www.theleagueofmoveabletype.com/ostrich-sans">Ostrich Sans Inline</a>. The background image as well as the profile image on this page is © <a href="http://teresamarenzi.com">Teresa Marenzi</a>. The social media icons are by <a href="https://fontawesome.com/">Font Awesome</a>.
+    </p>
+</section>

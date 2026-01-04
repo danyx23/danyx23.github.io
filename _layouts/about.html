@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="about">
+<body class="about">
 
-    {% include header.html %}
+{% include header.html %}
 
-	<div class="photo-of-daniel"></div>
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<div class="page-content">
+    <div class="wrapper about-me">
+        <div class="about-image">
+            <img src="/img/DanielBachler.jpg" alt="Photo of Daniel Bachler">
+        </div>
+        <div class="about-text">
+            {{ content }}
+        </div>
     </div>
-  </body>
+</div>
 
+</body>
 </html>

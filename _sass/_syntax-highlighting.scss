@@ -10,7 +10,7 @@ code, pre {
 
 $spacing-unit:     30px;
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit * 0.5;
 }
 
 .highlight {
