@@ -14,6 +14,22 @@ This is a **Jekyll-based personal website** hosted at [danielbachler.de](https:/
 
 ## Running Locally
 
+### Option 1: VS Code Dev Container (Recommended)
+
+Open the project in VS Code and use "Reopen in Container" (requires Docker and the Dev Containers extension). The container includes Ruby, Node.js, and `pi` (pi-coding-agent).
+
+```bash
+# Inside the dev container (using just commands)
+just install        # Install Ruby dependencies (runs automatically on container creation)
+just preview        # Serve with live reload
+just build          # Build the site
+just preview-drafts # Serve including draft posts
+just clean          # Clean generated files
+just new-draft name # Create a new draft post
+```
+
+### Option 2: Docker without Dev Container
+
 Uses Docker with `ruby:3.2` base image (multi-arch: works on both arm64 and amd64).
 
 ```bash
@@ -23,11 +39,11 @@ docker build -t jekyll-danyx .
 # Serve with live reload
 docker run --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-danyx
 
-# Or use justfile (requires nushell)
-just build-docker   # build image
-just preview        # serve with watch
-just build          # build only
-just preview-quick  # serve without building image (slower, uses ruby:3.2 directly)
+# Or use justfile - run OUTSIDE container
+just build-docker      # build image
+just preview-docker    # serve with watch via Docker
+just build-docker-site # build only via Docker
+just preview-quick     # serve without building image (slower, uses ruby:3.2 directly)
 ```
 
 Site will be available at `http://localhost:4000`
