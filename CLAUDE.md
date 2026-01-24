@@ -110,8 +110,8 @@ Notes:
 | `_drafts/` | Unpublished drafts |
 | `_layouts/` | Page templates (`default.html`, `post.html`, `page.html`, `about.html`) |
 | `_includes/` | Reusable HTML snippets (header, head, social icons) |
-| `_sass/` | SCSS partials for styling |
-| `css/` | Main SCSS entry points (`main.scss`, `tufte.scss`, `print.scss`) |
+| `_sass/` | SCSS partials imported by `tufte.scss` |
+| `css/` | Stylesheets (`tufte.scss` - main, `print.scss` - print styles) |
 | `_plugins/` | Custom Liquid tags (Tufte-style sidenotes, margin notes, etc.) |
 | `_data/` | Site data files (`social.yml`, `options.yml`) |
 | `_site/` | Generated output (gitignored for builds) |
@@ -140,21 +140,22 @@ Many root-level folders are **old article permalinks** (e.g., `5D-retiming-first
 
 The site uses a **Tufte CSS-inspired design** with:
 - Dark theme (black background, light text)
-- Futura PT as the base font
+- Futura PT as the base font (loaded via Typekit in `_includes/head.html`)
 - Responsive typography scaling with viewport width
 - Sidenotes and margin notes for annotations
 
 ### SCSS Structure
 
-Main entry: `css/main.scss` → imports from `_sass/`:
-- `_base.scss` - Base element styles
-- `_custom.scss` - Site-specific customizations  
-- `_layout.scss` - Layout rules
-- `_fonts.scss` - Font definitions
-- `_settings.scss` - Variables
-- `_syntax-highlighting.scss` - Code highlighting
+**Main stylesheet:** `css/tufte.scss` (referenced in `_includes/head.html`)
 
-Alternative entry: `css/tufte.scss` for Tufte-specific styling
+This file contains most styles inline and imports these partials from `_sass/`:
+- `_fonts.scss` - Font-face definitions
+- `_settings.scss` - Variables (breakpoints, colors)
+- `_syntax-highlighting.scss` - Code block styling
+- `_toc.scss` - Table of contents styling
+- `_ostrich-sans.scss` - Ostrich Sans font for site header
+
+**Print stylesheet:** `css/print.scss` (imports `_settings.scss`)
 
 ## Custom Liquid Tags (Plugins)
 

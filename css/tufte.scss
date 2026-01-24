@@ -559,8 +559,8 @@ html.about {
 
 
 .site-header {
-
-  padding-bottom: 2.3rem;
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
 
   font-family: "Ostrich Sans Inline", sans-serif;
 
@@ -575,6 +575,17 @@ html.about {
   display: flex;
   align-items: flex-end;
   height: 100%;
+}
+
+@media screen and (max-width: $on-palm) {
+  .nav-inner {
+    flex-wrap: wrap;
+  }
+  
+  .site-title {
+    width: 100%;
+    font-size: 80%;
+  }
 }
 
 
@@ -592,12 +603,21 @@ html.about {
 
   .wrapper.about-me {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
   }
 
   .about-me .about-image {
-    max-width: 100%;
+    max-width: none;
     width: 100%;
     margin-bottom: 2em;
+  }
+
+  .about-me .about-image img {
+    width: 100%;
   }
 
   .about-me .about-text {
@@ -614,12 +634,15 @@ html.about {
   float: right;
 }
 
+.site-title {
+  line-height: 0.9;
+}
+
 
 .trigger {
   display: flex;
   align-content: end;
   justify-content: end;
-  max-width: 50%;
   margin-left: 2rem;
 }
 
@@ -709,10 +732,6 @@ ul { width: 55%;
      list-style-type: disc; }
 
 /* About page sections with visual rhythm */
-.about-intro {
-  margin-bottom: 2.5rem;
-}
-
 .lead {
   font-size: 1.5em;
   line-height: 1.4;
@@ -720,8 +739,6 @@ ul { width: 55%;
 }
 
 .about-section {
-  margin-bottom: 2.5rem;
-  
   &:not(:last-child) {
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
