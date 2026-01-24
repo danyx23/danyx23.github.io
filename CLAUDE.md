@@ -48,6 +48,58 @@ just preview-quick     # serve without building image (slower, uses ruby:3.2 dir
 
 Site will be available at `http://localhost:4000`
 
+## Dev-Browser on Host (Mac) + Container Automation
+
+Use this when you want the automation to run inside the dev container while Chrome runs on the host Mac.
+
+### Host (MacOS)
+
+1. Start dev-browser on the host:
+
+```bash
+cd ~/.pi/agent/skills-repos/dev-browser/skills/dev-browser
+./server.sh
+```
+
+2. Ensure Chrome is allowed to accept remote DevTools connections:
+
+Edit `~/.pi/agent/skills-repos/dev-browser/skills/dev-browser/src/index.ts` and add the flag:
+
+```typescript
+args: [
+  `--remote-debugging-port=${cdpPort}`,
+  `--remote-allow-origins=*`,
+],
+```
+
+Restart `./server.sh` after changing it.
+
+### Container
+
+1. Start the Jekyll preview server:
+
+```bash
+bundle exec jekyll serve --host 0.0.0.0
+```
+
+2. Connect to the host dev-browser API by IP (resolved from `host.docker.internal`):
+
+```bash
+getent ahostsv4 host.docker.internal | awk '{print $1}' | head -1
+```
+
+Use that IP in dev-browser client scripts, for example:
+
+```typescript
+const client = await connect("http://<HOST_IP>:9222");
+const page = await client.page("jekyll");
+await page.goto("http://localhost:4000");
+```
+
+Notes:
+- `client.page("jekyll")` will hang if Chrome's DevTools WS is blocked or the host IP is wrong.
+- If `page.goto("http://localhost:4000")` times out, make sure the preview server is running and port 4000 is reachable from the host.
+
 ## Project Structure
 
 ### Core Directories
